@@ -1,8 +1,40 @@
-(function($) { 
+(function($) {
 	"use strict";
 
 
-    
+	var lFollowX = 0,
+		lFollowY = 0,
+		x = 0,
+		//y = 0,
+		friction = 1 / 30;
+
+function moveBackground() {
+	x += (lFollowX - x) * friction;
+	//y += (lFollowY - y) * friction;
+
+	//var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+	var translate = 'translate(' + x + 'px) scale(1.1)';
+
+	$('.banner .bg').css({
+		'-webit-transform': translate,
+		'-moz-transform': translate,
+		'transform': translate
+	});
+
+	window.requestAnimationFrame(moveBackground);
+}
+
+$(window).on('mousemove click', function(e) {
+
+	var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+	//var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+	lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+	//lFollowY = (10 * lMouseY) / 100;
+
+});
+
+moveBackground();
+
     //For background slider
     /*$(function() {
         $('#ri-grid').gridrotator( {
@@ -63,7 +95,7 @@
                 }
              });
              return false;
-        }); 
+        });
 
         var chart = window.chart = $('.chart').data('easyPieChart');
         //console.log(chart);
@@ -89,7 +121,7 @@
         $(document).scroll(function(){
             onHabilidades();
         });
-        
+
         $(document).ready( function() {
 
 
@@ -108,9 +140,9 @@
                     }
                 }
             });*/
-            
+
             //jQuery.scrollSpeed(15, 500, 'easeOutCubic');
-            
+
             /*$('body').umbg({
                 'mediaPlayerType': 'YouTube', // YouTube, Vimeo, Dailymotion, Wistia, HTML5, Image, or Color.
                 'mediaId': 'eKbFuqvWi8k', // Use the video id . For HTML5 use the location and video filename.
@@ -123,7 +155,7 @@
                 'displayControls': 0,
                 'videoQuality': "default"
             });*/
-            
+
             // for portfoli lightbox jquary
             /*var $chosenSheet,
             $stylesheets = $("a[id^=theme-]");*/
@@ -131,7 +163,7 @@
             // run rlightbox
             $(".lb").rlightbox();
             //$(".lb_title-overwritten").rlightbox({overwriteTitle: true});
-            
+
             window.addEventListener('DOMContentLoaded', function() {
                 "use strict";
                 var ql = new QueryLoader2(document.querySelector("body"), {
@@ -185,7 +217,7 @@
             //});
 
             //var windowBottom = $(window).height();
-            
+
             //$('.parallax').scrolly({bgParallax: true});
             //console.log(nagativeValue)
 
@@ -207,7 +239,7 @@
             onComplete: function(){
             console.log("done!");
             },
-            splashFunction: function() {  
+            splashFunction: function() {
 
             //passing Splash Screen script to jPreLoader
             $('#jSplash').children('section').not('.selected').hide();
@@ -237,7 +269,7 @@
             $(next).fadeIn(800);
             });
             }*/
-            
+
             /*var gMap;
 
             gMap = new GMaps({
@@ -262,7 +294,7 @@
             }
             };
             var map = new google.maps.Map(document.getElementById('map'), mapOptions);*/
-            
+
             var wow;
             wow = new WOW({
                 boxClass:     'wow',      // default
@@ -272,7 +304,7 @@
                 live:         true        // default
             });
             wow.init();
-            
+
             // init controller
             /*var controller = new ScrollMagic.Controller();
 
@@ -285,7 +317,7 @@
                     duration: 400
                 }).addTo(controller);*/
                 //}).addIndicators().addTo(controller);
-            
+
             (function($) {
                 var $innerS0 = $('.innerS0'),
                 $innerS1 = $('.innerS1'),
@@ -308,42 +340,42 @@
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(innerS0Tl).triggerElement($('body')[0]).addTo(ctrl);
-                
+
                 var innerS1Tl = new TimelineMax();
                 innerS1Tl.to($innerS1, 1, { opacity: 0, yPercent: 20, scale: 0.9 }, 0);
 
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(innerS1Tl).triggerElement($('body')[0]).addTo(ctrl);
-                
+
                 var faAngleDownTl = new TimelineMax();
                 faAngleDownTl.to($faAngleDown, 1, { opacity: 0, yPercent: 10, scale: 0.8 }, 0.1);
-                
+
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(faAngleDownTl).triggerElement($('body')[0]).addTo(ctrl);
-                
+
                 var textoInicioTl = new TimelineMax();
                 textoInicioTl.to($textoInicio, 1, { opacity: 0, yPercent: 5, scale: 0.7 }, 0.2);
-                
+
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(textoInicioTl).triggerElement($('body')[0]).addTo(ctrl);
-                
+
                 var cloudsTl = new TimelineMax();
                 cloudsTl.to($clouds, 1, { opacity: 0, yPercent: 5, scale: 0.6 }, 0.3);
-                
+
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(cloudsTl).triggerElement($('body')[0]).addTo(ctrl);
 
                 var particlesTl = new TimelineMax();
                 particlesTl.to($particles, 1, { opacity: 0 }, 0.3);
-                
+
                 new ScrollMagic.Scene({
                     duration: '100%'
                 }).setTween(particlesTl).triggerElement($('body')[0]).addTo(ctrl);
-                
+
                 /*TweenMax.staggerFrom([
                     '#brick1',
                     '#brick2',
@@ -367,9 +399,9 @@
                     '#brick2',
                     '#brick3'
                 ], 0.5, { x: windowWidth, delay : 0.5 }, 1));*/
-                
+
            })(jQuery);
-            
+
             $("ul.trabajosContainer li span.hoverBox .linKed.disabled").click(function(e) {
                 e.preventDefault();
                 return false;
@@ -401,41 +433,41 @@
             });
 
             $(".mapArea").mouseleave(function() {
-              $('.mapArea iframe').css("pointer-events", "none"); 
+              $('.mapArea iframe').css("pointer-events", "none");
             });
-            
+
             $("#home .fa-angle-down").click(function(e) {
                 e.preventDefault ? e.preventDefault() : e.returnValue = false;
                 $("#btn-sobremi").trigger("click");
             });
-            
+
             $(".page-up-holder .fa-angle-up").click(function(e) {
                 e.preventDefault ? e.preventDefault() : e.returnValue = false;
                 $("#btn-inicio").trigger("click");
             });
-            
+
             $("#sobremi #btn-go-contacto").click(function(e) {
                 e.preventDefault ? e.preventDefault() : e.returnValue = false;
                 $("#btn-contacto").trigger("click");
             });
-            
+
             $(".navbar-logo-holder").click(function(e) {
                 e.preventDefault ? e.preventDefault() : e.returnValue = false;
                 $("#btn-inicio").trigger("click");
             });
-            
+
             // Somth page scroll
             //$(function() {
                 //$('a[href*=#]:not([href=#])').click(function() {
                 $('.menuItem a').click(function(e) {
                     e.preventDefault ? e.preventDefault() : e.returnValue = false;
-                    
+
                     var hdifExtra = 20;
 
                     if($(window).width() <= 768){
                         $('.btn-navbar').click();
                         if($(".navbar-collapse").hasClass("in")){ $('.navbar-toggle').click(); }
-                        
+
                         hdifExtra = 2;
                     }
 
@@ -483,18 +515,18 @@
                     }
                 });
             //});
-            
+
             validate_and_submit_forms();
             onHabilidades();
             $(window).resize();
-            
+
             /*particlesJS.load('particles-js', 'particles.json', function() {
                 console.log('callback - particles.js config loaded');
             });*/
-            
+
         });
     //});
-    
+
 }(jQuery));
 
 function onHabilidades(){
@@ -515,12 +547,12 @@ function onHabilidades(){
         }
         index++;
     }
-    
+
     if($(window).scrollTop() >= ($('.home').height()-5)){
         $(".page-up-holder").removeClass("fadeOutDown").addClass('fadeInUp');
     } else {
         $(".page-up-holder").removeClass("fadeInUp").addClass('fadeOutDown');
-    }   
+    }
 }
 
 $(window).load(function() {
@@ -729,16 +761,16 @@ function fillTopper() {
 
 function validate_and_submit_forms(b) {
     var a = (b !== undefined && b.length > 0) ? b : $("form.validate-form");
-    
+
     a.each(function () {
         var c = $(this);
-        
+
         c.find(".validate-field").each(function () {
             $(this).change(function () {
                 $(this).siblings(".alert").fadeOut("fast", function () {
                     $(this).remove();
                 });
-                
+
                 if ($(this).val().trim() != "") {
                     var e = validate_fields(c, $(this));
                     if (e.length > 0) {
@@ -756,7 +788,7 @@ function validate_and_submit_forms(b) {
         });*/
         c.submit(function (e) {
             e.preventDefault ? e.preventDefault() : e.returnValue = false;
-            
+
             $(this).find(".form-loader").fadeIn("fast");
             var d = $(this).attr("action");
             if (d === undefined && d == "") {
@@ -794,7 +826,7 @@ function validate_and_submit_forms(b) {
                     var l = (k == "success") ? true : false;
                     var h = (k == "captcha") ? false : true;
                     var g = "";
-                    
+
                     switch (k) {
                         case "success":
                             //g = "Su consulta se envio con exito!";
@@ -814,11 +846,11 @@ function validate_and_submit_forms(b) {
                             $(".form-general-error-container .error").fadeIn("fast");
                             break;
                     }
-                    
+
                     /*var j = '<div class="alert ';
                     j += (l == true) ? "success" : "error";
                     j += '">' + g + "</div>";*/
-                    
+
                     if (!h) {
                         c.find("#form-captcha").parent(".form-group").append(j);
                         c.find("#form-captcha").siblings(".alert").fadeIn("fast");
@@ -830,7 +862,7 @@ function validate_and_submit_forms(b) {
                         });*/
                         $(".form-general-error-container .success, .form-general-error-container .incomplete, .form-general-error-container .error").delay(10000).fadeOut("fast");
                     }
-                    
+
                     //reset_captcha(c);
                     if (l == true) {
                         c.find(".form-control").val("");
@@ -875,7 +907,7 @@ function validate_fields(d, a) {
     if (d !== undefined && d.length > 0) {
         var b = (a !== undefined && a.length > 0) ? a : d.find(".validate");
         var c = new Array();
-        
+
         b.each(function () {
             var e = $(this).attr("data-validation-type");
             var h = $(this).hasClass("required");
@@ -883,11 +915,11 @@ function validate_fields(d, a) {
             var f = new Array();
             f.field_object = $(this);
             f.message = "success";
-            
+
             if (h == true && (g == "" || g === null || g === undefined)) {
                 f.message = "Este campo es obligatorio.";
             }
-            
+
             if (e == "string" && (g != "" && g !== null && g !== undefined)) {
                 if (g.match(/^[a-z0-9 .\-]+$/i) == null) {
                     f.message = "Caracteres inválidos.";
