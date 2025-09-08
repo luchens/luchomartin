@@ -1,0 +1,69 @@
+.modulo-19 {
+  position: relative;
+
+  .btn-prev {
+    margin-right: 16px;
+  }
+
+  .btn-next {
+    margin-left: 16px;
+  }
+
+  .btn-prev,
+  .btn-next {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    -webkit-mask-size: 28px;
+    background-color: @ColorBlue;
+  }
+
+  .btn-numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    font-family: @PoppinsRegular;
+    font-size: 14px;
+    line-height: 50px;
+    color: @ColorBlue;
+    .Transition(all .3s ease);
+
+    @media (max-width: 480px){
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    &:hover,
+    &.activo {
+      font-family: @PoppinsBold;
+      color: @ColorBlanco;
+      background-color: @ColorRojo;
+    }
+  }
+
+  .btn-puntos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    font-family: @PoppinsRegular;
+    font-size: 14px;
+    line-height: 50px;
+    color: @ColorBlue;
+    .Transition(all .3s ease);
+
+    @media (max-width: 480px){
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+    }
+  }
+}

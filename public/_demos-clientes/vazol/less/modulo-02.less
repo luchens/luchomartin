@@ -1,0 +1,73 @@
+.modulo-02 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bg-gris {
+    background-color: @ColorGrisClarito;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .texto-top {
+    font-family: @NunitoSansRegular;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      font-family: @NunitoSansBold;
+      color: @ColorPurpura;
+    }
+
+    b {
+      font-family: @PoppinsBold;
+    }
+
+    .gris {
+      color: @ColorGrisOscuro;
+      font-family: @PoppinsBold;
+    }
+
+    .purpura {
+      color: @ColorPurpura;
+      font-family: @PoppinsBold;
+    }
+  }
+
+  .holder {
+    position: relative;
+
+    &:hover {
+      .numero {
+        color: @ColorPurpuraOscuro;
+      }
+
+      .texto {
+        color: @ColorPurpura;
+      }
+    }
+
+    .numero {
+      font-family: @PoppinsBold;
+      color: @ColorPurpura;
+      font-size: 64px;
+      line-height: 71px;
+      .Transition(all .3s ease);
+    }
+
+    .texto {
+      font-family: @NunitoSansSemiBold;
+      color: @ColorGrisOscuro;
+      font-size: 16px;
+      line-height: 21px;
+      .Transition(all .3s ease);
+    }
+  }
+}

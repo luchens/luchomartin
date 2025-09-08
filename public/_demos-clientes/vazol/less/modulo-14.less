@@ -1,0 +1,147 @@
+.modulo-14 {
+  position: relative;
+  background-color: @ColorGrisClarito;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 40px;
+    line-height: 45px;
+    width: 100%;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .btn-link {
+    display: inline-flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: @NunitoSansBold;
+    color: @ColorPurpuraOscuro;
+    font-size: 16px;
+    line-height: 48px;
+    text-decoration: none;
+    border: 1px solid @ColorPurpuraOscuro;
+    border-radius: 8px;
+    padding: 0px 16px;
+    .Transition(all .3s ease);
+
+    img {
+      width: 24px;
+      height: 24px;
+      .Transition(all .3s ease);
+    }
+
+    &:hover {
+      color: @ColorPurpuraOscuro;
+      background-color: @ColorRosaClarito;
+      border-color: @ColorPurpuraOscuro;
+
+      img {
+        content: url("../images/arrow-right-icon-purpura-oscuro.svg");
+      }
+    }
+
+    @media (max-width: 991px){
+      width: 100%;
+    }
+  }
+
+  ul {
+    &.lista {
+      padding: 0px;
+      margin: 0px 0px 32px 0px;
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      list-style: none;
+
+      li {
+        font-family: @NunitoSansBold;
+        color: @ColorGrisOscuro;
+        font-size: 20px;
+        line-height: 25px;
+
+        &:before {
+          content: '';
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 24px;
+          height: 24px;
+          margin-right: 17px;
+          -webkit-mask-size: 24px;
+          -webkit-mask-repeat: no-repeat;
+          -webkit-mask-position: center;
+          background-color: @ColorPurpura;
+          .Transition(all .3s ease);
+        }
+
+        &.calidad {
+          &:before {
+            -webkit-mask-image: url("../images/calidad-icon.svg");
+          }
+        }
+
+        &.innovacion {
+          &:before {
+            -webkit-mask-image: url("../images/innovacion-icon.svg");
+          }
+        }
+
+        &.especializacion {
+          &:before {
+            -webkit-mask-image: url("../images/especializacion-icon.svg");
+          }
+        }
+
+        &.confianza {
+          &:before {
+            -webkit-mask-image: url("../images/confianza-icon.svg");
+          }
+        }
+
+        &.disponibilidad {
+          &:before {
+            -webkit-mask-image: url("../images/disponibilidad-icon.svg");
+          }
+        }
+      }
+    }
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+
+}

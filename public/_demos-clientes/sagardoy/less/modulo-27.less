@@ -1,0 +1,107 @@
+.modulo-27 {
+  position: relative;
+  background-color: @ColorBlanco;
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 48px;
+    line-height: 51px;
+
+    @media (max-width: 991px){
+      font-size: 38px;
+      line-height: 41px;
+    }
+  }
+
+  .btns-slider {
+    .btn-prev,
+    .btn-next {
+      width: 44px;
+      height: 44px;
+      -webkit-mask-size: 28px;
+      background-color: @ColorBlue;
+    }
+  }
+
+  .slider-premios {
+    position: relative;
+    margin-top: 70px;
+
+    @media (max-width: 991px){
+      margin-top: 20px;
+    }
+
+    .slick-slider {
+      .slick-list {
+        overflow: visible;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: calc(-100% - 0px);
+          width: 100%;
+          height: 100%;
+          background-color: @ColorBlanco;
+          z-index: 1;
+        }
+
+        &:focus {
+	        outline: none;
+	      }
+
+	      &.draggable {
+	        cursor: grab;
+
+	        &:active {
+	          cursor: grabbing;
+	        }
+	      }
+
+        .slick-track {
+          .slick-slide {
+            position: relative;
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .line-border {
+      position: relative;
+      z-index: 1;
+      top: 0px;
+      height: 200px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      border-radius: 13px;
+      padding: 12px;
+      border: 1px solid @ColorBlue20;
+      .Transition(all .3s ease);
+
+      &:hover {
+        top: -5px;
+        background-color: @ColorBlanco;
+      }
+    }
+
+    .img-fluid {
+      display: block;
+      width: 213px;
+      height: auto;
+
+      @media (max-width: 991px){
+        margin-bottom: 10px;
+      }
+    }
+
+    .texto {
+      font-family: @PoppinsRegular;
+      color: @ColorBlue;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

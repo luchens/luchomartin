@@ -1,0 +1,29 @@
+.Calc(@prop; @val){
+  @{prop}: calc(~'@{val}');
+  @{prop}: -moz-calc(~'@{val}');
+  @{prop}: -webkit-calc(~'@{val}');
+  @{prop}: -o-calc(~'@{val}');
+}
+
+.Transition(@type){
+  -webkit-transition: ~"@{type}";
+  -moz-transition: ~"@{type}";
+  -ms-transition: ~"@{type}";
+  -o-transition: ~"@{type}";
+}
+
+.Transform(@function) {
+  -webkit-transform: @function;
+  -moz-transform: @function;
+  -ms-transform: @function;
+  -o-transform: @function;
+}
+
+.noSelectable(){
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}

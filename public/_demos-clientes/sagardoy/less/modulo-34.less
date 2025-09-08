@@ -1,0 +1,81 @@
+.modulo-34 {
+  position: relative;
+  background-color: @ColorBlue;
+
+  .img-fluid {
+    width: 100%;
+    height: 437px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+
+    @media (max-width: 991px){
+      height: 240px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlanco;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 30px;
+
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .info {
+    font-family: @PoppinsRegular;
+    font-size: 16px;
+    line-height: 21px;
+
+    @media (max-width: 991px){
+      margin-top: 30px;
+    }
+
+    a {
+      display: inline-block;
+      color: @ColorBlanco;
+      margin-bottom: 5px;
+
+      &.btn-direccion {
+        background-image: url("../images/ico-flecha-right-blanco.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 22px;
+        .Transition(all .3s ease);
+
+        &:hover {
+          padding-right: 5px;
+        }
+      }
+
+      &.btn-email {
+        color: @ColorRojo;
+      }
+    }
+  }
+
+  .btn-link {
+    font-family: @PoppinsRegular;
+    color: @ColorBlanco;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    display: inline-block;
+    .Transition(all .3s ease);
+
+    &:hover {
+      background-color: @ColorRojo;
+    }
+  }
+}

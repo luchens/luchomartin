@@ -1,0 +1,45 @@
+.modulo-10 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  @media (max-width: 991px){
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+
+  .accordion-flush {
+    .accordion-item {
+      border-color: @ColorGrisClarin;
+
+      .accordion-button {
+        font-family: @HindBold;
+        color: @ColorAzul;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 16px 0px;
+
+        &:not(.collapsed) {
+          background-color: transparent;
+          box-shadow: inset 0 -1px 0 @ColorGrisClarin;
+        }
+
+        &:after {
+          width: 20px;
+          height: 20px;
+          background-image: url("../images/chevron-down.svg");
+          background-size: 20px;
+        }
+      }
+
+      .accordion-body {
+        font-family: @HindMedium;
+        color: @ColorGrisOscuro;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 0px 16px 0px;
+      }
+    }
+  }
+}

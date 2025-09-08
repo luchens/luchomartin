@@ -1,0 +1,117 @@
+.modulo-29 {
+  position: relative;
+  background-color: @ColorBlanco;
+
+  &.bg-gris {
+    background-color: @ColorGris;
+  }
+
+  .accesos {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+
+    @media (max-width: 991px){
+      flex-flow: column;
+    }
+
+    .acceso {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      border: 1px solid @ColorGrisOscuro;
+      gap: 60px;
+
+      @media (max-width: 991px){
+        gap: 30px;
+      }
+
+      &.left {
+        border-radius: 12px 0px 0px 12px;
+
+        @media (max-width: 991px){
+          border-radius: 12px 12px 0px 0px;
+        }
+      }
+
+      &.right {
+        border-radius: 0px 12px 12px 0px;
+        border-left: none;
+
+        @media (max-width: 991px){
+          border-radius: 0px 0px 12px 12px;
+          border-left: 1px solid @ColorGrisOscuro;
+          border-top: none;
+        }
+      }
+
+      .titulo {
+        font-family: @TiemposHeadlineRegular;
+        color: @ColorRojo;
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 0px;
+        width: 100%;
+
+        @media (max-width: 991px){
+          font-size: 24px;
+          line-height: 28px;
+          max-width: 252px;
+        }
+      }
+
+      .img-fluid {
+        width: 294px;
+        height: 294px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        @media (max-width: 991px){
+          width: 214px;
+          height: 214px;
+        }
+      }
+
+      .texto {
+        font-family: @PoppinsRegular;
+        color: @ColorBlue;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 440px;
+
+        @media (max-width: 991px){
+          max-width: 266px;
+        }
+      }
+
+      .btn-link {
+        font-family: @PoppinsMedium;
+        color: @ColorBlue;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+        padding: 0px 0px;
+        text-transform: uppercase;
+        border-bottom: 2px solid @ColorRojo;
+        .Transition(all .3s ease);
+
+        @media (max-width: 991px){
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        &:hover {
+          color: @ColorRojo;
+        }
+      }
+    }
+  }
+}

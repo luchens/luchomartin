@@ -1,0 +1,123 @@
+.engage-fcas {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 69px);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0px 64px 0px 64px;
+  margin-top: 69px;
+
+  @media (max-width: 1200px){
+    height: auto;
+    min-height: 700px;
+    margin-top: 0px;
+    padding: 97px 32px 0px 32px;
+  }
+
+  .degrade {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(103.06deg, #FFFFFF 28.23%, rgba(255, 255, 255, 0) 69.9%);
+    z-index: 1;
+
+    @media (max-width: 480px){
+      background-image: linear-gradient(0.29deg, rgba(255, 255, 255, 0) -15.95%, rgba(255, 255, 255, 0.7) 34.04%, rgba(255, 255, 255, 0) 114.13%);
+    }
+  }
+
+  .block {
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1200px){
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 64px;
+
+      @media (max-width: 1200px){
+        max-width: 291px;
+        margin-bottom: 49px;
+      }
+    }
+
+    .texto {
+      font-family: @NeoSansRegular;
+      color: @ColorAzul;
+      font-size: 25px;
+      line-height: 33px;
+      max-width: 804px;
+      margin-bottom: 64px;
+
+      @media (max-width: 1200px){
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 49px;
+        text-align: left;
+      }
+
+      b {
+        font-family: @NeoSansMedium;
+      }
+    }
+
+    .btn-link-mobile {
+      display: inline-block;
+      font-family: @NeoSansBold;
+      color: @ColorAzul;
+      font-size: 20px;
+      line-height: 31px;
+      margin-bottom: 49px;
+      text-decoration: underline;
+      .Transition(all .4s ease);
+
+      @media (min-width: 481px){
+        display: none;
+      }
+
+      &:hover {
+        color: @ColorAmarillo;
+      }
+    }
+
+    .btn-link {
+      display: inline-block;
+      font-family: @NeoSansBold;
+      color: @ColorAzul;
+      font-size: 18px;
+      line-height: 23px;
+      background-color: @ColorAmarillo;
+      padding: 20px 30px;
+      text-decoration: none;
+      .Transition(all .4s ease);
+
+      @media (max-width: 4801px){
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px 22px;
+      }
+
+      &:hover {
+        background-color: @ColorBlanco;
+      }
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}

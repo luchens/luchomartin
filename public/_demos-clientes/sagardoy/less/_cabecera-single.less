@@ -1,0 +1,100 @@
+.section {
+  &.cabecera-single {
+    position: relative;
+    width: 100%;
+    background-color: @ColorGris;
+    padding-top: 88px;
+    padding-bottom: 28px;
+
+    .datos {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      height: 100%;
+
+      .nombre {
+        font-family: @TiemposHeadlineRegular;
+        color: @ColorBlue;
+        font-size: 80px;
+        line-height: 78px;
+
+        @media (max-width: 480px){
+          font-size: 42px;
+          line-height: 48px;
+        }
+      }
+
+      .cargo {
+        font-family: @PoppinsRegular;
+        color: @ColorBlue;
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 60px;
+
+        @media (max-width: 480px){
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .titulo-top {
+        font-family: @PoppinsBold;
+        color: @ColorBlue;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: uppercase;
+        border-top: 1px solid @ColorBlue15;
+        padding-top: 12px;
+        margin-bottom: 8px;
+
+        @media (max-width: 480px){
+          padding-top: 10px;
+          margin-top: 25px;
+        }
+      }
+
+      .btn-email {
+        display: block;
+        font-family: @PoppinsRegular;
+        color: @ColorRojo;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0px;
+      }
+
+      .btn-telefono {
+        display: block;
+        font-family: @PoppinsRegular;
+        color: @ColorBlue;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+
+      @media (max-width: 480px){
+        display: none;
+      }
+
+      &.mobile {
+        @media (max-width: 480px){
+          height: 373px!important;
+          margin-bottom: 20px;
+          display: inline-block!important;
+        }
+
+        @media (min-width: 481px){
+          display: none!important;
+        }
+      }
+    }
+  }
+}

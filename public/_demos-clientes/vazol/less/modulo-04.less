@@ -1,0 +1,114 @@
+.modulo-04 {
+  position: relative;
+  background-color: @ColorPurpura;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  max-height: 610px;
+
+  @media (max-width: 1199px){
+    max-height: none;
+  }
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    font-family: @PoppinsBold;
+    color: @ColorBlanco;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 32px;
+  }
+
+  .holder {
+    &:hover {
+      .icon {
+        width: 80px;
+        height: 80px;
+        background-color: @ColorGrisClarito;
+
+        &:before {
+          background-color: @ColorPurpuraOscuro;
+        }
+      }
+    }
+
+    .icon {
+      display: inline-flex;
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      background-color: @ColorPurpuraOscuro;
+      border-radius: 8px;
+      .Transition(all .3s ease);
+
+      &:before {
+        content: '';
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 24px;
+        -webkit-mask-size: 24px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        background-color: @ColorBlanco;
+        .Transition(all .3s ease);
+      }
+
+      &.innovacion {
+        &:before {
+          -webkit-mask-image: url("../images/innovacion-icon.svg");
+        }
+      }
+
+      &.calidad {
+        &:before {
+          -webkit-mask-image: url("../images/calidad-icon.svg");
+        }
+      }
+
+      &.eficiencia {
+        &:before {
+          -webkit-mask-image: url("../images/eficiencia-icon.svg");
+        }
+      }
+
+      &.trabajo {
+        &:before {
+          -webkit-mask-image: url("../images/trabajo-icon.svg");
+        }
+      }
+
+      &.honestidad {
+        &:before {
+          -webkit-mask-image: url("../images/honestidad-icon.svg");
+        }
+      }
+    }
+
+    .titulo {
+      position: relative;
+      font-family: @PoppinsBold;
+      color: @ColorBlanco;
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    .texto {
+      font-family: @NunitoSansRegular;
+      color: @ColorBlanco;
+      font-size: 16px;
+      line-height: 21px;
+
+      b {
+        font-family: @NunitoSansBold;
+      }
+    }
+  }
+
+}

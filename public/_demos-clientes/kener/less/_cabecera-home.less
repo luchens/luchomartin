@@ -1,0 +1,113 @@
+.section {
+  &.cabecera-home {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+
+    @media (max-width: 991px){
+      min-height: 668px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: @ColorBlanco50;
+      z-index: 1;
+    }
+
+    .data {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      min-height: 700px;
+      display: flex;
+      align-items: start;
+      justify-content: end;
+      flex-wrap: wrap;
+      flex-direction: column;
+      z-index: 2;
+      padding-bottom: 96px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      @media (max-width: 991px){
+        min-height: 668px;
+        padding-bottom: 83px;
+      }
+
+      .titulo {
+        font-family: @RalewayBold;
+        color: @ColorAzul;
+        font-size: 64px;
+        line-height: 69px;
+        margin-bottom: 32px;
+
+        .turqueza {
+          color: @ColorTurqueza;
+        }
+
+        @media (max-width: 991px){
+          font-size: 56px;
+          line-height: 61px;
+        }
+      }
+
+      .texto {
+        font-family: @HindSemiBold;
+        color: @ColorAzulOscuro;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 32px;
+
+        .azul {
+          font-family: @HindBold;
+          color: @ColorAzul;
+        }
+
+        b {
+          font-family: @HindBold;
+        }
+      }
+
+      .btn-link {
+        display: inline-block;
+        width: 100%;
+        max-width: 129px;
+        font-family: @HindBold;
+        color: @ColorBlanco;
+        font-size: 16px;
+        line-height: 44px;
+        background-color: @ColorAzul;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        padding: 0px 16px;
+        .Transition(all .1s ease);
+
+        &:hover {
+          background-color: @ColorTurqueza;
+        }
+
+        @media (max-width: 991px){
+          max-width: 100%;
+        }
+      }
+    }
+
+    .bg {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: calc(100% - 32px);
+      height: calc(100% - 32px);
+      object-fit: cover;
+      object-position: top;
+      z-index: 0;
+      border-radius: 8px;
+    }
+  }
+}

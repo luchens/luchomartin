@@ -1,0 +1,80 @@
+.section {
+  &.cabecera-interna-publicaciones {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    background-color: @ColorBlue;
+
+    .container {
+      @media (max-width: 991px){
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+      }
+    }
+
+    .btn-volver {
+      position: absolute;
+      top: 85px;
+      left: 27px;
+      font-family: @PoppinsMedium;
+      color: @ColorBlanco;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 12px 12px 12px 40px;
+      display: inline-block;
+      background-image: url("../images/ico-flecha-left-blanco.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 28px;
+      text-transform: uppercase;
+
+      @media (max-width: 991px){
+        top: 60px;
+        left: 15px;
+      }
+
+      u {
+        text-decoration: none;
+        border-bottom: 2px solid @ColorRojo;
+      }
+
+      .Transition(all .2s ease);
+    }
+
+    .holder {
+      width: 100%;
+      position: absolute;
+      top: calc(50% + 85px);
+      left: 0px;
+      transform: translateY(-50%);
+      z-index: 1;
+
+      .titulo {
+        font-family: @TiemposHeadlineRegular;
+        color: @ColorBlanco;
+        font-size: 80px;
+        line-height: 78px;
+        border-left: 5px solid @ColorRojo;
+        padding-left: 19px;
+        margin-bottom: 30px;
+
+        @media (max-width: 991px){
+          font-size: 42px;
+          line-height: 48px;
+        }
+      }
+
+      .texto {
+        font-family: @PoppinsRegular;
+        color: @ColorBlanco;
+        font-size: 16px;
+        line-height: 21px;
+
+        @media (max-width: 991px){
+          padding-left: 25px;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}

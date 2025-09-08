@@ -1,0 +1,48 @@
+.section {
+  &.cabecera-interna {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 40px;
+
+    .data {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: center;
+
+      @media (max-width: 991px){
+        padding-top: 0px;
+        padding-bottom: 40px;
+        justify-content: end;
+      }
+
+      .titulo {
+        font-family: @RalewayBold;
+        color: @ColorTurqueza;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+      }
+
+      .texto {
+        font-family: @RalewayBold;
+        color: @ColorAzul;
+        font-size: 48px;
+        line-height: 53px;
+        max-width: 900px;
+
+        @media (max-width: 991px){
+          font-size: 32px;
+          line-height: 37px;
+        }
+      }
+    }
+  }
+}

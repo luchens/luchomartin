@@ -1,0 +1,165 @@
+.modulo-la-revista-que {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 100px;
+
+  @media (max-width: 991px){
+    padding-top: 30px;
+  }
+
+  .container-fluid {
+    position: relative;
+    z-index: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media (max-width: 991px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: @MuseoSansRounded900;
+    font-size: 40px;
+    line-height: 48px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: 991px){
+      font-size: 20px;
+      line-height: 24px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .texto {
+    display: block;
+    width: 100%;
+    max-width: 1364px;
+    margin: 0px auto 40px auto;
+    font-family: @MuseoSansRounded300;
+    font-size: 20px;
+    line-height: 25px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    padding-left: 138px;
+    padding-right: 138px;
+
+    @media (max-width: 991px){
+      font-size: 14px;
+      line-height: 19px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px auto 30px auto;
+    }
+
+    .rojo {
+      color: @ColorRojo;
+      font-family: @MuseoSansRounded500;
+    }
+  }
+
+  .column {
+    position: relative;
+    margin-bottom: 80px;
+
+    @media (max-width: 991px){
+      margin-bottom: 50px;
+    }
+
+    .row {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cohete {
+      position: absolute;
+      left: -95px;
+      top: -390px;
+      z-index: 0;
+      width: 220px;
+      height: auto;
+
+      @media (max-width: 991px){
+        display: none;
+      }
+    }
+
+    .popi {
+      position: absolute;
+      right: 0;
+      top: -291px;
+      z-index: 0;
+      width: 193px;
+      height: auto;
+
+      @media (max-width: 991px){
+        display: none;
+      }
+    }
+
+    .holder {
+      position: relative;
+      display: block;
+      border-radius: 25px;
+      padding: 82px 29px;
+      height: 100%;
+      text-align: center;
+
+      @media (max-width: 991px){
+        padding: 36px 19px;
+      }
+
+      &.bg-amarillo {
+        background-color: @ColorAmarillo;
+      }
+
+      &.bg-verde {
+        background-color: @ColorVerde;
+      }
+
+      &.bg-celeste {
+        background-color: @ColorCeleste;
+      }
+
+      &.bg-rojo {
+        background-color: @ColorRojo;
+      }
+
+      .titulo {
+        font-family: @MuseoSansRounded900;
+        font-size: 32px;
+        line-height: 36px;
+        color: @ColorNegro;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @media (max-width: 991px){
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .texto {
+        font-family: @MuseoSansRounded500;
+        font-size: 20px;
+        line-height: 24px;
+        color: @ColorGrisOscuro;
+        margin-bottom: 0px;
+        padding: 0px;
+
+        @media (max-width: 991px){
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}

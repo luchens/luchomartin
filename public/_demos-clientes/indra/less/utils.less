@@ -1,0 +1,121 @@
+.Calc(@prop; @val){
+  @{prop}: calc(~'@{val}');
+  @{prop}: -moz-calc(~'@{val}');
+  @{prop}: -webkit-calc(~'@{val}');
+  @{prop}: -o-calc(~'@{val}');
+}
+
+.Transition(@type){
+  -webkit-transition: ~"@{type}";
+  -moz-transition: ~"@{type}";
+  -ms-transition: ~"@{type}";
+  -o-transition: ~"@{type}";
+}
+
+.Transform(@function) {
+  -webkit-transform: @function;
+  -moz-transform: @function;
+  -ms-transform: @function;
+  -o-transform: @function;
+}
+
+.noSelectable(){
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.btn-arrow {
+  position: relative;
+  font-family: @NeoSansRegular;
+  color: @ColorBlack;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid @ColorBlack;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  .Transition(all .4s ease);
+
+  &.f-hover {
+    &:hover {
+      color: @ColorBlanco;
+      background-color: @ColorGris;
+      border-color: @ColorGris;
+      box-shadow: none;
+      border-radius: 20px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.s-large {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+
+  &.no-arrow {
+    &:after {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: @ColorBlack;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
+
+    &:after {
+      left: 10px;
+    }
+  }
+
+  &:after {
+    position: relative;
+    content: '';
+    width: 30px;
+    height: 7px;
+    left: 0px;
+    background-color: @ColorBlack;
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/ico-arrow-right.svg");
+    .Transition(all .4s ease);
+  }
+
+  &.c-blanco {
+    color: @ColorBlanco;
+    border: 1px solid @ColorBlanco;
+
+    &:hover {
+      color: @ColorBlanco;
+    }
+
+    &:after {
+      background-color: @ColorBlanco;
+    }
+  }
+
+  &.c-negro {
+    color: @ColorNegro;
+    border: 1px solid @ColorNegro;
+
+    &:hover {
+      color: @ColorNegro;
+    }
+
+    &:after {
+      background-color: @ColorNegro;
+    }
+  }
+}

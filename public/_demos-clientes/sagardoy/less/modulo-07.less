@@ -1,0 +1,83 @@
+.modulo-07 {
+  position: relative;
+  background-color: @ColorBlue;
+  background-image: url("../images/img-grafismo.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 370px auto;
+
+  @media (max-width: 991px){
+    padding-bottom: 220px;
+    background-size: auto 140px;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 73px;
+
+    @media (max-width: 991px){
+      max-width: 312px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+
+    @media (max-width: 991px){
+      height: 250px;
+      margin-bottom: 57px;
+    }
+  }
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlanco;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 33px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .texto {
+    font-family: @PoppinsRegular;
+    color: @ColorBlanco;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px){
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn-link {
+    font-family: @PoppinsRegular;
+    color: @ColorBlanco;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    .Transition(all .3s ease);
+
+    &:hover {
+      background-color: @ColorRojo;
+    }
+  }
+}

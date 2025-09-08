@@ -1,0 +1,87 @@
+.section {
+  &.cabecera-home {
+    position: relative;
+    width: 100%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: @ColorNegro30;
+      z-index: 1;
+    }
+
+    .data {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .titulo-top {
+        font-family: @PoppinsRegular;
+        color: @ColorBlanco;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+
+        @media (max-width: 991px){
+          font-size: 13px;
+          line-height: 13px;
+        }
+      }
+
+      .titulo {
+        font-family: @TiemposHeadlineRegular;
+        color: @ColorBlanco;
+        font-size: 80px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        u {
+          text-decoration: none;
+          border-bottom: 5px solid #FF1300;
+        }
+
+        @media (max-width: 448px){
+          font-size: 49px;
+          line-height: 48px;
+          margin-bottom: 2px;
+        }
+      }
+
+      .texto {
+        font-family: @PoppinsLight;
+        color: @ColorBlanco;
+        font-size: 80px;
+        line-height: 60px;
+
+        @media (max-width: 991px){
+          text-align: center;
+          font-size: 49px;
+          line-height: 48px;
+        }
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 100%;
+      height: calc(100vh);
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}

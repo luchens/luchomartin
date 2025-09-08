@@ -1,0 +1,275 @@
+.modulo-nuestras-revistas {
+  position: relative;
+  background-color: @ColorVerdeClaro;
+  padding-bottom: 235px;
+
+  @media (max-width: 991px){
+    padding-bottom: 185px;
+  }
+
+  .sam-sam {
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 660px);
+    z-index: 1;
+    width: 202px;
+    height: auto;
+
+    @media (max-width: 991px){
+      width: 87px;
+      top: 42px;
+      left: inherit;
+      right: 20px;
+    }
+  }
+
+  .nubes {
+    position: relative;
+    width: 100%;
+    height: 381px;
+    object-position: top;
+    object-fit: contain;
+    z-index: 0;
+
+    @media (max-width: 991px){
+      height: 200px;
+    }
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: @MuseoSansRounded900;
+    font-size: 40px;
+    line-height: 48px;
+    color: @ColorVerde;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: 991px){
+      font-size: 18px;
+      line-height: 23px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .slider-nuestras-revistas {
+    position: relative;
+
+    .slick-slider {
+      .slick-list {
+
+        &:focus {
+          outline: none;
+        }
+
+        &.draggable {
+          cursor: grab;
+
+          &:active {
+            cursor: grabbing;
+          }
+        }
+
+        .slick-track {
+          .slick-slide {
+            margin-right: 85px;
+
+            @media (max-width: 1399px){
+              margin-right: 35px;
+            }
+
+            @media (max-width: 991px){
+              margin-right: 20px;
+            }
+
+            @media (max-width: 768px){
+              margin-right: 0px;
+            }
+
+            .holder {
+              position: relative;
+              padding: 0px;
+              background-color: @ColorBlanco;
+              border-radius: 30px;
+              padding: 40px 23px 30px 20px;
+
+              .top {
+                display: inline-flex;
+                width: 100%;
+                gap: 16px;
+
+                .people-icon {
+                  width: 50px;
+                  height: 50px;
+                }
+
+                .stars {
+                  display: inline-flex;
+                  gap: 7px;
+
+                  .star {
+                    width: 25px;
+                    height: 25px;
+                    background: url("../images/star.svg");
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-size: 50px;
+                  }
+                }
+              }
+
+              .texto {
+                font-family: @MuseoSansRounded300;
+                font-size: 16px;
+                line-height: 21px;
+                color: @ColorNegro;
+                padding-left: 66px;
+
+                b {
+                  font-family: @MuseoSansRounded500;
+                }
+              }
+
+              @media (max-width: 480px){
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 62px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 62px;
+      z-index: 1;
+
+      &:before {
+        width: 62px;
+        height: 62px;
+
+        @media (max-width: 991px){
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @media (max-width: 991px){
+        bottom: -96px;
+        top: initial;
+        width: 25px;
+        height: 25px;
+        background-size: 25px!important;
+      }
+    }
+
+    .slick-prev {
+      background: url("../images/flecha-izqda.svg");
+      left: -120px;
+
+      @media (max-width: 1551px){
+        left: -60px;
+      }
+
+      @media (max-width: 1431px){
+        left: -30px;
+      }
+
+      @media (max-width: 1399px){
+        left: -60px;
+      }
+
+      @media (max-width: 991px){
+        left: 0px;
+      }
+    }
+
+    .slick-next {
+      background: url("../images/flecha-drcha.svg");
+      right: -120px;
+
+      @media (max-width: 1551px){
+        right: -60px;
+      }
+
+      @media (max-width: 1431px){
+        right: -30px;
+      }
+
+      @media (max-width: 1399px){
+        right: -60px;
+      }
+
+      @media (max-width: 991px){
+        right: 0px;
+      }
+    }
+
+    .slick-dots {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      bottom: -80px;
+
+      li {
+        padding: 0px;
+        margin: 0px;
+        width: 22px;
+        height: 22px;
+        .Transition(all .2s ease);
+
+        @media (max-width: 991px){
+          width: 15px;
+          height: 15px;
+        }
+
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: @ColorVerdeClarito;
+          padding: 0px;
+          margin: 0px;
+          border-radius: 100%;
+          .Transition(all .2s ease);
+
+          @media (max-width: 991px){
+            width: 15px;
+            height: 15px;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          width: 32px;
+          height: 32px;
+
+          @media (max-width: 991px){
+            width: 20px;
+            height: 20px;
+          }
+
+          button {
+            width: 32px;
+            height: 32px;
+            background-color: @ColorVerde;
+
+            @media (max-width: 991px){
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

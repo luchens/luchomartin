@@ -1,0 +1,423 @@
+.modulo-mas-ninos {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+  @media (max-width: 991px){
+    padding-bottom: 20px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .slider-mas-ninos {
+    position: relative;
+
+    @media (min-width: 991px){
+      display: none;
+    }
+
+    .slick-slider {
+      .slick-list {
+        &:focus {
+          outline: none;
+        }
+
+        &.draggable {
+          cursor: grab;
+
+          &:active {
+            cursor: grabbing;
+          }
+        }
+
+        .slick-track {
+          .slick-slide {
+            padding: 15px;
+
+            .articulo {
+              position: relative;
+              background-color: @ColorBlanco;
+              box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+              border-radius: 20px;
+              overflow: hidden;
+              padding: 40px 20px 45px 40px;
+              margin-bottom: 0px;
+              height: 100%;
+
+              .triangulo {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60%;
+                height: auto;
+                z-index: 1;
+                object-fit: contain;
+                object-position: top;
+              }
+
+              .top {
+                position: relative;
+                z-index: 1;
+
+                .titulo {
+                  font-family: @MuseoSansRounded700;
+                  color: @ColorNegro;
+                  font-size: 30px;
+                  line-height: 35px;
+                  text-align: left;
+                  margin-bottom: 20px;
+                  text-transform: uppercase;
+                }
+
+                .texto {
+                  font-family: @MuseoSansRounded300;
+                  color: @ColorNegro;
+                  font-size: 20px;
+                  line-height: 24px;
+                }
+
+                .edad {
+                  font-family: @MuseoSansRounded500;
+                  color: @ColorNegro;
+                  font-size: 20px;
+                  line-height: 24px;
+                }
+              }
+
+              .holder {
+                position: relative;
+                display: block;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                padding-right: 30px;
+                z-index: 0;
+
+                .img-fluid {
+                  width: 100%;
+                  height: 250px;
+                  object-fit: contain;
+                  object-position: center;
+                  margin-bottom: 20px;
+                }
+
+                .btn-link {
+                  width: 100%;
+                  display: block;
+                  font-family: @MuseoSansRounded700;
+                  color: @ColorBlanco;
+                  font-size: 16px;
+                  line-height: 37px;
+                  background-color: @ColorCeleste;
+                  border-radius: 37px;
+                  width: 100%;
+                  height: 37px;
+                  text-align: center;
+                  text-decoration: none;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 62px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 62px;
+      z-index: 1;
+
+      &:before {
+        width: 62px;
+        height: 62px;
+
+        @media (max-width: 991px){
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @media (max-width: 991px){
+        bottom: -35px;
+        top: initial;
+        width: 25px;
+        height: 25px;
+        background-size: 25px!important;
+      }
+    }
+
+    .slick-prev {
+      background: url("../images/flecha-izqda-celeste.svg");
+      left: -120px;
+
+      @media (max-width: 1551px){
+        left: -60px;
+      }
+
+      @media (max-width: 1431px){
+        left: -30px;
+      }
+
+      @media (max-width: 1399px){
+        left: -60px;
+      }
+
+      @media (max-width: 991px){
+        left: 0px;
+      }
+    }
+
+    .slick-next {
+      background: url("../images/flecha-drcha-celeste.svg");
+      right: -120px;
+
+      @media (max-width: 1551px){
+        right: -60px;
+      }
+
+      @media (max-width: 1431px){
+        right: -30px;
+      }
+
+      @media (max-width: 1399px){
+        right: -60px;
+      }
+
+      @media (max-width: 991px){
+        right: 0px;
+      }
+    }
+
+    .slick-dots {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      bottom: -20px;
+
+      li {
+        padding: 0px;
+        margin: 0px;
+        width: 22px;
+        height: 22px;
+        .Transition(all .2s ease);
+
+        @media (max-width: 991px){
+          width: 15px;
+          height: 15px;
+        }
+
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: @ColorCelesteClaro;
+          padding: 0px;
+          margin: 0px;
+          border-radius: 100%;
+          .Transition(all .2s ease);
+
+          @media (max-width: 991px){
+            width: 15px;
+            height: 15px;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          width: 32px;
+          height: 32px;
+
+          @media (max-width: 991px){
+            width: 20px;
+            height: 20px;
+          }
+
+          button {
+            width: 32px;
+            height: 32px;
+            background-color: @ColorCeleste;
+
+            @media (max-width: 991px){
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+
+    @media (max-width: 991px){
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: @MuseoSansRounded900;
+    font-size: 40px;
+    line-height: 45px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+
+    @media (max-width: 991px){
+      font-size: 18px;
+      line-height: 23px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .arcoiris {
+    position: absolute;
+    top: 67px;
+    left: -225px;
+    width: 570px;
+    height: auto;
+
+    @media (max-width: 991px){
+      top: inherit;
+      bottom: -160px;
+      left: 20px;
+      width: 175px;
+      z-index: 1;
+    }
+  }
+
+  .globo {
+    position: absolute;
+    top: 58px;
+    right: -160px;
+    width: 192px;
+    height: auto;
+
+    @media (max-width: 991px){
+      top: -102px;
+      right: 0;
+      width: 63px;
+    }
+  }
+
+  .articulos {
+    position: relative;
+    margin-bottom: 0px;
+    z-index: 1;
+
+    @media (max-width: 991px){
+      display: none;
+    }
+
+    @media (max-width: 991px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    > .row {
+      --bs-gutter-x: 4.5rem;
+    }
+
+    .articulo {
+      position: relative;
+      background-color: @ColorBlanco;
+      box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 40px 20px 45px 40px;
+      margin-bottom: 0px;
+      height: 100%;
+
+      .triangulo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: auto;
+        z-index: 1;
+        object-fit: contain;
+        object-position: top;
+      }
+
+      .top {
+        position: relative;
+        z-index: 1;
+
+        .titulo {
+          font-family: @MuseoSansRounded700;
+          color: @ColorNegro;
+          font-size: 30px;
+          line-height: 35px;
+          text-align: left;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+        }
+
+        .texto {
+          font-family: @MuseoSansRounded300;
+          color: @ColorNegro;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        .edad {
+          font-family: @MuseoSansRounded500;
+          color: @ColorNegro;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      .holder {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-right: 30px;
+        z-index: 0;
+
+        .img-fluid {
+          width: 100%;
+          height: 250px;
+          object-fit: contain;
+          object-position: center;
+          margin-bottom: 20px;
+        }
+
+        .btn-link {
+          width: 100%;
+          display: block;
+          font-family: @MuseoSansRounded700;
+          color: @ColorBlanco;
+          font-size: 16px;
+          line-height: 37px;
+          background-color: @ColorCeleste;
+          border-radius: 37px;
+          width: 100%;
+          height: 37px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.modulo-31 {
+  position: relative;
+  background:
+            url("../images/img-grafismo-01.svg") no-repeat left top / auto 87px,
+            @ColorGris url("../images/img-grafismo-02.svg") no-repeat right bottom / auto 87px;
+
+  @media (max-width: 991px){
+    background: none;
+    background-color: @ColorGris;
+  }
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 20px;
+
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 33px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .texto {
+    width: 100%;
+    max-width: 556px;
+    display: inline-block;
+    font-family: @PoppinsRegular;
+    color: @ColorBlue;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 45px;
+
+    @media (max-width: 991px){
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn-link {
+    display: inline-block;
+    font-family: @PoppinsRegular;
+    color: @ColorBlue;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    .Transition(all .3s ease);
+
+    &:hover {
+      color: @ColorBlanco;
+      background-color: @ColorRojo;
+    }
+  }
+}

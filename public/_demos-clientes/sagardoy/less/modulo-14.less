@@ -1,0 +1,75 @@
+.modulo-14 {
+  position: relative;
+  background-color: @ColorBlue;
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlanco;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 20px;
+
+    @media (max-width: 480px){
+      font-size: 30px;
+      line-height: 33px;
+    }
+  }
+
+  .articulos {
+    .articulo {
+      padding-top: 20px;
+      margin-top: 20px;
+      border-top: 1px solid @ColorBlanco20;
+
+      .top {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 5px;
+
+        @media (max-width: 480px){
+          gap: 10px;
+        }
+
+        .categoria {
+          font-family: @PoppinsBold;
+          color: @ColorBlanco;
+          font-size: 12px;
+          line-height: 19px;
+          text-transform: uppercase;
+        }
+
+        .fecha {
+          font-family: @PoppinsRegular;
+          color: @ColorBlanco;
+          font-size: 12px;
+          line-height: 19px;
+        }
+      }
+
+      .titulo {
+        font-family: @PoppinsRegular;
+        color: @ColorBlanco;
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 0px;
+
+        @media (max-width: 480px){
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+        object-position: top center;
+
+        @media (max-width: 480px){
+          height: 75px;
+        }
+      }
+    }
+  }
+}

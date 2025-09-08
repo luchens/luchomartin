@@ -1,0 +1,98 @@
+.modulo-06 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  @media (max-width: 991px){
+    padding-top: 136px;
+    padding-bottom: 40px;
+  }
+
+  .btn-link-atras {
+    position: relative;
+    display: inline-flex;
+    gap: 0px;
+    align-items: center;
+    font-family: @HindBold;
+    color: @ColorAzul;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px;
+    margin-bottom: 40px;
+    .Transition(all .3s ease);
+
+    .flecha {
+      display: block;
+      width: 20px;
+      height: 20px;
+      .Transition(all .3s ease);
+    }
+  }
+
+  .subtitulo {
+    font-family: @RalewayBold;
+    color: @ColorTurqueza;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+
+    @media (max-width: 991px){
+      margin-bottom: 16px;
+    }
+  }
+
+  .titulo {
+    font-family: @RalewayBold;
+    color: @ColorAzul;
+    font-size: 40px;
+    line-height: 45px;
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .texto {
+    font-family: @HindMedium;
+    color: @ColorGrisOscuro;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .subtexto {
+    font-family: @HindRegular;
+    color: @ColorGrisOscuro;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .items {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    .item {
+      font-family: @HindBold;
+      color: @ColorAzul;
+      font-size: 18px;
+      line-height: 23px;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+}

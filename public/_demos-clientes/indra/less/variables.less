@@ -1,0 +1,221 @@
+@NoeDisplayRegular: ~'"NoeDisplayRegular", sans-serif';
+@NeoSansRegular: ~'"NeoSansRegular", sans-serif';
+@NeoSansMedium: ~'"NeoSansMedium", sans-serif';
+@NeoSansBold: ~'"NeoSansBold", sans-serif';
+
+/* STYLES ======================================= */
+@ColorAzul: ~"#004254";
+@ColorAmarillo: ~"#FBBB21";
+@ColorVerde: ~"#25926E";
+@ColorVerdeOscuro: ~"#11523D";
+@ColorGris: ~"#E8E8E8";
+@ColorGrisClaro: ~"#F1F1F1";
+@ColorGrisOscuro: ~"#969696";
+@ColorAzul: ~"#004254";
+@ColorBlanco: ~"#FFFFFF";
+@ColorNegro: ~"#004254";
+@ColorBlack: ~"#000000";
+
+/* ============================================= */
+
+html,
+body {
+  position: relative;
+  font-family: @NeoSansRegular;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden!important;
+  overflow-y: visible!important;
+  background-color: @ColorBlanco;
+
+  &.loading {
+    position: absolute!important;
+
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100vh;
+      background-color: @ColorNegro;
+      z-index: 9999;
+      background-image: url("../images/logos/idra.svg");
+      background-size: auto 100px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      .Transition(all .7s ease);
+
+      @media (max-width: 480px){
+        background-size: auto 40px;
+      }
+    }
+  }
+
+  &.out {
+    &:before {
+      opacity: 0;
+      background-size: auto 134px;
+
+      @media (max-width: 480px){
+        background-size: auto 650px;
+      }
+    }
+  }
+
+  &.modal-open {
+    overflow: hidden;
+    position: absolute;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  outline: none!important;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none!important;
+  }
+}
+
+.form-select {
+  &:focus {
+    box-shadow: none!important;
+  }
+}
+
+/* ICONS ======================================= */
+
+.icons {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  background-color: @ColorBlanco;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  .Transition(all .2s ease);
+
+  &.ico-menu {
+    -webkit-mask-image: url("../images/ico-menu.svg");
+  }
+
+  &.ico-tancar {
+    -webkit-mask-image: url("../images/ico-tancar.svg");
+  }
+}
+
+button {
+  &:focus {
+    box-shadow: none!important;
+  }
+}
+
+.checkbox {
+  display: inline-block;
+  font-family: @NeoSansRegular;
+  font-size: 14px;
+  line-height: 18px;
+  color: @ColorGris;
+  margin-right: 50px;
+
+  &:hover {
+    .cr {
+      border-color: @ColorGris;
+    }
+  }
+}
+.checkbox label {
+  cursor: pointer;
+}
+
+.checkbox label:after,
+.radio label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid @ColorGris;
+  background-color: @ColorBlanco;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  float: left;
+  .Transition(all .2s ease);
+}
+
+.radio {
+  &:hover {
+    .cr {
+      border-color: @ColorGris;
+    }
+  }
+}
+
+.checkbox,
+.radio {
+  cursor: pointer;
+}
+
+.checkbox .cr {
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 1px;
+}
+
+.radio .cr {
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 3px;
+  padding-left: 1px;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+  vertical-align: top;
+  line-height: 0;
+}
+
+.checkbox .cr .cr-icon {
+  font-size: 16px;
+}
+
+.radio .cr .cr-icon {
+  font-size: 10px;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+  display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+  opacity: 0;
+  .Transition(all .1s ease-in);
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+  opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+  opacity: .5;
+}

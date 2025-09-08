@@ -1,0 +1,84 @@
+.modulo-07 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .holder {
+    &:hover {
+      .info {
+        .titulo {
+          color: @ColorTurqueza;
+        }
+
+        .btn-link {
+          color: @ColorTurqueza;
+
+          .flecha {
+            content: url("../images/chevron-right-turqueza.svg");
+          }
+        }
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .info {
+      position: relative;
+      padding: 16px;
+      display: flex;
+      height: 100%;
+      flex-flow: column;
+      justify-content: space-between;
+
+      .titulo {
+        font-family: @RalewayBold;
+        color: @ColorAzul;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+        .Transition(all .3s ease);
+      }
+
+      .texto {
+        font-family: @HindMedium;
+        color: @ColorGrisOscuro;
+        font-size: 16px;
+        line-height: 21px;
+        min-height: 64px;
+      }
+
+      .btn-link {
+        position: relative;
+        display: inline-flex;
+        gap: 0px;
+        align-items: center;
+        font-family: @HindBold;
+        color: @ColorAzul;
+        font-size: 16px;
+        line-height: 44px;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px 0px 0px 16px;
+        .Transition(all .3s ease);
+
+        .flecha {
+          display: block;
+          width: 20px;
+          height: 20px;
+          .Transition(all .3s ease);
+        }
+      }
+    }
+  }
+}

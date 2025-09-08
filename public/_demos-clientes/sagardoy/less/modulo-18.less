@@ -1,0 +1,45 @@
+.modulo-18 {
+  position: relative;
+
+  .input-email {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 570px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    .input {
+      width: 100%;
+      font-family: @PoppinsRegular;
+      font-size: 14px;
+      line-height: 50px;
+      color: @ColorBlue;
+      background-color: @ColorBlue10;
+      border-radius: 50px;
+      height: 50px;
+      border: 0px;
+      padding-left: 60px;
+      padding-right: 20px;
+      background-image: url("../images/ico-buscar.svg");
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      background-size: 22px 22px;
+
+      &::placeholder {
+        color: @ColorBlue;
+      }
+    }
+
+    .btn-link {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      display: block;
+      width: 50px;
+      height: 100%;
+      background-color: transparent;
+    }
+  }
+}

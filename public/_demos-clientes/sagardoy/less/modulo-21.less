@@ -1,0 +1,56 @@
+.modulo-21 {
+  position: relative;
+  background-color: @ColorGris;
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 0px;
+
+    @media (max-width: 991px){
+      font-size: 38px;
+      line-height: 41px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .btns {
+    .btn-link {
+      display: block;
+      width: 100%;
+      font-family: @PoppinsRegular;
+      color: @ColorBlue;
+      font-size: 21px;
+      line-height: 26px;
+      padding: 22px 20px;
+      background-image: url("../images/ico-flecha-right.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 20px) center;
+      background-size: 28px;
+      background-color: @ColorBlanco;
+      text-decoration: none;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      .Transition(all .2s ease);
+
+      @media (max-width: 991px){
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      &:hover {
+        padding-left: 30px;
+        color: @ColorBlanco;
+        background-color: @ColorBlue;
+        background-image: url("../images/ico-flecha-right-blanco.svg");
+      }
+    }
+  }
+
+}

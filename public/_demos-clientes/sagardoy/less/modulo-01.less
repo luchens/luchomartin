@@ -1,0 +1,65 @@
+.modulo-01 {
+  position: relative;
+
+  .texto {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 80px;
+    line-height: 78px;
+    margin-bottom: 50px;
+
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 33px;
+    }
+  }
+
+  .holder {
+    display: inline-block;
+
+    @media (max-width: 991px){
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .btn-sobre-nosotros {
+      font-family: @PoppinsRegular;
+      color: @ColorBlue;
+      font-size: 16px;
+      line-height: 35px;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      border-radius: 35px;
+      border: 2px solid @ColorRojo;
+      .Transition(all .3s ease);
+
+      @media (max-width: 991px){
+        display: inline-block;
+        margin-right: 0px;
+      }
+
+      &:hover {
+        color: @ColorBlanco;
+        background-color: @ColorRojo;
+      }
+    }
+
+    .btn-servicios {
+      font-family: @PoppinsRegular;
+      color: @ColorBlue;
+      font-size: 16px;
+      line-height: 35px;
+      text-decoration: none;
+      padding: 0px 0px;
+      text-transform: uppercase;
+      border-bottom: 2px solid @ColorRojo;
+      .Transition(all .3s ease);
+
+      &:hover {
+        color: @ColorRojo;
+      }
+    }
+  }
+}

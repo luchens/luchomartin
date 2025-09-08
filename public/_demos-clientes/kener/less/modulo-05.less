@@ -1,0 +1,93 @@
+.modulo-05 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .holder {
+    position: relative;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: @ColorBlanco;
+    min-height: 100%;
+    overflow: hidden;
+    .Transition(all .3s ease);
+
+    &:hover {
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+
+      .content {
+        .titulo {
+          color: @ColorTurqueza;
+        }
+
+        .btn-link {
+          color: @ColorTurqueza;
+          gap: 6px;
+
+          .flecha {
+            width: 20px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .content {
+      position: relative;
+      padding: 8px 16px;
+
+      .titulo {
+        font-family: @RalewayBold;
+        color: @ColorAzul;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 8px;
+        .Transition(all .3s ease);
+      }
+
+      .texto {
+        font-family: @HindMedium;
+        color: @ColorGrisOscuro;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 8px;
+        min-height: 120px;
+      }
+
+      .btn-link {
+        position: relative;
+        display: inline-flex;
+        gap: 0px;
+        align-items: center;
+        font-family: @HindBold;
+        color: @ColorAzul;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px 16px;
+        .Transition(all .3s ease);
+
+        .flecha {
+          display: block;
+          width: 0px;
+          height: 20px;
+          opacity: 0;
+          .Transition(all .3s ease);
+        }
+      }
+    }
+  }
+}

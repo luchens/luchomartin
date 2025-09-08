@@ -1,0 +1,81 @@
+.el-descubrimiento {
+  position: relative;
+  margin-bottom: -117px;
+
+  @media (max-width: 1200px){
+    margin-bottom: 0px;
+  }
+
+  .col-left {
+    .overflow-hidden {
+      margin-left: -64px;
+    }
+
+    video {
+      display: block;
+      //width: calc(100% + 64px);
+      //margin-left: -64px;
+      width: 100%;
+      min-height: 473px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1200px){
+      display: none!important;
+    }
+  }
+
+  .col-right {
+    @media (max-width: 1200px){
+      width: 100%;
+    }
+
+    .block {
+      padding: 131px 80px 131px 80px;
+
+      @media (max-width: 1200px){
+        padding: 119px 20px 119px 20px;
+      }
+
+      @media (max-width: 480px){
+        padding: 65px 32px;
+      }
+
+      .titulo {
+        font-family: @NoeDisplayRegular;
+        color: @ColorAzul;
+        font-size: 50px;
+        line-height: 25px;
+        margin: 0px;
+        white-space: nowrap;
+
+        @media (max-width: 1200px){
+          font-size: 40px;
+        }
+      }
+
+      .separador {
+        width: 100%;
+        max-width: 53px;
+        height: 6px;
+        background-color: @ColorAmarillo;
+        margin-top: 48px;
+        margin-bottom: 16px;
+      }
+
+      .texto {
+        font-family: @NeoSansRegular;
+        color: @ColorAzul;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0px;
+        max-width: 411px;
+
+        @media (max-width: 1200px){
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.modulo-por-que {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 100px;
+
+  @media (max-width: 991px){
+    padding-top: 30px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 991px){
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+  .column {
+    position: relative;
+    margin-bottom: 80px;
+
+    .row {
+      position: relative;
+      z-index: 1;
+
+      &.gapxy {
+        --bs-gutter-x : 4rem;
+        --bs-gutter-y : 2rem;
+
+        @media (max-width: 991px){
+          --bs-gutter-x : 1rem;
+          --bs-gutter-y : 0rem;
+        }
+      }
+    }
+
+    .arcoiris {
+      position: absolute;
+      left: -147px;
+      bottom: -156px;
+      z-index: 0;
+      height: auto;
+
+      @media (max-width: 991px){
+        width: 147px;
+        left: -7px;
+        bottom: -36px;
+      }
+    }
+
+    .globo {
+      position: absolute;
+      right: -153px;
+      top: -61px;
+      z-index: 0;
+      height: auto;
+
+      @media (max-width: 991px){
+        width: 62px;
+        right: -44px;
+        top: -320px;
+      }
+    }
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: @MuseoSansRounded900;
+    font-size: 40px;
+    line-height: 48px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: 991px){
+      font-size: 18px;
+      line-height: 23px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .texto {
+    font-family: @MuseoSansRounded300;
+    font-size: 20px;
+    line-height: 25px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media (max-width: 991px){
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .rojo {
+      color: @ColorRojo;
+      font-family: @MuseoSansRounded500;
+    }
+  }
+
+  .holder {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    padding: 34px 20px;
+    background-color: @ColorRojo;
+
+    font-family: @MuseoSansRounded500;
+    font-size: 24px;
+    line-height: 29px;
+    color: @ColorBlanco;
+    text-transform: uppercase;
+    height: 100%;
+
+    @media (max-width: 991px){
+      font-size: 14px;
+      line-height: 16px;
+      padding: 10px 10px;
+      border-radius: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .estrella {
+      position: absolute;
+      top: -50px;
+      left: -39px;
+      z-index: 1;
+      height: auto;
+
+      @media (max-width: 991px){
+        width: 49px;
+        top: -20px;
+        left: -14px;
+      }
+    }
+
+    .flecha {
+      position: absolute;
+      bottom: -20px;
+      right: -24px;
+      z-index: 1;
+
+      @media (max-width: 991px){
+        width: 30px;
+        bottom: -6px;
+        right: -10px;
+      }
+    }
+
+    .exclamacion {
+      position: absolute;
+      top: -20px;
+      left: -25px;
+      z-index: 1;
+
+      @media (max-width: 991px){
+        width: 27px;
+        top: -19px;
+        left: -7px;
+      }
+    }
+
+    .lapiz {
+      position: absolute;
+      top: -30px;
+      right: -38px;
+      z-index: 1;
+
+      @media (max-width: 991px){
+        width: 72px;
+        top: -19px;
+        right: -10px;
+      }
+    }
+
+    .paloma {
+      position: absolute;
+      top: -40px;
+      left: -23px;
+      z-index: 1;
+
+      @media (max-width: 991px){
+        width: 85px;
+        top: -26px;
+        left: 47px;
+      }
+    }
+
+    .corazones {
+      position: absolute;
+      top: -40px;
+      left: -49px;
+      z-index: 1;
+
+      @media (max-width: 991px){
+        width: 26px;
+        top: -20px;
+        left: 145px;
+      }
+    }
+  }
+
+  .text-center {
+    position: relative;
+    z-index: 1;
+
+    .bodegon {
+      width: 780px;
+
+      @media (max-width: 991px){
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.modulo-12 {
+  position: relative;
+  background-color: @ColorBlue;
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    margin-bottom: 45px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+
+    @media (max-width: 480px){
+      height: 240px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlanco;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 45px;
+
+    @media (max-width: 480px){
+      font-size: 30px;
+      line-height: 33px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .texto {
+    font-family: @PoppinsRegular;
+    color: @ColorBlanco;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 45px;
+  }
+
+  .btn-link {
+    font-family: @PoppinsRegular;
+    color: @ColorBlanco;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    .Transition(all .3s ease);
+
+    &:hover {
+      background-color: @ColorRojo;
+    }
+  }
+}

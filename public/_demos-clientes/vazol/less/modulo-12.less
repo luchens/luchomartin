@@ -1,0 +1,128 @@
+.modulo-12 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0px auto 16px auto;
+    padding-bottom: 16px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .texto-top {
+    position: relative;
+    font-family: @NunitoSansSemiBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0px auto 32px auto;
+
+    b {
+      font-family: @NunitoSansBold;
+    }
+  }
+
+  .mapa {
+    width: 100%;
+
+    @media (max-width: 991px){
+      margin-bottom: 32px;
+    }
+  }
+
+  .titulo {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .logos {
+    .logo {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .line-left {
+      border-left: 1px solid @ColorGrisClaro;
+    }
+  }
+
+  .btn-link {
+    display: inline-flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: @NunitoSansBold;
+    color: @ColorPurpuraOscuro;
+    font-size: 16px;
+    line-height: 48px;
+    text-decoration: none;
+    border: 1px solid @ColorPurpuraOscuro;
+    border-radius: 8px;
+    padding: 0px 16px;
+    .Transition(all .3s ease);
+
+    img {
+      width: 24px;
+      height: 24px;
+      .Transition(all .3s ease);
+    }
+
+    &:hover {
+      color: @ColorPurpuraOscuro;
+      background-color: @ColorRosaClarito;
+      border-color: @ColorPurpuraOscuro;
+
+      img {
+        content: url("../images/arrow-right-icon-purpura-oscuro.svg");
+      }
+    }
+
+    @media (max-width: 991px){
+      width: 100%;
+    }
+  }
+
+
+}

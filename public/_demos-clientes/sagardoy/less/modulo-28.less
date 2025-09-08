@@ -1,0 +1,116 @@
+.modulo-28 {
+  position: relative;
+  background-color: @ColorBlanco;
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 80px;
+    line-height: 78px;
+
+    @media (max-width: 991px){
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .links {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-flex;
+    flex-flow: row;
+    gap: 5px;
+
+    @media (max-width: 991px){
+      overflow-x: visible;
+      overflow-y: hidden;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &::-webkit-scrollbar { height: 3px; }
+      &::-webkit-scrollbar-track { background: @ColorGris; }
+      &::-webkit-scrollbar-thumb { background: @ColorBlue; &:hover { background: @ColorBlue; } }
+    }
+
+    li {
+      .btn-link {
+        font-family: @PoppinsMedium;
+        color: @ColorBlue;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 5px 15px;
+        border-radius: 18px;
+        border: 2px solid transparent;
+        text-transform: uppercase;
+        white-space: nowrap;
+        .Transition(all .3s ease);
+
+        &:hover,
+        &.activo {
+          border: 2px solid @ColorBlue;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .lista {
+    padding-left: 16px;
+    list-style-image: url("../images/ico-listas.svg");
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    @media (max-width: 991px){
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    li {
+      padding-left: 5px;
+      font-family: @PoppinsRegular;
+      color: @ColorBlue;
+      font-size: 16px;
+      line-height: 26px;
+      padding-top: 20px;
+      margin-bottom: 52px;
+      border-top: 1px solid @ColorBlue15;
+      .Transition(all .3s ease);
+
+      @media (max-width: 991px){
+        margin-bottom: 20px;
+      }
+
+      b {
+        font-family: @PoppinsBold;
+      }
+    }
+  }
+
+  .btn-link {
+    display: inline-block;
+    font-family: @PoppinsRegular;
+    color: @ColorBlue;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    text-align: center;
+    .Transition(all .3s ease);
+
+    @media (max-width: 991px){
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &:hover {
+      color: @ColorBlanco;
+      background-color: @ColorRojo;
+    }
+  }
+}

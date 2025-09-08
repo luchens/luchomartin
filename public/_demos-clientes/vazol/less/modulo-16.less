@@ -1,0 +1,189 @@
+.modulo-16 {
+  position: relative;
+  background-color: @ColorGrisClarito;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .texto-top {
+    position: relative;
+    font-family: @NunitoSansSemiBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 25px;
+
+    b {
+      font-family: @NunitoSansBold;
+    }
+
+    .lista {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+        font-family: @NunitoSansSemiBold;
+        color: @ColorGrisOscuro;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .desktop {
+    position: relative;
+
+    @media (max-width: 991px){
+      display: none;
+    }
+
+    .holder {
+      position: relative;
+      padding: 0px;
+      border: 1px solid @ColorGrisClaro;
+      border-radius: 12px;
+      background-color: @ColorBlanco;
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      .Transition(all .3s ease);
+
+      &:hover {
+        .titulo {
+          color: @ColorPurpura;
+          background-color: rgba(255, 255, 255, .7);
+        }
+      }
+
+      .img-fluid {
+        width: 100%;
+        height: 343px;
+        object-fit: cover;
+        .Transition(all .3s ease);
+      }
+
+      .titulo {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        font-family: @NunitoSansSemiBold;
+        color: @ColorBlanco;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+        background-color: @ColorPurpura70;
+        padding: 8px 16px 16px 16px;
+        .Transition(all .3s ease);
+      }
+    }
+  }
+
+  .mobile {
+    position: relative;
+
+    @media (min-width: 991px){
+      display: none;
+    }
+
+    .slider-modulo-16 {
+      .slick-slider {
+        .slick-list {
+          overflow: visible!important;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.draggable {
+            cursor: grab;
+
+            &:active {
+              cursor: grabbing;
+            }
+          }
+
+
+          .slick-track {
+            .slick-slide {
+              padding: 10px;
+
+              .holder {
+                position: relative;
+                padding: 0px;
+                border: 1px solid @ColorGrisClaro;
+                border-radius: 12px;
+                background-color: @ColorBlanco;
+                width: 100%;
+                min-height: 100%;
+                overflow: hidden;
+                .Transition(all .3s ease);
+
+                &:hover {
+                  .titulo {
+                    color: @ColorPurpura;
+                    background-color: rgba(255, 255, 255, .7);
+                  }
+                }
+
+                .img-fluid {
+                  width: 100%;
+                  height: 343px;
+                  object-fit: cover;
+                  .Transition(all .3s ease);
+                }
+
+                .titulo {
+                  position: absolute;
+                  left: 0px;
+                  bottom: 0px;
+                  width: 100%;
+                  font-family: @NunitoSansSemiBold;
+                  color: @ColorBlanco;
+                  font-size: 20px;
+                  line-height: 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  background-color: @ColorPurpura70;
+                  padding: 8px 16px 16px 16px;
+                  .Transition(all .3s ease);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

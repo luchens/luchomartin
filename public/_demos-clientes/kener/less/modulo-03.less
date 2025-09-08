@@ -1,0 +1,87 @@
+.modulo-03 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    font-family: @RalewayBold;
+    color: @ColorTurqueza;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .texto-top {
+    font-family: @RalewayBold;
+    color: @ColorAzul;
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 600px;
+    margin: 0px auto 40px auto;
+    text-align: center;
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .holder {
+    min-height: 300px;
+    .Transition(all .1s ease);
+
+    @media (max-width: 991px){
+      min-height: auto;
+    }
+
+    &:hover {
+      background-color: @ColorTurquezaClarito;
+    }
+
+    .titulo {
+      font-family: @RalewayBold;
+      color: @ColorTurqueza;
+      font-size: 24px;
+      line-height: 29px;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding-left: 14px;
+      padding-right: 14px;
+
+      @media (max-width: 991px){
+        justify-content: start;
+      }
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .texto {
+      font-family: @HindMedium;
+      color: @ColorAzulOscuro;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 16px;
+
+      b {
+        font-family: @HindBold;
+      }
+    }
+  }
+}

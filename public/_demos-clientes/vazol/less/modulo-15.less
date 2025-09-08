@@ -1,0 +1,223 @@
+.modulo-15 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0px auto 16px auto;
+    padding-bottom: 16px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .texto-top {
+    position: relative;
+    font-family: @NunitoSansSemiBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0px auto 32px auto;
+
+    b {
+      font-family: @NunitoSansBold;
+    }
+  }
+
+  .btn-link {
+    display: inline-flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: @NunitoSansBold;
+    color: @ColorPurpuraOscuro;
+    font-size: 16px;
+    line-height: 48px;
+    text-decoration: none;
+    border: 1px solid @ColorPurpuraOscuro;
+    border-radius: 8px;
+    padding: 0px 16px;
+    .Transition(all .3s ease);
+
+    img {
+      width: 24px;
+      height: 24px;
+      .Transition(all .3s ease);
+    }
+
+    &:hover {
+      color: @ColorPurpuraOscuro;
+      background-color: @ColorRosaClarito;
+      border-color: @ColorPurpuraOscuro;
+
+      img {
+        content: url("../images/arrow-right-icon-purpura-oscuro.svg");
+      }
+    }
+
+    @media (max-width: 991px){
+      width: 100%;
+    }
+  }
+
+  .desktop {
+    position: relative;
+
+    @media (max-width: 991px){
+      display: none;
+    }
+
+    .holder {
+      position: relative;
+      padding: 0px;
+      border: 1px solid @ColorGrisClaro;
+      border-radius: 12px;
+      background-color: @ColorBlanco;
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      .Transition(all .3s ease);
+
+      &:hover {
+        .titulo {
+          color: @ColorPurpura;
+          background-color: rgba(255, 255, 255, .7);
+        }
+      }
+
+      .img-fluid {
+        width: 100%;
+        height: 343px;
+        object-fit: cover;
+        .Transition(all .3s ease);
+      }
+
+      .titulo {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        font-family: @NunitoSansSemiBold;
+        color: @ColorBlanco;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+        background-color: @ColorPurpura70;
+        padding: 8px 16px 16px 16px;
+        .Transition(all .3s ease);
+      }
+    }
+  }
+
+  .mobile {
+    position: relative;
+
+    @media (min-width: 991px){
+      display: none;
+    }
+
+    .slider-modulo-15 {
+      .slick-slider {
+        .slick-list {
+          overflow: visible!important;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.draggable {
+            cursor: grab;
+
+            &:active {
+              cursor: grabbing;
+            }
+          }
+
+
+          .slick-track {
+            .slick-slide {
+              padding: 10px;
+
+              .holder {
+                position: relative;
+                padding: 0px;
+                border: 1px solid @ColorGrisClaro;
+                border-radius: 12px;
+                background-color: @ColorBlanco;
+                width: 100%;
+                min-height: 100%;
+                overflow: hidden;
+                .Transition(all .3s ease);
+
+                &:hover {
+                  .titulo {
+                    color: @ColorPurpura;
+                    background-color: rgba(255, 255, 255, .7);
+                  }
+                }
+
+                .img-fluid {
+                  width: 100%;
+                  height: 343px;
+                  object-fit: cover;
+                  .Transition(all .3s ease);
+                }
+
+                .titulo {
+                  position: absolute;
+                  left: 0px;
+                  bottom: 0px;
+                  width: 100%;
+                  font-family: @NunitoSansSemiBold;
+                  color: @ColorBlanco;
+                  font-size: 20px;
+                  line-height: 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  background-color: @ColorPurpura70;
+                  padding: 8px 16px 16px 16px;
+                  .Transition(all .3s ease);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

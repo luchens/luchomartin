@@ -1,0 +1,130 @@
+.modulo-05 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorPurpura;
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0px;
+      display: block;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+  }
+
+  .holder {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -26px;
+      top: 0px;
+      width: 10px;
+      height: 10px;
+      background-color: @ColorGrisClaritoClarito;
+      border-radius: 100%;
+      .Transition(all .3s ease);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -22px;
+      top: 18px;
+      width: 2px;
+      height: calc(100% - 18px);
+      border-radius: 2px;
+      background-color: @ColorGrisClaritoClarito;
+      .Transition(all .3s ease);
+    }
+
+    &.active {
+      &:before {
+        background-color: @ColorPurpura;
+      }
+
+      &:after {
+        background-color: @ColorPurpura;
+      }
+
+      .ano {
+        color: @ColorGrisOscuro;
+      }
+
+      .texto {
+        color: @ColorGrisOscuro;
+
+        b {
+          color: @ColorPurpura;
+        }
+      }
+    }
+
+    &:hover {
+      &:before {
+        background-color: @ColorTurqueza;
+      }
+
+      &:after {
+        background-color: @ColorTurqueza;
+      }
+
+      .ano {
+        color: @ColorTurqueza;
+      }
+
+      .texto {
+        color: @ColorGrisOscuro;
+
+        b {
+          color: @ColorPurpura;
+        }
+      }
+    }
+
+    .ano {
+      position: relative;
+      font-family: @PoppinsSemiBold;
+      color: @ColorGrisClaritoClarito;
+      font-size: 20px;
+      line-height: 25px;
+      .Transition(all .3s ease);
+    }
+
+    .texto {
+      font-family: @NunitoSansRegular;
+      color: @ColorGrisClaritoClarito;
+      font-size: 16px;
+      line-height: 21px;
+      .Transition(all .3s ease);
+
+      b {
+        font-family: @NunitoSansBold;
+        color: @ColorGrisClaritoClarito;
+        .Transition(all .3s ease);
+      }
+    }
+  }
+
+}

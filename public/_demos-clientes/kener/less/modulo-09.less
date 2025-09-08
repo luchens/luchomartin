@@ -1,0 +1,89 @@
+.modulo-09 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  @media (max-width: 991px){
+    padding-top: 144px;
+    padding-bottom: 0px;
+  }
+
+  .btn-link-atras {
+    position: relative;
+    display: inline-flex;
+    gap: 0px;
+    align-items: center;
+    font-family: @HindBold;
+    color: @ColorAzul;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px;
+    margin-bottom: 16px;
+    .Transition(all .3s ease);
+
+    .flecha {
+      display: block;
+      width: 20px;
+      height: 20px;
+      .Transition(all .3s ease);
+    }
+  }
+
+  .img-fluid {
+    width: calc(100% - 72px);
+    height: calc(100% - 16px);
+    object-fit: contain;
+    object-position: bottom;
+
+    @media (max-width: 991px){
+      height: 300px;
+      object-position: center;
+    }
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .subtitulo {
+      font-family: @RalewayBold;
+      color: @ColorTurqueza;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 16px;
+    }
+
+    .titulo {
+      font-family: @RalewayBold;
+      color: @ColorAzul;
+      font-size: 48px;
+      line-height: 53px;
+      margin-bottom: 16px;
+    }
+
+    .subtexto {
+      font-family: @HindMedium;
+      color: @ColorGrisOscuro;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 16px;
+    }
+
+    .texto {
+      font-family: @HindMedium;
+      color: @ColorGrisOscuro;
+      font-size: 18px;
+      line-height: 27px;
+
+      b {
+        font-family: @HindBold;
+      }
+    }
+  }
+}

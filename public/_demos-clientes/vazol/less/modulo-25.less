@@ -1,0 +1,231 @@
+.modulo-25 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-top: 96px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .subtitulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorPurpura;
+    font-size: 48px;
+    line-height: 53px;
+    width: 100%;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+
+    @media (max-width: 991px){
+      font-size: 36px;
+      line-height: 41px;
+    }
+  }
+
+  .texto-top {
+    position: relative;
+    font-family: @NunitoSansSemiBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 24px;
+
+    b {
+      font-family: @NunitoSansBold;
+    }
+  }
+
+  .confirmacion-ok {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: @ColorBlanco;
+    display: flex;
+    justify-content: center;
+    display: none;
+
+    background-image: url("../images/form-confirm.svg");
+    background-repeat: no-repeat;
+    background-position: center -94px;
+
+    &.show {
+      display: flex;
+    }
+
+    @media (max-width: 991px){
+      align-items: center;
+    }
+
+    .holder {
+      text-align: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 126px;
+
+      @media (max-width: 991px){
+        margin-top: 0px;
+        height: calc(100% - 255px);
+      }
+
+      .titulo {
+        position: relative;
+        font-family: @PoppinsBold;
+        color: @ColorPurpura;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+      }
+
+      .texto {
+        font-family: @NunitoSansSemiBold;
+        color: @ColorGrisOscuro;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 24px;
+      }
+
+      .btn-link {
+        position: relative;
+        display: inline-flex;
+        gap: 0px;
+        align-items: center;
+        font-family: @NunitoSansBold;
+        color: @ColorPurpura;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px 16px;
+        .Transition(all .3s ease);
+
+        &:hover {
+          color: @ColorTurqueza;
+          gap: 8px;
+
+          .flecha {
+            width: 24px;
+            opacity: 1;
+          }
+        }
+
+        .flecha {
+          display: block;
+          width: 0px;
+          height: 24px;
+          opacity: 0;
+          .Transition(all .3s ease);
+        }
+      }
+    }
+  }
+
+  form {
+    .form-label {
+      font-family: @NunitoSansSemiBold;
+      color: @ColorGrisOscuro;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 4px;
+    }
+
+    .form-control {
+      font-family: @NunitoSansSemiBold;
+      color: @ColorGrisOscuro;
+      font-size: 16px;
+      line-height: 21px;
+      border-radius: 8px;
+      border-color: @ColorGrisClaro;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .Transition(border-color .3s ease);
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+
+      &:focus {
+        box-shadow: none!important;
+        border-color: @ColorGrisOscuro;
+      }
+
+      &::placeholder {
+        font-family: @NunitoSansRegular;
+        color: @ColorGrisSemiClarito;
+      }
+    }
+
+    .form-select {
+      font-family: @NunitoSansSemiBold;
+      color: @ColorGrisOscuro;
+      font-size: 16px;
+      line-height: 21px;
+      border-radius: 8px;
+      border-color: @ColorGrisClaro;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .Transition(border-color .3s ease);
+
+      &:focus {
+        box-shadow: none!important;
+        border-color: @ColorGrisOscuro;
+      }
+    }
+
+    .texto {
+      font-family: @NunitoSansSemiBold;
+      color: @ColorGrisOscuro;
+      font-size: 14px;
+      line-height: 19px;
+
+      a {
+        color: @ColorPurpura;
+        font-family: @NunitoSansBold;
+      }
+    }
+
+    .btn-enviar {
+      font-family: @NunitoSansBold;
+      color: @ColorGrisClarito;
+      font-size: 16px;
+      line-height: 21px;
+      background-color: @ColorPurpura;
+      border-radius: 8px;
+      padding: 14px 18px;
+      border: 0px;
+    }
+  }
+
+
+}

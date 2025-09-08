@@ -1,0 +1,91 @@
+.modulo-04 {
+  position: relative;
+  background-color: @ColorGrisClarito;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .subtitulo-top {
+    position: relative;
+    font-family: @RalewayBold;
+    color: @ColorTurqueza;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+
+  .titulo-top {
+    position: relative;
+    font-family: @RalewayBold;
+    color: @ColorAzul;
+    font-size: 40px;
+    line-height: 45px;
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .holder {
+    position: relative;
+    margin-bottom: 16px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -26px;
+      top: 0px;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      border: 2px solid @ColorTurqueza;
+      .Transition(all .3s ease);
+
+      @media (max-width: 991px){
+        left: -33px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -19px;
+      top: 20px;
+      width: 2px;
+      height: calc(100% - 18px);
+      border-radius: 2px;
+      background-color: @ColorTurqueza;
+      .Transition(all .3s ease);
+
+      @media (max-width: 991px){
+        left: -26px;
+      }
+    }
+
+    .ano {
+      position: relative;
+      font-family: @RalewayBold;
+      color: @ColorTurqueza;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 6px;
+      .Transition(all .3s ease);
+    }
+
+    .texto {
+      font-family: @HindMedium;
+      color: @ColorGrisOscuro;
+      font-size: 16px;
+      line-height: 21px;
+      .Transition(all .3s ease);
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+.modulo-01 {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo {
+    font-family: @RalewayBold;
+    color: @ColorTurqueza;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .texto {
+    font-family: @RalewayBold;
+    color: @ColorAzul;
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+}

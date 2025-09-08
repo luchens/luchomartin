@@ -1,0 +1,618 @@
+.modulo-elige-la-mejor {
+  position: relative;
+  background-color: @ColorBlanco;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 991px){
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .container-fluid {
+    position: relative;
+    z-index: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media (max-width: 991px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: @MuseoSansRounded900;
+    font-size: 40px;
+    line-height: 48px;
+    color: @ColorGrisOscuro;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: 991px){
+      font-size: 20px;
+      line-height: 24px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .slider-elige-la-mejor {
+    position: relative;
+
+    @media (min-width: 991px){
+      display: none;
+    }
+
+    .slick-slider {
+      .slick-list {
+        &:focus {
+          outline: none;
+        }
+
+        &.draggable {
+          cursor: grab;
+
+          &:active {
+            cursor: grabbing;
+          }
+        }
+
+        .slick-track {
+          .slick-slide {
+            margin-right: 85px;
+
+            @media (max-width: 1399px){
+              margin-right: 35px;
+            }
+
+            @media (max-width: 991px){
+              margin-right: 20px;
+            }
+
+            @media (max-width: 768px){
+              margin-right: 0px;
+            }
+
+            .holder {
+              position: relative;
+              display: block;
+              text-align: center;
+              border: 2px solid @ColorRojoClaro;
+              border-radius: 25px;
+              overflow: hidden;
+              .Transition(all .1s ease);
+
+              &:hover {
+                border: 2px solid @ColorRojo;
+
+                .titulo {
+                  background-color: @ColorRojo;
+                }
+
+                ~ .btn-anadir {
+                  background-color: @ColorRojo;
+                }
+              }
+
+              .titulo {
+                font-family: @MuseoSansRounded900;
+                font-size: 30px;
+                line-height: 30px;
+                color: @ColorBlanco;
+                text-transform: uppercase;
+                height: 127px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: @ColorRojoClaro;
+                margin-bottom: 0px;
+                .Transition(all .1s ease);
+
+                @media (max-width: 991px){
+                  font-size: 18px;
+                  line-height: 18px;
+                  height: 62px;
+                }
+              }
+
+              .image {
+                position: relative;
+                margin-bottom: 40px;
+
+                @media (max-width: 991px){
+                  margin-bottom: 10px;
+                }
+              }
+
+              .holder-inner {
+                padding: 0px 88px 80px 88px;
+
+                @media (max-width: 991px){
+                  padding: 0px 40px 35px 40px;
+                }
+
+                .precio {
+                  position: relative;
+                  margin-bottom: 20px;
+
+                  .ahorra {
+                    position: absolute;
+                    top: -64px;
+                    left: -75px;
+
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 128px;
+                    height: 126px;
+                    background: url("../images/star-bg.svg");
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-size: 128px 126px;
+
+                    @media (max-width: 991px){
+                      width: 60px;
+                      height: 60px;
+                      background-size: 60px;
+                      top: -24px;
+                      left: -15px;
+                    }
+
+                    .texto {
+                      font-family: @MuseoSansRounded500;
+                      color: @ColorGrisOscuro;
+                      font-size: 16px;
+                      line-height: 24px;
+                      margin-bottom: 0px;
+                      margin-top: 8px;
+
+                      @media (max-width: 991px){
+                        font-size: 10px;
+                        line-height: 10px;
+                      }
+                    }
+
+                    .precio {
+                      font-family: @MuseoSansRounded900;
+                      color: @ColorGrisOscuro;
+                      font-size: 32px;
+                      line-height: 24px;
+                      margin-bottom: 0px;
+
+                      @media (max-width: 991px){
+                        font-size: 14px;
+                        line-height: 14px;
+                      }
+                    }
+                  }
+
+                  .antes {
+                    font-family: @MuseoSansRounded700;
+                    color: @ColorRojoClaro;
+                    font-size: 20px;
+                    line-height: 16px;
+                    margin-bottom: 10px;
+
+                    @media (max-width: 991px){
+                      font-size: 14px;
+                      line-height: 10px;
+                    }
+                  }
+
+                  .ahora {
+                    font-family: @MuseoSansRounded700;
+                    color: @ColorRojo;
+                    font-size: 40px;
+                    line-height: 45px;
+
+                    @media (max-width: 991px){
+                      font-size: 24px;
+                      line-height: 29px;
+                    }
+                  }
+                }
+
+                .texto {
+                  font-family: @MuseoSansRounded500;
+                  font-size: 18px;
+                  line-height: 20px;
+                  color: @ColorGrisOscuro;
+                  margin-bottom: 0px;
+                  padding: 0px;
+                  text-align: left;
+                  min-height: 154px;
+
+                  @media (max-width: 991px){
+                    font-size: 12px;
+                    line-height: 14px;
+                  }
+
+                  b {
+                    font-family: @MuseoSansRounded900;
+                  }
+                }
+              }
+            }
+
+            .btn-anadir {
+              position: relative;
+              font-family: @MuseoSansRounded700;
+              font-size: 16px;
+              line-height: 45px;
+              color: @ColorBlanco;
+              border-radius: 38px;
+              width: 200px;
+              height: 45px;
+              text-align: center;
+              text-decoration: none;
+              background-color: @ColorRojoClaro;
+              display: block;
+              margin: -23px auto 0px auto;
+              z-index: 1;
+              .Transition(all .1s ease);
+
+              &:hover {
+                background-color: @ColorRojo;
+              }
+
+              @media (max-width: 991px){
+                font-size: 14px;
+                line-height: 34px;
+                height: 34px;
+                margin: -19px auto 0px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 62px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 62px;
+      z-index: 1;
+
+      &:before {
+        width: 62px;
+        height: 62px;
+
+        @media (max-width: 991px){
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @media (max-width: 991px){
+        bottom: -66px;
+        top: initial;
+        width: 25px;
+        height: 25px;
+        background-size: 25px!important;
+      }
+    }
+
+    .slick-prev {
+      background: url("../images/flecha-izqda-rojo.svg");
+      left: -120px;
+
+      @media (max-width: 1551px){
+        left: -60px;
+      }
+
+      @media (max-width: 1431px){
+        left: -30px;
+      }
+
+      @media (max-width: 1399px){
+        left: -60px;
+      }
+
+      @media (max-width: 991px){
+        left: 0px;
+      }
+    }
+
+    .slick-next {
+      background: url("../images/flecha-drcha-rojo.svg");
+      right: -120px;
+
+      @media (max-width: 1551px){
+        right: -60px;
+      }
+
+      @media (max-width: 1431px){
+        right: -30px;
+      }
+
+      @media (max-width: 1399px){
+        right: -60px;
+      }
+
+      @media (max-width: 991px){
+        right: 0px;
+      }
+    }
+
+    .slick-dots {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      bottom: -80px;
+
+      @media (max-width: 991px){
+        bottom: -50px;
+      }
+
+      li {
+        padding: 0px;
+        margin: 0px;
+        width: 22px;
+        height: 22px;
+        .Transition(all .2s ease);
+
+        @media (max-width: 991px){
+          width: 15px;
+          height: 15px;
+        }
+
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: @ColorRojoClaro;
+          padding: 0px;
+          margin: 0px;
+          border-radius: 100%;
+          .Transition(all .2s ease);
+
+          @media (max-width: 991px){
+            width: 15px;
+            height: 15px;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          width: 32px;
+          height: 32px;
+
+          @media (max-width: 991px){
+            width: 20px;
+            height: 20px;
+          }
+
+          button {
+            width: 32px;
+            height: 32px;
+            background-color: @ColorRojo;
+
+            @media (max-width: 991px){
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .column {
+    position: relative;
+
+    @media (max-width: 991px){
+      .desktop {
+        display: none;
+      }
+    }
+
+    .holder {
+      position: relative;
+      display: block;
+      height: 100%;
+      text-align: center;
+      border: 2px solid @ColorRojoClaro;
+      border-radius: 25px;
+      overflow: hidden;
+      .Transition(all .1s ease);
+
+      &:hover {
+        border: 2px solid @ColorRojo;
+
+        .titulo {
+          background-color: @ColorRojo;
+        }
+
+        ~ .btn-anadir {
+          background-color: @ColorRojo;
+        }
+      }
+
+      .titulo {
+        font-family: @MuseoSansRounded900;
+        font-size: 30px;
+        line-height: 30px;
+        color: @ColorBlanco;
+        text-transform: uppercase;
+        height: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @ColorRojoClaro;
+        margin-bottom: 0px;
+        .Transition(all .1s ease);
+      }
+
+      .image {
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+      .holder-inner {
+        padding: 0px 88px 80px 88px;
+
+        .precio {
+          position: relative;
+          margin-bottom: 20px;
+
+          .ahorra {
+            position: absolute;
+            top: -64px;
+            left: -75px;
+
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 128px;
+            height: 126px;
+            background: url("../images/star-bg.svg");
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 128px 126px;
+
+            .texto {
+              font-family: @MuseoSansRounded500;
+              color: @ColorGrisOscuro;
+              font-size: 16px;
+              line-height: 24px;
+              margin-bottom: 0px;
+              margin-top: 8px;
+            }
+
+            .precio {
+              font-family: @MuseoSansRounded900;
+              color: @ColorGrisOscuro;
+              font-size: 32px;
+              line-height: 24px;
+              margin-bottom: 0px;
+            }
+          }
+
+          .antes {
+            font-family: @MuseoSansRounded700;
+            color: @ColorRojoClaro;
+            font-size: 20px;
+            line-height: 16px;
+            margin-bottom: 10px;
+          }
+
+          .ahora {
+            font-family: @MuseoSansRounded700;
+            color: @ColorRojo;
+            font-size: 40px;
+            line-height: 45px;
+          }
+        }
+
+        .texto {
+          font-family: @MuseoSansRounded500;
+          font-size: 18px;
+          line-height: 20px;
+          color: @ColorGrisOscuro;
+          margin-bottom: 0px;
+          padding: 0px;
+          text-align: left;
+
+          b {
+            font-family: @MuseoSansRounded900;
+          }
+        }
+      }
+    }
+
+    .btn-anadir {
+      position: relative;
+      font-family: @MuseoSansRounded700;
+      font-size: 16px;
+      line-height: 45px;
+      color: @ColorBlanco;
+      border-radius: 38px;
+      width: 200px;
+      height: 45px;
+      text-align: center;
+      text-decoration: none;
+      background-color: @ColorRojoClaro;
+      display: block;
+      margin: -23px auto 0px auto;
+      z-index: 1;
+      .Transition(all .1s ease);
+
+      &:hover {
+        background-color: @ColorRojo;
+      }
+    }
+
+    .info {
+      margin-top: 100px;
+      text-align: center;
+
+      .texto {
+        font-family: @MuseoSansRounded500;
+        font-size: 20px;
+        line-height: 24px;
+        color: @ColorGrisOscuro;
+        margin-bottom: 30px;
+
+        @media (max-width: 991px){
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 20px;
+        }
+
+        .verde {
+          font-family: @MuseoSansRounded900;
+          color: @ColorVerde;
+        }
+
+        a {
+          font-family: @MuseoSansRounded900;
+          color: @ColorVerde;
+          text-decoration: none;
+        }
+      }
+
+      .btns-link {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        @media (max-width: 991px){
+          display: block;
+        }
+
+        .btn-link {
+          font-family: @MuseoSansRounded700;
+          font-size: 16px;
+          line-height: 45px;
+          color: @ColorBlanco;
+          border-radius: 38px;
+          width: 260px;
+          height: 45px;
+          text-align: center;
+          text-decoration: none;
+          background-color: @ColorCeleste;
+          display: inline-block;
+
+          &:first-child {
+            @media (max-width: 991px){
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

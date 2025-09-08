@@ -1,0 +1,440 @@
+footer {
+  &.footer {
+    position: relative;
+    background-color: @ColorBlanco;
+
+    .container {
+      @media (max-width: 991px){
+        padding-left: 18px!important;
+        padding-right: 18px!important;
+      }
+    }
+
+    .politica {
+      display: inline-flex;
+      gap: 0px;
+    }
+
+    .container-top {
+      padding-top: 70px;
+      padding-bottom: 60px;
+
+      @media (max-width: 991px){
+        padding-top: 46px!important;
+      }
+
+      .text-end {
+        @media (max-width: 991px){
+          margin-top: 20px;
+          text-align: left!important;
+        }
+      }
+
+      @media (max-width: 991px){
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+
+      .logo-footer {
+        img {
+          width: 100%;
+          max-width: 273px;
+          height: auto;
+
+          @media (max-width: 991px){
+            max-width: 243px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      .btn-telefono {
+        font-family: @PoppinsRegular;
+        font-size: 21px;
+        line-height: 26px;
+        color: @ColorBlue;
+        text-decoration: none;
+        .Transition(all .3s ease);
+
+        @media (max-width: 991px){
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .btn-email {
+        font-family: @PoppinsRegular;
+        font-size: 21px;
+        line-height: 26px;
+        color: @ColorRojo;
+        text-decoration: none;
+        .Transition(all .3s ease);
+
+        @media (max-width: 991px){
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          //color: @ColorVerdeClaro;
+        }
+      }
+
+      .btn-idioma {
+        display: inline-flex;
+        gap: 10px;
+        margin-right: 20px;
+
+        a {
+          font-family: @PoppinsRegular;
+          color: @ColorBlue50;
+          font-size: 14px;
+          line-height: 19px;
+          .Transition(all .3s ease);
+
+          &:hover {
+            color: @ColorRojo;
+          }
+
+          &.activo {
+            color: @ColorBlue;
+          }
+        }
+      }
+
+      .btns-redes {
+        display: inline-flex;
+        gap: 10px;
+        vertical-align: middle;
+
+        @media (max-width: 991px){
+          justify-content: center;
+        }
+
+        .btn-linkedin,
+        .btn-youtube {
+          width: 24px;
+          height: 24px;
+          background-color: @ColorBlue;
+          -webkit-mask-size: 24px;
+          -webkit-mask-repeat: no-repeat;
+          .Transition(all .2s ease);
+
+          &:hover {
+            background-color: @ColorRojo;
+          }
+        }
+
+        .btn-linkedin {
+          -webkit-mask-image: url("../images/ico-linkedin.svg");
+        }
+
+        .btn-youtube {
+          -webkit-mask-image: url("../images/ico-youtube.svg");
+        }
+      }
+    }
+
+    .container-middle {
+      @media (max-width: 991px){
+        border-top: 1px solid @ColorBlue15;
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+
+      .newletter {
+        .title {
+          font-family: @PoppinsRegular;
+          font-size: 21px;
+          line-height: 26px;
+          color: @ColorBlue;
+
+          @media (max-width: 991px){
+            font-size: 18px;
+            line-height: 23px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .input-email {
+          position: relative;
+          margin-top: 20px;
+          margin-bottom: 25px;
+          width: 100%;
+          max-width: 525px;
+
+          @media (max-width: 991px){
+            margin-top: 15px;
+            margin-bottom: 15px;
+            max-width: 100%;
+          }
+
+          .input {
+            width: 100%;
+            font-family: @PoppinsRegular;
+            font-size: 14px;
+            line-height: 50px;
+            color: @ColorBlue;
+            background-color: @ColorBlue10;
+            border-radius: 25px;
+            height: 50px;
+            border: 0px;
+            padding-left: 20px;
+            padding-right: 60px;
+            background-image: url("../images/ico-flecha-right.svg");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 20px) center;
+            background-size: 28px 28px;
+
+            &::placeholder {
+              color: @ColorBlue;
+            }
+          }
+
+          .btn-link {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+            display: block;
+            width: 60px;
+            height: 100%;
+            background-color: transparent;
+          }
+        }
+
+        .checkbox-holder {
+          cursor: pointer;
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 30px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          + .label {
+            font-family: @PoppinsRegular;
+            font-size: 14px;
+            line-height: 19px;
+            color: @ColorBlue;
+            padding-left: 10px;
+
+            a {
+              font-family: @PoppinsBold;
+              color: @ColorBlue;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          &:hover input ~ .checkmark {
+            border-color: @ColorRojo;
+          }
+
+          &:hover input {
+            &:checked ~ .checkmark {
+              border-color: @ColorBlue;
+            }
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark {
+              &:after {
+                display: block;
+              }
+            }
+          }
+
+          .checkmark {
+            position: relative;
+            height: 13px;
+            width: 13px;
+            border: 1px solid @ColorBlue;
+            border-radius: 50%;
+            .Transition(all .2s ease);
+
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 1px;
+              top: 1px;
+              width: 9px;
+              height: 9px;
+              border-radius: 50%;
+              background-color: @ColorBlue;
+            }
+          }
+        }
+      }
+
+      .border-top {
+        border-top: 1px solid @ColorBlue15;
+
+        @media (max-width: 991px){
+          margin-top: 20px;
+          padding-left: 40px;
+        }
+      }
+
+      .menu {
+        @media (max-width: 991px){
+          display: none;
+        }
+
+        .title {
+          font-family: @PoppinsBold;
+          font-size: 12px;
+          line-height: 19px;
+          color: @ColorBlue;
+        }
+
+        .btns-list {
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+
+          li {
+            width: 100%;
+
+            a {
+              position: relative;
+              font-family: @PoppinsRegular;
+              font-size: 14px;
+              line-height: 24px;
+              color: @ColorBlue;
+              text-decoration: none;
+              display: inline-block;
+              .Transition(all .2s ease);
+
+              &:after {
+                content: '';
+                position: relative;
+                top: -2px;
+                left: 0px;
+                display: block;
+                width: 0%;
+                height: 1.5px;
+                background-color: @ColorRojo;
+                .Transition(all .2s ease);
+              }
+
+              &:hover,
+              &.activo {
+                color: @ColorRojo;
+
+                &:after {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-bottom {
+      padding-top: 100px;
+      padding-bottom: 20px;
+
+      @media (max-width: 991px){
+        padding-top: 40px;
+        padding-bottom: 46px;
+      }
+
+      .text-end {
+        @media (max-width: 991px){
+          text-align: left!important;
+        }
+      }
+
+      .logo-footer {
+        img {
+          width: 100%;
+          max-width: 142px;
+          height: auto;
+
+          @media (max-width: 991px){
+            display: none;
+          }
+        }
+      }
+
+      .btns-list {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: inline-flex;
+        gap: 20px;
+
+        @media (max-width: 991px){
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
+
+        li {
+          a {
+            display: inline-block;
+            font-family: @PoppinsRegular;
+            font-size: 14px;
+            line-height: 19px;
+            color: @ColorBlue;
+            text-decoration: none;
+            .Transition(all .2s ease);
+
+            &:hover {
+              color: @ColorRojo;
+            }
+          }
+        }
+      }
+
+      .copy {
+        display: inline-block;
+        font-family: @PoppinsRegular;
+        font-size: 14px;
+        line-height: 19px;
+        color: @ColorBlue60;
+        white-space: nowrap;
+
+        @media (max-width: 991px){
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+        }
+
+        .logo-footer-alt {
+          img {
+            width: 100%;
+            max-width: 142px;
+            height: auto;
+
+            @media (min-width: 481px){
+              display: none;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

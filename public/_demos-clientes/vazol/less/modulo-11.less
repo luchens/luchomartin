@@ -1,0 +1,106 @@
+.modulo-11 {
+  position: relative;
+  background-color: @ColorPurpura;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .holder {
+    position: relative;
+    width: 100%;
+
+    > .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      > .row {
+        @media (min-width: 991px){
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .data {
+      text-align: center;
+
+      .titulo {
+        position: relative;
+        font-family: @PoppinsBold;
+        color: @ColorBlanco;
+        font-size: 48px;
+        line-height: 53px;
+        padding-bottom: 24px;
+        margin-bottom: 52px;
+
+        @media (max-width: 991px){
+          font-size: 32px;
+          line-height: 37px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0px;
+          width: 50px;
+          height: 4px;
+          border-radius: 8px;
+          background-color: @ColorBlanco;
+        }
+      }
+
+      .texto {
+        font-family: @NunitoSansRegular;
+        color: @ColorBlanco;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 32px;
+
+        b {
+          font-family: @NunitoSansBold;
+        }
+      }
+
+      .btn-link {
+        display: inline-flex;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-family: @NunitoSansBold;
+        color: @ColorBlanco;
+        font-size: 16px;
+        line-height: 48px;
+        text-decoration: none;
+        border: 1px solid @ColorBlanco;
+        border-radius: 8px;
+        padding: 0px 16px;
+        .Transition(all .3s ease);
+
+        img {
+          width: 24px;
+          height: 24px;
+          .Transition(all .3s ease);
+        }
+
+        &:hover {
+          color: @ColorPurpura;
+          background-color: @ColorRosaClarito;
+          border-color: @ColorPurpura;
+
+          img {
+            content: url("../images/arrow-right-icon-purpura.svg");
+          }
+        }
+
+        @media (max-width: 991px){
+          width: 100%;
+        }
+      }
+    }
+  }
+}

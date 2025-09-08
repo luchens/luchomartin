@@ -1,0 +1,268 @@
+.modulo-03 {
+  position: relative;
+  background-color: @ColorGrisClarito;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo-top {
+    font-family: @PoppinsBold;
+    color: @ColorPurpura;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 8px;
+
+    @media (max-width: 991px){
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  .subtitulo-top {
+    position: relative;
+    font-family: @PoppinsBold;
+    color: @ColorGrisOscuro;
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &:after {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: @ColorPurpura;
+    }
+  }
+
+  .texto-top {
+    font-family: @NunitoSansSemiBold;
+    color: @ColorGrisOscuro;
+    font-size: 20px;
+    line-height: 30px;
+
+    @media (max-width: 991px){
+      margin-bottom: 24px;
+    }
+
+    b {
+      font-family: @NunitoSansBold;
+    }
+  }
+
+  .desktop {
+    position: relative;
+
+    @media (max-width: 991px){
+      display: none;
+    }
+
+    .holder {
+      position: relative;
+      padding: 24px;
+      border: 1px solid @ColorGrisClaro;
+      border-radius: 12px;
+      background-color: @ColorBlanco;
+      min-height: 100%;
+      padding-bottom: 80px;
+      .Transition(all .3s ease);
+
+      &:hover {
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .1);
+
+        .logo {
+          width: 72px;
+          height: 72px;
+        }
+
+        .titulo {
+          color: @ColorTurqueza;
+        }
+
+        .btn-link {
+          color: @ColorTurqueza;
+          gap: 8px;
+          width: 159px;
+          bottom: 10px;
+
+          .flecha {
+            opacity: 1;
+          }
+        }
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px;
+        .Transition(all .3s ease);
+      }
+
+      .titulo {
+        font-family: @PoppinsBold;
+        color: @ColorPurpura;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 16px;
+        .Transition(all .3s ease);
+      }
+
+      .texto {
+        font-family: @NunitoSansBold;
+        color: @ColorGrisOscuro;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 8px;
+      }
+
+      .btn-link {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+        display: inline-flex;
+        gap: 0px;
+        align-items: center;
+        width: 127px;
+        font-family: @NunitoSansBold;
+        color: @ColorPurpura;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        .Transition(all .3s ease);
+
+        .flecha {
+          display: block;
+          width: 24px;
+          height: 24px;
+          opacity: 0;
+          .Transition(all .3s ease);
+        }
+      }
+    }
+  }
+
+  .mobile {
+    position: relative;
+
+    @media (min-width: 991px){
+      display: none;
+    }
+
+    .slider-modulo-03 {
+      .slick-slider {
+        .slick-list {
+          overflow: visible!important;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.draggable {
+            cursor: grab;
+
+            &:active {
+              cursor: grabbing;
+            }
+          }
+
+          .slick-track {
+            .slick-slide {
+              padding: 10px;
+
+              .holder {
+                position: relative;
+                padding: 24px;
+                border: 1px solid @ColorGrisClaro;
+                border-radius: 12px;
+                background-color: @ColorBlanco;
+                min-height: 334px;
+                .Transition(all .3s ease);
+
+                &:hover {
+                  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .1);
+
+                  .logo {
+                    width: 72px;
+                    height: 72px;
+                  }
+
+                  .titulo {
+                    color: @ColorTurqueza;
+                  }
+
+                  .btn-link {
+                    color: @ColorTurqueza;
+                    gap: 8px;
+                    width: 159px;
+                    bottom: 10px;
+
+                    .flecha {
+                      opacity: 1;
+                    }
+                  }
+                }
+
+                .logo {
+                  width: 60px;
+                  height: 60px;
+                  .Transition(all .3s ease);
+                }
+
+                .titulo {
+                  font-family: @PoppinsBold;
+                  color: @ColorPurpura;
+                  font-size: 24px;
+                  line-height: 29px;
+                  margin-top: 16px;
+                  .Transition(all .3s ease);
+                }
+
+                .texto {
+                  font-family: @NunitoSansBold;
+                  color: @ColorGrisOscuro;
+                  font-size: 16px;
+                  line-height: 21px;
+                  margin-top: 8px;
+                }
+
+                .btn-link {
+                  position: absolute;
+                  left: 24px;
+                  bottom: 24px;
+                  display: inline-flex;
+                  gap: 0px;
+                  align-items: center;
+                  width: 127px;
+                  font-family: @NunitoSansBold;
+                  color: @ColorPurpura;
+                  font-size: 16px;
+                  line-height: 40px;
+                  text-align: center;
+                  text-decoration: none;
+                  .Transition(all .3s ease);
+
+                  .flecha {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    opacity: 0;
+                    .Transition(all .3s ease);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

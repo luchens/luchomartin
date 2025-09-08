@@ -1,0 +1,61 @@
+.modulo-09 {
+  position: relative;
+  background-color: @ColorGris;
+
+  @media (max-width: 991px){
+    padding: 60px 10px 60px 10px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+
+    @media (max-width: 991px){
+      height: 274px;
+    }
+  }
+
+  .titulo {
+    font-family: @TiemposHeadlineRegular;
+    color: @ColorBlue;
+    font-size: 48px;
+    line-height: 51px;
+    margin-bottom: 38px;
+
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 33px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .btn-link {
+    width: 100%;
+    max-width: 290px;
+    font-family: @PoppinsRegular;
+    color: @ColorBlue;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 26px;
+    border: 2px solid @ColorRojo;
+    text-align: center;
+    .Transition(all .3s ease);
+
+    @media (max-width: 991px){
+      display: block;
+      text-align: center;
+    }
+
+    &:hover {
+      color: @ColorBlanco;
+      background-color: @ColorRojo;
+    }
+  }
+}
