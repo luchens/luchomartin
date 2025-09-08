@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 203 189" style="enable-background:new 0 0 203 189;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F9CF00;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Roboto-Bold';}
+	.st3{font-size:20px;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<polygon class="st0" points="0,0.4 203,0.4 203,189 0,189.4 	"/>
+</g>
+<g>
+	<g>
+		<text transform="matrix(1 0 0 1 49.4885 80.5693)" class="st1 st2 st3">€</text>
+		<text transform="matrix(1 0 0 1 140.5988 80.5693)" class="st1 st2 st3">€</text>
+		<text transform="matrix(1 0 0 1 98.0812 34.4062)" class="st1 st2 st3">€</text>
+		<text transform="matrix(1 0 0 1 62.8518 50.1992)" class="st1 st2 st3">€</text>
+		<text transform="matrix(1 0 0 1 129.6652 50.1992)" class="st1 st2 st3">€</text>
+	</g>
+	<g>
+		<rect x="54.7" y="163.9" class="st1" width="93.5" height="7.8"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<path class="st1" d="M93.1,116.6v15.5H74.6v-15.5L93.1,116.6 M96.1,113.6H71.6v21.5h24.6V113.6L96.1,113.6z"/>
+			</g>
+			<g>
+				<path class="st1" d="M128.4,116.6V157h-18.6v-40.4H128.4 M131.4,113.6h-24.6V160h24.6V113.6L131.4,113.6z"/>
+			</g>
+		</g>
+		<g>
+			<path class="st1" d="M103.1,75.9l42.1,32.8V157H57.7v-48.3L103.1,75.9 M103.1,72.2l-48.4,35V160h93.5v-52.8L103.1,72.2
+				L103.1,72.2z"/>
+		</g>
+	</g>
+	<polyline class="st4" points="161.9,110.6 103.4,63.9 41.1,110.6 	"/>
+	<g>
+		<path class="st1" d="M101.4,107.9c-17.5,0-31.8-14.3-31.8-31.8S84,44.3,101.5,44.3s31.8,14.3,31.8,31.8
+			C133.2,93.7,119.1,107.9,101.4,107.9z"/>
+		<path class="st0" d="M101.4,45.3c17,0,30.8,13.8,30.8,30.8s-13.8,30.8-30.8,30.8S70.6,93.1,70.6,76.1S84.6,45.3,101.4,45.3
+			 M101.4,43.3c-18.1,0-32.8,14.7-32.8,32.8s14.7,32.8,32.8,32.8s32.8-14.7,32.8-32.8S119.7,43.3,101.4,43.3L101.4,43.3z"/>
+	</g>
+	<g>
+		<polygon class="st0" points="89.2,94.5 95.4,82.4 91.2,82.4 98.1,73.3 94.1,73.3 102.8,60.9 113.9,61.1 105.1,69.6 110.2,69.6 
+			101.1,78.9 106.2,78.9 89.1,94.6 		"/>
+	</g>
+</g>
+</svg>

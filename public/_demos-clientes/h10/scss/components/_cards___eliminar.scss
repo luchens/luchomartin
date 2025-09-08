@@ -1,0 +1,813 @@
+// CARDS INFO
+// 01
+.card-info {
+
+    &__container {
+        @include respond-to(1024px) {
+            padding: 22px;
+            display: flex;
+        }
+        @include respond-to(1024px) {
+            padding: 0;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        @include respond-to(medium) {
+            max-width: 352px;
+        }
+        @include respond-to(1024px) {
+            max-width:50%;
+        }
+    }
+
+    &__image {
+
+    }
+
+    &__image-span {
+        position: absolute;
+        margin-left: 0px;
+        background-color: rgba(0, 0, 40, 0.2);
+        backdrop-filter: blur(5px);
+        padding: 10px 8px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        @include respond-to(medium) {
+            display: none;
+        }
+        @include respond-to(1024px) {
+            display: unset;
+            margin-left: 64px;
+            bottom: 0;
+            height: min-content;
+            padding: 8px 6px;
+            font-size: 14px;
+        }
+    }
+}
+
+// text info
+.card-info__text-container {
+    color: $color-main;
+    position: relative;
+    margin-top: -54px;
+    margin-left: 12px;
+
+    @include respond-to(medium) {
+        position: static;
+        margin-left: 0;
+    }
+
+    .card-info__title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        font-family: $second-font;
+        font-weight: $thin;
+        font-size: 48px;
+        line-height: 50px;
+
+        @include respond-to(medium) {
+            position: relative;
+            margin-left: -130px;
+            margin-top: 84px;
+
+            font-size: 40px;
+            line-height: 38px;
+        }
+
+        @include respond-to(1024px) {
+            font-size: $h1-size;
+            line-height: 74px;
+        }
+
+
+        .card-info__title-span {
+            background-color: $color-white;
+            white-space: nowrap;
+            width: min-content;
+            padding: 4px 8px 0 8px;
+
+            @include respond-to(1024px) {
+                padding: 7px 16px;
+            }
+        }
+
+        .card-info__title-span-bottom {
+            @include respond-to(medium) {
+                position: relative;
+                left: 100px;
+            }
+            @include respond-to(1024px) {
+                margin-left: 270px;
+            }
+        }
+    }
+
+    .card-info__p {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 8px;
+
+        @include respond-to(medium) {
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 19px;
+
+            position: relative;
+            top: 32px;
+            left: 60px;
+            width: 300px;
+        }
+        @include respond-to(1210px) {
+            font-size: 18px;
+            line-height: 28px;
+            left: 260px;
+
+        }
+    }
+}
+
+// 02
+
+.card-info__container02-mobile {
+    @include respond-to(1440px) {
+        display: none;
+    }
+}
+
+.card-info__container02 {
+display: none;
+}
+
+.card-info {
+    &__container02 {
+        @include respond-to(1440px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__image-02 {
+        @include respond-to(large) {
+            max-width: 491px;
+            max-height: 561px;
+        }
+    }
+
+    &__p02 {
+
+        @include respond-to(large) {
+            font-family: $main-font;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 28px;
+
+            position: relative;
+            top: 2px;
+            left: 465px;
+            width: 424px;
+        }
+    }
+}
+
+
+//03
+
+.card-info {
+
+    &__container03 {
+        @include respond-to(medium) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    // imagen
+
+    &__image-03 {
+        @include respond-to(medium) {
+            max-width: 491px;
+            max-height: 561px;
+        }
+    }
+
+    // contenido texto
+    &__container03-left {
+        padding: 24px;
+
+        .card-info__text-container {
+            left: 0;
+        }
+        .card-info__title-span {
+            font-size: 48px;
+        }
+        .card-info__title-span-bottom {
+            text-decoration: underline;
+            font-size: 28px;
+
+        }
+        .card-info__title {
+            @include respond-to(medium) {
+                display: none;
+            }
+            @include respond-to(large) {
+                display: flex;
+            }
+        }
+        @include respond-to(medium) {
+            .card-info__title-span {
+                font-size: 40px;
+            }
+            .card-info__title-span-bottom {
+                text-decoration: none;
+                font-size: 40px;
+            }
+        }
+        @include respond-to(large) {
+            .card-info__title-span {
+                font-size: 80px;
+            }
+            .card-info__title-span-bottom {
+                text-decoration: none;
+                font-size: 80px;
+            }
+        }
+    }
+
+    &__p03 {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 28px;
+        @include respond-to(medium) {
+
+            font-family: $second-font;
+            font-style: normal;
+            font-weight: 250;
+            font-size: 30px;
+            line-height: 36px;
+
+            position: relative;
+            top: 16px;
+            left: -100px;
+            background-color: $color-white;
+            padding: 20px;
+            max-width: 350px; //--
+        }
+        @include respond-to(large) {
+
+            font-family: $second-font;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 28px;
+
+            position: relative;
+            top: 16px;
+            left: 400px;
+            max-width: 350px; //--
+            padding: 0;
+        }
+    }
+}
+
+
+.p-c8-03 {
+    margin-bottom: 32px;
+    ;
+    font-size: 16px;
+    font-weight: 325;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -32px;
+    @include respond-to(medium) {
+        margin-top: 21px;
+        margin-left: 21px;
+        width: 327px;
+    }
+    @include respond-to(large) {
+        margin-top: 40px;
+        margin-left: 70px;
+        width: 537px;
+    }
+
+    .leer-mas {
+        @include respond-to(medium) {
+            display: none;
+        }
+    }
+}
+
+.card-info__articles {
+    @include respond-to(medium) {
+       display: none;
+    }
+    @include respond-to(large) {
+        display: unset;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+}
+
+.card-info__articles-tablet {
+    display: none;
+
+    @include respond-to(medium) {
+        display: block;
+        margin-top: 20px;
+    }
+
+    @include respond-to(large) {
+        display: none;
+    }
+}
+
+// tablet
+.c8-03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-info__title__tablet {
+    display: none;
+
+    @include respond-to(medium) {
+        display: block;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+
+    @include respond-to(large) {
+        display: none;
+    }
+
+}
+
+
+
+// 09
+.card-info09 {
+    padding: 16px;
+    ;
+    font-size: 18px;
+    font-weight: 325;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    @include respond-to(medium) {
+        width: 100vw;
+        height: 700px; //cambiar
+        padding-left: 65px;
+        padding-top: 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, 100px);
+        font-size: 16px;
+    }
+
+    &__title {
+        //styleName: Headline01_Mobile_Argent (48-56)/Thin;
+        font-family: $second-font;
+        font-size: 48px;
+        font-weight: 250;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        margin: 24px;
+
+        @include respond-to(medium) {
+            font-size: 80px;
+            font-weight: 100;
+            line-height: 74px;
+            text-align: left;
+        }
+    }
+
+    &__image-container {
+        width: 100%;
+
+        .card-info__image09 {
+            width: 785px;
+            position: relative;
+            right: -10em;
+            margin-top: 16px;
+        }
+    }
+
+    &__text-container {
+        width: 100%;
+        margin-top: 16px;
+
+        @include respond-to(medium) {
+            width: 80%;
+            margin-left: 100px;
+        }
+
+        &.show {
+          .btn-leer {
+            background-image: url("#{$iconspath}arrow-up.svg");
+          }
+        }
+
+        .buttons-container09 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 16px;
+
+            @include respond-to(medium) {
+                flex-direction: row;
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//SUB-CARDS TITLE
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.2rem 2.4rem 0rem 2.4rem;
+
+    @include respond-to(medium) {
+        margin: 1.6rem 2.4rem;
+    }
+
+    &__title {
+        font-family: $main-font;
+        font-weight: $regular;
+        font-size: $h3-size-mobile;
+        font-style: normal;
+        line-height: 3.6rem;
+        text-align: center;
+
+        @include respond-to(large) {
+            font-size: $h2-size;
+            font-weight: $thin;
+            line-height: 6rem;
+        }
+    }
+
+    &__info {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $second-font;
+        font-size: 1.8rem;
+        line-height: $high-line;
+        text-align: center;
+        font-weight: $regular;
+    }
+}
+
+//VERSION MOBILE PARA LAS SUB-CARDS TITLE
+
+@media (max-width: 700px) {
+    .card-container {
+
+        &__title {
+            font-weight: $thin;
+            font-size: $h3-size;
+            line-height: 4.5rem;
+        }
+
+        &__info {
+            padding-top: 16px;
+            text-align: center;
+
+        }
+
+        &__text {
+            font-size: $medium-size;
+            line-height: 2.2rem;
+        }
+    }
+}
+
+
+
+.leer-mas {
+    text-decoration: underline;
+    margin-left: 6px;
+}
+
+.leer-mas__arrow {
+    margin-left: 6px;
+}
+
+// c10
+
+.card-info {
+
+    &__container10 {
+        width: 272px;
+        padding: 16px;
+
+        @include respond-to(medium) {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            margin: 10em;
+        }
+
+        @include respond-to(large) {
+            // padding: 0;
+            width: 100%;
+            // display: flex;
+            // margin: 10em;
+        }
+
+    }
+
+    &__image-10 {
+        width: 100%;
+        height: 240px;
+        @include respond-to(medium) {
+            width: 600px;
+            height: 378px;
+        }
+    }
+
+    &__logo10  {
+        position: relative;
+        bottom: -80px;
+        background: rgba(255, 255, 255, 0.54);
+        backdrop-filter: blur(5px);
+        width: min-content;
+        padding: 10px;
+
+        .card-info__logo-10 {
+            width: 144.07px;
+            height: 28.96px;
+            @include respond-to(large) {
+                width: 199px;
+                height: 40px;
+            }
+        }
+
+    }
+
+    &__text-container10 {
+        font-size: 16px;
+        font-weight: 325;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        @include respond-to(large) {
+            position: relative;
+            bottom: -44px;
+
+            color: $color-main;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: left;
+            margin-left: 60px;
+        }
+
+    }
+
+    &__title10 {
+        //styleName: Headline03_Argent (36-45)/Thin;
+        font-family: $second-font;
+        font-size: 36px;
+        font-weight: 250;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+
+        @include respond-to(large) {
+        //styleName: Headline02_Argent (50-64)/Thin;
+        font-size: 50px;
+        line-height: 74px;
+        margin: 0;
+        }
+
+    }
+
+    &__p10-list {
+        display: none;
+
+        @include respond-to(large) {
+            display: unset;
+            list-style: circle;
+            margin: 0;
+            padding: 20px;
+        }
+    }
+}
+
+.card-info__logo-10-01 {
+    display: none;
+}
+.leer-mas10 {
+    text-decoration:underline;
+    @include respond-to(medium) {
+        display: none;
+    }
+
+}
+
+// tablet010
+@media (min-width: 700px) and (max-width: 1024px) {
+    .card-info__container10 {
+        width: 100%;
+        margin: auto;
+        padding: 24px;
+    }
+    .card-info__title10, .card-info__p10, .card-info__logo-10 {
+        display: none;
+    }
+
+    .card-info__image-10 {
+        width: 344px;
+        height: 213px;
+    }
+    .card-info__text-container10 {
+        padding: 50px;
+    }
+    .card-info__logo-10-01 {
+        width: 304px;
+        height: 61px;
+        display: unset;
+    }
+}
+
+.buttons-container10 {
+    margin-top: 16px;
+    .second-button {
+        width: 100%;
+        @include respond-to(medium) {
+            width: min-content;
+        }
+    }
+}
+
+.card-culinaria {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__lista {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__title {
+        padding-top: $medium-space;
+        font-family: $main-font;
+        font-weight: $medium;
+        font-size: $strong-size;
+        line-height: $regular-line;
+
+        @include respond-to(large) {
+            font-size: $subtitle01-size;
+            line-height: $high-line;
+        }
+    }
+
+    &__image {
+        padding-top: 0.8rem;
+    }
+
+    &__texto {
+        padding: $medium-space 0;
+        font-family: $main-font;
+        font-weight: $regular;
+        font-size: $medium-size;
+        line-height: $regular-line;
+
+        @include respond-to(large) {
+            font-size: $subtitle02-size-mobile;
+            line-height: $high-line;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        font-family: $main-font;
+        font-weight: $medium;
+        font-size: $medium-size;
+        line-height: $medium-line;
+        text-align: center;
+    }
+
+    &__separador {
+        display: none;
+
+        @include respond-to(large) {
+            display: block;
+            width: 38px;
+            margin: 0;
+            padding: 0;
+            padding-top: 2.4rem;
+            border-bottom: 0.25px solid black;
+        }
+    }
+}
+
+
+
+
+@media only screen
+    and (min-width: 768px) {
+
+    .inset-text {
+        &.card-info__container {
+            @include respond-to(768px) {
+                padding: 22px;
+                display: flex;
+            }
+            @include respond-to(768px) {
+                padding: 0;
+            }
+        }
+        .card-info__text-container .card-info__title {
+            margin-left: -40px;
+        }
+        .card-info__text-container .card-info__title .card-info__title-span-bottom {
+            left: 80px;
+        }
+        .card-info__image-container {
+            max-width: 50%;
+        }
+        .card-info__text-container .card-info__p {
+            left: 40px;
+            top: 12px;
+        }
+    }
+}
+
+@include respond-to(1024px) {
+    .inset-text {
+        .card-info__text-container .card-info__title .card-info__title-span-bottom {
+            margin-left: 90px;
+        }
+        .card-info__text-container .card-info__p {
+            left: 240px;
+        }
+    }
+}
+
+
+.direct-booking {
+    .card-container__title {
+        font-family: $second-font;
+        font-weight: $thin;
+        margin-bottom: 32px;
+    }
+}

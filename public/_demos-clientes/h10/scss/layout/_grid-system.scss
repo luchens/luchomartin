@@ -1,0 +1,95 @@
+.container-fix {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include respond-to(large) {
+    position: relative;
+  }
+
+  &.col-10-fix {
+    @include respond-to(large) {
+      padding-left: calc(8.33% + 16px);
+      padding-right: calc(8.33% + 16px);
+    }
+
+    @include respond-from(medium) {
+      padding-left: calc(4.16% + 16px);
+      padding-right: calc(4.16% + 16px);
+    }
+
+    @include respond-from(small) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  @include respond-to(small) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include respond-to(medium) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include respond-to(large) {
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-hero-text {
+  @include respond-to(1504px) {
+    padding-left: 0px !important;
+  }
+}
+
+.container-left{
+  padding-left: 0px !important;
+  padding-right: 0px;
+  @include respond-to(extraLarge) {
+    padding-right: 16px !important;
+  }
+}
+
+.container-both{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 740px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

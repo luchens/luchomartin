@@ -1,0 +1,602 @@
+.ficha-hotel {
+  &.ficha {
+    &.ini-skeleton {
+      @keyframes gradient-skeletor {
+        0%   { background-position: 100% 0%;    }
+        100% { background-position: 0% 100%;    }
+      }
+
+      .c2-c3 {
+        &__container {
+
+          .tabs-holder {
+            .tabs {
+              &:before {
+                content: "";
+                width: 100%;
+                height: calc(100% + 32px);
+                position: absolute;
+                top: -16px;
+                left: 0px;
+                background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                background-size: 500% 100%;
+                animation: gradient-skeletor 3s ease-in-out infinite;
+                z-index: 1;
+                background-color: $color-grey4;
+              }
+            }
+          }
+
+          .menu-top {
+            .breadcrumb-holder {
+              position: relative;
+              &:before {
+                content: "";
+                width: 100%;
+                height: calc(100% - 0px);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                background-size: 500% 100%;
+                animation: gradient-skeletor 3s ease-in-out infinite;
+                z-index: 1;
+                background-color: $color-grey4;
+              }
+            }
+
+            .btns-right {
+              .links-top {
+                position: relative;
+                &:before {
+                  content: "";
+                  width: 100%;
+                  height: calc(100% - 0px);
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                  background-size: 500% 100%;
+                  animation: gradient-skeletor 3s ease-in-out infinite;
+                  z-index: 1;
+                  background-color: $color-grey4;
+                }
+              }
+            }
+          }
+
+          .hotel-top {
+            .data-holder {
+              .data {
+                .titulo-block {
+                  .titulo-holder {
+
+                    @include respond-to(large) {
+                      min-width:300px;
+                    }
+      
+                    position: relative;
+                    &:before {
+                      content: "";
+                      width: 100%;
+                      height: calc(100% - 0px);
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                      background-size: 500% 100%;
+                      animation: gradient-skeletor 3s ease-in-out infinite;
+                      z-index: 1;
+                      background-color: $color-grey4;
+                    }
+                  }
+
+                  .direccion {
+      
+                    position: relative;
+                    &:before {
+                      content: "";
+                      width: 100%;
+                      height: calc(100% - 0px);
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                      background-size: 500% 100%;
+                      animation: gradient-skeletor 3s ease-in-out infinite;
+                      z-index: 1;
+                      background-color: $color-grey4;
+                    }
+                  }
+
+                  .tel-holder {
+      
+                    position: relative;
+                    &:before {
+                      content: "";
+                      width: 100%;
+                      height: calc(100% - 0px);
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                      background-size: 500% 100%;
+                      animation: gradient-skeletor 3s ease-in-out infinite;
+                      z-index: 1;
+                      background-color: $color-grey4;
+                    }
+                  }
+                }
+
+                .labels {
+                  position: relative;
+                  &:before {
+                    content: "";
+                    width: 100%;
+                    height: calc(100% - 0px);
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                    background-size: 500% 100%;
+                    animation: gradient-skeletor 3s ease-in-out infinite;
+                    z-index: 1;
+                    background-color: $color-grey4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .c62 {
+        &__container {
+
+          .c7 {
+            &__container {
+              position: relative;
+              &:before {
+                content: "";
+                width: 100%;
+                height: calc(100% - 16px);
+                position: absolute;
+                top: 8px;
+                left: 0px;
+                background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                background-size: 500% 100%;
+                animation: gradient-skeletor 3s ease-in-out infinite;
+                z-index: 1;
+                background-color: $color-grey4;
+              }
+            }
+          }
+
+          .banner-hero {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% - 0px);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+
+            .slick-arrow {
+              display: none!important;
+            }
+
+            .slick-dots {
+              display: none!important;
+            }
+          }
+
+          .tabs {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% + 32px);
+              position: absolute;
+              top: -16px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+          }
+
+        }
+      }
+
+      .c63-02 {
+        &__container {
+
+          .col-left {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% - 0px);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+          }
+
+          .col-right {
+            .titulo {
+              position: relative;
+              &:before {
+                content: "";
+                width: 100%;
+                height: calc(100% - 0px);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                background-size: 500% 100%;
+                animation: gradient-skeletor 3s ease-in-out infinite;
+                z-index: 1;
+                background-color: $color-grey4;
+              }
+            }
+
+            .texto_leer_mas {
+
+              .texto-1 {
+                position: relative;
+                &:before {
+                  content: "";
+                  width: 100%;
+                  height: calc(100% - 0px);
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                  background-size: 500% 100%;
+                  animation: gradient-skeletor 3s ease-in-out infinite;
+                  z-index: 1;
+                  background-color: $color-grey4;
+                }
+              }
+            }
+
+            .p-enlace-destacado {
+              position: relative;
+              &:before {
+                content: "";
+                width: 100%;
+                height: calc(100% - 0px);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+                background-size: 500% 100%;
+                animation: gradient-skeletor 3s ease-in-out infinite;
+                z-index: 1;
+                background-color: $color-grey4;
+              }
+            }
+          }
+
+          .slick-slider-holder {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% - 0px);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+          }
+        }
+      }
+
+      .c51 {
+        &__container {
+
+          .btn-ver {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% - 0px);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+          }
+
+          .grid-wrapper {
+            position: relative;
+            &:before {
+              content: "";
+              width: 100%;
+              height: calc(100% - 0px);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              background: linear-gradient(-90deg, transparent 0%, transparent 45%, rgba(255,255,255,.5) 55%, rgba(255,255,255,.5) 60%, transparent 65%, transparent 100%);
+              background-size: 500% 100%;
+              animation: gradient-skeletor 3s ease-in-out infinite;
+              z-index: 1;
+              background-color: $color-grey4;
+            }
+
+            .wide {
+              display: none;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.ficha-hotel {
+  .topbar-main {
+    top: 0px;
+    z-index: 4;
+    background-color: $color-white;
+    @include transition(all 0s ease);
+
+    @include respond-from(large) {
+      z-index: 5;
+      box-shadow: 0px 0px 34px rgba(0, 0, 0, .1);
+    }
+
+    &.open-menu {
+      z-index: 6;
+    }
+
+    /*&.sticky-bg {
+      top: 0px;*/
+
+      &.on-scroll-down {
+        @include respond-from(large) {
+          top: -56px;
+          box-shadow: none;
+        }
+      }
+
+      &.on-scroll-up {
+        @include respond-from(large) {
+          top: 0px;
+          //box-shadow: none;
+        }
+      }
+    //}
+
+    .topbar-main__container-left {
+      .menu-icon__mobile-click {
+        .menu-icon__mobile {
+          &:first-child {
+            content: url("../src/icons/menu.svg");
+          }
+        }
+      }
+    }
+
+    .topbar-main__container-right {
+      .header__icon-mobile {
+        &:first-child {
+          content: url("../src/icons/call_.svg");
+        }
+        &:last-child {
+          content: url("../src/icons/person_.svg");
+        }
+      }
+    }
+
+    @include respond-to(large) {
+      display: none;
+    }
+  }
+
+  .c63-02 {
+    &__container {
+      .col-right
+      {
+        .texto_leer_mas {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .show-open-opciones-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+  .daterangepicker-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+  .show-open-buscador-avanzado-mobile {
+    @include respond-from(large) {
+      z-index: 5;
+    }
+  }
+
+  .show-open-hotel-destino-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+
+  .ficha-galeria
+  {
+    .show-open-opciones-mobile,.daterangepicker-mobile,.show-open-hotel-destino-mobile {
+      @include respond-from(small) {
+        top: 0px;
+      }
+    }
+  }
+
+  .topbar-main-mobile-holder {
+    z-index: 5;
+
+    &:before {
+      display: none;
+    }
+
+  }
+
+  .topbar-main-mobile-contactanos {
+    &.open {
+      @include respond-from(small) {
+        top: -91px;
+      }
+    }
+  }
+
+  .topbar-main-mobile-login {
+    &.open {
+      @include respond-from(small) {
+        top: -91px;
+      }
+    }
+  }
+
+  &.ficha {
+    .topbar-main-mobile-contactanos {
+      &.open {
+        @include respond-from(small) {
+          top: -152px;
+        }
+      }
+    }
+
+    .topbar-main-mobile-login {
+      &.open {
+        @include respond-from(small) {
+          top: -152px;
+        }
+      }
+    }
+  }
+
+  &.ficha {
+    .c7__container {
+      &.fix-position-top-bottom {
+        .form-holder {
+          .form {
+            .form-item {
+              .show-open-hotel-destino-2-holder {
+                top:-395px;
+              }
+
+              .show-open-opciones-holder {
+                top: -433px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .daterangepicker {
+      margin-top: 15px;
+
+      &.fix-position-top-bottom {
+        top:-444px;
+        margin-top: -441px;
+      }
+    }
+  }
+
+  &:not(.home),
+  &:not(.ficha) {
+    &.on-scroll {
+      &.on-scroll-down {
+        .daterangepicker {
+          position: fixed!important;
+          top: 131px !important;
+          margin-top: 0px!important;
+        }
+      }
+
+      &.on-scroll-up {
+        .daterangepicker {
+          position: fixed!important;
+          top: 171px !important;
+          margin-top: 0px!important;
+        }
+      }
+    }
+  }
+}
+
+.ficha-hotel{
+  .ficha-hotel-integracion
+  {
+
+    .topbar-main-mobile{
+      padding-top: 0;
+    }
+
+    .topbar-main-btns-bottom
+    {
+      bottom: 56px;
+    }
+
+    .topbar-main-mobile-contactanos.open
+    {
+      top: -56px;
+    }
+
+    .topbar-main-mobile-idioma.open
+    {
+      top: -56px;
+    }
+
+    .topbar-main-mobile-reservas.open 
+    {
+      top: -56px;
+    }
+
+    .topbar-main-mobile-cerrar-sesion.open
+    {
+      top: -56px;
+    }
+    .topbar-main-mobile-login.open
+    {
+      top: -56px;
+    }
+
+  }
+}

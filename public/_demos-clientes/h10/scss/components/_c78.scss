@@ -1,0 +1,49 @@
+.c78__ {
+  &container {
+
+    .holder {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      &.separator{
+      border-bottom: 0.5px solid #B6B6B6;
+      padding-bottom: 90px;
+
+      }
+
+      .btn-arrow {
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-size: 16px 28px;
+        background-position: center;
+
+        &.left {
+          background-image: url('#{$iconspath}arrow-left-.svg');
+        }
+
+        &.right {
+          background-image: url('#{$iconspath}arrow-right-.svg');
+        }
+      }
+
+      .btn-numero {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 18px;
+        line-height: 26px;
+        padding-left: 3px;
+        padding-right: 3px;
+
+        &.activo {
+          font-weight: $medium;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Zener - Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.0/css/solid.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/skycons.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="d-flex">
+        <div class="mr-auto align-middle"><a href="main.html"><div class="logo"><img src="images/logo.jpg"></div></a></div>
+        <div class="item align-middle">14-09-2020 18:15:19</div>
+        <div class="item align-middle"><a hre="index.html" class="btn-logout"><span class="fa fa-fw fa-power-off" class="ico-logout"></span></a></div>
+      </div>
+    </nav>
+    <main role="main" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 main-left">
+          <div class="title">Bienvenido/a a:</div>
+          <div class="title-intro">
+            ZENER<br><i>Smart Home</i>
+          </div>
+          <ul class="menu">
+            <li><div class="title">Navegación</div></li>
+            <li><a href="demanda-hogar-detalle.html"><span class="ico"><i class="fa fa-fw fa-home"></i></span> Hogar</a></li>
+            <li class="active"><a href="autoconsumo-detalle.html"><span class="ico"><i class="fa fa-fw fa-recycle"></i></span> Autoconsumo</a></li>
+            <li><a href="economia-detalle.html"><span class="ico"><i class="fa fa-fw fa-hand-holding-usd"></i></span> Economía</a></li>
+            <li><a href="main.html"><span class="ico"><i class="fa fa-fw fa-solar-panel"></i></span> Servicio</a></li>
+            <li><a href="conectividad.html"><span class="ico"><i class="fa fa-fw fa-wifi"></i></span> Conectividad</a></li>
+            <li><a href="informacion-general.html"><span class="ico"><i class="fa fa-fw fa-info-circle"></i></span> Información General</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 main-right">
+
+          <div class="menu-options">
+            <div class="options">
+              <div class="option servicio activo">
+                <i class="fa fa-fw fa-solar-panel"></i> SERVICIO
+              </div>
+              <div class="option conectividad inactivo">
+                <i class="fa fa-fw fa-wifi"></i> CONECTIVIDAD
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="content-items autoconsumo mb-4 contenedor">
+                  <a href="#" class="btn-exportar">EXPORTAR <i class="fa fa-fw fa-file-export"></i></a>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                      <div class="item auto-consumo alt">
+                        <div class="inner">
+                          <div class="title">AUTOCONSUMO</div>
+                          <div class="img-holder"><img src="images/auto-consumo-alt.svg" class="img" /></div>
+                          <p>
+                            <h5>Circuito DC</h5>
+                            TensiónPV1: <b>230VDC</b><br>
+                            TensiónPV2: <b>230VDC</b><br>
+                            CorrientePV1: <b>4A</b><br>
+                            CorrientePV2: <b>4A</b><br>
+                            PotenciaPV1+PV2: <b>1500W</b><br>
+                            Energía día: <b>15Kwh</b><br>
+                          </p>
+                          <p>
+                            <h5>Circuito AC</h5>
+                            Tensión: <b>230VAC</b><br>
+                            Corriente: <b>6VAC</b><br>
+                            Potencia: <b>1480W</b>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-5">
+                      <div  class="contenedor">
+                        <canvas id="canvas-3" height="80vh" width="100vw"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="contenedor">
+                  <div class="row">
+                    <div class="input-group col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-1">
+                      <div class="input-group-prepend">
+                        <i class="fa fa-fw fa-calendar-alt"></i>
+                      </div>
+                      <select class="form-control">
+                        <option selected>Seleccionar año...</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018...</option>
+                      </select>
+                    </div>
+                    <div class="input-group col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-1">
+                      <div class="input-group-prepend">
+                        <i class="fa fa-fw fa-calendar-alt"></i>
+                      </div>
+                      <select class="form-control">
+                        <option selected>Seleccionar mes...</option>
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo...</option>
+                      </select>
+                    </div>
+                    <div class="input-group col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-1">
+                      <div class="input-group-prepend">
+                        <i class="fa fa-fw fa-calendar-alt"></i>
+                      </div>
+                      <select class="form-control">
+                        <option selected>Seleccionar día...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <canvas id="canvas-4" height="50vh" width="100vw"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.4.0/js/all.js"></script>
+    <script src="js/Chart.min.js"></script>
+  	<script src="js/utils.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

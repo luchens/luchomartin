@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <title>H10 Hotels. Confirmaci&oacute;n Reserva</title>
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <style type="text/css">
+    body { width: 100%; background-color: #EDEDF0; margin: 0; padding: 0; border: 0; -webkit-font-smoothing: antialiased; font-family: Arial, sans-serif; }
+    /*table { border-collapse: collapse; border-spacing: 0px; padding: 0px; }*/
+    div, p, a, li { -webkit-text-size-adjust: none; padding: 0px; margin: 0px; }
+    a { color: #000028; font-weight: bold; }
+
+    @media only screen and (max-width: 480px)  {
+      .deviceWidth {
+        width: 100%!important;
+        max-width: 100%!important;
+        display: block;
+        text-align: center;
+        padding-left: 0px!important;
+      }
+      .deviceWidth img {
+        max-width: 100%!important;
+      }
+
+      .deviceWidth.first {
+        margin-bottom: 24px;
+      }
+    }
+  </style>
+</head>
+<body width="100%" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="font-family: Arial, sans-serif">
+  @{ String UrlHotel = String.Empty; } @if (!String.IsNullOrEmpty(Model.DatosHotel.Url)) { UrlHotel = Model.DatosHotel.Url; if (!Model.DatosHotel.Url.Contains("http")) { UrlHotel = "http://" + UrlHotel; } }
+
+  <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#EDEDF0">
+    <tr>
+      <td width="100%" align="center" style="padding-left: 16px;padding-right: 16px;">
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="max-width: 600px;border-radius:8px;margin-bottom:40px;overflow: hidden;">
+          <tr>
+            <td>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:24px 24px 24px 24px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:0px;">
+                      <tr>
+                        <td width="30%" align="left"><a href="#"><img width="95" src="@Model.StaticUrl/logo-blue.png" alt="H10 Hotels. Pensando en ti" border="0" style="width:95px;display:inline-block;border:0;vertical-align: middle;" /></a></td>
+                        <td width="70%" align="right"><a href="#"><img height="45" src="@Model.DatosHotel.LogoHotel" alt="H10 Hotels. Pensando en ti" border="0" style="display:inline-block;border:0;vertical-align: middle;padding-left:5px" /></a></td>
+                      </tr>
+                    </table>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td><img width="100%" src="@Model.DatosHotel.HeroHotel" alt="" border="0" style="width:100%;display:block;border:0;" /></td>
+                      </tr>
+                    </table>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center">
+                          <h4 style="font-family: Arial, sans-serif; font-size:28px; line-height:32px; color:#000028; margin-top:32px;margin-bottom:16px;">Gracias @Model.DatosCliente.Nombre, tu reserva ha sido confirmada</h4>
+                          <img src="../../../src/emails/punto-azul.gif" style="width: 160px; height:.5px; background-color:#000028; display: block;" />
+                          <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;margin-top:16px;margin-bottom:20px;">
+                            ¡Gracias por elegir el @Model.DatosHotel.NombreHotel!<br>
+                            A continuación encontrarás los detalles de tu reserva.
+                          </p>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 0px;">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">DATOS DE HOTEL</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td class="deviceWidth first"><img src="../../../src/emails/thumb.jpg" style="width: 100%; max-width: 160px; display: block;" /></td>
+                                    <td style="padding-left: 16px;" class="deviceWidth">
+                                      <h5 style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#000028; margin-top:0px; margin-bottom:10px;"><strong>@Model.DatosHotel.NombreHotel</strong> <p style="display: inline-block; margin-left: 16px;"><img src="../../../src/emails/ico-star.png" width="16" height="15" border="0" style="display: inline-block;margin-right: 2px;" /><img src="../../../src/emails/ico-star.png" width="16" height="15" border="0" style="display: inline-block;margin-right: 2px;" /><img src="../../../src/emails/ico-star.png" width="16" height="15" border="0" style="display: inline-block;margin-right: 2px;" /><img src="../../../src/emails/ico-star.png" width="16" height="15" border="0" style="display: inline-block;margin-right: 2px;" /><img src="../../../src/emails/ico-star.png" width="16" height="15" border="0" style="display: inline-block;margin-right: 2px;" /></p></h5>
+                                      <a href="#" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="../../../src/emails/ico-ubicacion-gris.png" width="8" height="10" border="0" style="margin-right: 5px;" /> @Model.DatosHotel.UbicacionHotel</a>
+                                      <br>
+                                      <a href="tel:+34900444466" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="../../../src/emails/ico-telefono-gris.png" width="8" height="8" border="0" style="margin-right: 5px;" /> @Model.DatosHotel.TelefonoHotel</a>
+                                      <br>
+                                      <a href="mailto:atlanticsunset@h10hotels.com" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="../../../src/emails/ico-email-gris.png" width="10" height="8" border="0" style="margin-right: 5px;" /> @Model.DatosHotel.EmailHotel</a>
+                                      <br>
+                                      <a href="#" style="font-family: Arial, sans-serif; font-size:16px; line-height:25px; color:#000028; text-decoration: none; font-weight: normal; margin-top: 6px; display: block;"><strong style="text-decoration: underline;">IR A LA FICHA DEL HOTEL</strong> <img src="../../../src/emails/ico-arrow-right.png" width="30" height="10" border="0" style="margin-left: 15px;" /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 2px; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">DATOS DE RESERVA</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="width: 160px; padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">LOCALIZADOR</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.Localizador</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">ENTRADA</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.FechaEntrada</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">SALIDA</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.FechaSalida</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">NOCHES</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.Noches</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">OCUPACI&Oacute;N</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.Ocupacion.Adultos adulto/s @if(Model.DatosReserva.Ocupacion.Ninos.Length > 0) { @("+ " + Model.DatosReserva.Ocupacion.Ninos.Length + " ni&ntilde;o/s") }</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">HORA DE LLEGADA</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">@Model.DatosReserva.HoraLlegada</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            
+                              <td style="padding-left: 2px; padding-right: 0px; vertical-align: top; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">DATOS DEL CLIENTE</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="width: 160px; padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">CLIENTE</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosCliente.Nombre @Model.DatosCliente.Apellido1 @Model.DatosCliente.Apellido2</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">TELÉFONO</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;"><a href="tel:@Model.DatosCliente.Telefono">@Model.DatosCliente.Telefono</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">EMAIL</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;"><a href="mailto:@Model.DatosCliente.Email">@Model.DatosCliente.Email</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">TARJETA CLUB H10</strong></td>
+                                    @if (Model.DatosCliente.ClubH10.Trim().Equals("900000041296")) {
+                                      <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">Alta exprés</td>
+                                    } else {
+                                      <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosCliente.ClubH10</td>
+                                    }
+                                  </tr>
+                                  <tr>
+                                    <td><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">ORIGEN</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">@Model.DatosCliente.Origen</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 2px; vertical-align: top; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">CHECK-IN ONLINE</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block; margin-bottom:16px;" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" width="147" height="147"><img src="../../../src/emails/codigo-qr.png" style="display: block;" /></td>
+                                    <td align="left" style="vertical-align: top; padding-left: 16px;">
+                                      <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">
+                                        Ahorra tiempo y evita colas.<br>
+                                        Desde las 15h, dos días antes de tu llegada al hotel.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td style="padding-left: 2px; padding-right: 0px; vertical-align: top; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">DESGLOSE DE PRECIOS</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="60%" style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase;">1. @Model.DatosPrecio.Habitacion1</strong></td>
+                                    <td width="40%" style="padding-bottom: 8px; vertical-align: top;" align="right"><strong style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#000028;">@Model.DatosPrecio.Habitacion1Precio</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosPrecio.Habitacion1Dia1</td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px; vertical-align: top;" align="right">@Model.DatosPrecio.Habitacion1Dia1Precio</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosPrecio.Habitacion1Dia2</td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px; vertical-align: top;" align="right">@Model.DatosPrecio.Habitacion1Dia2Precio</td>
+                                  </tr>
+                                </table>
+                                <br><br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="60%" style="padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase;">2. @Model.DatosPrecio.Habitacion2</strong></td>
+                                    <td width="40%" style="padding-bottom: 8px; vertical-align: top;" align="right"><strong style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#000028;">@Model.DatosPrecio.Habitacion2Precio</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosPrecio.Habitacion2Dia1</td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px; vertical-align: top;" align="right">@Model.DatosPrecio.Habitacion2Dia1Precio</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosPrecio.Habitacion2Dia2</td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px; vertical-align: top;" align="right">@Model.DatosPrecio.Habitacion2Dia2Precio</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br><br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 2px; vertical-align: top; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">IMPORTE TOTAL</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase; padding-bottom: 8px; padding-right: 16px;">@Model.DatosImporte.Descuento1</td>
+                                    <td width="56" style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#CC5C5C; padding-bottom: 8px;" align="right">@Model.DatosImporte.Descuento1Precio</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase; padding-bottom: 8px; padding-right: 16px;" >@Model.DatosImporte.Descuento2</td>
+                                    <td width="56" style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#CC5C5C; padding-bottom: 8px;" align="right">@Model.DatosImporte.Descuento2Precio</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="right"><img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block; margin-top: 16px; margin-bottom: 16px;" /></td>
+                                  </tr>
+                                </table>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-bottom: 8px; padding-right: 16px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase;">Importe total de la reserva</strong></td>
+                                    <td width="56" style="padding-bottom: 8px;" align="right"><strong style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#000028;">@Model.DatosImporte.ImporteTotal</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="right" style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028; padding-top: 16px;">*Impuestos incluidos excepto impuestos pernoctación</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td style="padding-left: 2px; padding-right: 0px; vertical-align: top; width:50%">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">DATOS DE PAGO</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="width: 160px; padding-bottom: 8px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">MODALIDAD</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosPago.Descripcion</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="width: 160px;"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">TARJETA DE CRÉDITO</strong></td>
+                                    <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">@Model.DatosPago.NumeroTarjeta</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br><br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 0px;">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">OBSERVACIONES DE CLIENTE (NO GARANTIZADAS)</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:12px; line-height:20px; color:#000028;">@Model.Observaciones</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br><br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td style="padding-left: 0px; padding-right: 0px;">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td align="left">
+                                      <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px;">CONDICIONES DE RESERVA</h4>
+                                      <img src="../../../src/emails/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                    </td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="font-family: Arial, sans-serif; font-size:12px; line-height:20px; color:#000028;padding-bottom: 8px;">
+                                      @foreach (var Condicion in Model.Condiciones) {
+                                        <strong>@Condicion.Titulo</strong> @Condicion.Descripcion
+                                        <br>
+                                      }
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                          <br>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 24px;">
+                            <tr>
+                              <td width="100%" style="text-align: center;">
+                                <a href="#" target="_blank" style="text-decoration:none;">
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border: .5px solid #000028;">
+                                    <tr>
+                                      <td style="text-align: center; padding-top: 24px; padding-bottom: 19px;" class="deviceWidth">
+                                        <h5 style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;margin-top:0px;margin-bottom:0px;text-transform: uppercase;">¿CÓMO LLEGAR AL HOTEL?</h5>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 24px;">
+                            <tr>
+                              <td width="205" class="deviceWidth first">
+                                <img src="../../../src/emails/thumb-2.jpg" width="100%" border="0" style="width: 100%; display: inline-block;" />
+                              </td>
+                              <td style="padding-left: 16px;vertical-align: top;" class="deviceWidth">
+                                <h5 style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;margin-top:0px;margin-bottom:8px;text-transform: uppercase;">¡Empieza a sumar puntos en tu próxima estancia!</h5>
+                                <p style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;margin-bottom:16px;">Alójate y disfruta de beneficios y atenciones especiales exclusivas para miembros del Club H10... ¡Te lo mereces!</p>
+                                <a href="#" style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff;background-color: #000028;text-decoration: none; font-weight: bold; padding:12px 16px;display: inline-block;">DATE DE ALTA</a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="205" class="deviceWidth first">
+                                <img src="../../../src/emails/thumb-2.jpg" width="100%" border="0" style="width: 100%; display: inline-block;" />
+                              </td>
+                              <td style="padding-left: 16px;vertical-align: top;" class="deviceWidth">
+                                <h5 style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;margin-top:0px;margin-bottom:8px;text-transform: uppercase;">Transfer gratis del aeropuerto al hotel</h5>
+                                <p style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;margin-bottom:16px;">Válido desde 19/05/2022 al 01/06/2022</p>
+                                <a href="#" style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff;background-color: #000028;text-decoration: none; font-weight: bold; padding:12px 16px;display: inline-block;">VER DETALLES</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 20px;">
+                      <tr>
+                        <td width="50%" align="center" class="deviceWidth first">
+                          <h5 style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028;margin-top:0px;margin-bottom:20px;">SÍGUENOS EN REDES SOCIALES</h5>
+                          <a href="https://www.instagram.com/h10hotels/"><img src="../../../src/emails/ico-instagram.png" width="32" height="32" border="0" style="margin-right: 20px;" /></a> <a href="https://www.facebook.com/H10.Hotels"><img src="../../../src/emails/ico-facebook.png" width="32" height="32" border="0" style="margin-right: 20px;" /></a> <a href="#"><img src="../../../src/emails/ico-tiktok.png" width="32" height="32" border="0" style="margin-right: 20px;" /></a> <a href="#"><img src="../../../src/emails/ico-youtube.png" width="32" height="32" border="0" /></a>
+                        </td>
+                        <td width="50%" align="center" class="deviceWidth" style="vertical-align:top">
+                          <h5 style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028;margin-top:0px;margin-bottom:20px;">MÁS INFORMACIÓN Y RESERVAS</h5>
+                          <a href="tel:+34900444466" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="../../../src/emails/ico-telefono.png" width="8" height="8" border="0" style="margin-right: 5px;" /> (+34) 900 444 466</a>
+                          <br>
+                          <a href="mailto:reservas@h10hotels.com" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="../../../src/emails/ico-email.png" width="10" height="8" border="0" style="margin-right: 5px;" /> reservas@h10hotels.com</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center">
+                          <h6 style="font-family: Arial, sans-serif; font-size:11px; line-height:16px; color:#000028;margin-top:26px;margin-bottom:16px;">DATOS PERSONALES</h6>
+                          <p style="font-family: Arial, sans-serif; font-size:10px; line-height:16px; color:#000028;">Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición y/o limitación del tratamiento y portabilidad de los datos dirigiéndote por escrito a H10 HOTELS, C/ Numància, 185- 1ª planta - 08034 Barcelona, o bien por medio de un correo electrónico a la dirección <a href="mailto:dpo@h10hotels.com" title="dpo@h10hotels.com">dpo@h10hotels.com</a>, en ambos casos, con la Referencia "Protección de Datos". Este mensaje contiene información confidencial. Si no eres el destinatario del presente correo electrónico te agradeceremos nos lo hagas saber por este mismo medio y procedas a eliminarlo.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center">
+                    <p style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#000028; background-color: #B6B6B6; padding:8px 24px;">
+                      Si quieres dejar de recibir nuestras comunicaciones, envíanos un e-mail a <a href="mailto:dpo@h10hotels.com" title="dpo@h10hotels.com">dpo@h10hotels.com</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

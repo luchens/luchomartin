@@ -1,0 +1,209 @@
+.c79__ {
+  &container {
+
+
+    margin-top: 70px;
+        
+    @include respond-from(large) {
+          margin-top: 50px;
+    }
+
+
+    .tabla {
+      @include respond-from(large) {
+        display: none;
+      }
+
+      .row {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 26px;
+
+        &.top {
+          .col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70px;
+
+            &:nth-child(1) {
+              width: calc((9% + 5px)*3);
+              align-items: end;
+              justify-content: flex-start;
+            }
+          }
+
+          .btn-link {
+            display: inline-flex;
+            flex-flow: row;
+            gap: 4px;
+            align-items: center;
+
+            span {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 25px;
+              text-decoration: underline;
+              text-transform: uppercase;
+            }
+
+            .icon {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        .col {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 14px;
+          line-height: 18px;
+          width: calc(9% - 17px);
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+            width: calc(9% + 18px);
+          }
+
+          b, strong{
+            font-weight: $medium;
+          }
+
+          img {
+            width: 100%;
+            max-width: 70px;
+          }
+        }
+      }
+    }
+
+    .tabla-mobile {
+      margin-top: 26px;
+
+      @include respond-to(large) {
+        display: none;
+      }
+
+      .select {
+        width: 100%;
+        margin-bottom: 24px;
+
+        label {
+          display: block;
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 12px;
+          line-height: 16px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          cursor: auto;
+        }
+
+        select {
+          appearance: none;
+          background-color: transparent;
+          background-image: url("../src/icons/arrow_big_down.svg");
+          background-position: calc(100% - 8px) center;
+          background-repeat: no-repeat;
+          background-size: 20px;
+          border: 1px solid $color-grey2;
+          padding: 12px 36px 12px 8px;
+          margin: 0;
+          width: 100%;
+          font-family: inherit;
+          font-size: inherit;
+          cursor: inherit;
+          line-height: inherit;
+          outline: none;
+
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+
+          &:not(:focus):invalid {
+            color: $color-grey1;
+            font-style: italic;
+          }
+        }
+      }
+
+      .cols {
+        columns: 4;
+        margin-bottom: 24px;
+
+        .col {
+          text-align: center;
+
+          .texto {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 0px;
+
+            b, strong{
+              display: block;
+              font-weight: $medium;
+            }
+          }
+
+          img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+
+      div {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 24px;
+
+        b, strong{
+          font-weight: $medium;
+        }
+      }
+
+      .btn-link {
+        display: inline-flex;
+        flex-flow: row;
+        gap: 4px;
+        align-items: center;
+        margin-top: 16px;
+
+        span {
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 25px;
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

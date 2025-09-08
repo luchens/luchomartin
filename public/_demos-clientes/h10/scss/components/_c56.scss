@@ -1,0 +1,329 @@
+.c56__ {
+  &container {
+
+    margin-top: 64px;
+    @include respond-to(medium) {
+      margin-top: 55px;
+    }
+
+/*    @include respond-to(extraLarge)
+    {
+      .multiofertas
+      {
+        display: flex;
+        justify-content: space-between;
+  
+        .separador-vertical{
+          width: 1px;
+          background-color: black;
+        }
+  
+      }
+  
+    }*/
+
+    .titulo {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 80px;
+      line-height: 96px;
+      text-align: center;
+      margin-bottom: 24px;
+
+      @include respond-from(medium) {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .texto {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @include respond-from(medium) {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 24px;
+      }
+
+      b, strong{
+        font-weight: $medium;
+      }
+    }
+
+    .contador-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .contador {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        max-width: 650px;
+        height: 170px;
+        border: .5px solid $color-main;
+
+        @include respond-from(medium) {
+          height: 118px;
+        }
+
+        .dias,
+        .horas,
+        .minutos,
+        .segundos {
+          position: relative;
+          width: 100%;
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 66px;
+          line-height: 74px;
+          text-align: center;
+
+          @include respond-from(medium) {
+            font-size: 28px;
+            line-height: 32px;
+          }
+        }
+
+        .dias {
+          @include respond-from(medium) {
+            display: none;
+          }
+
+          &:before {
+            content: ':';
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 66px;
+            line-height: 74px;
+            position: absolute;
+            top: 0px;
+            right: -9px;
+
+            @include respond-from(medium) {
+              font-size: 28px;
+              line-height: 32px;
+              right: -5px;
+            }
+          }
+
+          &:after {
+            display: block;
+            content: attr(data-after);
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .horas {
+          &:before {
+            content: ':';
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 66px;
+            line-height: 74px;
+            position: absolute;
+            top: 0px;
+            right: -9px;
+
+            @include respond-from(medium) {
+              font-size: 28px;
+              line-height: 32px;
+              right: -5px;
+            }
+          }
+
+          &:after {
+            display: block;
+            content: attr(data-after);
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .minutos {
+          &:before {
+            content: ':';
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 66px;
+            line-height: 74px;
+            position: absolute;
+            top: 0px;
+            right: -9px;
+
+            @include respond-from(medium) {
+              font-size: 28px;
+              line-height: 32px;
+              right: -5px;
+            }
+          }
+
+          &:after {
+            display: block;
+            content: attr(data-after);
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .segundos {
+          &:after {
+            display: block;
+            content: attr(data-after);
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .texto-top-holder {
+        position: absolute;
+        margin-top: -16px;
+
+        @include respond-to(medium) {
+          display: none;
+        }
+
+        /*@include respond-from(medium) {
+          display: block;
+        }
+
+        @include respond-from(small) {
+          padding-left: 56px;
+          padding-right: 56px;
+          text-align: center;
+        }
+
+        @include respond-to(medium) {
+          margin-top: 155px;
+          display: none;
+        }*/
+
+        .texto-top {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+          background-color: $color-white;
+          padding: 0px 27px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          /*@include respond-from(small) {
+            font-size: 16px;
+            line-height: 22px;
+          }*/
+        }
+      }
+
+      .texto-bottom-holder {
+        position: absolute;
+//        top: calc(100% - 14px);
+        //margin-top: -14px;
+        margin-top: 102px;
+
+        @include respond-from(medium) {
+          display: block;
+        }
+
+        @include respond-from(medium) {
+          padding-left: 56px;
+          padding-right: 56px;
+          text-align: center;
+//          top: calc(100% - 16px);
+          display: none;
+        }
+
+        @include respond-to(medium) {
+          margin-top: 155px;
+        }
+
+        .texto-bottom {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-grey1;
+          font-size: 18px;
+          line-height: 28px;
+          background-color: $color-white;
+          padding: 0px 8px;
+
+          @include respond-from(medium) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+
+    .texto-posterior
+    {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        max-width: 645px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+        margin-top: 48px;
+
+        @include respond-from(medium) {
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 32px;
+          margin-top: 32px;
+        }
+
+        a{
+          text-decoration: underline;
+          font-weight: $bold;
+          cursor: pointer;
+        }
+
+        b, strong{
+          font-weight: $bold;
+        }
+    }
+
+
+
+  }
+}

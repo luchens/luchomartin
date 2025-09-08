@@ -1,0 +1,520 @@
+.c18__ {
+  &container {
+
+    margin-top: 64px;
+    @include respond-to(medium) {
+      margin-top: 89px;
+    }
+
+    &.fix-top {
+      margin-top: 50px;
+    }
+
+    &.fix-bottom {
+      margin-bottom: 90px;
+    }
+
+    @include respond-from(large) {
+      .container-fix {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    .title, .title2 {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 80px;
+      line-height: 74px;
+      text-align: center;
+      width: 83%;
+      margin: auto;
+      margin-bottom: 48px;
+
+      @include respond-from(large) {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 32px;
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      @include respond-from(medium) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+    }
+
+    .title2 {
+      font-size: 50px;
+      line-height: 64px;
+
+      @include respond-from(medium) {
+        font-size: 50px;
+        line-height: 74px;
+        margin-bottom: 22px;
+      }
+
+      @include respond-from(small) {
+        font-size: 40px;
+        line-height: 54px;
+      }
+
+    }
+
+    .intro {
+      color: $color-main;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      width: 66%;
+      margin: auto;
+      margin-bottom: 48px;
+
+      @include respond-from(large) {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 24px;
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      @include respond-from(medium) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+
+    .restaurantes-destacados {
+      .slick-slider-holder {
+        position: relative;
+
+        @include respond-to(large) {
+          > div {
+            display: flex;
+            gap: 16px;
+
+            > div {
+              width: 100%;
+            }
+          }
+        }
+
+        .slick-slider {
+          position: relative;
+          display: block;
+          box-sizing: border-box;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+          -khtml-user-select: none;
+          -ms-touch-action: pan-y;
+          touch-action: pan-y;
+          -webkit-tap-highlight-color: transparent;
+
+          .slick-prev,
+          .slick-next {
+            position: absolute;
+            top: calc(50% - 5px);
+            width: 21px;
+            height: 38px;
+            cursor: pointer;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include transition(all .2s ease);
+            border:0;
+          }
+
+          .slick-prev {
+            left: -20px;
+            background-image: url('#{$iconspath}arrow-left-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-next {
+            right: -20px;
+            background-image: url('#{$iconspath}arrow-right-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 26px;
+
+            @include respond-from(large) {
+              padding-right: 96px;
+              padding-left: 16px;
+            }
+
+            @include respond-from(medium) {
+              padding-right: 72px!important;
+            }
+
+            &:focus {
+              outline: none;
+            }
+
+            &.draggable {
+              cursor: grab;
+
+              &:active {
+                cursor: grabbing;
+              }
+            }
+          }
+
+          .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:after,
+            &:before {
+              display: table;
+              content: '';
+            }
+
+            &:after {
+              clear: both;
+            }
+          }
+
+          .slick-list,
+          .slick-track {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            display: flex;
+          }
+
+          .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            margin-right: 16px;
+          }
+        }
+
+        .slick-loading {
+          .slick-track {
+            visibility: hidden;
+          }
+        }
+
+        [dir='rtl'] {
+          .slick-slide {
+            float: right;
+          }
+        }
+
+        .slick-slide {
+          &.slick-loading img {
+            display: none;
+          }
+          &.dragging {
+            img {
+              pointer-events: none;
+            }
+          }
+        }
+
+        .slick-initialized {
+          .slick-slide {
+            display: block;
+          }
+        }
+
+        .slick-loading {
+          .slick-slide {
+            visibility: hidden;
+          }
+        }
+
+        .slick-arrow {
+          &.slick-hidden {
+            display: none;
+          }
+        }
+      }
+
+      .restaurante-destacado {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .image {
+          position: relative;
+          width: 100%;
+          height: 280px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include respond-from(small) {
+            height: 200px;
+          }
+
+          .img {
+            position: absolute;
+            left: 16px;
+            top: 0px;
+            width: calc(100% - 32px);
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        .data {
+          background-color: $color-white;
+          box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+          padding: 16px 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: calc(100% - 280px);
+
+
+
+          @include respond-from(small) {
+//            padding-bottom: 100px;
+            height: calc(100% - 195px);
+          }
+
+          .card_body
+          {
+            position: relative;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+
+            &:after {
+              content: '';
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              width: 38px;
+              height: .5px;
+              background-color: $color-main;
+            }
+          }
+
+          .titulo {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+//            min-height: 64px;
+
+            @include respond-from(small) {
+              font-size: 20px;
+              line-height: 26px;
+              min-height: 52px;
+            }
+
+            b, strong{
+              font-weight: $bold;
+            }
+
+            &.titulo-gl{
+              font-weight: $thin;
+              font-family: "Argent CF";
+              color:#A79C67;
+              margin-left: -10px;
+              font-size: 26px;
+            }
+
+          }
+
+          .ratings {
+            position: relative;
+            margin: 0;
+            padding: 2px 2px 0 0;
+            width: 100%;
+            direction: rtl;
+            text-align: left;
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+            margin-right:10px;
+            margin-bottom:8px;
+
+            .star {
+              position: relative;
+              display: inline-block;
+              vertical-align: middle;
+              transition: color .3s ease;
+
+              &:before {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 23px;
+                background-image: url('#{$iconspath}star-o.svg');
+                background-repeat: no-repeat;
+                background-size: 22px;
+                background-position: center center;
+
+                @include respond-from(small) {
+                  width: 16px;
+                  height: 16px;
+                  background-size: 18px;
+                }
+              }
+
+              //&:hover,
+              &.selected,
+              //&:hover ~ .star,
+              &.selected ~ .star {
+                background-image: url('#{$iconspath}star.svg');
+                background-position: center center;
+                transition: color .3s ease;
+              }
+            }
+          }
+
+          .label {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: $color-azul7;
+            border-radius: 48px;
+            padding: 6px 8px 4px;
+            margin-right: 10px;
+            margin-bottom: 8px;
+            margin-top: 3px;
+
+
+            @include respond-from(small) {
+              margin-left: 0px;
+//              margin-top: 8px;
+            }
+
+            @include min-max-width(740px, 1000px){
+              margin-left: 0px;
+//              margin-top: 16px;
+            }
+          }
+
+          .poi {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+            padding-left: 35px;
+
+            background-image: url('#{$iconspath}icono_ubicacion.svg');
+            background-repeat: no-repeat;
+            background-size: 21px;
+            background-position: left center;
+          }
+          .oferta {
+
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 16px;
+            line-height: 22px;
+            padding-top: 8px;
+
+            .prev{
+              text-decoration:line-through;
+            }
+            .price{
+              font-size:20px;
+              font-weight: $bold;
+              color:#000028;
+            }
+
+
+          }
+
+          
+          .btn-ver {
+            /*width: 100%;
+            display: block;
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-white;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: $color-main;
+            margin-top: 30px;
+            @include transition(all .3s ease);*/
+            
+
+            @include button($color-main, $color-white, $color-main);
+            width: 100%;
+            margin-top: 30px;
+          }
+        }
+      }
+
+      &.mas-3
+      {
+        .slick-slider-holder {
+  
+          @include respond-to(large) {
+            > div {
+              flex-wrap: wrap;
+  
+              > div {
+                width: calc(33% - 8px);
+              }
+            }
+
+            .restaurante-destacado{
+              padding-bottom: 50px;}
+
+          }
+
+
+
+        }
+
+      }
+
+
+    }
+  }
+}

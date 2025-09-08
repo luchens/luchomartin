@@ -1,0 +1,309 @@
+.c16__ {
+  &container {
+
+    &.fix-top {
+      margin-top: 50px;
+    }
+
+    &.fix-bottom {
+      margin-bottom: 90px;
+    }
+
+    @include respond-from(large) {
+      .container-fix {
+        padding-right: 0px;
+      }
+    }
+
+    .mas-ofertas-holder {
+      text-align: center;
+      padding-top: 48px;
+
+      @include respond-from(small) {
+        padding-right: 16px;
+      }
+
+      .btn-mas-ofertas {
+        @include button($color-main, $color-white, $color-main);
+
+        @include respond-from(small) {
+          width: 100%;
+        }
+      }
+    }
+
+    .hoteles-ofertas {
+      .slick-slider-holder {
+        position: relative;
+
+        @include respond-to(large) {
+          > div {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+
+            > div {
+              width: 25%;
+            }
+          }
+        }
+
+        .slick-slider {
+          position: relative;
+          display: block;
+          box-sizing: border-box;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+          -khtml-user-select: none;
+          -ms-touch-action: pan-y;
+          touch-action: pan-y;
+          -webkit-tap-highlight-color: transparent;
+
+          .slick-prev,
+          .slick-next {
+            position: absolute;
+            top: calc(50% - 5px);
+            width: 10px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include transition(all .2s ease);
+          }
+
+          .slick-prev {
+            left: -8px;
+            background-image: url('#{$iconspath}arrow-left-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-next {
+            right: -8px;
+            background-image: url('#{$iconspath}arrow-right-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+
+            @include respond-from(large) {
+              padding-right: 96px;
+            }
+
+            @include respond-from(medium) {
+              padding-right: 72px!important;
+            }
+
+            &:focus {
+              outline: none;
+            }
+
+            &.draggable {
+              cursor: grab;
+
+              &:active {
+                cursor: grabbing;
+              }
+            }
+          }
+
+          .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:after,
+            &:before {
+              display: table;
+              content: '';
+            }
+
+            &:after {
+              clear: both;
+            }
+          }
+
+          .slick-list,
+          .slick-track {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            margin-right: 16px;
+          }
+        }
+
+        .slick-loading {
+          .slick-track {
+            visibility: hidden;
+          }
+        }
+
+        [dir='rtl'] {
+          .slick-slide {
+            float: right;
+          }
+        }
+
+        .slick-slide {
+          &.slick-loading img {
+            display: none;
+          }
+          &.dragging {
+            img {
+              pointer-events: none;
+            }
+          }
+        }
+
+        .slick-initialized {
+          .slick-slide {
+            display: block;
+          }
+        }
+
+        .slick-loading {
+          .slick-slide {
+            visibility: hidden;
+          }
+        }
+
+        .slick-arrow {
+          &.slick-hidden {
+            display: none;
+          }
+        }
+      }
+
+      .hotel-oferta {
+        .imagen {
+          position: relative;
+          margin-bottom: 24px;
+
+          .texto {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            min-height: 109px;
+            z-index: 0;
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-white;
+            font-size: 20px;
+            line-height: 26px;
+            background-image: url('#{$iconspath}union-big.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            padding-top: 41px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+
+            @include respond-from(small) {
+              padding-bottom: 32px;
+            }
+
+            b, strong{
+              font-weight: $medium;
+            }
+          }
+
+          .imagen-holder {
+            position: relative;
+            margin-left: 8px;
+            margin-right: 8px;
+            overflow: hidden;
+            z-index: -1;
+
+            .img {
+              /*position: absolute;
+              top: 0px;
+              left: 8px;
+              width: calc(100% - 16px);
+              height: 100%;*/
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+              height: 408px;
+              //z-index: 0;
+              @include transition(all 1s ease);
+
+              @include respond-from(small) {
+                height: 256px;
+              }
+            }
+          }
+
+          /*.img {
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            width: calc(100% - 16px);
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+          }*/
+        }
+
+        &:hover {
+          .imagen {
+            .imagen-holder {
+              .img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+
+        .btn-detalle {
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: underline;
+          padding-right: 45px;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          background-image: url('#{$iconspath}arrow-right.svg');
+          background-repeat: no-repeat;
+          background-size: 30px 9px;
+          background-position: right center;
+
+          @include transition(all .3s ease);
+
+          &:hover {
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}

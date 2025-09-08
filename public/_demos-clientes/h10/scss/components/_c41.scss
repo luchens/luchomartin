@@ -1,0 +1,90 @@
+.card-sticker4 {
+    width: 100%;
+
+    @include respond-to(large) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: $main-font;
+        font-weight: $thin;
+        font-size: 4rem;
+        line-height: $ultra-line;
+        text-align: center;
+
+        
+    }
+
+    &__contenedor {
+        padding: $medium-space $thin-space;
+        width: 100%;
+
+        @include respond-to(large) {
+            width: 50%;
+        }
+
+        &--title {
+            width: 100%;
+            padding-left: $small-space;
+            padding-right: $small-space;
+            margin-bottom: $medium-space;
+        }
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            width: auto;
+
+            &-display {
+                font-weight: $thin;
+                font-size: $h3-size;
+                line-height: $ultra-line;
+                text-align: center;
+            }
+        }
+    }
+
+    &__lista {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $medium-space;
+        margin-top: $medium-space;
+
+        &--items {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        &--content {
+            width: auto;
+        }
+
+        &--text {
+            font-family: $second-font;
+            font-weight: $regular;
+            font-size: $medium-size;
+            line-height: $regular-line;
+            text-align: center;
+        }
+
+        &--text2 {
+            font-family: $second-font;
+            font-weight: $regular;
+            font-size: $h4-size-mobile;
+            line-height: $medium-line;
+            text-align: center;
+        }
+    }
+}

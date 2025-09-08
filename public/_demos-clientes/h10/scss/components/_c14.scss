@@ -1,0 +1,369 @@
+.c14 {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.fix-top {
+      margin-top: 80px;
+    }
+
+    &.fix-bottom {
+      margin-bottom: 0px;
+    }
+
+    .heading-container {
+      .heading {
+        h3 {
+          font-family: $second-font;
+          font-weight: $thin;
+          color: $color-main;
+          font-size: 80px;
+          line-height: 96px;
+          text-align: center;
+          margin-bottom: 24px;
+
+          @include respond-from(medium) {
+            font-size: 48px;
+            line-height: 50px;
+          }
+        }
+
+        p {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          max-width: 645px;
+          margin: auto;
+          margin-bottom: 48px;
+
+          @include respond-from(small) {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          @include respond-from(small) {
+            font-weight: $regular;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .nav-container {
+      margin-bottom: 48px;
+
+      @include respond-from(medium) {
+        padding-left: 16px;
+      }
+
+      @include respond-from(medium) {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+
+        @include respond-from(small) {
+          padding-right: 16px;
+        }
+
+        @include respond-from(medium) {
+          gap: 24px;
+        }
+
+        @media (max-width: 1204px){
+          overflow-x: visible;
+          overflow-y: hidden;
+          padding-bottom: 10px;
+          padding-right: 24px;
+
+          &::-webkit-scrollbar { 
+            height: 0px; 
+//            height: 4px;
+          }
+          &::-webkit-scrollbar-track { background: transparent; }
+          &::-webkit-scrollbar-thumb { background: $color-grey3; &:hover { background: $color-grey3; } }
+        }
+
+        li {
+          white-space: nowrap;
+
+          a {
+            display: block;
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 16px;
+            line-height: 20px;
+            padding-bottom: 15px;
+
+            @include respond-from(small) {
+              font-size: 14px;
+              line-height: 17px;
+              padding-bottom: 8px;
+            }
+
+            &:hover {
+              color: $color-main;
+              font-weight: $bold;
+            }
+
+            &.activeitem {
+              color: $color-main;
+              font-weight: $bold;
+              border-bottom: 1px solid $color-main;
+            }
+          }
+        }
+      }
+    }
+    .contents {
+      position: relative;
+      width: 100%;
+
+      .layer {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        //background-color: yellow;
+        display: none;
+
+        &.show {
+          display: block;
+        }
+
+        &.show-o {
+          &:before {
+            opacity: 1;
+          }
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background-color: $color-white;
+          @include transition(all 1s ease);
+        }
+      }
+
+      .content {
+        display: none;
+
+        &.show {
+          display: flex;
+        }
+
+        .c13_ {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+          gap: 110px;
+
+          @include respond-from(large) {
+            flex-direction: column-reverse;
+            gap: 24px;
+          }
+
+          .col {
+            &:nth-child(1){
+              width: 40%;
+              padding-left: 64px;
+              padding-bottom: 4px;
+
+              @include respond-from(large) {
+                width: 100%;
+                padding-left: 16px;
+                padding-right: 16px;
+              }
+
+              .text {
+                width: 100%;
+
+                h4 {
+                  font-family: $second-font;
+                  font-weight: $thin;
+                  font-size: 50px;
+                  line-height: 60px;
+                  margin-bottom: 16px;
+
+                  @include respond-from(medium) {
+                    font-size: 36px;
+                    line-height: 45px;
+                  }
+                }
+
+                p {
+                  font-family: $main-font;
+                  font-weight: $thinItalic;
+                  font-size: 18px;
+                  line-height: 28px;
+                  margin-bottom: 55px;
+
+                  @include respond-from(large) {
+                    margin-bottom: 32px;
+                  }
+                }
+
+                .main-button {
+                  max-width: 250px;
+
+                  @include respond-from(small) {
+                    width: 100%;
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+
+            &:nth-child(2){
+              width: 60%;
+
+              @include respond-from(large) {
+                width: 100%;
+              }
+
+              .image {
+                position: relative;
+                width: 100%;
+
+                @include respond-from(medium) {
+
+                }
+              }
+            }
+          }
+        }
+
+        .c14_ {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 32px;
+
+          @include respond-from(large) {
+            flex-direction: column-reverse;
+            gap: 24px;
+          }
+
+          .col {
+            &:nth-child(1){
+              width: 35%;
+              padding-left: 64px;
+
+              @include respond-from(large) {
+                width: 100%;
+                padding-left: 16px;
+                padding-right: 16px;
+              }
+
+              .text {
+                width: 100%;
+
+                h4 {
+                  font-family: $second-font;
+                  font-weight: $thin;
+                  font-size: 50px;
+                  line-height: 60px;
+                  margin-bottom: 16px;
+
+                  @include respond-from(medium) {
+                    font-size: 36px;
+                    line-height: 45px;
+                  }
+                }
+
+                p {
+                  font-family: $main-font;
+                  font-weight: $thinItalic;
+                  font-size: 18px;
+                  line-height: 28px;
+                  margin-bottom: 55px;
+
+                  @include respond-from(large) {
+                    margin-bottom: 32px;
+                  }
+                }
+
+                .main-button {
+                  max-width: 250px;
+
+                  @include respond-from(small) {
+                    width: 100%;
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+
+            &:nth-child(2){
+              width: 65%;
+
+              @include respond-from(large) {
+                width: 100%;
+              }
+
+              .image-holder {
+                position: relative;
+                text-align: right;
+
+                .image-left {
+                  position: absolute;
+                  top: 70px;
+                  left: 0;
+                  width: 100%;
+                  max-width: 60%;
+                  z-index: 0;
+
+                  @include respond-from(large) {
+                    position: relative;
+                    max-width: 100%;
+                    max-height: 300px;
+                    object-fit: cover;
+                    object-position: top;
+                    top: 0px;
+                  }
+                }
+
+                .image-right {
+                  width: 100%;
+                  max-width: 60%;
+                  right: 0px;
+
+                  @include respond-from(large) {
+                    display: none;
+                    /*max-width: 100%;
+                    max-height: 300px;
+                    object-fit: cover;
+                    object-position: top;*/
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

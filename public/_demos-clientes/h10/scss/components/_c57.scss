@@ -1,0 +1,116 @@
+.c57__ {
+  &container {
+    margin-top: 64px;
+    @include respond-to(medium) {
+      margin-top: 89px;
+    }
+
+    &.full-width {
+      margin-top: 56px;
+      margin-bottom: 72px;
+    }
+
+    .titulo-top {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 50px;
+      line-height: 74px;
+      margin-bottom: 0;
+      text-align: center;
+      margin-bottom: 32px;
+      @include respond-from(small) {
+        font-size: 36px;
+        line-height: 45px;
+      }
+    }
+
+    .faqs {
+      .faq {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 0.5px solid $color-grey2;
+        cursor: pointer;
+        user-select: none;
+
+        &.no-content {
+          .titulo {
+            &:after {
+              background-image: none;
+            }
+          }
+        }
+
+        &.show {
+          padding-bottom: 48px;
+
+          .titulo {
+            font-weight: $medium;
+
+            &:after {
+              background-image: url("#{$iconspath}arrow-up.svg");
+            }
+          }
+
+          .texto {
+            display: block;
+          }
+        }
+
+        .titulo {
+          position: relative;
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 28px;
+          padding-right: 32px;
+
+          strong {
+            font-weight: $medium;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 5px);
+            right: 0;
+            width: 19px;
+            height: 10px;
+            background-image: url("#{$iconspath}arrow-down.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include transition(all 0.3s ease);
+          }
+          @include respond-from(small) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+
+        .texto {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+          padding-right: 50px;
+          padding-top: 16px;
+          padding-left: 24px;
+          display: none;
+
+          strong {
+            font-weight: $medium;
+          }
+
+          @include respond-from(small) {
+            font-size: 12px;
+            line-height: 16px;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}

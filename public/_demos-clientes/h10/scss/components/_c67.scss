@@ -1,0 +1,136 @@
+.c67__ {
+  &container {
+
+    margin-top: 69px;
+//    min-height: 445px;
+
+    @include respond-from(large) {
+      margin-top: 32px;
+    }
+
+    .col {
+      display: flex;
+      flex-flow: row;
+      gap: 16px;
+      margin-bottom: 30px;
+
+      @include respond-from(large) {
+        display: block;
+        margin-bottom: 56px;
+        //display: flex;
+        //flex-flow: column-reverse;
+      }
+
+      .col-left {
+        flex: 0 0 50%;
+      }
+
+      .col-right {
+//        flex: 0 0 50%;
+      }
+
+      .image-holder {
+        position: relative;
+
+        @include respond-from(large) {
+          margin-left: -16px;
+          margin-right: -16px;
+        }
+
+        .image {
+          width: 100%;
+          height: 360px;
+          object-fit: cover;
+          object-position: center center;
+
+          @include respond-from(large) {
+            height: 256px;
+          }
+        }
+      }
+
+      .title {
+        position: relative;
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 38px;
+
+        &:after {
+          content: '';
+          display: block;
+          width: 38px;
+          height: .5px;
+          background-color: $color-main;
+          margin-top: 24px;
+          margin-bottom: 24px;
+        }
+
+        @include respond-from(large) {
+          font-size: 28px;
+          line-height: 32px;
+          margin-top: 16px;
+        }
+      }
+
+
+    }
+   
+    &.tabs
+    {
+        margin-top: 0px;  
+        min-height: 0px;
+        margin-bottom: 48px;  
+ 
+        .col {
+          gap: 55px;
+          margin-bottom: 0px;
+
+          @include respond-from(large) {
+            margin-bottom: 0px;
+          }
+
+          .image-holder {
+    
+            @include respond-from(large) {
+              margin-left: 0px;
+              margin-right: 0px;
+            }
+
+            .image {
+              height: 378px;
+            }
+  
+          }
+
+          .title {
+            position: relative;
+            font-family: $second-font;
+            font-weight: $thin;
+            color: $color-main;
+            font-size: 50px;
+            line-height: 64px;
+            margin-bottom: 16px;
+            margin-top: -18px;
+    
+            &:after {
+              content: none;
+            }
+    
+            @include respond-from(large) {
+              font-size: 36px;
+              line-height: 45px;
+              margin-top: 16px;
+            }
+          }
+
+
+        } 
+    } 
+  
+
+  }  
+
+}

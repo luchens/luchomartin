@@ -1,0 +1,119 @@
+
+/**
+ * FOR DEMO PURPOSES ONLY - MANY FEATURES REMOVED.
+ *
+ * Ultimate Media Background CSS Document - DEMO ONLY (Missing Many Features)
+ * For: UMBG jQuery Plugin v1.1.1 DEMO
+ *      http://codecanyon.net/user/theefarmer?ref=theefarmer
+ *      http://theefarmer.com
+ *
+ * Author: TheeFarmer | Alendee Internet Solutions
+ * Copyright: (c) 2015 Alendee Internet Solutions
+ *
+http://www.theefarmer.com/demo/umbg/jquery/
+ **/
+
+@import "../css/font-awesome.min.css";
+
+#umbg,
+.umbg {
+    max-height:none;
+    max-width:none;
+    position:fixed;
+    z-index:-100;
+}
+
+.umbg-mobile-poster {
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    left:50%;
+    min-height:100%!important;
+    min-width:100%!important;
+    max-width:none!important;
+    position:fixed;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:-95;
+}
+
+.umbg-player-controls {
+    border-radius:3px;
+    color:#fff;
+    font-size:1.325rem;
+    line-height:1rem;
+    padding:5px 5px 3px;
+    position:fixed;
+    text-shadow:0 1px 0 rgba(0,0,0,.75);
+    z-index:9999;
+}
+
+.umbg-br {
+    bottom:.5rem;
+    right:.5rem;
+}
+
+.umbg-bl {
+    bottom:.5rem;
+    left:.5rem;
+}
+
+.umbg-tr {
+    right:.5rem;
+    top:.5rem;
+}
+
+.umbg-tl {
+    left:.5rem;
+    top:.5rem;
+}
+
+.umbg-page-up-down,
+.umbg-play-button,
+.umbg-volume-button {
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    margin:2px;
+    padding:0;
+    text-align:center;
+    width:19px;
+}
+
+.umbg-page-up-down:hover,
+.umbg-play-button:hover,
+.umbg-volume-button:hover {
+    color:#fff;
+}
+
+.umbg-volume-button {
+    margin-left:3px;
+    text-align:left;
+}
+
+.umbg-overlay {
+    left:0;
+    min-height:100%;
+    min-width:100%;
+    position:fixed;
+    top:0;
+    z-index:-90;
+}
+
+.umbg-overlay-transparent{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAADElEQVQImWNgoBMAAABpAAFEI8ARAAAAAElFTkSuQmCC);
+}
+
+/*.umbg-overlay-square-grid{background-image:linear-gradient(rgba(95,95,95,.125) 2px,transparent 2px),linear-gradient(90deg,rgba(95,95,95,.125) 2px,transparent 2px);background-repeat:repeat;background-size:8px 8px,8px 8px}*/
+
+.umbg-overlay-square-grid {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(253,237,0,.3), rgba(253,237,0,.3) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(253,237,0,.3), rgba(253,237,0,.3) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(253,237,0,.3), rgba(253,237,0,.3) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(253,237,0,.3), rgba(253,237,0,.3) 1px, transparent 1px, transparent 100%);
+    
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+}

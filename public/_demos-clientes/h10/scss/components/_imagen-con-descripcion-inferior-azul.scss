@@ -1,0 +1,133 @@
+.trapecio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__imagen {
+        max-width: 30rem;
+
+        @include respond-to(large) {
+            max-width: 40rem;
+        }
+    }
+
+    &__svg {
+        position: absolute;
+        top: -11.2rem;
+
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+
+    &__svg-big {
+        position: absolute;
+        top: -11.2rem;
+        display: none;
+
+        @include respond-to(large) {
+            display: block;
+        }
+    }
+
+    &__contenedor {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            width: 100%;
+            padding-bottom: $medium-space;
+        }
+
+        &--lista {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--svg {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+    }
+    
+    &__title {
+        font-family: $main-font;
+        font-weight: $thin;
+        font-size: $h3-size;
+        line-height: $ultra-line;
+        text-align: center;
+    }
+
+    &__contenido {
+        z-index: 10;
+        margin-top: -7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: $thin-space;
+        height: 17.5rem;
+        padding-bottom: $medium-space;
+
+        @include respond-to(large) {
+            gap: $medium-space;
+            height: 15.5rem;
+            padding-bottom: $thin-space;
+        }
+
+        &--texto {
+            width: auto;
+        }
+    }
+
+    &__text {
+        font-size: $second-font;
+        font-weight: $regular;
+        font-size: $subtitle02-size-mobile;
+        line-height: $high-line;
+        color: white;
+        width: 32rem;
+        padding-left: $thin-space;
+        padding-right: $thin-space;
+
+        @include respond-to(large) {
+            width: 43rem;
+            font-size: $subtitle02-size-mobile;
+            line-height: $regular-line;
+        }
+    }
+
+    &__text2 {
+        font-size: $second-font;
+        font-weight: $regular;
+        font-size: $subtitle03-size-mobile;
+        line-height: $medium-line;
+        color: white;
+        width: 32rem;
+        padding-left: $thin-space;
+        padding-right: $thin-space;
+
+        @include respond-to(large) {
+            width: 43rem;
+            font-size: $medium-size;
+            line-height: $regular-line;
+        }
+    }
+
+    &__linea-separadora {
+        opacity: 1!important;
+        height: 0.5px;
+        width: 5.6rem;
+        background-color: $color-grey2;
+        border: 0px;
+        margin-left: $thin-space;
+    }
+}

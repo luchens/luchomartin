@@ -1,0 +1,404 @@
+/*---------------------------------------------------------------------------------
+ Responsive style
+-------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+    /* .workYear {
+        width:140px;
+        height:140px;
+        padding-top:50px;
+    }
+    .education .workYear {
+        padding-top:58px;
+    } */
+}
+
+ @media screen and (max-width: 991px) {
+    .navbar.navbar-inverse.navbar-static-top a {
+        padding-left:18px;
+        padding-right:18px;
+    }
+    /*.bannerText {
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .bannerText h1 {
+        font-size:65px;
+        line-height:71px;
+    }
+    .bannerText h2 {
+        font-size:28px;
+    }*/
+    .proPic {
+        text-align:center;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    /* body {
+        min-height:700px;
+    } */
+    #header h3 {
+        font-size: 38px;
+    }
+    #header h3 span {
+        font-size: 16px;
+    }
+    .abc {
+        width:100%;
+    }
+    .navbar.navbar-inverse.navbar-static-top a {
+        padding-left: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .conForm .input.col-sm-6 {
+        width: 47%;
+    }
+    .conForm .input.col-lg-6 {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+    .navbar.navbar-inverse.navbar-static-top a {
+        padding: 15px 25px;
+    }
+
+    .navbar-wrapper .container,
+    .navwrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    ul.trabajosContainer li.col-xs-6 {
+        width:49%;
+        min-height: 85px;
+    }
+    .conForm .textarea {
+        width: 100%;
+    }
+    .conForm .btn-submit {
+        margin: 0;
+    }
+    .navbar-wrapper {
+        height: auto;
+        border-top: none;
+        /*background: rgba(8, 45, 64, 1);
+        border-bottom: 1px solid rgba(32, 152, 209, 0.12);
+        -webkit-box-shadow: 0px 10px 35px 0px rgba(31, 152, 209, .2);
+        box-shadow: 0px 10px 35px 0px rgba(31, 152, 209, .2);*/
+        /*background: transparent;*/
+        border-bottom: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navbar-logo-sub-holder .navbar-logo-sub {
+        top: 43px;
+        left: 86px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-header {
+        display:block;
+    }
+    .workYear {
+        margin:0 auto;
+    }
+    .workDetails .rightArea {
+        border-left:none;
+    }
+    .arrowpart {
+        float:none;
+        width:100%;
+        height:14px;
+        background:url(../images/arrow-top.png) no-repeat 50% 100%;
+    }
+    .workDetails .rightArea:hover .arrowpart {
+        background: url("../images/arrow-top-w.png") no-repeat 50% 100%;
+    }
+    .exCon {
+        margin-left:0px;
+    }
+    ul.navbar-nav li a {
+        display:block;
+    }
+
+    .workDetails .logo {
+        display:block;
+        max-width: 50px;
+        top: -30px;
+        border: 2px solid rgb(32, 152, 209);
+        border-radius: 50%;
+        right: 104px;
+    }
+    .workDetails .holder-workYear {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        margin-left: -30px;
+    }
+    .workDetails .workYear {
+        font-size: 12px;
+        line-height: 8px;
+    }
+    .workDetails .rightArea {
+        margin-top: 80px;
+        position: relative;
+    }
+    .workDetails .arrowpart {
+        position: absolute;
+        width: 26px;
+        left: 50%;
+        top: 6px;
+        margin-left: -13px;
+    }
+
+    .habilidades .skillsArea:before {
+        display: none;
+    }
+
+    /*.habilidades .skillsArea:before {
+        width: calc(50% - 24%);
+        right: -13%;
+    }*/
+
+    .texto-inicio {
+        width: 59%;
+        left: 25%;
+        margin-left: -5.5%;
+    }
+}
+
+ @media screen and (max-width: 650px) {
+    #home {
+        top: 200px !important;
+    }
+    .upbox {
+        transform: translate(0px, -70px);
+        -ms-transform: translate(0px, -70px); /* IE 9 */
+        -webkit-transform: translate(0px, -70px); /* Safari and Chrome */
+    }
+    /*.bannerText {
+        top: 25%;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+    .bannerText h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .bannerText h2 {
+        font-size: 18px;
+        line-height:24px;
+    }*/
+}
+
+/*@media (max-width: 479px){
+    .home .bannerText {
+        margin-top: -190px;
+    }
+}*/
+
+@media screen and (max-width: 480px) {
+    /* .navbar.navbar-inverse.navbar-static-top a {
+        line-height: 17px;
+        padding-top:11px;
+        padding-bottom:11px;
+    } */
+     #home {
+         top: 90px !important;
+     }
+    .home .bannerText {
+        margin-top: -140px;
+    }
+    .home .logo {
+        background: url("../images/logo-small.png") no-repeat center center;
+    }
+    .home .logo-base {
+        width: 220px;
+        height: 220px;
+        background: url("../images/logo-base-small.png") no-repeat;
+        background-size: cover;
+    }
+    .spHeight {
+        padding-top:0;
+        padding-bottom: 0;
+    }
+    .home.spHeight .bannerText {
+        margin-top: -140px;
+    }
+
+    .habilidades .skillsArea {
+        float: none!important;
+    }
+
+    .heading {
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .heading h2 {
+        margin-bottom: 0;
+    }
+
+    .sobremi .container p {
+        font-size: 16px;
+    }
+
+    .sobremi .btn-cv span.t {
+        display: none;
+    }
+
+    .sobremi .bg {
+        top: 153px;
+        height: calc(100% - 153px);
+    }
+
+    .navbar-collapse {
+        box-shadow: none;
+    }
+
+    .proPic {
+        display: none;
+    }
+
+    .workDetails .arrowpart {
+        top: 6px;
+    }
+
+    .conForm .form-group {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .conForm .form-group.form-general-error-container {
+        margin-bottom: 0;
+    }
+
+    .contactoDetails .container {
+        padding-right: 0;
+        padding-top: 5px;
+    }
+
+    .conForm {
+        padding-top: 20px;
+    }
+
+    .conForm .textarea {
+        margin-bottom: 0;
+    }
+
+    .exCon .col-md-12 {
+        padding-left: 0;
+    }
+
+    .exCon {
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+
+    section > .container-fluid > .container {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .sobremi .btn-cv {
+        margin-bottom: 0;
+    }
+
+    .workDetails .rightArea:hover .arrowpart {
+        margin-top: -20px;
+    }
+
+    .mapArea {
+        display: none;
+    }
+
+    .conForm .alert {
+        width: 100%;
+    }
+
+    .texto-inicio {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        bottom: 20px;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 0;
+
+        .sub {
+            font-size: 11px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #loopedSlider,
+    #newsSlider {
+        min-height: 650px;
+        height: 100%;
+    }
+    ul.slides {
+        min-height: 600px;
+        height: 100%;
+    }
+    .item {
+        width: 19%;
+    }
+    .item p {
+        font-size: 36px;
+    }
+    .aboutme img {
+        width:100%;
+    }
+    ul.trabajosContainer li.col-xs-6 {
+        width:100%;
+    }
+
+    /* .btn-cv {
+        font-size: 13px;
+        padding: 16px 14px;
+    } */
+    .conForm textarea {
+        margin-bottom:20px;
+    }
+    .textGroup {
+        display:block;
+        padding:0 0 40px 0;
+    }
+    .nameError,
+    .emailError {
+        left:0px;
+        top:0px;
+    }
+}
+
+/*@media (max-width: 767px){
+    .habilidades .skillsArea:before {
+        display: none;
+    }
+    .habilidades .skillsArea:before {
+        width: calc(50% - 24%);
+        right: -13%;
+    }
+}*/
+
+/*@media (max-width: 479px){
+    .habilidades .skillsArea {
+        float: none!important;
+    }
+}*/

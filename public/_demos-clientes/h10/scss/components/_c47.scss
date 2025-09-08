@@ -1,0 +1,134 @@
+.c47__ {
+  &container {
+
+    .titulo {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+
+      @include respond-from(medium) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .table {
+      width: 100%;
+      //overflow-x: auto;
+      //overflow-y: hidden;
+      padding-bottom: 24px;
+
+      table {
+        width: 100%;
+        //min-width: 1024px;
+        min-width: 100%;
+
+        @include respond-from(small) {
+          min-width: 100%;
+        }
+
+        tr {
+          @include respond-from(small) {
+            position: relative;
+          }
+
+          th {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 0px 24px 0px 0px;
+            margin-bottom: 32px;
+          }
+        }
+
+        tr {
+          td {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: left;
+            padding: 24px 24px 24px 0px;
+            border-bottom: .5px solid $color-grey2;
+            vertical-align: top;
+
+            @include respond-from(small) {
+              line-height: 20px;
+            }
+
+            h3 {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 20px;
+              line-height: 26px;
+              margin-top: 0px;
+              margin-bottom: 16px;
+
+              @include respond-from(small) {
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 8px;
+                white-space: nowrap;
+                background-color: $color-white;
+                overflow: hidden;
+
+                position: absolute;
+                top: 16px;
+                left: 0px;
+                width: 100%;
+                z-index: 1;
+                display: block;
+
+              }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2){
+              padding-top: 54px;
+            }
+
+            &:nth-child(1){
+              min-width: 20%;
+            }
+
+            &:nth-child(2){
+              min-width: 20%;
+            }
+
+            &:nth-child(3){
+              min-width: 60%;
+              padding-right: 32px;
+            }
+
+            @include respond-from(small) {
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(3){
+                min-width: 50%;
+                padding-right: 0px;
+                width: 50%;
+              }
+            }
+
+            b, strong {
+              font-weight: $medium;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,784 @@
+// C1
+//header
+
+.topbar-desplegable__mobile-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 23px;
+  background-color: hsla(0, 0%, 100%, 1);
+  width: 100%;
+  box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 0 0;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  @include respond-to(medium) {
+    width: 100%;
+  }
+  @include respond-to(large) {
+    display: none;
+  }
+}
+
+.topbar-desplegable__mobile-tlf {
+  @include respond-to(large) {
+    display: none;
+  }
+}
+// login
+
+.topbar-desplegable {
+  &__login-container {
+    right: 0px!important;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-style: normal;
+    font-weight: 325;
+    font-size: 14px;
+    line-height: 18px;
+    gap: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    @include respond-to(large) {
+      padding: 24px 43px!important;
+      width: 427px;
+    }
+  }
+
+  &__logueado-container {
+    right: 0px!important;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    font-style: normal;
+    font-weight: 325;
+    font-size: 14px;
+    line-height: 18px;
+    gap: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    @include respond-to(large) {
+      padding: 24px 24px;
+      width: 427px;
+    }
+
+    .close{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 17px;
+      height: 17px;
+      background-image: url(../src/icons/X.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .title {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+
+      + .bts-holder {
+        margin-top: 40px;
+      }
+    }
+
+    .text {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 40px;
+    }
+
+    .bts-holder {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      .btn-cerrar {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main!important;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: underline;
+      }
+
+      .btn-confirmar {
+        @include button($color-main, $color-white, $color-main);
+      }
+    }
+  }
+
+  &__tlf-container {
+    text-align: left;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    @include respond-to(large) {
+      width: 297px;
+    }
+  }
+
+  &__tlf-text {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+
+    .topbar-tlf__icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+
+    .text {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__tlf-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    .topbar-desplegable__tlf__list-item {
+      margin: 8px;
+    }
+  }
+
+  &__tlf__list-item {
+    font-family: $main-font!important;
+    font-weight: $regular!important;
+    color: $color-main!important;
+    font-size: 14px!important;
+    line-height: 18px!important;
+
+    b, strong{
+      font-weight: $medium!important;
+    }
+  }
+
+  &__login-titles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include respond-to(large) {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-grey1;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0;
+      text-align: center;
+
+      a{
+        color: $color-grey1 !important;
+      }
+  
+
+    }
+
+    .topbar-desplegable__activeitem {
+      font-weight: $bold;
+      color: $color-main;
+      position: relative;
+
+      a{
+        color: $color-main !important;
+      }
+  
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0px;
+        bottom: -8px;
+        background-color: $color-main;
+      }
+    }
+
+
+  }
+
+
+  &__reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+
+    .topbar-desplegable__link {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main!important;
+      font-size: 14px;
+      line-height: 25px;
+      text-decoration: underline;
+    }
+
+    &-button {
+      margin-left: 0.6rem;
+    }
+  }
+
+  &__right {
+    margin-top: 50px;
+    @include respond-to(large) {
+      margin: 0;
+      display: flex;
+      gap: 16px;
+    }
+
+    .topbar-desplegable__check-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+      width: 50%;
+
+      .main-button {
+        width: 100%;
+        height: 80px;
+
+        img {
+          width: 16px;
+          margin-bottom: -3px;
+        }
+
+        @include respond-to(large) {
+          height: 40px;
+        }
+      }
+
+      .text {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+      }
+
+      @include respond-to(large) {
+        gap: 56px;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__login-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 28px;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .main-button {
+      width: min-content;
+    }
+  }
+
+  &__login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 325;
+    font-size: 12px;
+    line-height: 16px;
+
+    input {
+      @include input();
+    }
+  }
+
+  &__login-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+    }
+
+    input {
+      &.i-usuario {
+        @include input(person_);
+        &::placeholder {
+          font-weight: $regularItalic;
+        }
+      }
+    }
+
+    input {
+      &.i-contrasena {
+        @include input(lock);
+        &::placeholder {
+          font-weight: $regularItalic;
+        }
+      }
+    }
+
+    .i-contrasena-error {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-rojo;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: left;
+      }
+
+  }
+
+  &__login-checkbox {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+
+    .checkbox-recuerdame {
+      position: relative;
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 12px;
+      line-height: 14px;
+      padding-left: 22px;
+      cursor: pointer;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+
+        &:checked {
+          ~ .checkmark {
+            background-color: $color-main;
+
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14px;
+        width: 14px;
+        border: .5px solid $color-main;
+        background-color: $color-white;
+
+        &:after {
+          display: none;
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 1px;
+          width: 2px;
+          height: 8px;
+          border: solid $color-white;
+          border-width: 0 1.5px 1.5px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main!important;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: underline;
+      text-align: left;
+    }
+  }
+
+  &__container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+
+    a {
+      font-family: $main-font;
+      font-weight: $bold;
+      color: $color-main!important;
+      font-size: 14px;
+      line-height: 18px;
+      text-decoration: underline;
+    }
+
+    b, strong{
+      font-family: $main-font;
+      font-weight: $bold;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    p {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__container4 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    text-align: center;
+
+    a {
+      font-family: $main-font;
+      font-weight: $bold;
+      color: $color-main!important;
+      font-size: 14px;
+      line-height: 18px;
+      text-decoration: underline;
+    }
+
+    b, strong{
+      font-family: $main-font;
+      font-weight: $bold;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    p {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__bottom-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+    @include respond-to(large) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+}
+// acceso agencias
+.topbar-desplegable__container4 {
+  @include respond-to(large) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .topbar-desplegable__registrate {
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+}
+// reservas
+.topbar-desplegable {
+  &__reservas-container {
+    padding: 16px 24px;
+    border-radius: 2px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+
+    @include respond-to(large) {
+      line-height: $medium-line;
+      font-size: $subtitle03-size-mobile;
+      width: 934px;
+      //height: 313px;
+      background-color: white;
+
+      a,
+      a:visited {
+        color: black;
+      }
+    }
+  }
+
+  &__hr {
+    display: none;
+    @include respond-to(large) {
+      display: unset;
+      border: 0.5px solid hsla(0, 0%, 71%, 1);
+      margin: 0 16px;
+      padding: 0;
+      height: 132px;
+      margin-top: 24px;
+    }
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-weight: $medium;
+    color: $color-main;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &__content {
+    @include respond-to(large) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  // right
+  &__form-container {
+    .main-button {
+      @include respond-to(large) {
+        width: min-content;
+      }
+    }
+
+    .input-main {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__form {
+    font-weight: 325;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    label {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+    }
+
+    @include respond-to(large) {
+      margin-bottom: 32px;
+      width: 403px;
+    }
+
+    input {
+      @include input();
+      &::placeholder {
+        font-weight: $regularItalic;
+      }
+    }
+
+    .topbar-desplegable__localizador {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+      align-items: center;
+
+      ._localizador {
+        width: 97px;
+        background-position: calc(100% - 5px) center;
+      }
+
+      ._codigo-localizador {
+        width: 100%;
+        background-position: calc(100% - 5px) center;
+      }
+
+      span {
+        font-family: $main-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__title {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+
+  .topbar-desplegable__mobile-tlf {
+    //styleName: Body02 (16-22)/Medium;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    gap: 24px;
+
+    .topbar-desplegable__mobile-hr {
+      border: 0.5px solid hsla(0, 0%, 71%, 1);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    @include respond-to(large) {
+      display: none;
+    }
+  }
+
+  // descuentos
+  .topbar-desplegable {
+    &__descuentos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 325;
+      line-height: 18px;
+      letter-spacing: 0;
+      text-align: left;
+      border-radius: 2px;
+      padding: 16px 24px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+      width: 427px;
+      height: 212px;
+
+      .topbar-desplegable__title {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        background-color: $color-white;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+
+        a,
+        a:visited {
+          color: black !important;
+        }
+      }
+      @include respond-to(large) {
+        width: 297px;
+      }
+
+      .topbar-desplegable__p {
+        margin-top: 8px;
+      }
+
+      .bottom-buttons {
+        .close {
+          text-decoration: underline;
+          background-color: $color-white;
+          border: none;
+          font-weight: 350;
+          font-size: 16px;
+          line-height: 25px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  &__idioma-list {
+    padding: 16px 24px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      margin-bottom: 16px;
+
+      a {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 18px;
+
+        &.activeitem {
+          font-weight: $medium!important;
+        }
+
+        &:hover {
+          font-weight: $medium!important;
+        }
+      }
+
+      @include respond-to(large) {
+        margin-bottom: 8px;
+      }
+    }
+    @include respond-to(large) {
+      width: 120px;
+      //height: 206px;
+      text-transform: lowercase;
+    }
+  }
+}

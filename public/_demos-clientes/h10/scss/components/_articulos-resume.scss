@@ -1,0 +1,182 @@
+.articulo-resume {
+  font-size: 16px;
+  font-weight: 325;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include respond-to(medium) {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-direction: row;
+  }
+
+  &__image {
+    width: auto;
+    height: 104px;
+    @include respond-to(medium) {
+      width: 206px;
+      height: 112px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include respond-to(medium) {
+      gap: 16px;
+    }
+  }
+
+  hr {
+    border-top: 0.5px solid #000028;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    order: 1;
+    margin-bottom: 48px;
+    @include respond-to(medium) {
+      display: none;
+    }
+    @include respond-to(large) {
+      display: unset;
+      order: 0;
+      margin-bottom: 0;
+      width: 600px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 536px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &__p {
+    @include respond-to(medium) {
+      width: 535px;
+    }
+  }
+
+  &__ver {
+    text-decoration: underline;
+
+    .arrow-right {
+      margin-left: 9px;
+      width: 36px;
+    }
+  }
+}
+// c4-01
+.articulo-resume04 {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  // margin-bottom: 28px;
+  // @include respond-to(medium) {
+  //     margin-bottom: 0;
+  // }
+  &__image {
+    width: 162px;
+    height: 102px;
+    flex: 0 0 162px;
+    object-fit: cover;
+    display: none;
+    @include respond-to(large) {
+      display: unset;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include respond-to(large) {
+      gap: 8px;
+      width: 100%;
+    }
+  }
+
+  hr {
+    border-top: 0.5px solid #000028;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    order: 1;
+    margin-bottom: 48px;
+    @include respond-to(large) {
+      order: 0;
+      margin-bottom: 0;
+      width: 600px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__p {
+    display: none;
+    width: 100%;
+    font-weight: $regular;
+    @include respond-to(large) {
+      display: unset;
+    }
+
+    &:hover {
+      font-weight: $medium;
+    }
+
+    b, strong{
+      font-weight: $medium;
+    }
+
+  }
+
+  &__ver {
+    text-decoration: underline;
+
+    .arrow-right {
+      margin-left: 9px;
+      width: 36px;
+    }
+  }
+}
+
+.articulo-resume__ver04 {
+  width: 100%;
+  font-family: $main-font;
+  color: $color-main!important;
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  text-align: right;
+  display: none;
+
+  .arrow-right {
+    width: 36px;
+    @include transition(all .3s ease);
+  }
+
+  &:hover {
+    .arrow-right {
+      margin-left: 21px;
+      margin-right: -5px;
+    }
+  }
+
+  @include respond-to(large) {
+    display: inline-block;
+  }
+}

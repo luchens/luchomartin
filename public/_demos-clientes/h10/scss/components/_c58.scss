@@ -1,0 +1,215 @@
+.c58__ {
+  &container {
+    margin-top: 48px;
+
+    @include respond-from(large) {
+      margin-top: 16px;
+
+      &.extra-top {
+        margin-top: 48px;
+      }
+    }
+
+    &.ficha-galeria {
+      @include respond-from(large) {
+        margin-top: 82px;
+      }
+    }
+
+    &.club-h10 {
+      margin-top: 72px;
+      margin-bottom: 40px;
+
+      @include respond-from(large) {
+        margin-bottom: 24px;
+      }
+
+      .holder {
+        padding: 24px 48px 24px 16px;
+
+        @include respond-from(large) {
+          padding: 16px 16px 20px 16px;
+        }
+
+        @include respond-from(large) {
+          display: block;
+
+          .btn-ver-ficha {
+            float: none;
+            width: 100%;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+
+    &.fix_top {
+      margin-top: 88px;
+    }
+
+    &.modal {
+      margin-top: 0;
+      width: 100%;
+    }
+    &.modal_button {
+      margin-top: 0;
+      width: 100%;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .holder {
+      /*      display: flex;*/
+      gap: 34px;
+      background-color: $color-celeste;
+      border-radius: 2px;
+      padding: 21px 16px 16px 34px;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &.bg-green {
+        background-color: $color-green3;
+      }
+
+      @include respond-from(large) {
+        padding: 18px 16px 16px 17px;
+        gap: 25px;
+        align-items: start;
+      }
+
+      @include respond-from(small) {
+        flex-direction: column;
+      }
+
+      .icon {
+        img {
+          width: 43px;
+          height: 70px;
+          @include respond-from(large) {
+            width: 40px;
+            height: auto;
+          }
+        }
+      }
+
+      .data-set {
+        display: inline-flex;
+        gap: 16px;
+        align-items: center;
+        margin-top: 0;
+        
+        img{
+          width: 72px;
+          height: 72px;
+        }
+
+      }
+
+      .info_ico img {
+        width: 19px;
+        height: 19px;
+      }
+
+      .info_logo img {
+        width: 79px;
+        height: 79px;
+        display: block;
+      }
+
+      .data {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        .title {
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 28px;
+          margin-top: -7px;
+          text-transform: uppercase;
+
+          @include respond-from(large) {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: -4px;
+          }
+        }
+
+        .text {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 8px;
+
+          @include respond-from(large) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          b,
+          strong {
+            font-weight: $medium;
+            text-decoration: underline;
+          }
+
+          a {
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+      }
+
+      &.narrow {
+        gap: 16px;
+        padding: 21px 16px 16px;
+        margin-bottom: 56px;
+        @include respond-from(large) {
+          margin-bottom: 20px;
+        }
+
+        .data {
+          max-width: 245px;
+
+          &.wide {
+            max-width: 355px;
+            @include respond-from(large) {
+              max-width: 655px;
+            }
+          }
+        }
+      }
+    }
+
+    &.align-top {
+      .holder {
+        align-items: start;
+      }
+    }
+
+    .btn-ver-ficha {
+      float: right;
+      @include button($color-main, $color-white, $color-main);
+      // min-width: 245px;
+    }
+  }
+}
+
+.ficha-hotel {
+  &.on-scroll-down,
+  &.on-scroll-up {
+    .c58__container {
+      @include respond-from(large) {
+        margin-top: 40px !important;
+      }
+      @include respond-from(medium) {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}

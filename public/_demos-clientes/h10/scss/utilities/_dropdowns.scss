@@ -1,0 +1,193 @@
+// Dropdowns
+
+.dropdown {
+  //cursor: pointer;
+
+  &__content {
+    @include respond-from(large) {
+      &.dropdown_menu-01 {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+        /*.c4-01__container {
+          padding: 0px;
+
+          .c4-01__main-cabecera {
+            .c4-01__title {
+              margin: 0px;
+            }
+          }
+        }*/
+      }
+    }
+    @include respond-to(large) {
+      display: none;
+      position: absolute;
+      top: 106px;
+      right: 64px;
+      background: transparent;
+
+      &--centered {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &--centered2 {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1379px;
+        max-height: none!important;
+        overflow-y: visible!important;
+        padding: 16px 32px 8px 0px;
+
+        @include respond-to(large) {
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+          border-radius: 2px;
+        }
+
+        .scroll-y {
+          display: block;
+          max-height: 95vh;
+          overflow-y: auto;
+          padding-left: 16px;
+
+          &.ofr{
+            padding-left: 0px;
+          }
+
+          &::-webkit-scrollbar { width: 4px; }
+          &::-webkit-scrollbar-track { background: transparent; }
+          &::-webkit-scrollbar-thumb { background: $color-grey3; &:hover { background: $color-grey3; } }
+        }
+      }
+
+    }
+  }
+
+  &.active {
+    .dropdown {
+      &__content {
+        display: block;
+        max-height: 95vh;
+        overflow-y: auto;
+        background-color: $color-white;
+        @include respond-to(large) {
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+          border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar { width: 4px; }
+        &::-webkit-scrollbar-track { background: transparent; }
+        &::-webkit-scrollbar-thumb { background: $color-grey3; &:hover { background: $color-grey3; } }
+      }
+      &__toggler {
+        //text-decoration: underline;
+        border-bottom: 1px solid #FFF;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}
+
+.dropdown-onclick {
+  position: relative;
+
+  span {
+    cursor: pointer;
+  }
+
+  &__content {
+    @include respond-to(large) {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 39px;
+      background-color: $color-white;
+      padding: 16px 24px 16px 24px;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+      z-index: 1;
+
+      li {
+        text-align: left;
+        text-decoration: none!important;
+
+        &:after {
+          display: none;
+        }
+
+        a {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main!important;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    @media (max-width: 1398px){
+      &.topbar-desplegable__reservas-container {
+        right: -365px;
+      }
+    }
+  }
+
+  &.dropdown-onclick--active {
+    &.dropdown-idioma,
+    &.dropdown-telefono,
+    &.dropdown-inicio-sesion,
+    &.dropdown-logueado,
+    &.dropdown-reservas {
+      &:before {
+        content: '';
+        position: absolute;
+        left: -3px;
+        bottom: -3px;
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: $color-white;
+      }
+    }
+
+    &.dropdown-telefono {
+      &:before {
+        left: 0px;
+        width: calc(100% - 40px);
+      }
+    }
+
+    &.dropdown-inicio-sesion {
+      &:before {
+        left: 0px;
+        width: calc(100% - 0px);
+      }
+    }
+
+    &.dropdown-logueado {
+      &:before {
+        left: 0px;
+        width: calc(100% - 0px);
+      }
+    }
+
+    &.dropdown-reservas {
+      &:before {
+        left: 0px;
+        width: calc(100% - 40px);
+      }
+    }
+
+    .dropdown-onclick {
+      &__content {
+        display: block;
+      }
+    }
+  }
+}

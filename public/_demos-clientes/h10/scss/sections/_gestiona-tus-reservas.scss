@@ -1,0 +1,1714 @@
+.form-container {
+  width: 100%;
+  max-width: 648px;
+  margin: 0 auto;
+  padding-top: 41px;
+
+  @include respond-from(large) {
+    padding-top: 0px;
+  }
+
+  .title {
+    font-family: $main-font;
+    font-weight: $medium;
+    color: $color-main;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @include respond-from(large) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .text {
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $color-main;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include respond-from(large) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.reservas-realizadas {
+  margin-top: 88px;
+
+  .title {
+    position: relative;
+    font-family: $second-font;
+    font-weight: $thin;
+    color: $color-main;
+    font-size: 50px;
+    line-height: 64px;
+    padding-bottom: 21px;
+    margin-bottom: 24px;
+    text-align: center;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translateX(-50%);
+      width: 237px;
+      height: .5px;
+      background-color: $color-main;
+    }
+  }
+
+  .text {
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $color-main;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 100%;
+    max-width: 648px;
+    margin: 0px auto;
+    display: block;
+
+    b {
+      font-weight: $medium;
+    }
+  }
+
+  .row-2cols {
+    display: flex;
+    flex-wrap: wrap;
+    border: .5px solid $color-main;
+    margin-top: 32px;
+
+    @include respond-from(large) {
+      display: block;
+    }
+
+    .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      @include respond-from(large) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .holder {
+        width: 100%;
+        height: 100%;
+
+        padding: 24px;
+
+        img {
+          display: block;
+          width: 48px;
+          height: 48px;
+          margin: 0px auto;
+        }
+
+        .text {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          margin-top: 8px;
+
+          a,
+          b {
+            color: $color-main;
+            font-weight: $medium;
+          }
+        }
+      }
+    }
+  }
+
+  .btns {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 88px;
+
+    @include respond-from(large) {
+      display: block;
+    }
+
+    .btn-link {
+      display: flex;
+      flex-flow: row;
+      gap: 4px;
+      align-items: center;
+
+      span {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 25px;
+        text-decoration: underline;
+        text-transform: uppercase;
+
+        @include respond-from(large) {
+          font-size: 14px;
+        }
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .line {
+      width: 1px;
+      height: 13px;
+      background-color: $color-main;
+
+      @include respond-from(large) {
+        display: block;
+        width: 48px;
+        height: .5px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.hotel-top {
+  position: relative;
+  padding: 0px;
+  //z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 57px;
+
+  @include respond-from(large) {
+    display: none;
+  }
+
+  .container-fix {
+    display: flex;
+    flex-flow: row;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 19px;
+
+    @include respond-from(large) {
+      padding-left: 0px;
+      padding-right: 0px;
+      display: block;
+    }
+  }
+
+  @include respond-from(large) {
+    flex-flow: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    min-width: 205px;
+    max-width: 205px;
+    min-height: 128px;
+
+    @include respond-from(large) {
+      max-width: 100%;
+      min-height: 200px;
+    }
+
+    .img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+
+      @include respond-from(large) {
+        left: 16px;
+        width: calc(100% - 32px);
+        height: calc(100% - 8px);
+      }
+    }
+  }
+
+  .data-holder {
+    @include respond-from(large) {
+      width: 100%;
+    }
+
+    .data {
+      display: inline-flex;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+
+      @include respond-from(large) {
+        display: block;
+      }
+
+      @include respond-from(large) {
+          margin-top: 5px;
+      }
+
+      @include respond-from(medium) {
+        display: block;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+      }
+
+      .titulo {
+        font-family: $second-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 28px;
+        line-height: 33px;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: nowrap;
+
+        b {
+          font-weight: $bold;
+        }
+
+        @include respond-from(large) {
+          display: block;
+          margin-bottom: 16px;
+        }
+        @include respond-from(small) {
+          white-space: normal;
+        }
+
+      }
+
+      .ratings {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        direction: rtl;
+        text-align: left;
+        list-style: none;
+        display: inline-flex;
+        gap: 2px;
+        vertical-align: middle;
+        width: auto;
+
+        @include respond-from(large) {
+          margin-bottom: 12px;
+        }
+
+        .star {
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          @include transition(color .3s ease);
+
+          &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url('#{$iconspath}star-o.svg');
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: center center;
+          }
+
+          &.selected,
+          &.selected ~ .star {
+            background-image: url('#{$iconspath}star.svg');
+            background-position: center center;
+            @include transition(all .3s ease);
+          }
+        }
+      }
+
+      .labels {
+        .label {
+          display: inline-block;
+          vertical-align: middle;
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          text-transform: uppercase;
+          background-color: $color-azul7;
+          border-radius: 48px;
+          padding: 6px 8px 4px;
+          margin-left: 3px;
+          white-space: nowrap;
+          margin-top: 4px;
+          margin-bottom: 4px;
+
+          @include max-width(885px) {
+            margin-left: 0px;
+          }
+
+          @include respond-from(large) {
+            margin-left: 0px;
+            margin-right: 4px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .contacto {
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+
+        display: flex;
+
+      &.inline {
+        flex-wrap: wrap;
+
+        .direccion,
+        .telefono,
+        .email {
+          width: 100%;
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: 11px;
+        background-color: $color-grey1;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+
+    .direccion {
+      font-family: $main-font;
+      font-weight: $regularItalic;
+      color: $color-grey1;
+      font-size: 12px;
+      line-height: 14px;
+      background-image: url('#{$iconspath}pin_drop_gray.svg');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 7px;
+      padding-left: 13px;
+
+      @include respond-from(large) {
+        background-size: 9px;
+        padding-left: 28px;
+      }
+    }
+
+    .telefono {
+      font-family: $main-font;
+      font-weight: $regularItalic;
+      color: $color-grey1;
+      font-size: 12px;
+      line-height: 14px;
+      background-image: url('#{$iconspath}call_gray.svg');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 8px;
+      padding-left: 13px;
+
+      @include respond-from(large) {
+        background-size: 11px;
+        padding-left: 28px;
+      }
+
+      a {
+        color: $color-grey1;
+      }
+    }
+
+    .email {
+      font-family: $main-font;
+      font-weight: $regularItalic;
+      color: $color-grey1;
+      font-size: 12px;
+      line-height: 14px;
+      background-image: url('#{$iconspath}mail_gray.svg');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 8px;
+      padding-left: 13px;
+
+      @include respond-from(large) {
+        background-size: 11px;
+        padding-left: 28px;
+      }
+
+      a {
+        color: $color-grey1;
+      }
+    }
+
+    .views-holder {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      gap: 5px;
+      margin-bottom: 8px;
+
+      @include respond-from(medium) {
+        margin-top: 5px;
+        justify-content: space-between;
+      }
+      @include respond-to(medium) {
+        justify-content: end;
+        width: 50%;
+      }
+      @include respond-to(large) {
+        width: 100%;
+        justify-content: start;
+      }
+
+      .icons-mobile {
+        display: inline-flex;
+        gap: 25px;
+        align-items: center;
+
+        @include respond-to(medium) {
+          display: none;
+        }
+
+        .ico-ubicacion {
+          width: 13px;
+        }
+
+        .ico-telefono {
+          width: 16px;
+        }
+      }
+
+      .logo {
+        width: 20px;
+        height: 15px;
+
+        @include respond-from(medium) {
+          display: none;
+        }
+      }
+
+      .numero {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 12px;
+        line-height: 14px;
+
+        @include respond-from(medium) {
+          display: none;
+        }
+      }
+
+      .views-holder_ {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+
+        .views {
+          display: flex;
+          flex-direction: row;
+          gap: 2px;
+
+          .view {
+            position: relative;
+            width: 11px;
+            height: 11px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $color-green;
+            border-radius: 11px;
+
+            &:before {
+              content: '';
+              display: block;
+              width: 7px;
+              height: 7px;
+              border-radius: 7px;
+              background-color: $color-green;
+            }
+
+            &.half {
+              &:before {
+                border-radius: 7px 0px 0px 8px;
+                width: 3.5px;
+                margin-left: -2.5px;
+              }
+            }
+
+            &.activo {
+              &:before {
+                background-color: $color-green;
+              }
+            }
+
+            &.activo {
+              ~ .view {
+                &:before {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .reviews {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .btn-link {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      text-decoration: underline;
+      font-size: 16px;
+      line-height: 24px;
+      margin: auto;
+      order: 1;
+
+      .arrow-right {
+        width: 30px;
+        margin-left: 17px;
+        display:inline;
+        @include transition(all .3s ease);
+      }
+
+      &:hover {
+        .arrow-right {
+          margin-left: 22px;
+          margin-right: -5px;
+        }
+      }
+
+      @include respond-from(large) {
+        margin-top: -66px!important;
+      }
+
+      @include respond-from(medium) {
+        margin-top: 24px;
+      }
+
+      @include respond-to(medium) {
+        order: 0;
+        margin: 0 0 16px auto;
+      }
+    }
+
+  }
+}
+
+.datos-holder {
+  .holder {
+    display: flex;
+    flex-flow: row;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    //columns: 2;
+    //column-rule: 4px double #ff00ff;
+
+    //@include respond-from(large) {
+    @include max-width(1430px) {
+      display: block;
+    }
+
+    //@include respond-from(large) {
+    @include max-width(1430px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  .title {
+    position: relative;
+    font-family: $main-font;
+    font-weight: $medium;
+    color: $color-main;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    padding-bottom: 16px;
+    margin-bottom: 39px;
+
+    //@include respond-from(large) {
+    @include max-width(1430px) {
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 177px;
+      height: .5px;
+      background-color: $color-main;
+
+      //@include respond-from(large) {
+      @include max-width(1430px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .col-left_ {
+    width: calc(100% - 540px);
+    //width: 49%;
+
+    //@include respond-from(large) {
+    @include max-width(1430px) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    .hotel-top {
+      display: inline-flex;
+      flex-flow: row;
+      align-items: start;
+      gap: 16px;
+
+      //@include respond-from(large) {
+      @include max-width(1430px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        margin-bottom: 46px;
+      }
+
+      .image {
+        margin-top: 6px;
+
+        //@include respond-from(large) {
+        @include max-width(1430px) {
+          min-height: 254px;
+          margin-top: 0px;
+          margin-bottom: 16px;
+          max-width: 100%;
+        }
+
+        @include respond-from(medium) {
+          min-height: 128px;
+          margin-top: 0px;
+          margin-bottom: 16px;
+        }
+
+        /*@media only screen and (min-width: 1024px) and (max-width: 1320px)  {
+          display: none;
+        }*/
+
+        .img {
+          //@include respond-from(large) {
+          @include max-width(1430px) {
+            width: 100%;
+            left: 0px;
+//              height: 128px;
+          }
+          @include respond-from(medium) {
+            height: 128px;
+          }
+
+        }
+      }
+
+      .data-holder {
+        .informacion {
+          position: relative;
+          padding-top: 24px;
+          margin-top: 40px;
+
+          //@include respond-from(large) {
+          @include max-width(1430px) {
+            padding-top: 16px;
+            margin-top: 16px;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 177px;
+            height: .5px;
+            background-color: $color-grey2;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              width: 104px;
+            }
+          }
+
+          .tit {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              text-transform: initial;
+              margin-bottom: 0px;
+            }
+          }
+
+          a {
+            display: block;
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .rows {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+
+      &.line {
+        .row {
+          &:first-child {
+            padding-top: 24px;
+            margin-top: 40px;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              padding-top: 16px;
+              margin-top: 16px;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 0;
+              width: 177px;
+              height: .5px;
+              background-color: $color-grey2;
+            }
+          }
+        }
+      }
+
+      .row {
+        position: relative;
+        display: inline-flex;
+        flex-flow: row;
+        gap: 16px;
+
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 20px;
+
+        //@include respond-from(large) {
+        @include max-width(1430px) {
+          gap: 8px;
+        }
+
+        .col-left {
+          width: 100%;
+
+          //@include respond-from(large) {
+          @include max-width(1430px) {
+            width: initial;
+            text-transform: initial;
+            max-width: 100%;
+          }
+
+          b {
+            font-weight: $medium;
+            text-transform: uppercase;
+            min-width: 189px;
+            max-width: 189px;
+            display: inline-block;
+            vertical-align: top;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              min-width: initial;
+              margin-right: 8px;
+            }
+
+            u {
+              text-decoration: none;
+
+              //@include respond-to(large) {
+              @include max-width(1430px) {
+                display: none;
+              }
+            }
+          }
+
+          span {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 189px);
+            //display: none;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              display: inline;
+              width: initial;
+            }
+
+            /*@include respond-from(large) {
+              display: inline-block;
+            }*/
+          }
+        }
+
+        /*.col-right {
+          width: calc(100% - 189px);
+          padding-right: 104px;
+          display: block;
+
+          @include respond-from(large) {
+            display: none;
+            width: calc(100% - 128px);
+            padding-right: 8px;
+          }
+        }*/
+      }
+    }
+  }
+
+  .col-right_ {
+    position: relative;
+    max-width: 540px;
+    //width:49%;
+
+    //@include respond-from(large) {
+    @include max-width(1430px) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: -64px;
+      width: .5px;
+      height: calc(100% - 87px);
+      background-color: $color-grey2;
+    }
+
+    &.no-border {
+      &:before {
+        display: none;
+      }
+    }
+
+    .rows {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+
+      &.line {
+        .row {
+          &:first-child {
+            padding-top: 24px;
+            margin-top: 40px;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              padding-top: 16px;
+              margin-top: 16px;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 0;
+              width: 177px;
+              height: .5px;
+              background-color: $color-grey2;
+            }
+          }
+        }
+      }
+
+      .row {
+        position: relative;
+        display: inline-flex;
+        flex-flow: row;
+        gap: 16px;
+
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 20px;
+
+        //@include respond-from(large) {
+        @include max-width(1430px) {
+          gap: 8px;
+        }
+
+        .col-left {
+          width: 100%;
+
+          //@include respond-from(large) {
+          @include max-width(1430px) {
+            text-transform: initial;
+            max-width: 100%;
+          }
+
+          b {
+            font-weight: $medium;
+            text-transform: uppercase;
+            min-width: 189px;
+            max-width: 189px;
+            display: inline-block;
+            vertical-align: top;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              min-width: fit-content;
+              margin-right: 8px;
+            }
+
+            u {
+              text-decoration: none;
+
+              //@include respond-to(large) {
+              @include max-width(1430px) {
+                display: none;
+              }
+            }
+          }
+
+          span {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 189px);
+            //display: none;
+
+            //@include respond-from(large) {
+            @include max-width(1430px) {
+              display: inline-block;
+              width: initial;
+            }
+
+            /*@include respond-from(large) {
+              display: inline-block;
+            }*/
+          }
+        }
+
+        /*.col-right {
+          width: calc(100% - 189px);
+          padding-right: 104px;
+          display: block;
+
+          @include respond-from(large) {
+            display: none;
+            width: calc(100% - 128px);
+            padding-right: 8px;
+          }
+        }*/
+      }
+    }
+  }
+}
+
+.extra-top {
+  width: 100%;
+  margin-bottom: 58px;
+
+  @include respond-from(large) {
+    margin-top: 16px!important;
+    margin-bottom: 16px;
+  }
+
+  &.fix-width {
+    max-width: 870px;
+    margin: 0px auto;
+
+    .titulo-top {
+      margin-top: 0px;
+    }
+  }
+
+  &.mt {
+    margin-top: 64px;
+  }
+
+  .titulo-top {
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 32px;
+    margin-top: -79px;
+
+    @include respond-from(large) {
+      padding-bottom: 8px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .titulo {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include respond-from(large) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    .texto {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 237px;
+      height: .5px;
+      background-color: $color-main;
+
+      @include respond-from(large) {
+        width: 114px;
+      }
+    }
+  }
+
+  .extra {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    margin-top: 16px;
+
+    @include respond-from(large) {
+      flex-flow: column;
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      max-width: 205px;
+      min-height: 125px;
+
+      @include respond-from(large) {
+        max-width: 100%;
+        min-height: 254px;
+      }
+
+      @include respond-from(medium) {
+        max-width: 100%;
+        min-height: 160px;
+      }
+
+      @include respond-from(small) {
+        display: none;
+      }
+
+      .img {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 100%;
+        height: calc(100% - 16px);
+        object-fit: cover;
+        z-index: 0;
+
+        @include respond-from(large) {
+          left: 16px;
+          width: calc(100% - 32px);
+          height: calc(100% - 8px);
+        }
+      }
+    }
+
+    .data {
+      width: 100%;
+      background-color: $color-white;
+      box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      padding: 22px 18px 19px 0px;
+      margin-left: -90px;
+      padding-left: 105px;
+
+      @include respond-from(large) {
+        margin-left: 0px;
+        padding: 24px 16px 16px 16px;
+      }
+
+      @include respond-from(small) {
+        box-shadow: none;
+        border: .5px solid $color-black;
+        padding: 16px;
+      }
+
+      .titulo {
+        position: relative;
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: sub;
+        width: 100%;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .texto {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 0px;
+          display: block;
+          text-transform: none;
+
+          @include respond-from(large) {
+            margin-top: 32px;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        @include respond-from(large) {
+          display: block;
+          font-size: 20px;
+          line-height: 26px;
+          padding-bottom: 16px;
+          margin-bottom: 0px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 42px;
+            left: 0;
+            width: 38px;
+            height: .5px;
+            background-color: $color-main;
+          }
+        }
+      }
+
+      .texto {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 24px;
+
+        @include respond-from(large) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        b {
+          font-weight: $medium;
+        }
+      }
+
+      .row-bottom {
+        width: 100%;
+        display: inline-flex;
+        align-items: end;
+        justify-content: space-between;
+
+        .btns {
+          display: inline-flex;
+          flex-flow: row;
+          gap: 16px;
+          align-items: center;
+
+          /*@include respond-from(large) {
+            display: block;
+          }*/
+
+          .btn-link-a {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 25px;
+            text-decoration: underline;
+          }
+
+          .line {
+            width: 1px;
+            height: 13px;
+            background-color: $color-main;
+          }
+        }
+
+        .precio {
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 28px;
+          line-height: 32px;
+
+          @include respond-from(large) {
+            font-size: 20px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+
+  .extra-bottom {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    margin-top: 64px;
+    text-align: right;
+
+    @include respond-from(large) {
+      flex-flow: column;
+      margin-top: 54px;
+    }
+
+    .data {
+      width: 100%;
+      background-color: $color-white;
+      box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      padding: 22px 18px 19px 18px;
+
+      @include respond-from(large) {
+        padding: 24px 16px 16px 16px;
+      }
+
+      .importe {
+        .title {
+          position: relative;
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: left;
+          padding-bottom: 16px;
+          margin-bottom: -45px;
+
+          @include respond-from(large) {
+            margin-bottom: 30px;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 206px;
+            height: .5px;
+            background-color: $color-main;
+          }
+        }
+
+        .row {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0px;
+          align-items: end;
+
+          @include respond-from(large) {
+            gap: 16px;
+          }
+
+          &:last-child {
+            padding-top: 24px;
+            margin-top: 24px;
+
+            @include respond-from(large) {
+              padding-top: 20px;
+              margin-top: 16px;
+              align-items: center;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              right: 0;
+              width: 173px;
+              height: .5px;
+              background-color: $color-main;
+
+              @include respond-from(large) {
+                width: 103px;
+              }
+            }
+
+            .col-left {
+              @include respond-from(large) {
+                width: calc(100% - 162px);
+              }
+            }
+
+            .col-right {
+              @include respond-from(large) {
+                width: 142px;
+              }
+            }
+          }
+
+          .col-left {
+            flex: 0 0 auto;
+            width: calc(100% - 170px);
+            text-align: right;
+
+            @include respond-from(large) {
+              text-align: left;
+              width: calc(100% - 162px);
+            }
+
+            .titulo {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 0px;
+              justify-content: end;
+            }
+
+            .texto {
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-main;
+              font-size: 14px;
+              line-height: 18px;
+              margin-bottom: 0px;
+
+              @include respond-from(large) {
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+          }
+
+          .col-right {
+            display: block;
+            flex: 0 0 auto;
+            width: 170px;
+            text-align: right;
+            min-width: 0px;
+
+            @include respond-from(large) {
+              width: 142px;
+            }
+
+            .precio {
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-rojo;
+              font-size: 14px;
+              line-height: 18px;
+
+              @include respond-from(large) {
+                font-size: 16px;
+                line-height: 20px;
+              }
+
+              b {
+                font-weight: $medium;
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+
+            .total {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 28px;
+              line-height: 32px;
+            }
+          }
+
+          .texto-pie {
+            display: block;
+            width: 100%;
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            text-align: right;
+
+            a {
+              text-decoration: underline;
+            }
+
+            @include respond-from(large) {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .titulo {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: sub;
+        width: 100%;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .texto {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 0px;
+        }
+
+        @include respond-from(large) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      .texto {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 24px;
+
+        b {
+          font-weight: $medium;
+        }
+      }
+    }
+  }
+
+  .btn-holder {
+    text-align: center;
+    margin-top: 32px;
+
+    .btn-continuar {
+      @include button($color-main, $color-white, $color-main);
+      min-width: 427px;
+
+      @include respond-from(large) {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+.modal-mantente, .modal-confirmacion {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% + 123px);
+  z-index: 9999;
+  background-color: rgba(255,255,255, .95);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+
+  @include respond-from(large) {
+    top: 0px;
+    padding: 16px;
+  }
+
+  &.show {
+    display: flex;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    width: 22px;
+    height: 22px;
+    background-image: url('#{$iconspath}X.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    cursor: pointer;
+
+    @include respond-from(large) {
+      top: 21px;
+      right: 21px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  .container-holder {
+    position: relative;
+    width: 100%;
+    max-width: 1090px;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: $color-white;
+    padding: 80px 210px 76px 210px;
+
+    @include respond-from(large) {
+      padding: 80px 54px 76px 54px;
+    }
+
+    @include respond-from(small) {
+      padding: 48px 16px 16px 16px;
+    }
+
+    .holder {
+      .title {
+        position: relative;
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+
+        &:after {
+          position: absolute;
+          left: calc(50% - 19px);
+          bottom: 0px;
+          content: '';
+          width: 38px;
+          height: .5px;
+          background-color: $color-main;
+        }
+
+        @include respond-from(large) {
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 16px;
+          padding-bottom: 16px;
+        }
+      }
+
+      .text {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @include respond-from(large) {
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 16px;
+        }
+      }
+
+      > div {
+        text-align: center;
+        margin-bottom: 16px;
+
+        .btn-enviar {
+          @include button($color-main, $color-white, $color-main);
+          min-width: 332px;
+
+          @include respond-from(large) {
+            min-width: 100%;
+          }
+        }
+
+        .btn-cancel {
+          @include button($color-white, $color-main, $color-main);
+          min-width: 332px;
+
+          @include respond-from(large) {
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

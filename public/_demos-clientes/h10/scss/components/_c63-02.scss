@@ -1,0 +1,451 @@
+.c63-02__ {
+  &container {
+    margin-top: 86px;
+
+    @include respond-from(large) {
+      margin-top: 16px;
+    }
+
+    @include respond-from(large) {
+      .container-fix {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    .col-holder {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 48px;
+
+      @include respond-from(large) {
+        flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 12px;
+      }
+
+      @include respond-from(large) {
+        margin-top: 20px;
+      }
+
+      .col-left,
+      .col-right {
+        width: 50%;
+
+        @include respond-from(large) {
+          width: 100%;
+        }
+      }
+
+      .col-left {
+        margin-left: -64px;
+
+        @include respond-from(large) {
+          margin-left: 0px;
+        }
+
+        .image {
+          width: 100%;
+
+          @include respond-from(small) {
+            height: 236px;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .col-right {
+        width: calc(50% + 64px);
+
+        @include respond-from(large) {
+          width: 100%;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .titulo {
+          position: relative;
+          display: block;
+          font-family: $second-font;
+          font-weight: $thin;
+          color: $color-main;
+          //font-size: 80px;
+          font-size: 4.5vw;
+          //line-height: 74px;
+          line-height: 4.4vw;
+          // margin-left: -65px;
+          // margin-top: 24px;
+          margin-bottom: 32px;
+          //padding: 7px 0px 7px 16px;
+          margin-left: 32px;
+          padding-right: 30px;
+
+          @include respond-from(large) {
+            margin-top: 13px;
+            margin-left: 0px;
+            margin-bottom: 16px;
+            padding-right: 0px;
+            font-size: 48px;
+            line-height: 56px;
+          }
+
+          @include respond-to(extraLarge) {
+            font-size: 70px;
+            line-height: 74px;
+            padding-right: 0px;
+          }
+
+          /*@include respond-to(extraLarge) {
+            font-size: 80px;
+          }*/
+
+          /*@include respond-from(large) {
+            margin-top: -38px;
+            margin-left: 16px!important;
+          }*/
+
+          /*@include respond-to(large) {
+            br {
+              display: none;
+            }
+          }*/
+
+          /*> span {
+            width: 100%;
+            display: inline-block;
+
+            i {
+              font-style: normal;
+
+              @include respond-from(large) {
+                background-color: $color-white;
+                padding: 0px 30px 0px 10px;
+              }
+            }
+
+            @include respond-from(large) {
+              width: max-content;
+              padding-left: 0px!important;
+              background-color: transparent!important;
+            }
+
+            &:first-child {
+              background-color: $color-white;
+              padding-left: 16px;
+            }
+            &:last-child {
+//              padding-left: 180px;
+            }
+          }*/
+
+          /*@include respond-from(large) {
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 16px;
+            margin-left: 0px;
+            padding: 0px;
+          }*/
+
+          /*@include respond-to(large) {
+            br {
+              display: none;
+            }
+          }*/
+
+          /*@include respond-from(large) {
+            position: absolute;
+            bottom: calc(100% - 25px);
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: transparent;
+
+            display: inline-block;
+            background-color: $color-white;
+            padding: 8px;
+            padding-top: 0px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            span {
+              display: inline-block;
+              background-color: $color-white;
+              padding: 8px;
+              padding-top: 0px;
+              padding-left: 8px;
+              padding-right: 8px;
+            }
+          }*/
+        }
+
+        b, strong{
+          font-weight: $medium;
+        }
+
+        .items-holder {
+          @include respond-from(large) {
+            margin-top: 40px;
+          }
+
+          @include respond-from(large) {
+            justify-content: start;
+            overflow-x: visible;
+            overflow-y: hidden;
+            padding-bottom: 0px;
+            margin-bottom: 30px;
+
+            &::-webkit-scrollbar { height: 5px; }
+            &::-webkit-scrollbar-track { background: transparent; }
+            &::-webkit-scrollbar-thumb { background: $color-grey3; &:hover { background: $color-grey3; } }
+          }
+
+          .items {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-left: 16px;
+            margin-bottom: 32px;
+
+            @include respond-from(large) {
+              gap: 24px;
+              margin-bottom: 16px;
+              margin-left: 0px;
+            }
+
+            .item {
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-main;
+              font-size: 9px;
+              line-height: 11px;
+              text-align: center;
+              width: 95px;
+
+              @include respond-from(large) {
+                width: auto;
+                min-width: 125px;
+                font-size: 12px;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+
+
+    .slick-slider-holder {
+      position: relative;
+      margin-bottom: 64px;
+
+      @include respond-to(large) {
+        > div {
+          display: flex;
+          gap: 16px;
+          justify-content: center;
+
+          > div {
+            width: 33%;
+          }
+        }
+
+        &.more-6 {
+          > div {
+            > div {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+
+        .slick-list {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+
+          @include respond-from(large) {
+            padding-right: 100px;
+          }
+
+          @include respond-from(small) {
+            padding-right: 200px;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &.draggable {
+
+            cursor: grab;
+            margin-left: 10px;
+
+            @include respond-to(medium) {
+              padding-left: 10px;
+              margin-left: initial;
+            }
+
+            &:active {
+              cursor: grabbing;
+            }
+          }
+        }
+
+        .slick-track {
+          position: relative;
+          top: 0;
+          left: 0;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          &:after,
+          &:before {
+            display: table;
+            content: '';
+          }
+
+          &:after {
+            clear: both;
+          }
+        }
+
+        .slick-list,
+        .slick-track {
+          -webkit-transform: translate3d(0, 0, 0);
+          -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+          -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+
+        .slick-slide {
+          display: none;
+          float: left;
+          height: 100%;
+          min-height: 1px;
+          margin-right: 64px;
+
+          @include respond-from(small) {
+            margin-right: 0px;
+          }
+        }
+      }
+
+      .item {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: calc(50% - 0px);
+          left: calc(50% - 2px);
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $color-main;
+        }
+
+        .image {
+          text-align: center;
+          height: 52px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            display: inline-block;
+            max-width: 144px;
+            max-height: 52px;
+
+
+            @include respond-from(small) {
+              max-height: 75%;
+              max-width: 75%;
+            }
+          }
+        }
+
+        .text {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 36px;
+        }
+      }
+
+      .slick-loading {
+        .slick-track {
+          visibility: hidden;
+        }
+      }
+
+      [dir='rtl'] {
+        .slick-slide {
+          float: right;
+        }
+      }
+
+      .slick-slide {
+        &.slick-loading img {
+          display: none;
+        }
+        &.dragging {
+          img {
+            pointer-events: none;
+          }
+        }
+      }
+
+      .slick-initialized {
+        .slick-slide {
+          display: block;
+        }
+      }
+
+      .slick-loading {
+        .slick-slide {
+          visibility: hidden;
+        }
+      }
+
+      .slick-vertical {
+        .slick-slide {
+          display: block;
+          height: auto;
+          border: 1px solid transparent;
+        }
+      }
+
+      .slick-arrow {
+        &.slick-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}

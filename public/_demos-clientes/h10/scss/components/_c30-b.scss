@@ -1,0 +1,474 @@
+@include respond-to(large) {
+  body {
+    &.on-scroll {
+      &.on-scroll-up {
+        .c30-b__ {
+          &container {
+
+            &.modal-reservar-habitacion {
+              top: -150px;
+            }
+          }
+        }
+      }
+
+      &.on-scroll-down {
+        .c30-b__ {
+          &container {
+
+            &.modal-reservar-habitacion {
+              top: -150px;
+            }
+          }
+        }
+      }
+
+      .c30-b__ {
+        &container {
+
+          &.modal-reservar-habitacion {
+            top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.c30-b__ {
+  &container {
+
+    &.modal-reservar-habitacion {
+      position: absolute;
+      //top: -123px;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: calc(100% + 123px);
+      z-index: -1;
+      background-color: rgba(255,255,255, .95);
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 45px 175px;
+
+      @include respond-from(large) {
+        top: 0px;
+        padding: 0px;
+        z-index: 99999;
+      }
+
+      &.show {
+        display: flex;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 99999;
+      }
+
+      .container-holder {
+        position: relative;
+        width: 100%;
+        max-width: 1090px;
+        box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        background-color: $color-white;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 38px;
+
+        @include respond-from(large) {
+          box-shadow: none;
+          padding: 0px;
+          padding-top: 66px;
+          border-radius: 0px;
+        }
+
+        .top {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-bottom: 30px;
+
+          @include respond-from(large) {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: 3002;
+            background-color: $color-white;
+            box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            margin-bottom: 16px;
+            justify-content: space-between;
+
+          }
+
+          .titulo {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+
+            @include respond-to(large) {
+              display: none;
+            }
+          }
+
+          .btn-close {
+            width: 26px;
+            height: 26px;
+            background-image: url('#{$iconspath}X.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+
+            @include respond-from(large) {
+              width: 17px;
+              height: 17px;
+            }
+          }
+        }
+
+        .col {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          /*flex-wrap: wrap;
+          flex: 1 1 50%;*/
+          margin-bottom: 46px;
+
+          @include respond-from(large) {
+            padding-left: 16px;
+            padding-right: 16px;
+            display: block;
+          }
+
+          .col-left {
+            width: 189px;
+
+            @include respond-from(large) {
+              width: 100%;
+            }
+
+            .image {
+              width: 100%;
+              height: 130px;
+              object-fit: cover;
+
+              @include respond-from(large) {
+                display: none;
+              }
+            }
+          }
+
+          .col-right {
+            width: calc(100% - 189px);
+
+            @include respond-from(large) {
+              width: 100%;
+            }
+
+            .titulo {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 28px;
+              line-height: 33px;
+              padding-bottom: 16px;
+              margin-bottom: 16px;
+              text-transform: uppercase;
+
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 39px;
+                height: .5px;
+                background-color: $color-main;
+              }
+
+              @include respond-from(large) {
+                &:before {
+                  display: none;
+                }
+
+                font-size: 20px;
+                line-height: 26px;
+                text-align: center;
+                padding-bottom: 0px;
+                margin-bottom: 12px;
+              }
+            }
+
+            .caracteristicas {
+              display: flex;
+              flex-direction: row;
+              gap: 25px;
+              margin-bottom: 24px;
+              display: none;
+
+              &.desktop {
+                @include respond-to(large) {
+                  display: flex;
+                }
+              }
+
+              &.mobile {
+                @include respond-from(large) {
+                  display: block;
+                }
+              }
+
+              .personas {
+                display: flex;
+                flex-direction: column;
+                width:50%;
+
+                .imgs{
+                  display: flex;
+                  align-items: center;
+                }
+
+
+                .icon {
+                  width: 24px;
+                  height: 24px;
+                }
+
+                .texto {
+                  font-family: $main-font;
+                  font-weight: $regular;
+                  color: $color-main;
+                  font-size: 14px;
+                  line-height: 18px;
+                  margin-left: 4px;
+                  margin-bottom: 0px;
+
+                  @include respond-from(large) {
+                    font-size: 12px;
+                    line-height: 16px;
+                  }
+                  &.tit{
+                    font-weight: $medium;
+                  }
+
+
+                }
+              }
+
+              .camas {
+                display: flex;
+                flex-direction: column;
+                width:50%;
+
+                .icon {
+                  width: 24px;
+                  height: 24px;
+                }
+
+                .texto {
+                  font-family: $main-font;
+                  font-weight: $regular;
+                  color: $color-main;
+                  font-size: 14px;
+                  line-height: 18px;
+                  margin-left: 4px;
+                  margin-bottom: 0px;
+
+                  @include respond-from(large) {
+                    font-size: 12px;
+                    line-height: 16px;
+                  }
+
+                  &.tit{
+                    font-weight: $medium;
+                  }
+
+                }
+              }
+
+              .text {
+                font-family: $main-font;
+                font-weight: $regular;
+                color: $color-grey1;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .col-selects {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 16px;
+          margin-bottom: 22px;
+
+          @include respond-from(large) {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 0px;
+            z-index: 3002;
+            background-color: $color-white;
+            box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+            display: block;
+
+            .select {
+              width: 100%!important;
+
+              &:first-child {
+                margin-bottom: 8px;
+              }
+            }
+          }
+
+          .text {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 16px;
+            display: none;
+
+            @include respond-from(large) {
+              display: block;
+            }
+          }
+
+          .select {
+            width: 50%;
+            max-width: 427px;
+
+            select {
+              // A reset of styles, including removing the default dropdown arrow
+              appearance: none;
+              // Additional resets for further consistency
+              background-color: transparent;
+              background-image: url("../src/icons/arrow_big_down.svg");
+              background-position: calc(100% - 8px) center;
+              background-repeat: no-repeat;
+              background-size: 20px;
+              border: 1px solid $color-grey2;
+              padding: 12px 36px 12px 8px;
+              margin: 0;
+              width: 100%;
+              font-family: inherit;
+              font-size: inherit;
+              cursor: inherit;
+              line-height: inherit;
+              outline: none;
+
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-main;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+
+        .datepicker-holder {
+          position: relative;
+          text-align: center;
+
+          .daterangepicker-holder-input {
+            display: inline-block;
+            width: 100%;
+            max-width: 940px;
+
+            #datepicker_habitaciones {
+              visibility: hidden;
+              height: 0px;
+              padding: 0px;
+              border: 0px;
+              width: 0px;
+            }
+
+            .daterangepicker {
+              position: relative;
+              margin-top: 0px;
+              margin-left: 0px;
+              max-width: 100%;
+              display: flex!important;
+              flex-flow: wrap;
+              box-shadow: none;
+              padding: 0px;
+              top: 0px!important;
+              left: 0px!important;
+
+              &:before {
+                content: "CALENDARIO DE PRECIOS";
+              }
+
+              .drp-calendar {
+                position: relative;
+                float: none;
+                
+                &:before {
+                  content: '';
+                  position: absolute;
+                  //top: 30px;
+                  //top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  //height: calc(100% - 30px);
+                  //height: 100%;
+                  top: 83px;
+                  //width: calc(100% - 48px);
+                  height: calc(100% - 83px);
+                  z-index: 1;
+                  background-color: transparent;
+                }
+
+                &.left {
+                  @include respond-from(large) {
+                    margin-bottom: 32px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .texto-pie {
+          margin-top: 47px;
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+.hotel-modals
+{
+
+  .c30-b__ {
+    &container {
+      &.modal-reservar-habitacion {
+        @include respond-from(medium) {
+          top: -150px;
+        }
+      }}}
+
+}

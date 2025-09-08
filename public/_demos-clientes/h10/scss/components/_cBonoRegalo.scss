@@ -1,0 +1,556 @@
+/*.main-bono-regalo {
+  .topbar-main {
+    top: 0px;
+    z-index: 4;
+
+    @include respond-from(large) {
+      background-color: $color-white;
+      @include transition(all 0s ease);
+      z-index: 5;
+      box-shadow: 0px 0px 34px rgba(0, 0, 0, .1);
+    }
+
+    &.open-menu {
+      z-index: 6;
+    }
+
+    &.on-scroll-down {
+      @include respond-from(large) {
+        top: -56px;
+        box-shadow: none;
+      }
+    }
+
+    &.on-scroll-up {
+      @include respond-from(large) {
+        top: 0px;
+      }
+    }
+
+    .topbar-main__container-left {
+      .menu-icon__mobile-click {
+        .menu-icon__mobile {
+          &:first-child {
+            content: url("../src/icons/menu.svg");
+          }
+        }
+      }
+    }
+
+    .topbar-main__container-right {
+      .header__icon-mobile {
+        &:first-child {
+          content: url("../src/icons/call_.svg");
+        }
+        &:last-child {
+          content: url("../src/icons/person_.svg");
+        }
+      }
+    }
+
+    @include respond-to(large) {
+      //display: none;
+    }
+  }
+
+  .show-open-opciones-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+  .daterangepicker-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+  .show-open-buscador-avanzado-mobile {
+    @include respond-from(large) {
+      z-index: 5;
+    }
+  }
+
+  .show-open-hotel-destino-mobile {
+    @include respond-from(small) {
+      //top: -163px;
+      top: 0px;
+    }
+  }
+
+  .topbar-main-mobile-holder {
+    z-index: 5;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .c7__container {
+    &.fix-position-top-bottom {
+      .form-holder {
+        .form {
+          .form-item {
+            .show-open-hotel-destino-2-holder {
+              top:-395px;
+            }
+
+            .show-open-opciones-holder {
+              top: -433px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .daterangepicker {
+    margin-top: 15px;
+
+    &.fix-position-top-bottom {
+      top:-444px;
+      margin-top: -441px;
+    }
+  }
+}*/
+
+.cBonoRegalo {
+  &__container {
+
+    .col {
+      display: flex;
+      flex-flow: row;
+      gap: 32px;
+      margin-top: 63px;
+      margin-bottom: 88px;
+
+      @include respond-from(large) {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 64px;
+      }
+
+      .col-left {
+        margin-left: -64px;
+        flex: 0 0 calc(100% - 427px);
+
+        @include respond-from(large) {
+          margin-left: 0px;
+        }
+
+        .image-holder {
+          position: relative;
+          //margin-left: -64px;
+
+          @include respond-from(large) {
+            margin-left: -32px;
+            margin-right: -32px;
+          }
+
+          @include respond-from(small) {
+            margin-left: -16px;
+            margin-right: -16px;
+          }
+
+          .image {
+            display: block;
+            width: 100%;
+            max-width: 839px;
+            height: 506px;
+            object-fit: cover;
+            object-position: center;
+
+            @include respond-from(large) {
+              height: 270px;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      .col-right {
+        width: 100%;
+        max-width: 427px;
+
+        @include respond-from(large) {
+          max-width: 100%;
+        }
+
+        .title {
+          position: relative;
+          font-family: $second-font;
+          font-weight: $thin;
+          color: $color-main;
+          font-size: 50px;
+          line-height: 60px;
+          margin-top: 32px;
+          margin-bottom: 16px;
+
+          @include respond-from(large) {
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 24px;
+          }
+        }
+
+        .texto {
+          font-family: $main-font;
+          font-weight: $regularItalic;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 32px;
+
+          @include respond-from(large) {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .btn-leer {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 24px;
+            text-decoration: underline;
+            padding-right: 18px;
+            background-image: url("#{$iconspath}arrow-down.svg");
+            background-repeat: no-repeat;
+            background-size: 12px 7px;
+            background-position: right center;
+            @include transition(all 0.3s ease);
+
+            &.menos {
+              display: none;
+            }
+
+            @include respond-from(large) {
+//              display: none!important;
+            }
+          }
+
+          p {
+            &.texto-1 {
+              //height: 240px;
+              //overflow: hidden;
+            }
+
+            &.texto-2 {
+              display: none;
+            }
+
+            &.p-enlace-destacado {
+              margin-top: 16px !important;
+              @include respond-to(large) {
+                margin-top: 8px !important;
+              }
+            }
+
+            .text-desktop {
+              /*display: none;
+
+              @include respond-to(large) {
+                display: block;
+              }*/
+            }
+
+            .text-mobile {
+              display: block;
+
+              @include respond-to(large) {
+                display: none;
+              }
+            }
+
+            a {
+              &.enlace-destacado {
+                font-family: $main-font;
+                font-weight: $bold;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          &.show {
+            p {
+              &.texto-1 {
+                //height: auto;
+                //overflow: visible;
+
+                .dots {
+                  display: none;
+                }
+              }
+
+              &.texto-2 {
+                display: block;
+              }
+            }
+
+            .btn-leer {
+              background-image: url("#{$iconspath}arrow-up.svg");
+
+              &.menos {
+                display: inline;
+              }
+
+              &.mas {
+                display: none;
+              }
+            }
+          }
+
+          b,
+          strong {
+            font-weight: $bold;
+          }
+        }
+
+        .btn-link {
+          @include button($color-main, $color-white, $color-main);
+
+          @include respond-from(large) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .bono-regalo {
+      .title {
+        position: relative;
+        font-family: $second-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 80px;
+        line-height: 74px;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        text-align: center;
+
+        @include respond-from(large) {
+          font-size: 36px;
+          line-height: 45px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .text {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        @include respond-from(large) {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 32px;
+        }
+      }
+
+      .cols {
+        display: flex;
+        flex-flow: row;
+        gap: 100px;
+        margin-bottom: 88px;
+
+        @include respond-from(large) {
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 64px;
+        }
+
+        .col_ {
+          position: relative;
+
+          @include respond-from(large) {
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+          }
+
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: .5px;
+            height: 104px;
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color-main;
+
+            @include respond-from(large) {
+              top: -24px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 216px;
+              height: .5px;
+            }
+          }
+
+          .icon {
+            display: block;
+            width: 72px;
+            height: 72px;
+            margin: 0px auto;
+          }
+
+          .text {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 0px;
+
+            b, strong {
+              display: block;
+              font-weight: $medium;
+            }
+
+            @include respond-from(large) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .comprar-bono-regalo {
+      .title {
+        position: relative;
+        font-family: $second-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 50px;
+        line-height: 64px;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        text-align: center;
+
+        @include respond-from(large) {
+          font-size: 36px;
+          line-height: 45px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .text {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @include respond-from(large) {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .cols {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-celeste;
+        padding: 16px 23px;
+
+        @include respond-from(large) {
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 64px;
+          padding: 16px 16px;
+        }
+
+        .col_ {
+          position: relative;
+
+          &:first-child {
+            display: flex;
+            flex-flow: row;
+            gap: 16px;
+            align-items: center;
+
+            @include respond-from(large) {
+              margin-bottom: 20px;
+            }
+
+            .logo {
+              display: flex;
+              flex-flow: row;
+              align-items: center;
+              justify-content: center;
+              width: 79px;
+              height: 79px;
+              padding: 3px;
+              background-color: $color-azul8;
+
+              @include respond-from(large) {
+                width: 62px;
+                height: 62px;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .texto {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 18px;
+              line-height: 28px;
+              text-transform: uppercase;
+
+              @include respond-from(large) {
+                font-size: 16px;
+                line-height: 22px;
+              }
+            }
+          }
+
+          &:last-child {
+            .btn-link {
+              @include button($color-main, $color-white, $color-main);
+
+              @include respond-from(large) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.c57__ {
+      &container {
+        .faqs {
+          .faq {
+            .texto {
+              padding-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

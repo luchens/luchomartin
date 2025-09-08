@@ -1,0 +1,27 @@
+#! /bin/bash
+sass style-cookies.scss ../css/style-cookies.css
+sass style-destino-hotel.scss ../css/style-destino-hotel.css
+sass style-ficha-privilege.scss ../css/style-ficha-privilege.css
+sass style-ficha-reuniones.scss ../css/style-ficha-reuniones.css
+sass style-ficha-galeria.scss ../css/style-ficha-galeria.css
+sass style-ficha-habitaciones.scss ../css/style-ficha-habitaciones.css
+sass style-ficha-hotel.scss ../css/style-ficha-hotel.css
+sass style-ficha-ofertas.scss ../css/style-ficha-ofertas.css
+sass style-ficha-restaurantes.scss ../css/style-ficha-restaurantes.css
+sass style-home.scss ../css/style-home.css
+sass style-listado-hoteles.scss ../css/style-listado-hoteles.css
+sass style-listado-hoteles-2.scss ../css/style-listado-hoteles-2.css
+sass style-hoteles-en-ciudad.scss ../css/style-hoteles-en-ciudad.css
+sass style-mapa-web.scss ../css/style-mapa-web.css
+sass style-contacto.scss ../css/style-contacto.css
+sass style-ofertas.scss ../css/style-ofertas.css
+sass style-stay-green.scss ../css/style-stay-green.css
+sass style-proceso-reservas.scss ../css/style-proceso-reservas.css
+sass style-reuniones-y-eventos.scss ../css/style-reuniones-y-eventos.css
+sass style-error-404.scss ../css/style-error-404.css
+sass style-premios-certificaciones.scss ../css/style-premios-certificaciones.css
+sass style-gestiona-tus-reservas.scss ../css/style-gestiona-tus-reservas.css
+sass style-bono-regalo.scss ../css/style-bono-regalo.css
+sass style-club-h10.scss ../css/style-club-h10.css
+sass style-sala-de-prensa.scss ../css/style-sala-de-prensa.css
+sass style.scss ../css/style.css

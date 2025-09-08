@@ -1,0 +1,35 @@
+@media all and (max-width: 700px) {
+  .acordeon-onclick {
+      &__submenu {
+        display: none;
+      }
+
+    &--open {
+      .c4-01__cabecera-arrow {
+        transform: rotate(180deg);
+      }
+      ~ .acordeon-onclick {
+        &__submenu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .sub-acordeon-onclick {
+    &__submenu {
+        display: none;
+      }
+
+    &--open {
+      .c4-01__cabecera-arrow {
+        transform: rotate(180deg);
+      }
+      ~ .sub-acordeon-onclick {
+        &__submenu {
+          display: block;
+        }
+      }
+    }
+  }
+}

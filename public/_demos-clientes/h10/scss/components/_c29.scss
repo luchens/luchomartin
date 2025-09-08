@@ -1,0 +1,182 @@
+.c29__ {
+  &container {
+    padding-top: 72px;
+    padding-bottom: 88px;
+
+    @include respond-from(large) {
+      padding-top: 24px;
+      padding-bottom: 64px;
+    }
+
+    .col {
+      display: flex;
+      flex-flow: row;
+      gap: 62px;
+      margin-bottom: 40px;
+
+      @include respond-from(large) {
+        display: block;
+      }
+
+      .col-left {
+        //flex: 0 0 50%;
+
+        @include respond-to(large) {
+          width: 50%;
+        }
+
+
+        .image-holder {
+          position: relative;
+          align-items: center;
+          display: flex;
+          max-height: 378px;
+          overflow: hidden;
+
+          @include respond-to(large) {
+            justify-content: center;
+            max-width: 602px;
+          }
+    
+
+          .logo-holder {
+            position: absolute;
+            top: 23px;
+            left: 0px;
+            background-color: rgba(255, 255, 255, 0.54);
+            padding: 7px 16px;
+            z-index: 1;
+
+            .logo {
+              width: auto;
+              height: 56px;
+
+              @include respond-from(large) {
+                height: 74px;
+              }
+
+              @include respond-from(medium) {
+                height: 38px;
+              }
+            }
+          }
+
+          .image {
+            width: 100%;
+          }
+        }
+      }
+
+      .col-right {
+        flex: 0 0 50%;
+
+        .title {
+          font-family: $second-font;
+          font-weight: $thin;
+          color: $color-main;
+          font-size: 50px;
+          line-height: 74px;
+          margin-top: -24px;
+          margin-bottom: 16px;
+
+          @include respond-from(large) {
+            font-size: 28px;
+            line-height: 32px;
+            margin-top: 16px;
+          }
+        }
+
+        .labels {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 14px;
+
+          @include respond-from(large) {
+            display: block;
+          }
+
+          .label {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 6px 8px;
+            border-radius: 48px;
+            background-color: $color-grey4;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 8px;
+            
+            @include respond-from(large) {
+              margin-right: 4px;
+            }
+          
+          }
+        }
+
+        .text {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 16px;
+
+          @include respond-from(large) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+
+        .horario {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 24px;
+
+          @include respond-from(large) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          b, strong{
+            font-weight: $bold;
+          }
+        }
+
+        .btns {
+          display: flex;
+          flex-flow: row;
+          gap: 16px;
+
+          @include respond-from(large) {
+            display: block;
+          }
+
+          .btn-ver-carta {
+            @include button($color-white, $color-main, $color-main);
+
+            @include respond-from(large) {
+              width: 100%;
+              margin-bottom: 16px;
+            }
+          }
+
+          .btn-reservar {
+            @include button($color-main, $color-white, $color-main);
+
+            @include respond-from(large) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+
+
+  }
+}

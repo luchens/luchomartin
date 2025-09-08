@@ -1,0 +1,212 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+
+// .topbar {
+//     width: 100vw;
+//     overflow: hidden;
+// }
+
+// mobile icons
+.mobile {
+    display: none;
+}
+
+// topbar
+    // .header__container {
+    //     width: 100%;
+    //     background: $color-white;
+    //     box-shadow: 0px 0px 34px hsla(0, 0%, 0%, 0.1);
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding: 16px 64px;
+    // }
+
+    // .header__container-left {
+    //     display: flex;
+    //     gap: 18px;
+    // }
+// LOGO
+    // .header__logo {
+    //     width: 95px;
+    //     height: 47px;
+    // }
+
+// HEADER INFO
+    // .header__container-info {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 10px;
+
+    //     .header__container-title {
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         gap: 12px;
+
+    //         h1 {
+    //             font-size: $subtitle01-size;
+    //         }
+    //     }
+
+    //     .header__tag {
+    //         font-size: $small-size;
+    //         color: $color-main;
+    //         font-style: normal;
+    //         font-weight: $medium;
+    //         background-color: $color-azul7;
+    //         padding: 6px 8px 4px;
+    //         border-radius: 48px;
+    //         white-space: nowrap;
+    //     }
+
+    //     .header__adress, a {
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+
+    //         font-size: $small-size;
+    //         color: $color-grey1;
+    //         font-style: italic;
+
+    //             .header__icon {
+    //                 margin-right: 6px;
+    //                 width: 12px;
+    //                 height: 12px;
+    //             }
+    //         }
+
+    //     .header__reviews-container {
+    //         display: flex;
+    //         flex-direction: row;
+    //         gap: 6px;
+    //         font-size: $small-size;
+    //     }
+    // }
+
+
+
+/* ------------------------------
+//* --------****MOBILE****--------
+//* ------------------------------*/
+
+// @media (max-width: 700px) {
+//     .topbar-nav {
+//         display: none;
+//     }
+
+//     .header__container {
+//         padding: 18px;
+//     }
+
+//     .header__container-left {
+//         flex-direction: column;
+//     }
+
+//     .logo-container {
+//         width: 90vw;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+
+//         .header__menu {
+//             display: inline;
+//             width: 32px;
+//         }
+
+//         .header__logo {
+//             width: 66px;
+//             height: 32px;
+//         }
+
+//         .logo-container-left {
+//             display: flex;
+//             gap: 24px;
+//         }
+//         .logo-container-right {
+//             display: flex;
+//             gap: 24px;
+
+//             .header__icon-mobile {
+//                 width: 32px;
+//                 height: 32px;
+//             }
+//         }
+
+// }
+// .header__container-info {
+
+//     .header__container-title  {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         .header__title {
+//             font-weight: 250;
+//             font-size: 2rem;
+//             line-height: 32px;
+//         }
+//         .header__stars {
+//             width: 66px;
+//         }
+//     }
+// }
+// .mobile {
+//     display: flex;
+// }
+
+
+// .button__header {
+// display: none;
+// }
+
+
+// .header__container-info {
+//     .header__adress, .header__tag, .header__reviews-container {
+//          display: none;
+//     }
+
+// }
+
+
+// }
+
+
+

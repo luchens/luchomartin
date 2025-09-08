@@ -1,0 +1,110 @@
+.banner-c5-1 {
+    position: relative;
+    z-index: 0;
+    background-image: url('#{$imagespath}image-4.png');
+    background-size: cover;
+    background-position: center;
+    height: 474px;
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+
+    &.fixed-bottom {
+      margin-bottom: 57px;
+    }
+
+    @include respond-to(medium) {
+        height: 816px;
+        align-items: flex-end;
+        padding-bottom: 136px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    @include respond-to(large) {
+        padding-bottom: 72px;
+    }
+
+    &__text-container {
+        //styleName: Headline01_Mobile_Argent (48-56)/Thin;
+        font-weight: 325;
+        font-size: 16px;
+        line-height: 22px;
+        color: hsla(0, 0%, 100%, 1);
+        padding-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include respond-to(medium) {
+            width: 312px;
+            line-height: 19px;
+            gap: 16px;
+        }
+
+        @include respond-to(large) {
+            width: 700px;
+            gap: 20px;
+        }
+
+        .banner-c5-1__title {
+            font-family: $second-font;
+            font-style: normal;
+            font-weight: 250;
+            font-size: 48px;
+            line-height: 50px;
+            @include respond-to(medium) {
+//                font-size: 30px;
+//                line-height: 50px;
+//                letter-spacing: -0.03em;
+            }
+            @include respond-to(large) {
+                font-size: 80px;
+                line-height: 74px;
+            }
+
+        }
+
+        .banner-c5-1__subtitle {
+            font-size: 16px;
+            font-family: $main-font;
+            font-weight: $regular;
+            @include respond-to(large) {
+                width: auto;
+            }
+        }
+        .second-button {
+            width: min-content;
+            background-color:transparent;
+            border-color: hsla(0, 0%, 100%, 1);
+            color: hsla(0, 0%, 100%, 1);
+        }
+    }
+
+    &__hr {
+        display: none;
+        @include respond-to(large) {
+            display: unset;
+            width: 63px;
+            margin-left: 0;
+            margin-bottom: -12px;
+            border: 0.5px solid #FFFFFF;
+        }
+    }
+
+    .banner-c5__span {
+        display: none;
+
+        @include respond-to(large) {
+           display: unset;
+
+           font-style: normal;
+           font-weight: 300;
+           font-size: 12px;
+           line-height: 14px;
+           letter-spacing: 0.37em;
+        }
+    }
+}

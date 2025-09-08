@@ -1,0 +1,166 @@
+.c55__ {
+  &container {
+
+    &.fix-top {
+      margin-top: 90px;
+
+    }
+
+    &.bg-celeste {
+      .nuestras-marcas {
+        background-color: $color-celeste;
+      }
+    }
+
+    .nuestras-marcas {
+      width: 100%;
+      clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0% 100%);
+      background-color: $color-bg;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      text-align: center;
+
+      @include respond-from(medium) {
+        clip-path: polygon(0 50px, 100% 0%, 100% 100%, 0% 100%);
+        padding-top: 70px;
+        padding-bottom: 10px;
+      }
+
+      .titulo {
+        position: relative;
+        font-family: $second-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 50px;
+        line-height: 60px;
+        padding-bottom: 56px;
+        margin-bottom: 70px;
+        display: inline-block;
+        margin-left: -90px;
+
+        @include respond-from(medium) {
+          font-size: 36px;
+          line-height: 45px;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          margin-left: 0px;
+        }
+
+
+        @include respond-from(large) {
+          margin-left: 0px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          left: calc(50% - 69px);
+          width: 138px;
+          height: .5px;
+          background-color: $color-main;
+        }
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        @include respond-from(1023px) {
+          gap: 0;
+        }
+
+
+        @include respond-from(medium) {
+          gap: 30px;
+        }
+
+        @include respond-from(medium) {
+          display: block;
+        }
+
+        .logo {
+
+          width: 100%;
+
+          @include respond-to(medium) {
+            width: 33%;
+          }
+
+          @include respond-to(large) {
+            width: inherit;
+          }
+
+
+          @include respond-from(small) {
+            margin-bottom: 40px;
+          }
+
+          .logo-1 {
+            width: 117px;
+
+            @include respond-from(small) {
+              width: 100px;
+            }
+          }
+
+          .logo-2 {
+            width: 135px;
+
+            @include respond-from(small) {
+              width: 120px;
+            }
+          }
+
+          .logo-3 {
+            width: 175px;
+
+            @include respond-from(small) {
+              width: 150px;
+            }
+          }
+
+          .texto {
+            position: relative;
+            font-family: $main-font;
+            font-weight: $regular;
+            font-style: italic;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 23px;
+            padding-top: 25px;
+            margin-top: 30px;
+
+            @include respond-from(medium) {
+              margin-bottom: 40px;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: calc(50% - 2px);
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: $color-main;
+            }
+
+            @include respond-from(medium) {
+              padding-top: 7px;
+              margin-top: 0px;
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

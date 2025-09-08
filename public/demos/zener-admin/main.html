@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Zener - Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.0/css/solid.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/skycons.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="d-flex">
+        <div class="mr-auto align-middle"><a href="main.html"><div class="logo"><img src="images/logo.jpg"></div></a></div>
+        <div class="item align-middle">14-09-2020 18:15:19</div>
+        <div class="item align-middle"><a hre="index.html" class="btn-logout"><span class="fa fa-fw fa-power-off" class="ico-logout"></span></a></div>
+      </div>
+    </nav>
+    <main role="main" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 main-left">
+          <div class="title">Bienvenido/a a:</div>
+          <div class="title-intro">
+            ZENER<br><i>Smart Home</i>
+          </div>
+          <ul class="menu">
+            <li><div class="title">Navegación</div></li>
+            <li><a href="demanda-hogar-detalle.html"><span class="ico"><i class="fa fa-fw fa-home"></i></span> Hogar</a></li>
+            <li><a href="autoconsumo-detalle.html"><span class="ico"><i class="fa fa-fw fa-recycle"></i></span> Autoconsumo</a></li>
+            <li><a href="economia-detalle.html"><span class="ico"><i class="fa fa-fw fa-hand-holding-usd"></i></span> Economía</a></li>
+            <li class="active"><a href="main.html"><span class="ico"><i class="fa fa-fw fa-solar-panel"></i></span> Servicio</a></li>
+            <li><a href="conectividad.html"><span class="ico"><i class="fa fa-fw fa-wifi"></i></span> Conectividad</a></li>
+            <li><a href="informacion-general.html"><span class="ico"><i class="fa fa-fw fa-info-circle"></i></span> Información General</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 main-right">
+          <div class="menu-options">
+            <div class="options">
+              <div class="option servicio activo">
+                <i class="fa fa-fw fa-solar-panel"></i> SERVICIO
+              </div>
+              <div class="option conectividad inactivo">
+                <i class="fa fa-fw fa-wifi"></i> CONECTIVIDAD
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="col estado contenedor">
+              <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                  ESTADO CORRECTO <span class="fa fa-fw fa-check-circle"></span>
+                  <div class="texto">
+                    Todos los servicios activos.<br>
+                    Aportando energía al hogar.
+                  </div>
+                  <br>
+                  ESTADO INCORRECTO <span class="fa fa-fw fa-times-circle"></span>
+                  <div class="texto">
+                    Todos los servicios inactivos.<br>
+                    No aportando energía al hogar.
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                  <div id="weatherWidget">
+              			<div class="weather-top">
+              				<div class="weather-grids">
+              					<h3 class="fri">Lunes</h3>
+              					<h3>Clima</h3>
+              				</div>
+              				<div class="weather-grids weather-mdl">
+              					<canvas id="clear-day" width="70" height="70"></canvas>
+              				</div>
+              				<div class="weather-grids">
+              					<h4>Max 27°</h4>
+              					<h2>21°C</h2>
+              					<h4>Min 10°</h4>
+              				</div>
+              				<div class="clear"> </div>
+              			</div>
+              			<div class="weather-bottom">
+              				<ul>
+              					<li class="bg"><h4>LUN</h4>
+              						<figure class="icons">
+              							<canvas id="clear-night" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>27°C</h5>
+              						<h6>17°C</h6>
+              					</li>
+              					<li class="bg"><h4>MAR</h4>
+              						<figure class="icons">
+              							<canvas id="partly-cloudy-day" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>20°C</h5>
+              						<h6>15°C</h6>
+              					</li>
+              					<li class="bg"><h4>MIE</h4>
+              						<figure class="icons">
+              							<canvas id="cloudy" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>18°C</h5>
+              						<h6>12°C</h6>
+              					</li>
+              					<li class="bg"><h4>JUE</h4>
+              						<figure class="icons">
+              							<canvas id="sleet" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>17°C</h5>
+              						<h6>12°C</h6>
+              					</li>
+              					<li class="bg"><h4>VIE</h4>
+              						<figure class="icons">
+              							<canvas id="rain" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>17°C</h5>
+              						<h6>10°C</h6>
+              					</li>
+              					<li class="bg"><h4>SAB</h4>
+              						<figure class="icons">
+              							<canvas id="snow" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>24°C</h5>
+              						<h6>10°C</h6>
+              					</li>
+              					<li class="bg"><h4>DOM</h4>
+              						<figure class="icons">
+              							<canvas id="fog" width="40" height="40"></canvas>
+              						</figure>
+              						<h5>25°C</h5>
+              						<h6>15°C</h6>
+              					</li>
+              				</ul>
+              			</div>
+                    <div class="row info-extra">
+                      <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <div class="salida"><img src="images/ico-sun-up.svg" class="ico-sun-up"> Salida del sol:<br><b>08:08AM</b></div>
+                        <div class="puesta"><img src="images/ico-sun-down.svg" class="ico-sun-down"> Puesta del sol:<br><b>21:15PM</b></div>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                        Hoy: Soleado ahora. La máxima será de 23°. Mayormente nublado esta noche y con una mínima de 9°.
+                      </div>
+                      <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        Porcentaje de lluvias<br><span class="porcentaje">15%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="content-items main-demanda-hogar mb-4">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-item">
+                      <div class="item demanda-hogar">
+                        <div class="inner">
+                          <span class="title">DEMANDA HOGAR</span>
+                          <div class="img-holder"><img src="images/demanda-hogar-alt-2.svg" class="img" /></div>
+                          <div class="speedbox demanda-hogar">
+                            <div class="speedbox__score" style="transform: rotate(75deg);"></div>
+                            <div class="speedbox__groove"></div>
+                            <div class="speedbox__odo">
+                              <div class="speedbox__up">
+                                1500W <br>
+                                <span>Potencia ahora</span>
+                              </div>
+                              <div class="speedbox__down">
+                                800kWh
+                                <br><span>Energía diario</span>
+                              </div>
+                            </div>
+                            <div class="speedbox__base"></div>
+                          </div>
+                          <a href="#" class="btn-detalle">Detalle <i class="fa fa-fw fa-search-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-item">
+                      <div class="item auto-consumo">
+                        <div class="inner">
+                          <span class="title">AUTO CONSUMO</span>
+                          <div class="img-holder"><img src="images/auto-consumo-alt-2.svg" class="img" /></div>
+                          <div class="speedbox auto-consumo">
+                            <div class="speedbox__score" style="transform: rotate(100deg);" ></div>
+                            <div class="speedbox__groove"></div>
+                            <div class="speedbox__odo">
+                              <div class="speedbox__up">
+                                1500W <br>
+                                <span>Potencia ahora</span>
+                              </div>
+                              <div class="speedbox__down">
+                                800kWh
+                                <br><span>Energía diario</span>
+                              </div>
+                            </div>
+                            <div class="speedbox__base"></div>
+                          </div>
+                          <a href="#" class="btn-detalle">Detalle <i class="fa fa-fw fa-search-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-item">
+                      <div class="item economia-hogar">
+                        <div class="inner">
+                          <span class="title">ECONOMÍA</span>
+                          <div class="img-holder"><img src="images/economia-hogar-alt-2.svg" class="img" /></div>
+                          <p>
+                            Por ahorro de energía día:<br>
+                            <b>Día: 5€</b> / <b>Semana: 20€</b>
+                          </p>
+                          <p>
+                            Por suministro a red:<br>
+                            <b>Día: 1€</b> / <b>Semana: 3€</b>
+                          </p>
+                          <a href="#" class="btn-detalle">Detalle <i class="fa fa-fw fa-search-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="grafico-holder">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+                <div class="grafico-holder verde-verde">
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim-1"><div class="bar"></div></div>
+                      <div class="linea-anim-2"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+                <div class="grafico-holder verde-amarillo">
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico amarillo">
+              			<div class="item">
+                      <div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+              	<div class="grafico-holder verde">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+              	<div class="grafico-holder amarillo">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+              	<div class="grafico-holder rojo">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-rojo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-rojo.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-rojo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-rojo.svg"></div></div>
+              			</div>
+              		</div>
+              	</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="grafico-holder">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+                <div class="grafico-holder verde-verde">
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim-1"><div class="bar"></div></div>
+                      <div class="linea-anim-2"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico verde">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+                <div class="grafico-holder verde-amarillo">
+              		<div class="grafico verde">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico amarillo">
+              			<div class="item">
+                      <div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico amarillo">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+              	<div class="grafico-holder verde">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-verde.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4-verde.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3-verde.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+              	<div class="grafico-holder amarillo">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4-amarillo.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3-amarillo.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+              	<div class="grafico-holder rojo">
+              		<div class="grafico">
+              			<div class="item">
+                      <div class="datos-1">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-2">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-1-rojo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-2-rojo.svg"></div></div>
+              			</div>
+              		</div>
+              		<div class="grafico">
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-4-rojo.svg"></div></div>
+              			</div>
+              			<div class="item">
+              				<div class="datos">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+                      <div class="datos-3">
+              					<div class="arrow"></div>
+              					Tensión: <b>0.0 V</b><br>
+              					Corriente: <b>0.00 A</b><br>
+              					Potencia: <b>0.000 Kw</b>
+              				</div>
+              				<div class="linea-anim"><div class="bar"></div></div>
+              				<div class="linea-holder"><div class="linea"><img src="images/icono-3-rojo.svg"></div></div>
+              			</div>
+              		</div>
+                  <div class="grafico">
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-4-rojo.svg"></div></div>
+                    </div>
+                    <div class="item">
+                      <div class="datos">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="datos-3">
+                        <div class="arrow"></div>
+                        Tensión: <b>0.0 V</b><br>
+                        Corriente: <b>0.00 A</b><br>
+                        Potencia: <b>0.000 Kw</b>
+                      </div>
+                      <div class="linea-anim"><div class="bar"></div></div>
+                      <div class="linea-holder"><div class="linea"><img src="images/icono-3-rojo.svg"></div></div>
+                    </div>
+                  </div>
+              	</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <canvas id="canvas-1" height="80vh" width="100vw"></canvas>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <canvas id="canvas-2" height="80vh" width="100vw"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.4.0/js/all.js"></script>
+    <script src="js/Chart.min.js"></script>
+  	<script src="js/utils.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

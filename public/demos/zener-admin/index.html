@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js login" lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<title>Zener - Login</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.0/css/solid.css">
+		<link rel="stylesheet" href="css/Chart.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<script src="js/skycons.js"></script>
+	</head>
+	<body>
+		<div class="container h-100">
+			<div class="d-flex justify-content-center h -100">
+				<div class="user_card">
+					<div class="d-flex justify-content-center">
+						<img src="images/logo.jpg" class="brand_logo" alt="Logo">
+					</div>
+					<div class="userlogin-text">ADMINISTRADOR</div>
+					<div class="d-flex justify-content-center form_container">
+						<form action="" method="post">
+							<input type="hidden" name="send" value="ok">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<i class="fa fa-fw fa-user"></i>
+								</div>
+								<input type="text" name="username" class="form-control input_user" value="" placeholder="username">
+							</div>
+							<div class="input-group mb-4">
+								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password" onclick="showPassword('0');"></span>
+								<div class="input-group-prepend inpt-pass">
+									<i class="fa fa-fw fa-key"></i>
+								</div>
+								<input type="password" name="password" class="form-control input_pass" id="password-field-0" placeholder="password" />
+							</div>
+							<div class="input-group">
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="recordarme" name="recordarme" value="1">
+									<label class="custom-control-label" for="recordarme">Recordarme</label>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center mt-1 login_container">
+					 			<input type="submit" name="button" class="btn login_btn" value="LOGIN"/>
+					    </div>
+						</form>
+					</div>
+					<!-- OCULTAR O MOSTRAR -->
+						<div class="mensaje">Username or Password incorrect.<br>Please, try again.</div>
+					<!-- OCULTAR O MOSTRAR -->
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.4.0/js/all.js"></script>
+    <script src="js/scripts.min.js"></script>
+	</body>
+</html>

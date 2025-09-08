@@ -1,6 +1,7 @@
 {
   "projects": {
-    "staging": "luchomartin-net"
+    "staging": "luchomartin-net",
+    "default": "luchomartin-net"
   },
   "targets": {},
   "etags": {}

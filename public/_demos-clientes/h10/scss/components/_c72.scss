@@ -1,0 +1,138 @@
+.c72__ {
+  &container {
+    margin-top: 120px;
+    margin-bottom: 110px;
+
+    @include respond-from(medium) {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+
+    .title {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 50px;
+      line-height: 64px;
+      text-align: center;
+      margin-bottom: 88px;
+
+      @include respond-from(medium) {
+        font-size: 50px;
+        line-height: 74px;
+        margin-bottom: 22px;
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      @include respond-from(small) {
+        font-size: 40px;
+        line-height: 54px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    .cols {
+      display: flex;
+      flex-flow: row;
+      gap: 16px;
+
+      &.bottom {
+        .col {
+          &.center {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+          }
+        }
+      }
+
+      @include respond-from(medium) {
+        display: block;
+
+        .col {
+          flex: 0 0 100%;
+        }
+      }
+
+      .col {
+        flex: 0 0 33.33%;
+        text-align: center;
+
+        &.left {
+          .texto {
+            margin-bottom: 60px;
+
+            @include respond-from(medium) {
+              margin-bottom: 22px;
+            }
+          }
+        }
+
+        &.center {
+          .texto-holder {
+            display: flex;
+            flex-wrap: wrap;
+
+            .texto {
+              @include respond-from(medium) {
+                margin-bottom: 22px;
+              }
+            }
+
+            &:last-child {
+              align-items: flex-end;
+            }
+          }
+        }
+
+        &.right {
+          .texto {
+            margin-top: 60px;
+
+            @include respond-from(medium) {
+              margin-top: 0px;
+              margin-bottom: 22px;
+            }
+          }
+        }
+
+        .titulo {
+          font-family: $main-font;
+          font-weight: $medium;
+          font-size: 18px;
+          line-height: 28px;
+          text-transform: uppercase;
+          text-align: left;
+        }
+
+        .texto {
+          font-family: $main-font;
+          font-weight: $regular;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: left;
+        }
+
+        .img-1 {
+          max-width: 100%;
+          margin-bottom: 115px;
+
+          @include respond-from(medium) {
+            margin-bottom: 34px;
+          }
+        }
+
+        .img-2 {
+          max-width: 100%;
+
+          @include respond-from(medium) {
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+
+  }
+}

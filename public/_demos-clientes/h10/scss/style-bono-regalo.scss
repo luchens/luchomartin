@@ -1,0 +1,54 @@
+/*------------------------------------*\
+	$SASS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+	$SITE, UTILITIES &&& VARIABLES
+\*------------------------------------*/
+@import
+	"variables/variables",
+	"variables/colors",
+	"variables/typography-var",
+	"utilities/mixins",
+	"utilities/functions";
+
+/*------------------------------------*\
+	$LAYOUT
+\*------------------------------------*/
+@import
+	"layout/grid",
+	"layout/_grid-system",
+	"utilities/utilities";
+
+/*------------------------------------*\
+	$COMPONENTS
+\*------------------------------------*/
+
+@import "components/ion.rangeSlider.min";
+
+
+@import
+	"site/site",
+	"components/c4",
+	"components/c7",
+	"components/c55",
+	"components/c57",
+	"components/c67",
+	"components/cBonoRegalo",
+
+	// se hace necesario al incluir este modal en el pie de todas las paginas. hay que mantenerlo.
+	"components/c75",
+	"components/cSuscripcion-newsletter",
+
+	"components/nav",
+	"components/topbar",
+	"components/footer",
+	"components/typography",
+	"components/links",
+	"components/topbar-main",
+	"components/topbar-desplegables",
+	"components/general-carrusel",
+	"utilities/acordion",
+	"utilities/modal",
+	"utilities/dropdowns";

@@ -1,0 +1,39 @@
+.c44__ {
+  &container {
+    background-color: $color-celeste;
+    padding: 22px 22px 22px 112px;
+
+    background-image: url('#{$iconspath}flexiMICE.svg');
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 22px 22px;
+
+    .titulo {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    .texto {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 11px;
+    }
+
+    .btn-detalles {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
+}

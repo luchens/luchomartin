@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <title>H10 Hotels. Recuperaci&oacute;n de Abandonos</title>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <style type="text/css">
+        body {
+            width: 100%;
+            background-color: #EDEDF0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            -webkit-font-smoothing: antialiased;
+            font-family: Arial, sans-serif;
+        }
+        /*table { border-collapse: collapse; border-spacing: 0px; padding: 0px; }*/
+        div, p, a, li {
+            -webkit-text-size-adjust: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            color: #000028;
+            font-weight: bold;
+        }
+
+        .spc_rrss {
+            text-align: center;
+        }
+
+        @@media (max-width:660px) {
+            .spc_rrss_it_1 {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .spc_rrss_it_2 {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body width="100%" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="font-family: Arial, sans-serif">
+    <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#EDEDF0">
+        <tr>
+            <td width="100%" align="center" style="padding-left: 16px;padding-right: 16px;">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="max-width: 600px;border-radius:8px;margin-bottom:40px;overflow: hidden;">
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding:24px 24px 40px 24px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:40px;">
+                                            <tr>
+                                                <td width="30%" align="left"><a href="@Model.LinkWeb"><img width="95" src="@Model.StaticUrl/logo-blue.png" alt="H10 Hotels. Pensando en ti." border="0" style="width:95px;display:inline-block;border:0;vertical-align: middle;" /></a></td>
+                                                <td width="70%" align="right"><a href="@Model.LinkFichaHotel"><img src="@Model.DatosHotel.LogoHotel" alt="H10 Hotels. Pensando en ti" border="0" style="display: inline-block; border: 0; vertical-align: middle; padding-left: 5px; max-width: 250px; max-height: 45px;" /></a></td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td><img width="100%" src="@Model.DatosHotel.HeroHotel" alt="" border="0" style="width:100%;display:block;border:0;max-width: 552px;" /></td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <h4 style="font-family: Arial, sans-serif; font-size:28px; line-height:32px; color:#000028; margin-top:32px;margin-bottom:16px;">El hotel @Model.DatosHotel.NombreHotel te está esperando</h4>
+                                                    <img src="@Model.StaticUrl/punto-azul.gif" style="width: 160px; height:.5px; background-color:#000028; display: block;" />
+                                                    <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;margin-top:16px;margin-bottom:16px;">
+                                                        Hola @Model.DatosReserva.Nombre, hemos visto que no has finalizado la reserva que estabas realizando en @Model.DatosHotel.NombreHotel. ¿Has tenido algún problema? Estaremos encantados de ayudarte a través del email <a href="mailto:reservas@h10hotels.com" style="font-weight: bold; text-decoration: none;">reservas@h10hotels.com</a> o en el teléfono <a href="tel:+34900444466" style="font-weight: bold;text-decoration: none;">+34 900 444 466</a>.
+
+                                                        <br>
+                                                        Si quieres recuperar tu reserva, haz clic aquí:
+                                                    </p>
+                                                    <a href="@Model.LinkRecuperarReserva" style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#ffffff;background-color: #000028;text-decoration: none; font-weight: bold; padding:12px 16px;display: inline-block;margin-bottom: 40px;">CONTINUAR CON LA RESERVA</a>
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding-left: 0px; padding-right: 0px;">
+                                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td align="left">
+                                                                            <h4 style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; margin-top:0px; margin-bottom:8px; text-transform: uppercase;">Detalles de la reserva en @Model.DatosHotel.NombreHotel</h4>
+                                                                            <img src="@Model.StaticUrl/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block;" />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <br>
+                                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="padding-bottom: 8px; width: 165px"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">ENTRADA</strong></td>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.FechaEntrada</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-bottom: 8px ; width: 165px"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;">SALIDA</strong></td>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Model.DatosReserva.FechaSalida</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                @foreach (var Habitacion in @Model.Habitaciones) {
+                                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border: .5px solid #000028;padding: 16px;">
+                                                                    <tr>
+                                                                        <td colspan="2" style="padding-bottom: 8px;">
+                                                                            <strong style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028; text-transform: uppercase;">@Habitacion.Nombre</strong>
+                                                                            <img src="@Model.StaticUrl/punto-azul.gif" style="width: 38px; height:.5px; background-color:#000028; display: block; margin-top: 8px;margin-bottom: 16px;" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;padding-bottom: 8px;">@{ var adulto="adulto"; var adultos="adultos"; var nino=" niño"; var ninos=" niños"; } @Habitacion.Adultos @if(@Habitacion.Adultos>1) {@adultos} else {@adulto} @if(@Habitacion.MostrarNinos == true) { @Habitacion.Ninos @if(@Habitacion.Ninos>1) {@ninos} else {@nino} } </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;padding-bottom: 8px;">
+                                                                            @Habitacion.Tarifa
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="50%" align="left" style="font-family: Arial, sans-serif; font-size:14px; line-height:16px; color:#000028;padding-bottom: 8px;"><strong>@Habitacion.Regimen</strong></td>
+                                                                        <td width="50%" align="right"><strong style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#000028;">@Habitacion.Precio</strong></td>
+                                                                    </tr>
+                                                                    @foreach (var Extra in @Habitacion.Extras) {
+                                                                    <tr>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px;">@Extra.Titulo, @Extra.Fecha</td>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;padding-bottom: 8px; vertical-align: top;" align="right">@Extra.Precio</td>
+                                                                    </tr>
+                                                                    }
+                                                                </table>
+                                                                <br>
+                                                                }
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <br><br>
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding-left: 0px; padding-right: 16px;">
+                                                                @if (@Model.DatosImporte.DescuentoPromocode == true || @Model.DatosImporte.DescuentoClub == true) {
+                                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    @if (@Model.DatosImporte.DescuentoPromocode == true) {
+                                                                    <tr>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase; padding-bottom: 8px; padding-right: 16px;" align="right">@Model.DatosImporte.Promocode</td>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#CC5C5C; padding-bottom: 8px;width:100px" align="right">-@Model.DatosImporte.CantidadPromocode</td>
+                                                                    </tr>
+                                                                    }
+                                                                    @if (@Model.DatosImporte.DescuentoClub == true) {
+                                                                    <tr>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase; padding-bottom: 8px; padding-right: 16px;" align="right">CLUB H10 @Model.DatosImporte.Club</td>
+                                                                        <td style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#CC5C5C; padding-bottom: 8px;width:100px" align="right">-@Model.DatosImporte.CantidadClub</td>
+                                                                    </tr>
+                                                                    }
+                                                                    <tr>
+                                                                        <td colspan="2" align="right"><img src="@Model.StaticUrl/punto-azul.gif" style="width: 88px; height:.5px; background-color:#000028; display: block; margin-top: 16px; margin-bottom: 16px;" /></td>
+                                                                    </tr>
+                                                                </table>
+                                                                }
+                                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="padding-bottom: 8px; padding-right: 16px;" align="right"><strong style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; text-transform: uppercase;">Importe total de la reserva</strong></td>
+                                                                        <td style="padding-bottom: 8px;" align="right"><strong style="font-family: Arial, sans-serif; font-size:18px; line-height:20px; color:#000028; width:100px">@Model.DatosImporte.ImporteTotal</strong></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" align="right" style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028; padding-top: 8px;">@Model.DatosImporte.Impuestos</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <a href="@Model.LinkRecuperarReserva" style="text-decoration: none;">
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EDEDF0; padding: 24px 16px;">
+                                                <tr>
+                                                    <td colspan="3" align="center"><h2 style="font-family: Arial, sans-serif; font-size:16px; line-height:20px; color:#000028; text-transform: uppercase; margin-top: 0px; margin-bottom: 24px;">Por qué elegirnos</h2></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="33.3%" align="center" class="deviceWidth" style="vertical-align: top;">
+                                                        <a href="@Model.LinkClub" style="text-decoration: none;">
+                                                            <img src="@Model.StaticUrl/ico-porque-elegirnos-1.png" width="72" height="72" border="0" style="margin-bottom: 8px; display: inline-block;" />
+                                                            <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028; font-weight: normal;">Hazte socio del Club H10 y disfruta del 5% de dto. en todas las reservas que realices online</p>
+                                                        </a>
+                                                    </td>
+                                                    <td width="33.3%" align="center" class="deviceWidth" style="vertical-align: top;padding-left: 16px;padding-right: 16px;">
+                                                        <a href="@Model.LinkWeb" style="text-decoration: none;">
+                                                            <img src="@Model.StaticUrl/ico-porque-elegirnos-2.png" width="72" height="72" border="0" style="margin-bottom: 8px; display: inline-block;" />
+                                                            <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;font-weight: normal;">Cancelación gratuita hasta las 12:00 del día anterior a tu llegada (*)</p>
+                                                        </a>
+                                                    </td>
+                                                    <td width="33.3%" align="center" class="deviceWidth" style="vertical-align: top;">
+                                                        <a href="@Model.LinkWeb" style="text-decoration: none;">
+                                                            <img src="@Model.StaticUrl/ico-porque-elegirnos-3.png" width="72" height="72" border="0" style="margin-bottom: 8px; display: inline-block;" />
+                                                            <p style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#000028;font-weight: normal;">Reserva con el mejor precio online garantizado</p>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 72px;">
+                                            <tr>
+                                                <td width="50%" class="deviceWidth first spc_rrss_it_1">
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="100%" align="center">
+                                                                <h5 style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028;margin-top:0px;margin-bottom:20px;">SÍGUENOS EN REDES SOCIALES</h5>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" class="spc_rrss">
+                                                                <a href="https://www.instagram.com/h10hotels/"><img src="@Model.StaticUrl/ico-instagram.png" width="32" height="32" border="0" style="margin-right: 2px;" /></a>
+                                                                <a href="https://www.facebook.com/H10.Hotels"><img src="@Model.StaticUrl/ico-facebook.png" width="32" height="32" border="0" style="margin-right: 2px;" /></a>
+                                                                <a href="https://www.tiktok.com/@Model.h10hotels"><img src="@Model.StaticUrl/ico-tiktok.png" width="32" height="32" border="0" style="margin-right: 2px;" /></a>
+                                                                <a href="https://www.youtube.com/user/h10hotels"><img src="@Model.StaticUrl/ico-youtube.png" width="32" height="32" border="0" /></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50%" align="center" class="deviceWidth spc_rrss_it_2">
+                                                    <h5 style="font-family: Arial, sans-serif; font-size:12px; line-height:14px; color:#000028;margin-top:0px;margin-bottom:20px;">MÁS INFORMACIÓN Y RESERVAS</h5>
+                                                    <a href="tel:+34900444466" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="@Model.StaticUrl/ico-telefono.png" width="8" height="8" border="0" style="margin-right: 5px;" /> (+34) 900 444 466</a>
+                                                    <br>
+                                                    <a href="mailto:reservas@h10hotels.com" style="font-family: Arial, sans-serif; font-size:12px; line-height:16px; color:#767676; font-style: italic; text-decoration: none; font-weight: normal;"><img src="@Model.StaticUrl/ico-email.png" width="10" height="8" border="0" style="margin-right: 5px;" /> reservas@h10hotels.com</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <h6 style="font-family: Arial, sans-serif; font-size:11px; line-height:16px; color:#000028;margin-top:56px;margin-bottom:16px;">DATOS PERSONALES</h6>
+                                                    <p style="font-family: Arial, sans-serif; font-size:10px; line-height:16px; color:#000028;">
+                                                        Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición y/o limitación del tratamiento y portabilidad de los datos dirigiéndote por escrito a H10 HOTELS, C/ Numància, 185- 1ª planta - 08034 Barcelona, o bien por medio de un correo electrónico a la dirección <a href="mailto:dpo@h10hotels.com" title="dpo@h10hotels.com">dpo@h10hotels.com</a>, en ambos casos, con la Referencia "Protección de Datos". Este mensaje contiene información confidencial. Si no eres el destinatario del presente correo electrónico te agradeceremos nos lo hagas saber por este mismo medio y procedas a eliminarlo.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <img src="https://neural15.cdnwebcloud.com/atp?tc=@Model.TcAlt&n_o_ord=[CACHEBUSTER]&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_37}" width="1" height="1" border="0" style="display:none;" />
+</body>
+</html>

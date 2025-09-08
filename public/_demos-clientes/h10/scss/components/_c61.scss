@@ -1,0 +1,319 @@
+.c61__ {
+  &container {
+    margin-top: 48px;
+    margin-bottom: 242px;
+
+    @include respond-from(medium) {
+      margin-top: 24px;
+      margin-bottom: 56px;
+    }
+
+    .container-fix {
+      .items {
+        &:last-child {
+          .cols {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .title {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 32px;
+      text-align: center;
+
+      @include respond-from(large) {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .text {
+      font-family: $main-font;
+      font-weight: $regular;
+      color: $color-main;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      max-width: 868px;
+      margin: 0px auto 80px auto;
+
+      @include respond-from(large) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .items {
+      .titulo-top {
+        position: relative;
+        font-family: $main-font;
+        font-weight: $bold;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        user-select: none;
+
+        @include respond-from(medium) {
+          margin-bottom: 32px;
+
+          &.show {
+            &:after {
+              background-image: url('#{$iconspath}arrow-up.svg');
+            }
+
+            + .cols {
+              display: block;
+            }
+          }
+
+          + .cols {
+            display: none;
+          }
+
+        }
+
+        @include respond-from(medium) {
+          &:after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 5px);
+            right: 0px;
+            width: 19px;
+            height: 10px;
+            background-image: url('#{$iconspath}arrow-down.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include transition(all .3s ease);
+          }
+        }
+
+        @include respond-from(small) {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      .cols {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+        padding-bottom: 24px;
+        border-bottom: .5px solid $color-grey2;
+
+        @include respond-from(medium) {
+          margin-bottom: 32px;
+          padding-bottom: 0px;
+        }
+
+        .col {
+          flex: 0 0 25%;
+
+          @include respond-from(large) {
+            flex: 0 0 33.33%;
+          }
+
+          @include respond-from(medium) {
+            flex: 0 0 100%;
+          }
+
+          .item {
+            //margin-bottom: 16px;
+            //padding-bottom: 16px;
+            //border-bottom: .5px solid $color-grey2;
+            @include respond-from(medium) {
+              cursor: pointer;
+              user-select: none;
+              margin-bottom: 32px;
+            }
+
+            @include respond-from(medium) {
+              &.show {
+                //padding-bottom: 48px;
+
+                .titulo {
+                  //font-weight: $medium;
+                  margin-bottom: 48px;
+
+                  &:after {
+                    background-image: url('#{$iconspath}arrow-up.svg');
+                  }
+                }
+
+                .subtitulo {
+                  margin-bottom: 48px;
+
+                  &:after {
+                    background-image: url('#{$iconspath}arrow-up.svg');
+                  }
+
+                  @include respond-from(medium) {
+                    &:before {
+                      content: "";
+                      position: absolute;
+                      top: -38px;
+                      left: -16px;
+                      width: calc(100% + 32px);
+                      height: 20px;
+                      box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, .07);
+                    }
+                  }
+                }
+
+                .texto {
+                  display: block;
+                }
+              }
+            }
+
+            &:last-child {
+              //margin-bottom: 0px;
+            }
+
+            .titulo {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $bold;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 8px;
+
+              @include respond-from(medium) {
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: calc(50% - 5px);
+                  right: 0px;
+                  width: 19px;
+                  height: 10px;
+                  background-image: url('#{$iconspath}arrow-down.svg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  @include transition(all .3s ease);
+                }
+              }
+
+              @include respond-from(small) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+
+            .subtitulo {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 8px;
+              text-decoration: underline;
+              padding-right: 28px;
+              padding-left: 0px;
+
+              i {
+                font-style: normal;
+
+                @include respond-from(medium) {
+                  display: none;
+                }
+              }
+
+              + .texto {
+                padding-left: 8px;
+              }
+
+              @include respond-to(medium) {
+                span {
+                  display: none;
+                }
+              }
+
+              @include respond-from(medium) {
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: calc(50% - 5px);
+                  right: 0px;
+                  width: 19px;
+                  height: 10px;
+                  background-image: url('#{$iconspath}arrow-down.svg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  @include transition(all .3s ease);
+                }
+              }
+
+              @include respond-from(small) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+
+            .texto {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-main;
+              font-size: 14px;
+              line-height: 22px;
+              padding-left: 8px;
+              margin-bottom: 24px;
+              padding-right: 28px;
+
+              @include respond-from(medium) {
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: -48px;
+                  left: -16px;
+                  width: calc(100% + 32px);
+                  height: 20px;
+                  box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, .07);
+                }
+              }
+
+              a {
+                display: block;
+                width: 100%;
+                margin-bottom: 7px;
+
+                &:last-child {
+                  margin-bottom: 0px;
+                }
+
+                @include respond-from(medium) {
+                  margin-bottom: 16px;
+                }
+              }
+
+              @include respond-from(medium) {
+                display: none;
+              }
+
+              @include respond-from(small) {
+                font-size: 12px;
+                line-height: 16px;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

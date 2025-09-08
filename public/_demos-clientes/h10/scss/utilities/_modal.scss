@@ -1,0 +1,470 @@
+.general_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255,255,255, .95);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 120px 16px 32px;
+
+  b {
+    font-weight: $bold;
+  }
+  // Itz lo he corregido, ya que he visto que no tiene ninguna aplicacion a tus nuevas modales y si que está desmaquetando las modales simples
+  @include respond-from(small) {
+    //    top: -156px;
+  }
+
+  &.show {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    background-image: url("#{$iconspath}X.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .titulo-top-holder_ {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    @include respond-from(small) {
+      display: block;
+      text-align: center;
+    }
+
+    .titulo-top_ {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 60px;
+      line-height: 72px;
+      @include respond-from(small) {
+        margin-bottom: 16px;
+      }
+    }
+
+    .btn-ver-todas-holder_ {
+      .btn-ver-todas_ {
+        @include button($color-main, $color-white, $color-main);
+      }
+    }
+  }
+
+  .modal-body {
+    width: 100%;
+    max-width: 1400px;
+    padding-bottom: 32px;
+    //display: none;
+    overflow-y: auto;
+
+    b,
+    strong {
+      font-weight: $bold;
+    }
+  }
+  // modifier
+  &--secondary {
+    top: 0;
+    @include respond-to(medium) {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &::after {
+      @include respond-to(medium) {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        background: #FFFFFF;
+        opacity: 0.95;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    .general_modal__content {
+      overflow-y: auto;
+      @include respond-to(medium) {
+        width: calc(100% - 30px);
+        max-height: calc(100% - 80px);
+        margin: 0 auto;
+        padding: 83px 43px 48px;
+        background: #FFFFFF;
+        /* sombra */
+        box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        position: relative;
+        z-index: 2;
+        overflow-y: initial;
+      }
+    }
+
+    .modal-body {
+      @include respond-to(medium) {
+        padding-bottom: 0;
+      }
+    }
+    @include respond-to(large) {
+      //max-width: 870px;
+      margin: 0 auto;
+    }
+  }
+
+  &--lg {
+    .general_modal__content {
+      max-width: 1410px;
+    }
+  }
+
+  &--md {
+    .general_modal__content {
+      max-width: 870px;
+    }
+
+    .centrada {
+      display: flex;
+      align-items: center;
+      /* height: calc(100vh - 300px); */
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.modal-galeria-imagenes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255,255,255, .95);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  @include respond-from(large) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &.show {
+    display: flex;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 26px;
+    height: 26px;
+    background-image: url("#{$iconspath}X.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .slick-slider-holder {
+    position: relative;
+    width: 100%;
+    max-width: 1090px;
+    @media (min-width: 1024px) and (max-width: 1270px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      display: block;
+      top: calc(50% - 5px);
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: 40px 13px;
+      background-position: center;
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+      text-indent: -1000px;
+      overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
+      @include respond-from(large) {
+        top: calc(100% + 25px);
+      }
+
+      &.slick-prev {
+        background-image: url("#{$iconspath}arrow-left.svg");
+        left: -90px;
+        @include respond-from(large) {
+          left: 0;
+        }
+      }
+
+      &.slick-next {
+        background-image: url("#{$iconspath}arrow-rights.svg");
+        right: -90px;
+        @include respond-from(large) {
+          right: 0;
+        }
+      }
+    }
+
+    .slick-slider {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+
+      .slick-list,
+      .slick-track {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        &:focus {
+          outline: none;
+        }
+
+        &.dragging {
+          cursor: pointer;
+          cursor: hand;
+        }
+
+        .slick-track {
+          position: relative;
+          top: 0;
+          left: 0;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          &:after,
+          &:before {
+            display: table;
+            content: '';
+          }
+
+          &:after {
+            clear: both;
+          }
+
+          .item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: calc(100vh - 100px);
+            justify-content: center;
+
+            .video-holder {
+              position: relative;
+              width: 100%;
+              height: 100%;
+
+              .ico-play {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: calc(100% - 5px);
+                  background-image: url("#{$iconspath}play.svg");
+                  background-repeat: no-repeat;
+                  background-size: 70px;
+                  background-position: center;
+                  z-index: 1;
+                  @include respond-from(large) {
+                    background-size: 38px;
+                  }
+                }
+
+                &:after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: calc(100% - 5px);
+                  background-color: $color-main;
+                  opacity: 0.4;
+                  z-index: 0;
+                }
+              }
+
+              video {
+                width: 100%;
+                height: calc(100vh - 100px);
+                object-fit: cover;
+                background-position: center;
+              }
+            }
+
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-loading {
+      .slick-track {
+        visibility: hidden;
+      }
+    }
+
+    .slick-slide {
+      display: none;
+      float: left;
+      min-height: 1px;
+
+      &.dragging {
+        img {
+          pointer-events: none;
+        }
+      }
+
+      &.slick-loading {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    [dir='rtl'] {
+      .slick-slide {
+        float: right;
+      }
+    }
+
+    .slick-initialized {
+      .slick-slide {
+        display: block;
+      }
+    }
+
+    .slick-loading {
+      .slick-slide {
+        visibility: hidden;
+      }
+    }
+
+    .slick-vertical {
+      .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+      }
+    }
+
+    .slick-arrow {
+      &.slick-hidden {
+        display: none;
+      }
+    }
+
+    .slick-contador-holder {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+      @include respond-to(large) {
+        display: flex;
+      }
+      @include respond-from(large) {
+        text-align: center;
+      }
+
+      .slick-contador {
+        display: flex;
+        align-items: center;
+        @include respond-from(large) {
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+
+        .slick-actual {
+          font-family: $main-font;
+          font-weight: $bold;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        .slick-total {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      .texto {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 18px;
+        line-height: 28px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

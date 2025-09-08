@@ -1,0 +1,305 @@
+.c39 {
+  &__container {
+    margin-top: 64px;
+    @include respond-to(medium) {
+      margin: 156px $ultra-space 0;
+    }
+  }
+
+  &__description {
+    margin: 0 auto 24px;
+    @include respond-to(medium) {
+      margin: 0 auto 48px;
+    }
+    @include respond-to(large) {
+      max-width: 83.1%;
+    }
+
+    img {
+      max-width: 104px;
+      margin: 0 auto 24px;
+      display: block;
+      @include respond-to(medium) {
+        max-width: 100%;
+        margin: 0 auto 28px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-family: $second-font;
+      font-style: normal;
+      font-weight: 250;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      color: #000028;
+      @include respond-to(large) {
+        font-size: 50px;
+        line-height: 54px;
+      }
+    }
+
+    p {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: $regular;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000028;
+      @include respond-to(medium) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      strong {
+        font-weight: $medium;
+      }
+    }
+  }
+
+  &__contenido {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include respond-to(medium) {
+      margin-bottom: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-item {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      @include respond-to(medium) {
+        margin-bottom: 0;
+        display: block;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 24px;
+    @include respond-to(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #000028;
+    @include respond-to(medium) {
+      width: 94px;
+      height: 94px;
+      margin: 0 auto 40px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000028;
+    @include respond-to(medium) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &__box {
+    max-width: 902px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    border: 0.5px solid #000028;
+    text-align: center;
+    @include respond-to(medium) {
+      padding: 43px 16px 16px;
+    }
+
+    > p {
+      font-weight: $regular;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000028;
+      @include respond-to(large) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      strong {
+        font-weight: $medium;
+      }
+    }
+  }
+
+  &__certificates {
+    margin-top: 40px;
+    @include respond-to(medium) {
+      display: flex;
+    }
+
+    &-col {
+      @include respond-to(medium) {
+        width: 50%;
+      }
+
+      &:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        .col {
+          flex: 0 0 auto;
+          width: 50%;
+          text-align: center;
+
+          img {
+            display: inline-block;
+            width: 90px;
+            height: auto;
+            margin: 0px;
+            //margin: 0 16px;
+            /*@include respond-to(medium) {
+                          width: auto;
+                          margin: 0 45px;
+                      }
+
+                      &.ods {
+                          position: relative;
+                          top: -4px;
+
+                          @include respond-to(medium) {
+                              top: 0;
+                          }
+                      }
+
+                      &.desk {
+                          display: none;
+
+                          @include respond-to(medium) {
+                              display: block;
+                          }
+                      }
+
+                      &.mob {
+                          @include respond-to(medium) {
+                              display: none;
+                          }
+                      }*/
+          }
+
+          .text {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin-top: 3px;
+          }
+        }
+
+        p, a {
+          width: 100%;
+          margin-top: 16px;
+          margin-bottom: 24px;
+          font-family: $main-font;
+          font-style: normal;
+          font-weight: $regular;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          text-decoration-line: underline;
+          color: #767676;
+          @include respond-to(medium) {
+            margin-top: 22px;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      &:last-child {
+        text-align: left;
+
+        p {
+          margin-bottom: 26px;
+          font-family: $main-font;
+          font-style: normal;
+          font-weight: $regular;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000028;
+          @include respond-to(medium) {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 26px;
+          }
+        }
+
+        ul {
+          margin-top: 8px;
+          margin-bottom: 10px;
+          margin-left: 18px;
+          list-style: disc;
+
+          li {
+            margin-bottom: 0;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: $regular;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000028;
+            @include respond-to(medium) {
+              margin-bottom: 0;
+//              font-size: 20px;
+              line-height: 26px;
+            }
+
+            &.hide {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .btn-leer {
+        margin-left: 18px;
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: underline;
+        padding-right: 18px;
+        background-image: url("#{$iconspath}arrow-down.svg");
+        background-repeat: no-repeat;
+        background-size: 12px 7px;
+        background-position: right center;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        @include transition(all 0.3s ease);
+
+        &.menos {
+          background-image: url("#{$iconspath}arrow-up.svg");
+        }
+      }
+    }
+  }
+}

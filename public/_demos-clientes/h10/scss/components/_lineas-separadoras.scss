@@ -1,0 +1,21 @@
+//-----> $ESTILOS LINEAS SEPARADORAS
+
+.linea-separadora {
+
+    &__1 {
+        opacity: 1!important;
+        width: 0.5px;
+        background-color: $color-black;
+        border: 0px;
+        margin-left: 1.6rem;
+    }
+
+    &__2 {
+        opacity: 1!important;
+        height: 1px;
+        width: 100%;
+        background-color: $color-grey2;
+        border: 0px;
+        margin: 0;
+    }
+}

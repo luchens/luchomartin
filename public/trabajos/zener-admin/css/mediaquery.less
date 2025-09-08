@@ -1,0 +1,420 @@
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/*
+xs = Extra small <576px
+Max container width None (auto)
+
+sm = Small ≥576px
+Max container width 540px
+
+md = Medium ≥768px
+Max container width 720px
+
+lg = Large ≥992px
+Max container width 960px
+
+xl = Extra large ≥1200px
+Max container width 1140px
+*/
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+@media (max-width: 522px) {
+  .estado {
+    font-size: 23px;
+  }
+
+  #weatherWidget {
+    .weather-grids {
+      display: inline-block;
+      vertical-align: top;
+      .Calc(width,"33.33% - 4px");
+
+      #clear-day {
+        width: 40px;
+        height: 40px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      h3 {
+        font-size: .7em;
+
+        &.fri {
+          font-size: 1em;
+        }
+      }
+
+      h4 {
+        font-size: .5em;
+      }
+    }
+    .weather-bottom {
+      ul {
+        display: block;
+
+        li {
+          .Calc(width, "50% - 5px");
+          margin-bottom: 5px;
+
+          &.bg {
+            &:nth-child(2n){
+              background-color: rgba(255,255,255,.1);
+            }
+            &:nth-child(2n - 1){
+              background-color: rgba(255,255,255,.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:480px){
+  main {
+    .main-right {
+      .menu-options {
+        .options {
+          .option {
+            font-size: 1.1em!important;
+            font-weight: 400;
+
+            .fa-fw {
+              width: 100%;
+            }
+            &.servicio {
+              &:nth-child(1){
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-items {
+      .item {
+        &.default {
+          &:last-child{
+            margin-bottom: 10px!important;
+          }
+
+          .title {
+            padding: 15px 0px 25px 60px!important;
+            line-height: 20px!important;
+          }
+          .btn-modificar,
+          .btn-configurar,
+          .btn-nueva {
+            right: inherit!important;
+            top: inherit!important;
+            position: relative!important;
+            margin: 0 0 10px 0!important;
+            padding: 10px!important;
+            .Calc(width, "100% - 30px");
+            max-width: 100%!important;
+            display: inline-block;
+          }
+
+          .sec {
+            .texto {
+              form {
+                .btns {
+                  .btn {
+                    margin-bottom: 10px!important;
+                    width: 100%!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:350px){
+  main {
+    .main-right {
+      .menu-options {
+        .options {
+          .option {
+            font-size: 0.9em!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width:375px){
+  /*.grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-1 {
+    left: -4px;
+    top: -62px;
+  }
+  .grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-2 {
+    width: 85%!important;
+    left: 95%!important;
+    top: -62px;
+  }
+  .grafico-holder .grafico:nth-child(2) .item:nth-child(1) .datos {
+    left: 65%;
+  }*/
+
+}
+
+
+
+/*@media (max-width: 879px) {
+  .grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-2 {
+    .Calc(width, "100% - 497px");
+  }
+}*/
+
+/*@media (max-width: 585px) {
+  .grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-2 {
+    width: 42%;
+  }
+}
+
+@media (max-width: 505px) {
+  .grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 504px) {
+  .grafico-holder .grafico:nth-child(1) .item:nth-child(1) .datos-2 {
+    width: 55%;
+    left: 95%;
+  }
+}*/
+@media (max-width: 768px) {
+  main {
+    .grafico-holder {
+      padding-top: 60px!important;
+      padding-bottom: 60px!important;
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+
+      .grafico {
+        .item {
+          max-width: 0px;
+
+          .linea-holder {
+            .linea {
+              width: 50px;
+              height: 50px;
+
+              img {
+                max-height: 35px;
+                .Calc(margin-top,"50% - 18px");
+              }
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          .item {
+            &:nth-child(1) {
+              .Calc(width,"100% - 60px");
+              .Calc(padding-right,"100% - 63px");
+
+              .linea-anim-1 {
+                left: 64px;
+                .Calc(width, "50% - 31px");
+              }
+
+              .linea-anim-2 {
+                .Calc(left, "50% + 33px");
+                .Calc(width, "50% - 29px");
+              }
+
+              .linea-anim {
+                left: 64px;
+                .Calc(width,"100% - 60px");
+              }
+
+              .datos-1 {
+                left: 24%;
+                top: -44px;
+                padding: 5px;
+                font-size: 10px;
+                line-height: 13px;
+              }
+
+              .datos-2 {
+                .Calc(left, "50% + 36px")!important;
+                top: -44px;
+                padding: 5px;
+                font-size: 10px;
+                line-height: 13px;
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          padding-top: 60px;
+
+          .item {
+            &:nth-child(1) {
+              padding-right: 38%;
+
+              .datos {
+                padding: 5px;
+                font-size: 10px;
+                line-height: 13px;
+                top: 63px;
+                .Calc(left, "50% - 16px");
+                margin-right: -44px;
+              }
+
+              .linea-anim {
+                .Calc(width, "100% - 60px");
+                left: 64px;
+              }
+            }
+            &:nth-child(2) {
+              .datos {
+                padding: 5px;
+                font-size: 10px;
+                line-height: 13px;
+                left: 47px;
+                top: -56px;
+              }
+
+              .linea-anim {
+                .Calc(left, "50% + 30px");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    padding-left: 10px;
+  }
+
+  main {
+    .main-left {
+      background-size: cover;
+      min-height: auto;
+      padding: 30px 0 30px 0;
+      min-height: auto;
+      position: relative;
+
+      .menu {
+        margin-top: 30px;
+      }
+    }
+
+    .main-right {
+      margin: 0;
+
+      .content-items {
+        margin-top: 60px;
+        padding-top: 80px;
+
+        &.autoconsumo,
+        &.demanda-hogar {
+          margin-top: 0px;
+        }
+
+        &.economia {
+          margin-top: 0px;
+          padding-top: 30px;
+        }
+
+        &.main-demanda-hogar {
+          margin-top: 0px;
+          padding-top: 0px;
+        }
+
+        &.default {
+          margin-top: 0px;
+          padding-top: 30px;
+          padding-bottom: 60px;
+        }
+      }
+
+      .menu-options {
+        .options {
+          .option {
+            .Calc(width, "50% - 22px");
+            max-width: none;
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+
+  .content-items {
+    .item {
+      &.economia {
+        .title {
+          padding-bottom: 0!important;
+        }
+
+        .texto {
+          padding-left: 0!important;
+          font-size: 13px;
+
+          .money {
+            .fa-euro-sign {
+              font-size: 30px!important;
+            }
+          }
+        }
+
+        .fa-coins {
+          font-size: 3.3em!important;
+        }
+      }
+    }
+  }
+}

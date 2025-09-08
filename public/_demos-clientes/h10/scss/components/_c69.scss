@@ -1,0 +1,445 @@
+.c69__ {
+  &container {
+
+    &.fix-top {
+      margin-top: 50px;
+    }
+
+    &.fix-bottom {
+      margin-bottom: 90px;
+    }
+
+    &.four-elems
+    {
+      .hoteles-ofertas {
+        .slick-slider-holder {
+
+          @include respond-to(large) {
+            > div {
+              > div {
+                width: 100%;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+    @include respond-from(large) {
+      .container-fix {
+        padding-right: 0px;
+      }
+    }
+
+    @include respond-to(large) {
+      margin-top: 88px;
+    }
+
+    h2.title,h3.title {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 50px;
+      line-height: 64px;
+      text-align: center;
+      margin-bottom: 50px;
+
+      @include respond-from(medium) {
+        font-size: 50px;
+        line-height: 74px;
+        margin-bottom: 22px;
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      @include respond-from(small) {
+        font-size: 40px;
+        line-height: 54px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+
+
+    .mas-ofertas-holder {
+      text-align: center;
+      padding-top: 48px;
+
+      @include respond-from(medium) {
+//        padding-top: 0px;
+      }
+
+      @include respond-from(small) {
+        padding-right: 16px;
+      }
+
+      .btn-mas-ofertas {
+        @include button($color-white, $color-main, $color-main);
+
+        @include respond-from(small) {
+          width: 100%;
+        }
+      }
+    }
+
+    .hoteles-ofertas {
+      .slick-slider-holder {
+        position: relative;
+
+        @include respond-to(large) {
+          > div {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+
+          }
+        }
+
+        &.elems_2
+        {
+          @include respond-to(large) {
+          > div {
+            justify-content:center;
+            > div {
+              width: 25%;
+            }
+
+          }
+          }
+          @include respond-to(medium) {
+          .slick-list{padding:0 32px !important}
+          }
+
+        }
+
+        .slick-slider {
+          position: relative;
+          display: block;
+          box-sizing: border-box;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+          -khtml-user-select: none;
+          -ms-touch-action: pan-y;
+          touch-action: pan-y;
+          -webkit-tap-highlight-color: transparent;
+
+          .slick-prev,
+          .slick-next {
+            position: absolute;
+            top: calc(50% - 5px);
+            width: 10px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include transition(all .2s ease);
+          }
+
+          .slick-prev {
+            left: -8px;
+            background-image: url('#{$iconspath}arrow-left-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-next {
+            right: -8px;
+            background-image: url('#{$iconspath}arrow-right-.svg');
+
+            &:hover {
+            }
+          }
+
+          .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+
+            @include respond-from(large) {
+              padding-right: 96px;
+            }
+
+            @include respond-from(medium) {
+              padding-right: 72px!important;
+            }
+
+            &:focus {
+              outline: none;
+            }
+
+            &.draggable {
+              cursor: grab;
+
+              &:active {
+                cursor: grabbing;
+              }
+            }
+          }
+
+          &.one-element
+          {
+            .slick-list {
+              @include respond-from(large) {
+                padding-right: 0px !important;
+              }
+            }
+          }
+
+          .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:after,
+            &:before {
+              display: table;
+              content: '';
+            }
+
+            &:after {
+              clear: both;
+            }
+          }
+
+          .slick-list,
+          .slick-track {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+            margin-right: 16px;
+          }
+        }
+
+        .slick-loading {
+          .slick-track {
+            visibility: hidden;
+          }
+        }
+
+        [dir='rtl'] {
+          .slick-slide {
+            float: right;
+          }
+        }
+
+        .slick-slide {
+          &.slick-loading img {
+            display: none;
+          }
+          &.dragging {
+            img {
+              pointer-events: none;
+            }
+          }
+        }
+
+        .slick-initialized {
+          .slick-slide {
+            display: block;
+          }
+        }
+
+        .slick-loading {
+          .slick-slide {
+            visibility: hidden;
+          }
+        }
+
+        .slick-arrow {
+          &.slick-hidden {
+            display: none;
+          }
+        }
+      }
+
+      .hotel-oferta {
+        .imagen {
+          position: relative;
+          margin-bottom: 24px;
+          z-index: 0;
+
+          .texto-holder {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            min-height: 109px;
+            z-index: 1;
+            background-image: url('#{$iconspath}union-big.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            padding-top: 61px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 0;
+
+            @include respond-from(small) {
+              padding-top: 41px;
+              padding-bottom: 32px;
+            }
+
+            .texto {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-white;
+              font-size: 20px;
+              line-height: 26px;
+//              padding-bottom: 24px;
+              margin-bottom: 24px;
+
+              b, strong{
+                font-weight: $medium;
+              }
+
+              .titulo{
+                font-weight: $medium;
+                margin-bottom:5px;
+              }
+
+            }
+
+            &.narrow {
+              padding-top: 19px;
+              .texto{
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                margin-top: 25px;
+                min-height: 50px;
+              }
+
+            }
+
+            .subtexto {
+              position: relative;
+              font-family: $main-font;
+              font-weight: $regular;
+              color: $color-white;
+              font-size: 16px;
+              line-height: 22px;
+
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: -24px;
+                width: 34px;
+                height: .5px;
+                background-color: $color-white;
+                margin-bottom: 0px;
+
+                /*@include respond-from(large) {
+                  margin-bottom: 24px;
+                }
+
+                @include respond-from(medium) {
+                  margin-bottom: 0px;
+                }
+
+                @include respond-from(small) {
+                  margin-bottom: 39px;
+                }*/
+              }
+
+              b, strong{
+                font-weight: $medium;
+              }
+            }
+          }
+
+          .imagen-holder {
+            position: relative;
+            margin-left: 8px;
+            margin-right: 8px;
+            padding-bottom: 40px;
+            overflow: hidden;
+
+            @include respond-from(medium) {
+              padding-bottom: 100px;
+            }
+
+            .img {
+              /*position: absolute;
+              top: 0px;
+              left: 8px;
+              width: calc(100% - 16px);
+              height: 100%;*/
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+              height: 408px;
+              //z-index: 0;
+              @include transition(all 1s ease);
+
+              @include respond-from(small) {
+                height: 256px;
+              }
+
+              &.to_bottom
+              {
+                object-position: top;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .imagen {
+            .imagen-holder {
+              .img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+
+        .btn-detalle {
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: underline;
+          padding-right: 45px;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          background-image: url('#{$iconspath}arrow-right.svg');
+          background-repeat: no-repeat;
+          background-size: 30px 9px;
+          background-position: right center;
+
+          @include transition(all .3s ease);
+
+          &:hover {
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}

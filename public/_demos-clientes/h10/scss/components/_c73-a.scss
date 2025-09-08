@@ -1,0 +1,158 @@
+.c73-a__ {
+  &container {
+
+    .valoracion_ {
+      padding: 26px 24px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 140px;
+      margin-bottom: 20px;
+
+      .col-left_ {
+        .top_ {
+          .titulo_ {
+            font-family: $main-font;
+            font-weight: $medium;
+            color: $color-main;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 6px;
+          }
+
+          .texto_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 16px;
+          }
+        }
+
+        .bottom_ {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+
+          .hotels_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 30px;
+
+            background-image: url('#{$iconspath}hotel.svg');
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: left center;
+          }
+
+          .fecha_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 31px;
+
+            background-image: url('#{$iconspath}calendar-2.svg');
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: left center;
+          }
+
+          .idioma_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 25px;
+
+            background-image: url('#{$iconspath}flag.svg');
+            background-repeat: no-repeat;
+            background-size: 18px 20px;
+            background-position: left center;
+          }
+
+          .hotel_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 25px;
+            text-decoration: underline;
+
+            background-image: url('#{$iconspath}check-out-blue.svg');
+            background-repeat: no-repeat;
+            background-size: 18px 20px;
+            background-position: left center;
+          }
+        }
+      }
+
+      .col-right_ {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-around;
+
+        .usuario_ {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 14px;
+          line-height: 18px;
+          padding-left: 28px;
+
+          background-image: url('#{$iconspath}habitacion.svg');
+          background-repeat: no-repeat;
+          background-size: 24px 24px;
+          background-position: left center;
+        }
+
+        .puntuacion_ {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+          gap: 9px;
+          margin-bottom: 24px;
+
+          .numero_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 28px;
+            line-height: 32px;
+
+            b, strong{
+              font-size: 50px;
+              line-height: 74px;
+              font-weight: $medium;
+            }
+          }
+
+          .texto_ {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 20px;
+            line-height: 26px;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,624 @@
+.c12__ {
+  &container {
+    width: 100%;
+    margin-top: 64px;
+    @include respond-to(large) {
+      margin-top: 89px;
+    }
+
+    &.fix-top {
+      margin-top: 90px;
+    }
+
+    &.fix-bottom {
+      margin-bottom: 0;
+    }
+
+    .card-info {
+      &__container02 {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        @include respond-to(large) {
+          flex-direction: row;
+        }
+        margin-bottom: 30px;
+      }
+
+      &__image-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @include respond-to(medium) {
+          max-width: inherit;
+        }
+        @include respond-to(large) {
+          max-width: 544px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        @include respond-to(1024px) {
+          max-width: 544px;
+          width: 100%;
+          margin: 0;
+        }
+
+        .card-info__image-02 {
+          @include respond-from(large) {
+            width: 100%;
+            height: 424px;
+            object-fit: cover;
+          }
+        }
+      }
+
+      &__logo-content {
+        width: 160px;
+        height: 48px;
+        position: absolute;
+        top: 8px;
+        padding: 10px;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        @include respond-to(large) {
+          width: 146px;
+          height: 69px;
+          top: 24px;
+        }
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.54);
+          backdrop-filter: blur(5px);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &.half_size
+        {
+          max-width:73px;
+        }
+
+        .card-info__logo {
+          max-width: 100%;
+          position: relative;
+          z-index: 2;
+          max-height: 40px;
+        }
+      }
+
+      &__image-02 {
+        @include respond-to(large) {
+          max-width: 100%;
+          max-height: initial;
+          //max-height: 561px;
+        }
+      }
+
+      &__container02-left {
+        padding-left: 16px;
+        padding-right: 16px;
+        @include respond-to(large) {
+          max-width: 895px;
+          width: 100%;
+          padding-left: 0;
+          padding-right: 48px;
+        }
+      }
+
+      &__text-container {
+        margin-left: 0;
+        padding-left: 32px;
+
+        @include respond-from(large) {
+          padding-left: 0px;
+        }
+      }
+
+      &__p02 {
+        font-family: $main-font;
+        font-weight: $regularItalic;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 46px;
+
+        @include respond-from(large) {
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 16px;
+        }
+
+        @include respond-to(large) {
+          width: 100%;
+          max-width: 424px;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000028;
+          left: 0;
+          margin-left: auto;
+        }
+      }
+
+      &__title {
+        margin-bottom: 30px;
+
+        u {
+          @include respond-to(large) {
+            text-decoration: none;
+          }
+        }
+
+        @include respond-from(large) {
+          margin-top: 16px;
+          margin-left: 0;
+          font-size: 48px;
+          line-height: 56px;
+        }
+
+        @include respond-to(extraLarge) {
+          //margin-top: 30px;
+          font-size: 80px;
+          line-height: 74px;
+          margin-left: 0;
+          margin-top: 32px;
+          margin-bottom: 16px;
+          //text-align: center;
+          //align-items: center;
+        }
+
+/*        @include respond-from(small) {
+          font-size: 40px;
+          line-height: 50px;
+        }*/
+
+        .card-info__title-span-bottom {
+          font-size: 28px;
+          line-height: 32px;
+
+          @include respond-from(small) {
+            font-size: 48px;
+            line-height: 50px;
+          }
+
+          u {
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            @include respond-to(large) {
+              text-decoration: none;
+            }
+          }
+          @include respond-to(medium) {
+            left: 0;
+          }
+          @include respond-to(1024px) {
+            margin-left: 272px;
+            text-decoration: none;
+          }
+          @include respond-to(large) {
+            left: 0;
+          }
+          @include respond-to(large) {
+            font-size: 8rem;
+            line-height: 74px;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .subcard-item {
+      @include respond-to(large) {
+        margin-top: 44px;
+        padding-left: 8.68%;
+      }
+
+      > p {
+        margin-bottom: 22px;
+        font-family: $main-font;
+        font-weight: $regular;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-main;
+
+        @include respond-to(large) {
+          max-width: 100%;
+        }
+
+        @include respond-to(large) {
+          max-width: 537px;
+        }
+
+        b, strong{
+          font-weight: $medium;
+        }
+
+
+      }
+    }
+
+    .subcard-button {
+      @include respond-to(large) {
+        margin-left: 8.68%;
+      }
+    }
+
+    .card-info-sm {
+      margin-bottom: 48px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #000028;
+      position: relative;
+      @include respond-to(large) {
+        margin-bottom: 0;
+        border-bottom: none;
+        transition: all 0.3s ease;
+      }
+
+      &:first-of-type {
+        margin-top: 32px;
+        @include respond-to(large) {
+          margin-top: 48px;
+        }
+      }
+
+      &__hide {
+        display: flex;
+        flex-direction: column;
+        @include respond-to(large) {
+          flex-direction: row;
+        }
+      }
+
+      &__image {
+        width: 100%;
+        margin-bottom: 24px;
+        @include respond-to(large) {
+          margin-right: 16px;
+        }
+        @include respond-to(large) {
+          max-width: 206px;
+        }
+
+        img {
+          width: 100%;
+          height: 104px;
+          object-fit: cover;
+          @include respond-to(large) {
+            height: auto;
+          }
+        }
+
+        .img-large {
+          display: none;
+        }
+      }
+
+      &__description {
+        display: flex;
+        flex-direction: column;
+
+        .text-2 {
+          display: none;
+        }
+
+        .dots {
+          @include respond-to(large) {
+            display: none;
+          }
+        }
+
+        &.show {
+          .card-info-sm__content {
+            display: block;
+            order: 3;
+
+            .btn-ver--large {
+              display: block;
+            }
+          }
+
+          .text-1 {
+            .dots {
+              display: none;
+            }
+          }
+
+          .text-2 {
+            display: block;
+          }
+
+          .btn-leer {
+            &.mas {
+              display: none;
+            }
+
+            &.menos {
+              display: inline;
+            }
+          }
+        }
+      }
+
+      &__title {
+        margin-bottom: 12px;
+        font-family: $main-font;
+        font-weight: $regular;
+        color: #000028;
+        position: relative;
+        font-size: 24px;
+        line-height: 28px;
+        order: 1;
+
+        @include respond-from(large) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        @include respond-to(large) {
+          margin-bottom: 4px;
+          padding-top: 16px;
+          font-size: 28px;
+          line-height: 32px;
+        }
+
+        &::before {
+          @include respond-to(large) {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #000028;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          @include respond-to(large) {
+            width: calc(100% + 48px);
+          }
+          @include respond-to(extraLarge) {
+            width: calc(100% + 64px);
+          }
+        }
+      }
+
+      &__text {
+        font-family: $main-font;
+        font-weight: $regular;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000028;
+        order: 2;
+        @include respond-to(large) {
+          order: 3;
+        }
+      }
+
+      .btn-leer {
+        font-family: $main-font;
+        font-weight: $medium;
+        color: $color-main;
+        font-size: 14px;
+        line-height: 25px;
+        text-decoration: underline;
+        padding-right: 18px;
+        background-image: url("#{$iconspath}arrow-down.svg");
+        background-repeat: no-repeat;
+        background-size: 12px 7px;
+        background-position: right center;
+        display: inline-flex;
+        @include transition(all 0.3s ease);
+        @include respond-to(large) {
+          display: none;
+        }
+
+        &.menos {
+          display: none;
+        }
+      }
+
+      &__content {
+        display: none;
+      }
+
+      .btn-ver {
+        width: 114px;
+        margin-top: 16px;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: $medium;
+        font-size: 14px;
+        line-height: 25px;
+        color: $color-main;
+        text-decoration: underline;
+        padding-right: 45px;
+        text-transform: uppercase;
+        background-image: url("#{$iconspath}arrow-right.svg");
+        background-repeat: no-repeat;
+        background-size: 30px 9px;
+        background-position: right center;
+        order: 3;
+        display: none;
+        @include transition(all 0.3s ease);
+
+        &:hover {
+          width: 119px;
+          padding-right: 50px;
+        }
+        @include respond-to(large) {
+          margin-top: 0;
+          margin-bottom: 11px;
+          order: 2;
+          display: inline-flex;
+        }
+
+        &--large {
+          width: 185px;
+          margin-left: auto;
+        }
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        .card-info-sm__text {
+          @include respond-to(large) {
+            padding-bottom: 16px;
+            position: relative;
+          }
+
+          &::before {
+            @include respond-to(large) {
+              content: '';
+              width: calc(100% + 48px);
+              height: 1px;
+              background-color: #000028;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+            @include respond-to(extraLarge) {
+              width: calc(100% + 64px);
+            }
+          }
+        }
+      }
+
+      .close {
+        display: none;
+        @include respond-to(large) {
+          width: 20px;
+          height: 20px;
+          background-image: url("#{$iconspath}close.svg");
+          background-repeat: no-repeat;
+          background-size: 20px;
+          background-position: center;
+          position: absolute;
+          top: 20px;
+          right: 25px;
+          z-index: 2;
+
+          span {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+          }
+        }
+      }
+
+      &.extend {
+        position: relative;
+        min-height: 360px;
+        @include respond-to(large) {
+          padding-top: 16px;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #000028;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #000028;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          +.card-info-sm--border {
+            border-top: none;
+          }
+        }
+
+        .card-info-sm__content {
+          order: 4;
+          display: block;
+          @include respond-to(large) {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
+
+        .card-info-sm__title {
+          @include respond-to(large) {
+            margin-bottom: 16px;
+          }
+
+          &::before {
+            @include respond-to(large) {
+              display: none;
+            }
+          }
+        }
+
+        .card-info-sm__text {
+          margin-bottom: 14px;
+          padding-bottom: 0;
+
+          &::before {
+            display: none;
+          }
+          @include respond-to(large) {
+            &.text-2 {
+              display: block;
+            }
+          }
+        }
+
+        .card-info-sm__image {
+          margin-bottom: 0;
+        }
+
+        .img-large {
+          display: block;
+        }
+
+        .img-short {
+          display: none;
+        }
+
+        .close {
+          @include respond-to(large) {
+            display: block;
+          }
+        }
+      }
+
+      &--border {
+        border-top: 1px solid #000028;
+        border-bottom: 1px solid #000028;
+        padding-bottom: 16px;
+
+        + .card-info-sm {
+          border-top: none;
+        }
+
+        + .card-info-sm.extend {
+          @include respond-to(large) {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

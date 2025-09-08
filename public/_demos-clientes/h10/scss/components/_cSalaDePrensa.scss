@@ -1,0 +1,534 @@
+.cSalaDePrensa {
+  &__container {
+
+    .nav-container {
+      position: relative;
+      margin-top: 72px;
+      margin-bottom: 64px;
+
+      @include respond-from(medium) {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+
+      @include respond-from(1204px) {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 50px;
+          height: calc(100% - 0px);
+          z-index: 1;
+          background: linear-gradient(270deg, #FFFFFF 30%, rgba(217, 217, 217, 0) 100%);
+
+          @include max-width(768px){
+            right: 0px;
+          }
+        }
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 64px;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+
+        @include respond-from(small) {
+          padding-right: 16px;
+        }
+
+        @include respond-from(medium) {
+          gap: 24px;
+        }
+
+        @media (max-width: 1204px){
+          overflow-x: visible;
+          overflow-y: hidden;
+          padding-bottom: 10px;
+          padding-right: 24px;
+          justify-content: start;
+
+          &::-webkit-scrollbar { height: 4px; }
+          &::-webkit-scrollbar-track { background: transparent; }
+          &::-webkit-scrollbar-thumb { background: transparent; &:hover { background: transparent; } }
+        }
+
+        li {
+          white-space: nowrap;
+
+          a {
+            display: block;
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-grey1;
+            font-size: 16px;
+            line-height: 20px;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+
+            @include respond-from(small) {
+              font-size: 14px;
+              line-height: 17px;
+              padding-bottom: 8px;
+            }
+
+            &:hover {
+              color: $color-main;
+              font-weight: $bold;
+            }
+
+            &.activo {
+              color: $color-main;
+              font-weight: $bold;
+              border-bottom: 1px solid $color-main;
+            }
+          }
+        }
+      }
+    }
+
+    .title {
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 36px;
+      line-height: 45px;
+      display: block;
+      width: 100%;
+      max-width: 869px;
+      margin: 0px auto 56px auto;
+      text-align: center;
+    }
+
+    .col {
+      display: flex;
+      flex-flow: row;
+      gap: 62px;
+      margin-bottom: 96px;
+
+      @include respond-from(large) {
+        margin-bottom: 56px;
+      }
+
+      @include respond-from(large) {
+        display: block;
+      }
+
+      .col-left {
+        flex: 0 0 595px;
+
+        .image-holder {
+          position: relative;
+
+          .image {
+            display: block;
+            width: 100%;
+            height: 378px;
+            object-fit: cover;
+
+            @include respond-from(large) {
+              height: 270px;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      .col-right {
+        .titulo {
+          position: relative;
+          font-family: $second-font;
+          font-weight: $thin;
+          color: $color-main;
+          font-size: 50px;
+          line-height: 64px;
+          margin-bottom: 16px;
+          margin-top: -25px;
+
+          @include respond-from(large) {
+            font-size: 36px;
+            line-height: 45px;
+            margin-top: 16px;
+          }
+        }
+
+        .fecha {
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 4px;
+
+          @include respond-from(large) {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          b,
+          strong {
+            font-weight: $bold;
+          }
+        }
+
+        .texto {
+          position: relative;
+          font-family: $main-font;
+          font-weight: $regular;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 24px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 32px;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .8) 80%, rgb(255, 255, 255) 100%);
+            filter: drop-shadow(0px -30px 14px rgb(255, 255, 255));
+            @include transition(opacity 6s ease);
+          }
+
+          &.show {
+            &:before {
+              display: none;
+            }
+            .dots {
+              display: none;
+            }
+            .full-texto {
+              display: block;
+            }
+          }
+
+          .full-texto {
+            display: none;
+          }
+
+          @include respond-from(large) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          b,
+          strong {
+            font-weight: $bold;
+          }
+        }
+
+        .btns {
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          justify-content: space-between;
+
+          @include respond-from(515px) {
+            display: block;
+          }
+
+          .col-left_ {
+            display: flex;
+            flex-flow: row;
+            gap: 24px;
+
+            @include respond-from(515px) {
+              display: block;
+              margin-bottom: 16px;
+            }
+
+            .btn-link {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 14px;
+              line-height: 24px;
+              text-decoration: underline;
+              text-transform: uppercase;
+
+              @include respond-from(515px) {
+                display: block;
+              }
+            }
+          }
+
+          .col-right_ {
+            .btn-ver-mas {
+              @include button($color-white, $color-main, $color-main);
+              min-width: 108px;
+
+              @include respond-from(515px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .detalle-holder {
+      .nav-container {
+        margin-bottom: 24px;
+      }
+
+      .btn-volver-holder {
+        margin-bottom: 48px;
+
+        .btn-volver {
+          font-family: $main-font;
+          font-weight: $medium;
+          color: $color-main;
+          font-size: 16px;
+          line-height: 25px;
+          text-decoration: underline;
+          text-transform: uppercase;
+          display: inline-flex;
+          align-items: center;
+          gap: 17px;
+          margin-left: -46px;
+
+          @include respond-from(large) {
+            margin-left: 0px;
+          }
+
+          .icon {
+            width: 30px;
+          }
+        }
+      }
+
+      .detalle {
+        .holder {
+          margin-bottom: 32px;
+
+          .titulo {
+            font-family: $second-font;
+            font-weight: $thin;
+            color: $color-main;
+            font-size: 36px;
+            line-height: 45px;
+            display: block;
+            margin-bottom: 32px;
+          }
+
+          .fecha {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
+
+            @include respond-from(large) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+
+            b,
+            strong {
+              font-weight: $bold;
+            }
+          }
+
+          .image-holder {
+            position: relative;
+            margin-bottom: 24px;
+
+            .image {
+              display: block;
+              width: 100%;
+              height: 378px;
+              object-fit: cover;
+
+              @include respond-from(large) {
+                height: 270px;
+                max-width: 100%;
+              }
+            }
+          }
+
+          .list {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 24px;
+
+            @include respond-from(large) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          .texto {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 24px;
+
+            b,
+            strong {
+              font-weight: $bold;
+            }
+
+            @include respond-from(large) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+        }
+
+        .modulo {
+          margin-bottom: 16px;
+
+          .titulo {
+            font-family: $second-font;
+            font-weight: $thin;
+            color: $color-main;
+            font-size: 28px;
+            line-height: 32px;
+            display: block;
+            margin-bottom: 24px;
+            margin-top: 32px;
+          }
+
+          .col {
+            margin-top: 32px;
+            margin-bottom: 24px;
+            gap: 16px;
+
+            &.two-imgs {
+              .col-left {
+                .image {
+                  height: 378px;
+                }
+              }
+
+              .col-right {
+                .image {
+                  height: 378px;
+                }
+              }
+            }
+
+            .col-left {
+              flex: 0 0 50%;
+
+              .texto {
+                font-family: $main-font;
+                font-weight: $regular;
+                color: $color-main;
+                font-size: 16px;
+                line-height: 25px;
+                margin-bottom: 0px;
+
+                b,
+                strong {
+                  font-weight: $medium;
+                }
+
+                @include respond-from(large) {
+                  font-size: 14px;
+                  line-height: 18px;
+                  margin-bottom: 16px;
+                }
+              }
+
+              .image {
+                display: block;
+                width: 100%;
+                height: 272px;
+                object-fit: cover;
+
+                @include respond-from(large) {
+                  height: 180px;
+                  max-width: 100%;
+                  margin-bottom: 16px;
+                }
+              }
+            }
+
+            .col-right {
+              flex: 0 0 50%;
+
+              .image {
+                display: block;
+                width: 100%;
+                height: 272px;
+                object-fit: cover;
+
+                @include respond-from(large) {
+                  height: 180px;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+
+          .texto {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 16px;
+
+            b,
+            strong {
+              font-weight: $medium;
+            }
+
+            @include respond-from(large) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          .btns {
+            display: flex;
+            flex-flow: row;
+            gap: 24px;
+            margin-top: 32px;
+
+            @include respond-from(515px) {
+              display: block;
+              margin-bottom: 16px;
+            }
+
+            .btn-link {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 25px;
+              text-decoration: underline;
+              text-transform: uppercase;
+              display: flex;
+              flex-flow: row;
+              gap: 4px;
+
+              .icon {
+                width: 16px;
+              }
+
+              @include respond-from(515px) {
+                display: block;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

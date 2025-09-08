@@ -1,0 +1,372 @@
+.modal-motivos-no-disponibilidad {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% + 123px);
+  z-index: 9999;
+  background-color: rgba(255,255,255, .95);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 45px;
+
+  @include respond-from(large) {
+    padding: 0px;
+  }
+
+  &.show {
+    display: flex;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .title-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $color-white;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+    padding: 17px;
+    margin-bottom: 24px;
+
+    @include respond-to(large) {
+      box-shadow: none;
+      display: block;
+      margin-bottom: 34px;
+    }
+
+    div {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      @include respond-to(large) {
+        display: none;
+      }
+    }
+
+    .btn-close {
+      width: 26px;
+      height: 26px;
+      background-image: url('#{$iconspath}X.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+
+      @include respond-to(large) {
+        float: right;
+      }
+
+      @include respond-from(large) {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  .container-holder {
+    position: relative;
+    width: 100%;
+    max-width: 1360px;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: $color-white;
+    padding: 24px 24px 40px 24px;
+
+    @include respond-from(large) {
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 0px;
+    }
+
+    .holder {
+      @include respond-from(large) {
+        padding: 0px 16px;
+      }
+
+      .mensaje-top {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+        background-color: $color-amarillo-claro;
+        padding: 18px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 18px;
+
+        div {
+          &:first-child {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          &:last-child {
+            font-family: $main-font;
+            font-weight: $regular;
+            color: $color-main;
+            font-size: 16px;
+            line-height: 20px;
+
+            @include respond-from(large) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+
+            a {
+              font-family: $main-font;
+              font-weight: $medium;
+              color: $color-main;
+              font-size: 16px;
+              line-height: 25px;
+              text-decoration: underline;
+              text-transform: uppercase;
+              margin-top: 10px;
+              display: inline-block;
+
+              @include respond-from(large) {
+                font-size: 14px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      .subtitle {
+        font-family: $main-font;
+        font-weight: $bold;
+        color: $color-main;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 24px;
+      }
+
+      .items-holder {
+        margin-bottom: 24px;
+
+        .item {
+          width: 100%;
+          background-color: $color-white;
+          box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+          padding: 19px 24px;
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+          border: 1px solid transparent;
+          @include transition(all 0.3s ease);
+          @include respond-from(large) {
+            display: block;
+          }
+          @include respond-from(small) {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          .col-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @include respond-from(large) {
+              display: block;
+            }
+
+            .data {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              @include respond-from(large) {
+                margin-bottom: 8px;
+              }
+
+              .titulo {
+                font-family: $second-font;
+                font-weight: $thin;
+                color: $color-main;
+                font-size: 28px;
+                line-height: 32px;
+                white-space: nowrap;
+
+                b {
+                  font-weight: $bold;
+                }
+
+                &.titulo-gl{
+                  font-weight: $thin;
+                  font-family: "Argent CF";
+                  color:#A79C67;
+                  font-size: 28px;
+                }
+
+                @include respond-from(small) {
+                  font-size: 28px;
+                  line-height: 26px;
+                }
+              }
+
+              .ratings {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                direction: rtl;
+                text-align: left;
+                list-style: none;
+//                min-width: 100px;
+                white-space: nowrap;
+
+                .star {
+                  position: relative;
+                  display: inline-block;
+                  vertical-align: middle;
+                  @include transition(color 0.3s ease);
+
+                  &:before {
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("#{$iconspath}star-o.svg");
+                    background-repeat: no-repeat;
+                    background-size: 14px;
+                    background-position: center center;
+                  }
+
+                  &.selected,
+                  &.selected ~ .star {
+                    background-image: url("#{$iconspath}star.svg");
+                    background-position: center center;
+                    @include transition(all 0.3s ease);
+                  }
+                }
+              }
+            }
+
+            .labels {
+              //display: flex;
+              //align-items: center;
+              //gap: 4px;
+              position: relative;
+              max-width: 486px;
+
+              @include respond-from(large) {
+                max-width: 100%;
+                overflow-x: visible;
+                overflow-y: hidden;
+                padding-bottom: 8px;
+                margin-bottom: 16px;
+
+                &::-webkit-scrollbar {
+                  height: 0.5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                  background: transparent;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background: $color-main;
+
+                  &:hover {
+                    background: $color-main;
+                  }
+                }
+              }
+
+              .label {
+                font-family: $main-font;
+                font-weight: $medium;
+                color: $color-main;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: $color-azul7;
+                border-radius: 48px;
+                padding: 6px 8px 4px;
+                white-space: nowrap;
+                display: inline-block;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                margin-right: 4px;
+              }
+            }
+          }
+
+          .col-right {
+            display: flex;
+            gap: 16px;
+            @include respond-from(large) {
+              display: block;
+            }
+
+            .btn-mas {
+              @include button($color-white, $color-main, $color-main);
+              min-width: 225px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+
+
+              @include respond-from(large) {
+                width: 100%;
+                margin-bottom: 8px;
+              }
+            }
+
+            .btn-seleccionar {
+              @include button($color-main, $color-white, $color-main);
+//              min-width: 297px;
+              display: inline-flex;
+              align-items: center;
+              width:max-content;
+              justify-content: center;
+
+
+              @include respond-from(large) {
+                width: 100%;
+              }
+
+              .icon {
+                width: 16px;
+                height: 16px;
+                display: none;
+              }
+            }
+          }
+
+          &.selected {
+            box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+            border-color: $color-grey1;
+
+            .col-right {
+              .btn-seleccionar {
+                @include button($color-white, $color-main, $color-main);
+                display: inline-flex!important;
+                align-items: center;
+                gap: 4px;
+
+                .icon {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

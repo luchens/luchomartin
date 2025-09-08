@@ -1,0 +1,40 @@
+.imagen-con-marco {
+    background-image: url(/src/images/image-21-2.png);
+    background-position: center;
+    width: 100%;
+    height: 43rem;
+    padding: 0.8rem;
+
+    @include respond-to(large) {
+        padding: 1.6rem 2rem;
+    }
+}
+
+.marco-imagen-con-marco {
+    border:  1px solid $color-white;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-titulo-imagen-con-marco {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-imagen-con-marco {
+    font-family: $main-font;
+    font-weight: $bold;
+    font-size: $h3-size;
+    line-height: $bold-line;
+    text-align: center;
+    color: $color-white;
+    padding: 0.8rem;
+    width: 100%;
+
+    @include respond-to(large) {
+        font-size: $h4-size-desktop;
+        line-height: $ultra-line;
+    }
+}

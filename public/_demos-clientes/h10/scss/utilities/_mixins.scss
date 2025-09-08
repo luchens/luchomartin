@@ -1,0 +1,152 @@
+// ----- MIXINS
+
+@mixin button($bgcolor, $colortext, $bordercolor, $ico: "") {
+  cursor: pointer;
+  background-color: $bgcolor;
+  color: $colortext;
+  width: auto;
+  padding: 10px 16px 10px 16px;
+  display: inline-block;
+  border: 1px solid $bordercolor;
+  font-family: $main-font;
+  font-weight: $medium;
+  font-size: 1.6rem;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  //white-space: nowrap;
+  @include transition(all .3s ease);
+
+  &:hover {
+    /*@if $bgcolor == "#fff" {
+      color: $bordercolor;
+      background-color: $bgcolor;
+      border: 1px solid $bordercolor;
+    } @else {
+      color: $bgcolor;
+      background-color: $colortext;
+      border: 1px solid $bgcolor;
+    }*/
+
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 41, .3);
+  }
+
+  @if $ico != "" {
+    background-image: url('#{$iconspath}#{$ico}.svg')!important;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 19px) center;
+    background-size: 9px;
+    padding-right: 39px;
+    background-color: transparent;
+  }
+}
+
+@mixin input($ico: "") {
+  background-color: $color-white;
+  color: $color-main;
+  width: auto;
+  height: 40px;
+  padding: 8px 12px 8px 12px;
+  outline: none;
+  border: 1px solid $color-grey2;
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-align: left;
+  white-space: nowrap;
+  background-image: transparent;
+
+  @if $ico != "" {
+    background-image: url('#{$iconspath}#{$ico}.svg')!important;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    background-size: 16px;
+    padding-right: 32px;
+  }
+
+  @include transition(all .3s ease);
+}
+
+@mixin transition($type){
+  -webkit-transition: $type;
+  -moz-transition: $type;
+  -ms-transition: $type;
+  -o-transition: $type;
+}
+
+@mixin noSelectable(){
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/**
+* Centers and gives a max-width with the $pagemaxwidth variable value..
+*/
+/* AQ comment */
+@mixin max-width($max-width)  {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin min-width($min-width)  {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin min-max-width($min-width, $max-width)  {
+  @media (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+/*
+* Variables are in a map in src\styles\variables\_layout-vars.scss:
+
+    'small'  : 48em,
+    'medium' : 56.25em,
+    'large'  : 68.75em,
+
+* Use like this:
+
+.foo {
+  color: red;
+  @include respond-to('small') {
+    color: blue;
+  }
+}
+*/
+
+@mixin respond-from($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

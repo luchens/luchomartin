@@ -1,0 +1,32 @@
+// ----- $VARIABLES
+
+// ----- PADDINGS MARGINS SPACE
+
+$small-space: 1.2rem;
+$thin-space: 1.6rem;
+$medium-space: 2.4rem;
+$space: 3rem;
+$big-space: 4rem;
+$high-space: 4.8rem;
+$ultra-space: 6rem;
+
+$unit: 8px;
+$padding: $unit * 2;
+$padding-big: $unit * 3;
+
+// ----- FONTPATH
+
+$fontpath: "../src/fonts/";
+$imagespath: "../src/images/";
+$iconspath: "../src/icons/";
+
+//-----> Breakpoints
+$breakpoints: (
+  'extraSmall'  : 380px,
+  'quiteSmall'  : 400px,
+  'small'  : 480px,
+  'medium' : 739px,
+  'large'  : 1024px,
+  'mediumlarge' : 1200px,
+  'extraLarge'  : 1440px
+) !default;

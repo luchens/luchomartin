@@ -1,89 +1,1250 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"><!--<![endif]--><head>
+<meta name="google-site-verification" content="AIzaSyDY6kS8HyaURgrXkXFd4a7Ws7J4pF3Q0WM" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="web, designer, developer, portfolio, freelance" />
+<meta name="description" content="Programación & Diseño Web - Freelance" />
+<title>Lucho Martin | Programación & Diseño Web - Freelance</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.2.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.2.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.2.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<!--FACEBOOK-->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lucho Martin" />
+<meta property="og:site_name" content="Lucho Martin" />
+<meta property="og:url" content="http://www.luchomartin.net/index.php" />
+<meta property="og:description" content="Web UI Developer & Designer - Freelance" />
+<meta property="og:image" content="http://www.luchomartin.net/images/fb-placeholder.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="480" />
+<meta property="og:image:height" content="270" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locality" content="Madrid" />
+<meta property="og:region" content="Madrid" />
+<meta property="og:postal-code" content="28012" />
+<meta property="og:country-name" content="España" />
+<meta property="og:email" content="luchoid@gmail.com" />
+<meta property="og:phone_number" content="+34698967429" />
+<meta property="fb:app_id" content="1593516784232331" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<!--TWITTER-->
+<!-- <meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="Lucho Martin - Portfolio">
+<meta property="twitter:description" content="Web UI Developer & Designer - Freelance">
+<meta property="twitter:creator" content="@luchomartin">
+<meta property="twitter:url" content="http://www.luchomartin.com/">
+<meta property="twitter:image" content="http://www.luchomartin.com/images/logo.jpg"> -->
+
+<!-- favicon -->
+<link rel="icon" type="image/jpg" href="images/favicon.jpg">
+<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- <link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/jpreloader.css" /> -->
+<!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300" >-->
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/hover-min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css" id="theme">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
+<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<!--<link type="text/css" href="css/umbg.min.css" rel="stylesheet" />-->
+<link type="text/css" href="css/aos.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.min.css" />
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<![endif]-->
+<!-- <script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script> -->
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="css/fallback.css" />
+<![endif]-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRDTK3NV5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WRDTK3NV5P');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z4QFN');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJ9KK7F07Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XJ9KK7F07Q');
+</script>-->
+
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z4QFN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Google Tag Manager -->
+  <!--
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5Z4QFN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z4QFN');</script>
+  -->
+  <!-- End Google Tag Manager -->
+
+
+  <!--<div id="particles-js"></div>-->
+
+  <div id="qLoverlay"></div>
+  <div class="page-up-holder animated fadeOutDown"><a href="#" class="fa fa-angle-up"></a></div>
+
+  <div id="home" class="home wrapper">
+    <header>
+      <div class="row banner">
+        <div class="bg-front"></div>
+        <div class="bg"></div>
+        <div class="clouds"></div>
+        <div id="particles-js"></div>
+      </div>
+      <div class="bannerText container">
+        <!--<div class="logo innerS1 l-1" data-magnetic-value="0.2">
+          <div class="logo-base" data-magnetic-value="0.15"></div>
+        </div>-->
+        <div class="logo innerS1 l-1">
+          <div class="logo-base"></div>
+        </div>
+        <div class="logo innerS1 l-2">
+          <div class="logo-base"></div>
+        </div>
+      </div>
+      <div class="fa-angle-down-holder">
+        <a href="#" class="fa fa-angle-down"></a>
+      </div>
+
+      <!--<div class="texto-inicio">"El activo económico más valioso que tiene una persona es su capacidad de aprender... lleve el tiempo que lleve."</div>-->
+      <div class="texto-inicio">Actualmente estoy aceptando proyectos web para desarrollar.<br><div class="sub">Cualquier consulta me podes contactar por e-email <a href="mailto:luchoid@gmail.com">luchoid@gmail.com</a> (provisorio)</div></div>
+      <div class="menu">
+        <div class="navbar-wrapper">
+          <div class="holder-container">
+            <div class="container fixer-stuck">
+              <div class="navwrapper">
+                <div class="navbar navbar-inverse navbar-static-top">
+                  <div class="container">
+                    <div class="navbar-logo-holder animated fadeOutUp"><img src="images/logo.svg" class="navbar-logo"></div>
+                    <!--<div class="navbar-logo-sub-holder animated slideOutLeft">
+                    <div class="navbar-logo-sub">Programaci&oacute; &amp; Diseño Web</div>
+                    </div>-->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="menuItem"><a href="#home" id="btn-inicio" class="hvr-overline-reveal">Inicio<span>Home</span></a></li>
+                        <li class="menuItem"><a href="#sobremi" id="btn-sobremi" class="hvr-overline-reveal">Sobre mi<span>About me</span></a></li>
+                        <li class="menuItem"><a href="#trabajos" class="hvr-overline-reveal">Proyectos<span>Projects</span></a></li>
+                        <!--
+                        <li class="menuItem">
+                        <img src="images/logo.png" style="height: 130px; margin: -70px 0 -70px 0; display: inline-block; ">
+                        </li>
+                        -->
+                        <li class="menuItem"><a href="#habilidades" class="hvr-overline-reveal">Habilidades<span>Skills</span></a></li>
+                        <li class="menuItem"><a href="#experiencia" class="hvr-overline-reveal">Experiencias<span>Experiences</span></a></li>
+                        <!--<li class="menuItem"><a href="#educacion" class="hvr-overline-reveal">
+                        Educación<span>Education</span>
+                        </a></li>-->
+                        <li class="menuItem"><a href="#contacto" id="btn-contacto" class="hvr-overline-reveal">Contacto<span>Contact</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <section id="sobremi" class="sobremi">
+    <div class="container-fluid">
+      <div class="heading" data-aos="fade-in">
+        <h2>Sobre mí</h2>
+        <p>Una pequeña introducción acerca de mí.</p>
+      </div>
+      <div class="bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <img src="images/yo-perfil-update.png" alt="" class="yo-perfil" data-aos="fade-in">
+            <h3 data-aos="fade-in">Luciano Andrés Martin</h3>
+            <h4 class="subHeading" data-aos="fade-in">Programaci&oacute;n &amp; Dise&ntilde;o Web</h4>
+            <p data-aos="fade-in">Hola&#33; Me dedico de manera profesional a la Programación (front-end) y Diseño Web. Además, hago fotografía cada vez que puedo.</p>
+            <p data-aos="fade-in">Trabajé en proyectos para clientes particulares y en diferentes estudios/agencias dedicados a la comunicación integral, publicidad y marketing digital.</p>
+            <p data-aos="fade-in">Me considero una persona emprendedora, responsable, flexible, organizada, detallista, curiosa, resolutiva, con muy buena predisposición para el trabajo en equipo y un apasionado en lo que hago.</p>
+            <p data-aos="fade-in">Si necesitas de un diseño, rediseño y/o desarrollo, no dudes en ponerte en <a href="#" id="btn-go-contacto">contacto</a> y te responderé a la brevedad.</p>
+            <p data-aos="fade-in">¿Nos conocemos?<!--<br><br><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="luchomartin" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/luchomartin?trk=profile-badge"></a></div>--></p>
+            <a href="https://www.linkedin.com/in/luchomartin/" target="_blank" class="btn btn-default btn-cv hvr-shutter-out-vertical" data-aos="fade-in">Te invito a que conozcas mi perfil <span class="t">a través</span> de <span class="fa fa-linkedin-square"></span> Linkedin</a>
+          </div>
+          <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 proPic">
+            <img src="images/logo.svg" alt="" class="img-circle topmar" data-aos="fade-in">
+          </div>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <section id="trabajos" class="trabajos">
+    <div class="container-fluid">
+      <div class="heading" data-aos="fade-in">
+        <h2>Proyectos</h2>
+        <p>Mis últimos proyectos realizados.</p>
+      </div>
+      <div class="container-fluid">
+        <div class="trabajosContainer row">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-18.jpg" title="M_Renta" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1643368-m_renta" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/big-18.jpg" alt="" >
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-19.jpg" title="H10" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://luchomartin.net/demos/h10/src/html/pages/home.php" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/big-19.jpg" alt="" >
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-16.jpg" title="Quoss" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1456850-proyecto-quoss-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/big-16.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-17.jpg" title="Onexis" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1456858-proyecto-onexis-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/big-17.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/bonavista-apartments.jpg" title="Bonavista Apartments" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1406004-bonavista-apartments" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/bonavista-apartments.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/indiear-web.jpg" title="INDIEAR - Fotografía de Conciertos" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://www.indiear.net/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/indiear-web.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/vall-dHebron-campus.jpg" title="Vall d'Hebron Campus" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1312126-proyecto-vall-d-hebron-barcelona-hospital-campus-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/vall-dHebron-campus.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/vall-dHebron-hospital.jpg" title="Vall d'Hebron Hospital" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1312350-proyecto-hospital-universitari-vall-d-hebron-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/vall-dHebron-hospital.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/thermorpro.jpg" title="Thermor Pro+" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1312368-proyecto-thermor-pro-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thermorpro.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/lacapsa.jpg" title="La Capsa]" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1311656-proyecto-la-capsa-maquetacion-web" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/lacapsa.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/ku-cycle.jpg" title="Kú Cycle" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.domestika.org/es/projects/1138688-ku-cycle-triathlon-bikes" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/ku-cycle.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/sygris.jpg" title="Sygris" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://luchomartin.net/demos/cbi-interface/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/sygris.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/zener.jpg" title="Zener" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://luchomartin.net/demos/zener-admin/main.html" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/zener.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-1.jpg" title="Tutaf | Bicis de madera" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://www.luchomartin.com/archivos/tutaf/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-1.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-11.jpg" title="Milkaut" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.milkaut.com.ar/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-11.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-5.jpg" title="Barbie | Campamento POP" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="#" title="" target="_blank" class="linKed disabled"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-5.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-13.jpg" title="Froneri" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.luchomrtin.net/trabajos/froneri/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-13.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-3.jpg" title="Squadra Consultora | Dirección estratégica y capital humano" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://www.squadraconsultora.com/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-3.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-r">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-6.jpg" title="Max Steel | Libera tu poder" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="#" title="" target="_blank" class="linKed disabled"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/big-6.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-l">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-r">
+                <div class="lightCon" data-aos="fade-in">
+                  <span class="hoverBox">
+                    <span class="smallIcon">
+                      <a rel="lightbox-demo" href="images/big-9.jpg" title="TiTio | Art Work" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                      <a href="http://www.titioart.com/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                    </span>
+                  </span>
+                  <img src="images/thu-9.jpg" alt="" >
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-l">
+                <div class="lightCon" data-aos="fade-in">
+                  <span class="hoverBox">
+                    <span class="smallIcon">
+                      <a rel="lightbox-demo" href="images/big-4.jpg" title="Goran | Digital Advertising" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                      <a href="http://www.gorandigital.com" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                    </span>
+                  </span>
+                  <img src="images/thu-4.jpg" alt="" >
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-r">
+                <div class="lightCon" data-aos="fade-in">
+                  <span class="hoverBox">
+                    <span class="smallIcon">
+                      <a rel="lightbox-demo" href="images/big-2.jpg" title="Daniel Delgado | Artista Plástico" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                      <a href="http://www.delgadan.com/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                    </span>
+                  </span>
+                  <img src="images/thu-2.jpg" alt="" >
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 np-l">
+                <div class="lightCon" data-aos="fade-in">
+                  <span class="hoverBox">
+                    <span class="smallIcon">
+                      <a rel="lightbox-demo" href="images/big-10.jpg" title="IUGR | Registro de Prácticas" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                      <a href="http://comunicacioniugr.com/udas/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                    </span>
+                  </span>
+                  <img src="images/thu-10.jpg" alt="" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-7.jpg" title="GPI | HubSpot Connector" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="http://www.hubspotconnector.com/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-7.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-12.jpg" title="Santa Rosa Quesos" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.santarosaquesos.com.ar/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-12.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-14.jpg" title="Clínica Impar" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.clinicaimpar.com.ar/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-14.jpg" alt="" >
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="lightCon" data-aos="fade-in">
+              <span class="hoverBox">
+                <span class="smallIcon">
+                  <a rel="lightbox-demo" href="images/big-15.jpg" title="Control de Ruido" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>
+                  <a href="https://www.controlderuido.com.ar/" title="" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a>
+                </span>
+              </span>
+              <img src="images/thu-15.jpg" alt="" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section id="habilidades" class="habilidades">
+  <div class="container-fluid">
+  <div class="heading" data-aos="fade-in">
+  <h2>Habilidades técnicas</h2>
+  <p>Conocimientos en las siguientes herramientas y lenguajes.</p>
+  </div>
+  <div class="container">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="93" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Adobe Photoshop</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="91" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Adobe Illustrator</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="80" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Adobe After Effects</h4>
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="80" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Sketch</h4>
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="80" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Figma</h4>
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="80" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>InVision</h4>
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="95" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Diseño Web</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="93" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>Responsive Web</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="95" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>HTML5</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="95" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>CSS3</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="85" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>LESS</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills" data-aos="fade-in">
+  <span class="chart skilBg" data-percent="92">
+  <span class="percent"></span>
+  </span>
+  <h4>Bootstrap</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="90" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>JavaScript</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="95" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>jQuery</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 skillsArea">
+  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
+  <span class="chart skilBg" data-percent="75" data-aos="fade-in">
+  <span class="percent"></span>
+  </span>
+  <h4>GitHub</h4>
+  <!--<p>Donec accumsan ligula vitae mag na curabitur id</p>-->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section id="experiencia" class="experiencia">
+  <div class="container-fluid">
+  <div class="heading" data-aos="fade-in">
+  <h2>Experiencias laborales</h2>
+  <p>Mis anteriores trabajos hasta la actualidad.</p>
+  </div>
+  <div class="container">
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">Actualidad<br>-<br>2014</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Freelance</h4>
+  <h5>Maquetación & Diseño Web</h5>
+  <p>Diseño, desarrollo de sitios webs.</p>
+  <div class="fecha">Septiembre de 2014 – Actualidad</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-freelance-2.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2014<br>-<br>2013</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Emexs</h4>
+  <h5>Maquetación Web</h5>
+  <p>Desarrollo de sitios web.</p>
+  <div class="fecha">Enero de 2013 – Septiembre de 2014</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-emexs.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2014<br>-<br>2013</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Babel</h4>
+  <h5>Digital Creative</h5>
+  <p>Desarrollo de sitios web.</p>
+  <div class="fecha">Enero de 2013 – Septiembre de 2014</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-babel.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2014<br>-<br>2013</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Nosis</h4>
+  <h5>Diseño Web</h5>
+  <p>Desarrollo de sitios web.</p>
+  <div class="fecha">Enero de 2013 – Septiembre de 2014</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-nosis.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2014<br>-<br>2013</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Kodear</h4>
+  <h5>Web UI developer.</h5>
+  <p>Desarrollo de sitios web.</p>
+  <div class="fecha">Enero de 2013 – Septiembre de 2014</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-kodear-2.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2014<br>-<br>2013</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Globant</h4>
+  <h5>Web UI developer.</h5>
+  <p>Desarrollo de sitios web.</p>
+  <div class="fecha">Enero de 2013 – Septiembre de 2014</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-globant.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2013<br>-<br>2011</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Estudio Shape</h4>
+  <h5>Desarrollo web.</h5>
+  <p>Desarrollo de sitios web html, css, flash.</p>
+  <div class="fecha">Mayo de 2011 – Enero de 2013</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-shape.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2011</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Freelance</h4>
+  <h5>Desarrollo web.</h5>
+  <p>Desarrollo de sitios web html, css.</p>
+  <div class="fecha">Marzo de 2011 – Mayo de 2011</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-freelance-2.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2011<br>-<br>2008</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Ellecktra</h4>
+  <h5>Desarrollo y diseño web</h5>
+  <p>Desarrollo y diseño de sitios web html, css, flash.</p>
+  <div class="fecha">Julio de 2008 – Marzo de 2011</div>
+  <div class="holder-sombra"><div class="sombra"><a href="http://www.ellecktra.com/"><img src="images/experiencias-logo-ellecktra.png" class="logo" /></a></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2008<br>-<br>2006</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Identidad Comunicación</h4>
+  <h5>Desarrollo y diseño web</h5>
+  <p>Desarrollo y diseño de sitios web html, css, flash.</p>
+  <div class="fecha">Enero de 2006 – Julio de 2008</div>
+  <div class="holder-sombra"><div class="sombra"><img src="images/experiencias-logo-identidad.png" class="logo" /></div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row workDetails" data-aos="fade-in">
+  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  <div class="holder-workYear"><div class="workYear">2006<br>-<br>2005</div></div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  <div class="exCon">
+  <div class="arrowpart"></div>
+  <div class="row">
+  <div class="col-md-12">
+  <h4>Eikon Digital SRL</h4>
+  <h5>Desarrollo Web</h5>
+  <p>Desarrollo de sitios web html, css, flash.</p>
+  <div class="fecha">Agosto de 2005 – Enero de 2006</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <div class="container-fluid">
+  <div class="heading" data-aos="fade-in">
+  <h2>Pongámonos en contacto</h2>
+  <p>Por favor, sentite libre para realizar cualquier consulta.</p>
+  </div>
+  <div class="container">
+  <div class="contactoDetails">
+  <div class="container">
+  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+  <p data-aos="fade-in"><i class="fa fa-map-marker fa-lg"></i> Madrid, 28053, España</p>
+  <p data-aos="fade-in"><i class="fa fa-mobile fa-lg"></i> +34 698 967 429</p>
+  <p data-aos="fade-in"><i class="fa fa-envelope-o"></i> <a href="mailto:luchid@gmail.com">luchoid@gmail.com</a></p>
+  <p data-aos="fade-in"><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/luchomartin/" target="_blank">/luchomartin</a></p>
+  <p data-aos="fade-in"><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/luchoface" target="_blank">/luchens</a></p>
+  <p data-aos="fade-in"><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/luchomartin_fo/" target="_blank">/luchomartin_fo</a></p>
+  <p data-aos="fade-in"><i class="fa fa-skype"></i> <a href="skype:lucho.sky?call">lucho.sky</a></p>
+  <p data-aos="fade-in"><div class="fb-like" data-href="http://www.luchomartin.net/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div></p>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
+  <form class="validate-form" action="php/send-email.php" method="POST" role="form">
+  <div class="row">
+  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <input type="text" class="input validate-field required" data-validation-type="string" id="form-name" placeholder="Nombre" name="nombre" data-aos="fade-in">
+  </div>
+  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <input type="text" class="input validate-field required" data-validation-type="string" id="form-name" placeholder="Apellido" name="apellido" data-aos="fade-in">
+  </div>
+  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <input type="email" class="input validate-field required" data-validation-type="email" id="form-email" placeholder="Email" name="email" data-aos="fade-in">
+  </div>
+  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <input type="tel" class="input validate-field required" data-validation-type="phone" id="form-contact-number" placeholder="Teléfono/Celular" name="telefono" data-aos="fade-in">
+  </div>
+  </div>
+  <div class="row">
+  <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <textarea class="textarea validate-field required" data-validation-type="message" id="form-message" placeholder="Mensaje" name="mensaje" data-aos="fade-in"></textarea>
+  </div>
+  </div>
+  <div class="row">
+  <div class="form-group form-general-error-container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <div class="success">Gracias por ponerte en contacto, te responderé a la brevedad. Saludos!</div>
+  <div class="incomplete">Incompleto</div>
+  <div class="error">error</div>
+  </div>
+  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <button type="submit" class="btn btn-default hvr-underline-reveal pull-right btn-submit" data-aos="fade-in">ENVIAR FORMULARIO</button>
+  <img src="images/ajax-loader-3.gif" class="form-loader pull-right">
+  <br>
+  </div>
+  </div>
+  </form>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="row mapArea" data-aos="fade-in">
+  <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.43154090657!2d-60.6981577!3d-32.95230345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C+Santa+Fe!5e0!3m2!1ses-419!2sar!4v1434330770399"></iframe> -->
+  <div id="map"></div>
+  </div>
+  </div>
+</section>
+
+<footer id="footer" class="footer">
+  <div class="container text-center">
+    <a href="https://www.facebook.com/luchoface" target="_blank" data-aos="fade-in"><i class="fa fa-facebook fa-2x fa-styl"></i></a>
+    <a href="https://www.linkedin.com/in/luchomartin/" target="_blank" data-aos="fade-in"><i class="fa fa-linkedin fa-2x fa-styl"></i></a>
+    <a href="https://www.instagram.com/luchomartin.ins/" target="_blank" data-aos="fade-in"><i class="fa fa-instagram fa-2x fa-styl"></i></a>
+    <a href="skype:lucho.sky?call" data-aos="fade-in"><i class="fa fa-skype fa-2x fa-styl"></i></a>
+    <div class="copy" data-aos="fade-in">Lucho Martin &copy; 2005 / <?php echo date("Y"); ?> - Todos los derechos reservados</div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--<script type="text/javascript" src="js/jquery.gridrotator.js"></script>-->
+<!-- <script type="text/javascript" src="js/vendor.js"></script>
+<script type="text/javascript" src="js/jpreloader.js"></script> -->
+<script type="text/javascript" src="js/queryloader2.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.isotope.js"></script>  -->
+<!-- <script type="text/javascript" src="js/jquery.easing.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>
+<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+<!--<script type="text/javascript" src="js/jquery.contact.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.scrolly.js"></script>-->
+<script type="text/javascript" src="js/parallax.js"></script>
+<!-- <script type="text/javascript" src="js/velocity.min.js"></script> -->
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+<!-- <script type="text/javascript" src="js/animation.velocity.js"></script> -->
+<!--<script type="text/javascript" src="js/wow.min.js"></script>-->
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+<script type="text/javascript" src="js/stickUp.js"></script>
+<!--<script type="text/javascript" src="js/jquery.umbg.min.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.hashchange.min.js"></script>-->
+<!-- <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script> -->
+<!--<script type="text/javascript" src="js/Three.js"></script>
+<script type="text/javascript" src="js/particles.js"></script> https://digital.scotch.io/-->
+<!--<script type="text/javascript" src="js/particles.min.js"></script>-->
+<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="js/custom.min.js"></script>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.init({
+appId      : '1593516784232331',
+xfbml      : true,
+version    : 'v2.5'
+});
+};
+
+(function(d, s, id){
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+/*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-75984502-1', 'auto');
+ga('send', 'pageview');*/
+
+
+function initMap() {
+var map;
+var lat = 40.4178283;
+var lng = -3.7153383;
+
+/*var styles = [{
+"elementType": "geometry",
+"stylers": [
+{ "visibility": "simplified" },
+{ "weight": 1 },
+{ "hue": "#ff0000" },
+{ "saturation": -100 }
+]}
+];*/
+
+var styles = [{
+"featureType": "water",
+"elementType": "geometry",
+"stylers": [{
+"color": "#e9e9e9"
+}, {
+"lightness": 17
+}
+]
+}, {
+"featureType": "landscape",
+"elementType": "geometry",
+"stylers": [{
+"color": "#f5f5f5"
+}, {
+"lightness": 20
+}
+]
+}, {
+"featureType": "road.highway",
+"elementType": "geometry.fill",
+"stylers": [{
+"color": "#ffffff"
+}, {
+"lightness": 17
+}
+]
+}, {
+"featureType": "road.highway",
+"elementType": "geometry.stroke",
+"stylers": [{
+"color": "#ffffff"
+}, {
+"lightness": 29
+}, {
+"weight": 0.2
+}
+]
+}, {
+"featureType": "road.arterial",
+"elementType": "geometry",
+"stylers": [{
+"color": "#ffffff"
+}, {
+"lightness": 18
+}
+]
+}, {
+"featureType": "road.local",
+"elementType": "geometry",
+"stylers": [{
+"color": "#ffffff"
+}, {
+"lightness": 16
+}
+]
+}, {
+"featureType": "poi",
+"elementType": "geometry",
+"stylers": [{
+"color": "#f5f5f5"
+}, {
+"lightness": 21
+}
+]
+}, {
+"featureType": "poi.park",
+"elementType": "geometry",
+"stylers": [{
+"color": "#dedede"
+}, {
+"lightness": 21
+}
+]
+}, {
+"elementType": "labels.text.stroke",
+"stylers": [{
+"visibility": "on"
+}, {
+"color": "#ffffff"
+}, {
+"lightness": 16
+}
+]
+}, {
+"elementType": "labels.text.fill",
+"stylers": [{
+"saturation": 36
+}, {
+"color": "#333333"
+}, {
+"lightness": 40
+}
+]
+}, {
+"elementType": "labels.icon",
+"stylers": [{
+"visibility": "off"
+}]
+}, {
+"featureType": "transit",
+"elementType": "geometry",
+"stylers": [{
+"color": "#f2f2f2"
+}, {
+"lightness": 19
+}]
+}, {
+"featureType": "administrative",
+"elementType": "geometry.fill",
+"stylers": [{
+"color": "#fefefe"
+}, {
+"lightness": 20
+}]
+}, {
+"featureType": "administrative",
+"elementType": "geometry.stroke",
+"stylers": [{
+"color": "#fefefe"
+}, {
+"lightness": 17
+}, {
+"weight": 1.2
+}]
+}];
+
+map = new google.maps.Map(document.getElementById('map'), {
+center: { lat: lat, lng: lng },
+zoom: 15,
+scrollwheel:!1
+});
+map.setOptions({styles: styles, fullscreenControl: true, scaleControl: true, disableDefaultUI: false });
+
+var beachMarker = new google.maps.Marker({
+position: {lat: lat, lng: lng },
+map: map,
+icon: 'images/logo-gmap.png'
+});
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf4ShbhxmjYoe-4P3F18LEPr8KCIn7DoU&callback=initMap" async defer></script>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+/*window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3sN0LgQqwDHciiYAb7IMvY6wqRPEiOjn";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");*/
+</script>
+<!--End of Zopim Live Chat Script-->
+
+<!--<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>-->
+
+</body>
 </html>

@@ -1,0 +1,57 @@
+.c6__ {
+  &container {
+    background-image: url("#{$imagespath}image-7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 193px;
+
+    @include respond-to(medium) {
+      margin-top: 158px;
+    }
+    @include respond-to(small) {
+      height: 304px;
+      margin-top: 123px;
+    }
+
+    @include respond-from(large) {
+      margin-top: 158px;
+    }
+
+    @include respond-from(small) {
+      margin-top: 193px;
+    }
+  }
+}
+
+.c6__title-container {
+  background-color: white;
+  padding: 0 8px;
+  width: min-content;
+  height: min-content;
+  @include respond-to(medium) {
+    height: min-content;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+.c6__title {
+  white-space: nowrap;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: $thin;
+  font-size: $subtitle01-size;
+  line-height: $high-line;
+  text-align: center;
+  @include respond-to(medium) {
+    font-size: $h2-size;
+    line-height: $ultra-line;
+  }
+  @include respond-to(large) {
+    line-height: $strong-line;
+  }
+}

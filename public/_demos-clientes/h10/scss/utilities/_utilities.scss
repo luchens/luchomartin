@@ -1,0 +1,685 @@
+.separator-line-list {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+        font-size: 16px;
+        font-style: normal;
+//        white-space: nowrap;
+
+        @include respond-to(large) {
+            font-size: 20px;
+        }
+
+        p{display: inline;}
+        b, strong{
+          font-weight: 400;
+        }
+
+        &:not(:last-child)::after {
+            content: "|";
+            padding-right: 1.2rem;
+            padding-left: 1.2rem;
+            text-decoration: none;
+            color: hsl(0deg, 0%, 46%);
+
+            @include respond-to(medium) {
+                padding-right: 2.4rem;
+                padding-left: 2.4rem;
+            }
+        }
+    }
+}
+
+.scroll-x {
+  overflow-x: visible!important;
+  overflow-y: hidden!important;
+}
+
+.scroll-y {
+  overflow-x: hidden!important;
+  overflow-y: visible!important;
+}
+
+.display {
+
+    &__mobile { //.display__mobile mostrará el contenido exclusivamente en resolución "MÓVIL Y TABLET"
+        display: block;
+
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+
+    &__desktop { //.display__desktop mostrará el contenido exclusivamente en resolucion "DESKTOP"
+        display: none;
+
+        @include respond-to(large) {
+            display: block;
+        }
+    }
+}
+
+
+
+// Typography
+
+.font-weight--250 {
+    font-weight: 250!important;
+}
+
+
+.font-weight--300 {
+    font-weight: 300;
+}
+
+.font-weight--400 {
+    font-weight: 400;
+}
+
+.font-argent {
+    font-family: $second-font!important;
+}
+
+.font-size-h2 {
+    font-size: $h2-size;
+}
+
+.font-style--normal {
+    font-style: normal;
+}
+
+// Margins
+
+.margin-bottom {
+    margin-bottom: 24px;
+}
+
+.margin-bottom-x {
+    margin-bottom: 32px;
+}
+.margin-0 {
+    margin: 0px !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+.no-margin-top {
+  margin-top: 0px !important;
+}
+// -----MAIN CTA
+.main-button {
+  @include button($color-main, $color-white, $color-main);
+  white-space: nowrap;
+}
+
+.second-button {
+  @include button($color-white, $color-main, $color-main);
+  white-space: nowrap;
+}
+
+
+.btn-ver-mas-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-ver-mas, .btn-ver-menos {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 16px;
+      line-height: 24px;
+      padding-right: 20px;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      background-image: url("../src/icons/arrow_big_down.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: right center;
+    }
+    .btn-ver-menos {
+      background-image: url("../src/icons/arrow_big_up.svg");
+    }
+
+  }
+
+  .hidden-ver-mas {
+    margin-top: -8px;
+    display:none;
+  }
+
+  .enlace-ver
+  {
+    font-family: $main-font;
+    font-weight: $medium;
+    color: $color-main;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    padding-right: 45px;
+    text-transform: uppercase;
+
+    background-image: url('#{$iconspath}arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 9px;
+    background-position: right center;
+
+    @include transition(all .3s ease);
+
+    &:hover {
+      padding-right: 50px;
+    }
+  }
+
+  .heading-container {
+    .heading {
+      h2,h3 {
+        font-family: $second-font;
+        font-weight: $thin;
+        color: $color-main;
+        font-size: 80px;
+        line-height: 96px;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @include respond-from(medium) {
+          font-size: 48px;
+          line-height: 50px;
+        }
+      }
+
+      p {
+        font-family: $main-font;
+        font-weight: $regular;
+        color: $color-main;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        max-width: 645px;
+        margin: auto;
+        margin-bottom: 48px;
+
+        @include respond-from(medium) {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        @include respond-from(small) {
+          font-weight: $regular;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  h4{
+    &.title{
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      margin-bottom: 38px;
+      margin-top: 18px;
+
+    }
+  }
+
+
+  .height-minima{
+    min-height: 150px !important;
+
+    @include respond-from(large) {
+      min-height: 182px !important;
+    }
+
+  }
+
+  .btn-ver-hoteles {
+    @include button($color-white, $color-main, $color-main);
+
+    @include respond-from(large) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &.wide{
+      width: 100%;
+    }
+  }
+
+
+  .texto {
+    &.texto-leer-mas
+    {
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $color-main;
+    font-size: 18px !important;
+    line-height: 28px;
+    margin-bottom: 12px;
+    margin-top: 32px;
+
+
+    @include respond-from(small) {
+//      font-size: 16px;
+//      line-height: 22px;
+    }
+
+   
+      .contenido_crop
+      {
+        max-height: 166px;
+        overflow: hidden;
+        margin-top: -74px;
+
+        @include respond-from(large) {
+          max-height: 163px;
+         }
+ 
+        @include respond-from(small) {
+         max-height: 225px;
+        }
+
+
+        &:before
+        {
+          content: "";
+          position: relative;
+          display: block;
+          left: 0px;
+          bottom: -144px;
+          width: 100%;
+          height: 32px;
+          background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .8) 80%, rgb(255, 255, 255) 100%);
+          filter: drop-shadow(0px -30px 14px rgb(255, 255, 255));
+          @include transition(opacity 6s ease);  
+          
+          @include respond-from(small) {
+            bottom: -195px;
+           }
+         
+        }
+
+        &.large{
+          max-height: 188px;
+          &:before
+          {
+            bottom: -160px;
+          }
+        }
+
+        &.xlarge{
+          max-height: 240px;
+          &:before
+          {
+            bottom: -213px;
+          }
+        }
+
+        &.nodegrad
+        {
+          &:before
+          {display: none;}
+          margin-top: -38px;
+
+        }
+
+
+      }
+
+      &.show
+      {
+        .contenido_crop
+        {
+          max-height: none;
+          margin-top: -42px;
+
+          &:before
+          {display: none;}
+
+          p
+          {font-size: 1.8rem !important;}
+
+        }
+
+        .btn-leer {
+          background-image: url('#{$iconspath}arrow-up.svg');
+
+          &.mas{
+            display: none;
+          }
+
+          &.menos {
+            display: inline;
+          }
+
+        }
+  
+      }
+
+
+    
+    .btn-leer {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: underline;
+      padding-right: 18px;
+      background-image: url('#{$iconspath}arrow-down.svg');
+      background-repeat: no-repeat;
+      background-size: 12px 7px;
+      background-position: right center;
+      @include transition(all .3s ease);
+
+      &.menos {
+         display: none;
+      }
+    }
+
+    div {
+      p{
+      margin: revert;
+//      margin-bottom: -8px;
+        :last-child{margin-bottom: 0px;}
+        b, strong{
+          font-weight: $bold;
+        }
+      }
+      
+      p:last-child{margin-bottom: 0px;}
+
+//        margin-bottom: 10px;
+
+      &.texto-1 {
+        //height: 180px;
+        overflow: hidden;
+      }
+
+      &.texto-2 {
+        display: none;
+      }
+
+      &.p-enlace-destacado {
+        margin-top: 16px;
+
+        &.mt {
+          margin-top: 30px;
+        }
+
+        @include respond-to(large) {
+          margin-top: 8px;
+        }
+      }
+
+      span.text-desktop{
+        display: none;
+
+        @include respond-to(large) {
+          display: block;
+        }
+      }
+
+      span.text-mobile{
+        display: block;
+
+        @include respond-to(large) {
+          display: none;
+        }
+      }
+
+      a{
+        &.enlace-destacado {
+        font-family: $main-font;
+        font-weight:$medium;
+        text-decoration: underline;
+
+          &:hover {
+            font-weight: $bold;
+            cursor: pointer;
+          }
+        }
+      }
+
+      ul {
+        list-style: disc;
+        margin: 0;
+        padding: 4px 20px 0 20px;
+        margin-bottom: 0;
+  
+        @include respond-to(large) {
+            margin-bottom: 24px;
+        }
+  
+        li {
+            font-size: 16px;
+            font-weight: $regular;
+            line-height: 22px;
+        }
+      }
+
+    }
+
+
+
+    @include respond-from(large) {
+      padding-left: 0px;
+      margin-bottom: 20px;
+      margin-top: 32px;
+    }
+
+    b {
+      font-weight: $bold;
+    }
+  }
+}
+
+
+
+
+
+  .texto_leer_mas{
+    font-family: $main-font;
+    font-weight: $regular;
+    color: $color-main;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 133px;
+
+
+    b, strong{
+      font-weight: $bold;
+    }
+
+
+    &.no-padding-left{
+      padding-left: 0px;
+    }
+
+    @include min-max-width(740px, 1140px) {
+      padding-right: 16px;
+    }
+
+
+    ul {
+      list-style: disc;
+      margin: 0;
+      padding: 4px 20px 0 20px;
+      margin-bottom: 0;
+
+      @include respond-to(large) {
+          margin-bottom: 24px;
+      }
+
+      li {
+          font-size: 16px;
+          font-weight: $regular;
+          line-height: 22px;
+      }
+    }
+
+    .btn-leer {
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: underline;
+      padding-right: 18px;
+      background-image: url('#{$iconspath}arrow-down.svg');
+      background-repeat: no-repeat;
+      background-size: 12px 7px;
+      background-position: right center;
+      @include transition(all .3s ease);
+
+      &.menos {
+         display: none;
+      }
+
+    }
+
+    &.no-desktop
+    {
+      @include respond-to(medium) {
+
+        .dots, .btn-leer
+        {        
+          display: none;
+        }
+
+      }
+    } 
+
+
+    p {
+
+      &.p-enlace-destacado {
+        margin-top: 16px;
+
+        &.mt {
+          margin-top: 30px;
+        }
+
+        @include respond-to(large) {
+          margin-top: 8px;
+        }
+      }
+
+      a{
+        &.enlace-destacado {
+        font-family: $main-font;
+        font-weight:$medium;
+        text-decoration: underline;
+
+          &:hover {
+            font-weight: $bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .texto-1 {
+      //height: 180px;
+      overflow: hidden;
+    }
+
+    .texto-2 {
+      display: none;
+    }
+
+
+    span.text-desktop, div.text-desktop, ul.text-desktop{
+      display: block;
+    }
+
+    .text-no-mobile{
+      display: inline;
+
+      @include respond-from(medium) {
+        display: none;
+      }
+    }
+
+    li.text-no-mobile{
+      display: list-item;
+      @include respond-from(medium) {
+        display: none;
+      }
+
+    }
+
+    .text-no-mobile{
+      .dots {
+        display: none;
+      }  
+    }
+
+
+   
+
+    @include respond-from(large) {
+      padding-left: 0px;
+    }
+
+    @include respond-from(large) {
+      margin-bottom: 20px;
+    }
+
+    b {
+      font-weight: $bold;
+    }
+  }
+
+
+.show-less{ 
+
+    &:after {
+    content: "";
+    position: relative;
+    display: block;
+    left: 0px;
+    bottom: 32px;
+    width: 100%;
+    height: 32px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .8) 80%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0px -30px 14px rgb(255, 255, 255));
+    @include transition(opacity 6s ease);
+    }
+
+    b, strong{
+      font-weight: $bold;
+    }
+
+    &.no-degrad
+    {
+      &:after {
+        display:none
+      }
+    }
+
+    &.short{
+      height: 100px;
+    }
+
+    &.medium{
+      height: 200px;
+    }
+
+    &.large{
+      height: 300px;
+    }
+}
+
+
+
+

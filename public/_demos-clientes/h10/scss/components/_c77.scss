@@ -1,0 +1,187 @@
+.c77__ {
+  &container {
+
+    margin-top: 110px;
+        
+    @include respond-from(large) {
+          margin-top: 50px;
+    }
+
+    .titulo-top {
+      position: relative;
+      font-family: $main-font;
+      font-weight: $medium;
+      color: $color-main;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 48px;
+      margin-left: 8px;
+      margin-right: 8px;
+      text-align: center;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        max-width: 237px;
+        height: .5px;
+        background-color: $color-main;
+        margin: 16px auto 0px auto;
+      }
+    }
+
+    .items {
+      .item {
+        position: relative;
+        background: $color-white;
+        box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 19px 15px 18px 25px;
+        margin-bottom: 24px;
+
+        .data-holder {
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+
+          @include respond-from(medium) {
+            flex-flow: wrap;
+          }
+
+
+          .data {
+            display: inline-flex;
+            gap: 16px;
+            align-items: center;
+            margin-top: 0px;
+
+            @include respond-from(large) {
+                margin-top: 5px;
+            }
+
+            @include respond-from(medium) {
+              display: block;
+              margin-left: 0px;
+              margin-top: 0px;
+            }
+
+            .titulo {
+              font-family: $second-font;
+              font-weight: $thin;
+              color: $color-main;
+              font-size: 28px;
+              line-height: 33px;
+              display: inline-block;
+              vertical-align: middle;
+              white-space: nowrap;
+
+              b, strong{
+                font-weight: $bold;
+              }
+
+              &.titulo-gl{
+                font-family: "Argent CF";
+                color:#A79C67;
+                margin-left: -10px;
+                font-size: 22px;
+
+                @include respond-from(medium) {
+                  margin-left: 0px;
+                }
+              }
+              
+              @include respond-from(large) {
+                font-size: 20px;
+                line-height: 32px;
+              }
+            }
+
+            .ratings {
+              position: relative;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              direction: rtl;
+              text-align: left;
+              list-style: none;
+              display: inline-flex;
+              gap: 2px;
+              vertical-align: middle;
+              width: auto;
+
+              @include respond-from(medium) {
+                margin: 0 5px;
+              }
+
+              .star {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                @include transition(color .3s ease);
+
+                &:before {
+                  content: '';
+                  display: block;
+                  width: 16px;
+                  height: 16px;
+                  background-image: url('#{$iconspath}star-o.svg');
+                  background-repeat: no-repeat;
+                  background-size: 16px;
+                  background-position: center center;
+                }
+
+                &.selected,
+                &.selected ~ .star {
+                  background-image: url('#{$iconspath}star.svg');
+                  background-position: center center;
+                  @include transition(all .3s ease);
+                }
+              }
+            }
+
+            .labels {
+              display: block;
+              gap: 4px;
+
+              .label {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: $main-font;
+                font-weight: $medium;
+                color: $color-main;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: $color-azul7;
+                border-radius: 48px;
+                padding: 6px 8px 4px;
+                white-space: nowrap;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                margin-left: 5px;
+
+                @include respond-from(small) {
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+
+          .btn-ver-ficha {
+            float: right;
+            @include button($color-main, $color-white, $color-main);
+            min-width: 215px;
+
+            @include respond-from(medium) {
+              margin-top: 10px;
+            }
+  
+          }
+        }
+      }
+    }
+
+  }
+}

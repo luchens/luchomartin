@@ -1,0 +1,92 @@
+.c76__ {
+  &container {
+    margin-top: 32px;
+//    padding-bottom: 88px;
+
+    &.wide{
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+
+    @include respond-from(large) {
+      margin-top: -16px;
+
+      &.fix-top-mobile
+      {
+        margin-top: 32px;
+      }
+    }
+
+
+    h2.title ,h3.title{
+      font-family: $second-font;
+      font-weight: $thin;
+      color: $color-main;
+      font-size: 80px;
+      line-height: 74px;
+      text-align: center;
+      width: 83%;
+      margin: auto;
+      margin-bottom: 48px;
+      margin-top: 88px;
+
+      @include respond-from(large) {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 32px;
+        margin-top: 68px;
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      @include respond-from(medium) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+    }
+
+    .introduction
+    {
+      width:50%;
+      margin:auto;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+
+      @include respond-from(medium) {
+        width:100%;
+      }
+
+      
+      p{
+        line-height: 26px;
+        margin: revert;
+        b, strong{
+          font-weight: 350;
+//          font-style: italic;
+        }
+      }
+
+      img{
+        margin-bottom: 40px;
+
+        &.mice_img
+        {
+          max-height: 52px;
+        }
+        
+        &.first_img{
+          margin-right: 48px;
+        }
+      }
+
+      &.wide{
+        width:83%;
+      }
+
+    }
+
+
+  }
+}
