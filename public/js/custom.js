@@ -97,19 +97,21 @@
 	  });
 
     jQuery(function($) {
-      $('.navbar-wrapper').stickUp({
-        parts: {
-            0: 'home',
-            1: 'sobremi',
-            2: 'trabajos',
-            3: 'habilidades',
-            4: 'experiencia',
-            5: 'contacto'
-        },
-        itemClass: 'menuItem',
-        itemHover: 'active',
-        topMargin: 'auto'
-      });
+			if($('.navbar-wrapper').length != 0) {
+	      $('.navbar-wrapper').stickUp({
+	        parts: {
+	            0: 'home',
+	            1: 'sobremi',
+	            2: 'trabajos',
+	            3: 'habilidades',
+	            4: 'experiencia',
+	            5: 'contacto'
+	        },
+	        itemClass: 'menuItem',
+	        itemHover: 'active',
+	        topMargin: 'auto'
+	      });
+			}
     });
 
     (function($) {
