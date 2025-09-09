@@ -1559,13 +1559,14 @@ span.hoverBox a {
 	line-height:42px;
 }
 span.hoverBox .smallIcon {
-  width: 134px;
-  margin: 0px auto;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -67px;
-  margin-top: -31px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 span.hoverBox .zoom {
 	visibility:hidden;
