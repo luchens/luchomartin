@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Home</title>
+    <link rel="shortcut icon" href="../../../src/icons/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="../../../css/style.css">
+  </head>
+  <body class="home">
+    <nav class="topbar-main">
+      <div class="topbar-main__container-left">
+        <a href="#" class="menu-icon__mobile-click">
+          <img src="../../icons/menu-white.svg" class="menu-icon__mobile" />
+          <img src="../../icons/menu-close-white.svg" class="menu-icon__mobile" />
+        </a>
+        <a href="/src/html/pages/home.php"><img src="../../logos/logo-blue.svg" class="logo__mobile" /></a>
+      </div>
+      <div class="topbar-main__container-right">
+        <div class="container-right__mobile">
+          <img src="../../icons/call_-white.svg" class="header__icon-mobile contactanos" />
+          <img src="../../icons/person_-white.svg" class="header__icon-mobile login" />
+        </div>
+        <div class="container-right__desktop">
+          <ul class="topbar__links-top">
+            <li class="js-dropdown dropdown-onclick dropdown-idioma">
+              <span>ES</span>
+              <div class="topbar-desplegable__mobile-header">IDIOMA<img class="x__mobile" src="../../icons/x.svg" alt="check in icon"></div>
+              <ul class="dropdown-onclick__content topbar-desplegable__idioma-list">
+                <li><a href="#">Català</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Portugués</a></li>
+                <li><a href="#">Ruso</a></li>
+              </ul>
+            </li>
+            <li class="js-dropdown dropdown-onclick dropdown-reservas">
+              <span class="link_reservas">MIS RESERVAS</span>
+              <div class="topbar-desplegable__mobile-header">MIS RESERVAS<img class="x__mobile" src="../../icons/x.svg" alt="check in icon"></div>
+              <div class="dropdown-onclick__content topbar-desplegable__reservas-container">
+                <div class="topbar-desplegable__title">GESTIONA TU RESERVA</div>
+                <div class="topbar-desplegable__content">
+                  <div class="topbar-desplegable__form-container">
+                    <form class="topbar-desplegable__form">
+    <!--                  <label for="hotel">HOTEL</label>
+                      <input class="input-main" placeholder="H10 Atlantic Sunset" id="hotel">-->
+                      <label class="localizador-label" for="localizador">LOCALIZADOR</label>
+                      <div class="topbar-desplegable__localizador">
+                        <input class="footer-info__suscripcion--input _localizador" placeholder="H5201"><span>-</span>
+                        <input class="footer-info__suscripcion--input _codigo-localizador" placeholder="Completa tu código localizador">
+                      </div>
+                      <label for="email">EMAIL</label>
+                      <input class="input-main" placeholder="Escribe tu email" id="email">
+                    </form>
+                    <div class="topbar-desplegable__reserva">
+                      <button class="main-button">BUSCAR RESERVA</button>
+                    </div>
+                  </div>
+                  <hr class="topbar-desplegable__hr">
+                  <div class="topbar-desplegable__right">
+                    <div class="topbar-desplegable__check-container">
+                      <button class="main-button">CHECK-IN ONLINE<img class="topbar-desplegable__reserva-button" src="../../icons/check-in.svg" alt="check in icon"></button>
+                      <p class="text">Desde las 15h, dos días antes de tu llegada al hotel.</p>
+                    </div>
+                    <div class="topbar-desplegable__check-container">
+                      <button class="main-button">CHECK-OUT ONLINE<img class="topbar-desplegable__reserva-button" src="../../icons/check-out.svg" alt="check out icon"></button>
+                      <p class="text">Desde las 22h del día anterior a tu salida del hotel.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="js-dropdown dropdown-onclick dropdown-telefono">
+              <span>(+34) 900 000 000</span>
+              <div class="topbar-desplegable__mobile-header">CONTÁCTANOS<img class="x__mobile" src="../../icons/x.svg" alt="check in icon"></div>
+              <div class="topbar-desplegable__mobile-tlf"><span>ESPAÑA <br> +34 900 000 000</span>
+                <button class="main-button">LLAMAR</button>
+                <hr class="topbar-desplegable__mobile-hr">
+              </div>
+              <div class="dropdown-onclick__content topbar-desplegable__tlf-container">
+                <div class="topbar-desplegable__tlf-text"><img class="topbar-tlf__icon" src="../../icons/call_.svg" alt="call icon">
+                  <p class="text">Horario Atención al Cliente <br> (GMT+1) <br> Lunes a viernes de 9 a 20h <br> Sábados de 10 a 15h</p>
+                </div>
+                <ul class="topbar-desplegable__tlf-list">
+                  <li class="topbar-desplegable__tlf__list-item"> FRANCIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> ITALIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> ALEMANIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> REINO UNIDO <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> ESTADOS UNIDOS <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> RUSIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> PORTUGAL <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="topbar-desplegable__tlf__list-item"> BRAZIL <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="js-dropdown dropdown-onclick dropdown-inicio-sesion">
+              <span class="topbar__links--inicio-sesion">
+                <img src="../../icons/person_white.svg" class="personsvg" />
+                <span class="link_session">INICIAR SESION</span>
+              </span>
+              <div class="topbar-desplegable__mobile-header">LOG IN<img class="x__mobile" src="../../icons/x.svg" alt="check in icon"></div>
+              <div class="dropdown-onclick__content topbar-desplegable__login-container">
+                <div class="topbar-desplegable__login-titles">
+                  <span class="form-login-club-h10 topbar-desplegable__activeitem">LOGIN CLUB H10</span>
+                  <span class="form-acceso-agencias"><a href='https://www.h10hotels.com/'>ACCESO AGENCIAS</a></span>
+                </div>
+                <div class="topbar-desplegable__login-content form-login-club-h10 active">
+                  <form class="topbar-desplegable__login-form">
+                    <div class="topbar-desplegable__login-item">
+                      <label for="nro">Nº TARJETA/EMAIL</label>
+                      <input class="input-main i-usuario" placeholder="521..." id="nro">
+                    </div>
+                    <div class="topbar-desplegable__login-item">
+                      <label for="contrasena">CONTRASEÑA</label>
+                      <input class="input-main i-contrasena" placeholder="Introduce tu contraseña" id="contrasena">
+                      <span class="i-contrasena-error">Login o password incorrectos</span>
+                      <div class="topbar-desplegable__login-checkbox">
+                        <label class="checkbox-recuerdame">
+                          Recuérdame
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="topbar-desplegable__container2"><a href="#">¿Has olvidado tu contraseña?</a>
+                    <button class="main-button">ACCEDER</button>
+                  </div>
+                  <div class="topbar-desplegable__container3"><b>¿Aún no tienes acceso online?</b>
+                    <p>Regístrate o activa tu cuenta (solo necesitas el número de tarjeta del Club H10 para activar tu cuenta online).</p>
+                    <div class="topbar-desplegable__bottom-buttons">
+                      <button class="second-button">REGISTRATE</button>
+                      <button class="second-button">ACTIVA TU CUENTA</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="topbar-desplegable__login-content form-acceso-agencias">
+                  <form class="topbar-desplegable__login-form">
+                    <div class="topbar-desplegable__login-item">
+                      <label for="codigo">CÓDIGO DE EMPRESA</label>
+                      <input class="input-main" placeholder="521..." id="codigo">
+                    </div>
+                    <div class="topbar-desplegable__login-item">
+                      <label for="usuario">USUARIO</label>
+                      <input class="input-main i-usuario" placeholder="Introduce tu usuario" id="usuario">
+                    </div>
+                    <div class="topbar-desplegable__login-item">
+                      <label for="contrasena2">CONTRASEÑA</label>
+                      <input class="input-main i-contrasena" placeholder="Introduce tu contraseña" id="contrasena2">
+                      <div class="topbar-desplegable__login-checkbox">
+                        <label class="checkbox-recuerdame">
+                          Recuérdame
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="topbar-desplegable__container2"><a href="#">¿Has olvidado tu contraseña?</a>
+                    <button class="main-button">ACCEDER</button>
+                  </div>
+                  <div class="topbar-desplegable__container4">
+                    <p>¿Aún no tienes acceso online?</p> <a href="#">Regístrate</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="topbar__links-bottom js-topbar__links-bottom">
+            <li class="dropdown"><span class="dropdown__toggler">HOTELES</span>
+              <div class="dropdown__content dropdown__content--centered2">
+                <div class="scroll-y">
+                  <div class="c4-01__container c4-01__container2">
+                    <section class="c4-01__destinos c4-01__destinos-fixed">
+                      <div class="c4-01__destinos-content c4-01__destinos-content-fixed">
+                        <div class="div c4-01__main-cabecera js-acordeon acordeon-onclick"><span class="c4-01__title">DESTINOS DE HOTELES</span><img class="c4-01__cabecera-arrow" src="../../icons/arrow_big_up.svg" alt="flecha mirando hacia arriba">
+                        </div>
+                        <hr class="hr__main-cabecera">
+                        <div class="c4-01__lists-container acordeon-onclick__submenu">
+                          <div class="c4-01__list">
+                            <div class="c4-01__list_cabecera js-sub-acordeon sub-acordeon-onclick"><span>ESPAÑA</span><img class="c4-01__cabecera-arrow" src="../../icons/arrow_big_up.svg" alt="flecha mirando hacia arriba"></div>
+                            <hr class="c4-01-hr_tablet">
+                            <ul class="c4-01__mobile-ul sub-acordeon-onclick__submenu">
+                              <li class="c4-01__desktop-ul"><a href="">Barcelona <b>(15)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Benidorm <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Córdoba <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Costa del Sol <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Fuerteventura <b>(5)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Gran Canaria <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">La Palma <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Lanzarote <b>(5)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Madrid <b>(3)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Málaga <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Mallorca <b>(3)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Salou - Cambrils <b>(6)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Sevilla <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Tarragona <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="/src/html/pages/listado-hoteles.php">Tenerife <b>(7)</b></a></li>
+                            </ul>
+                          </div>
+                          <div class="c4-01__list">
+                            <div class="c4-01__list_cabecera js-sub-acordeon sub-acordeon-onclick"><span>EUROPA</span><img class="c4-01__cabecera-arrow" src="../../icons/arrow_big_up.svg" alt="flecha mirando hacia arriba"></div>
+                            <hr class="c4-01-hr_tablet">
+                            <ul class="c4-01__mobile-ul sub-acordeon-onclick__submenu">
+                              <li class="c4-01__desktop-ul"><a href="">Berlín <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Lisboa <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Londres <b>(1)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Roma <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Venecia <b>(1)</b></a></li>
+                            </ul>
+                          </div>
+                          <div class="c4-01__list">
+                            <div class="c4-01__list_cabecera js-sub-acordeon sub-acordeon-onclick"><span>CARIBE</span><img class="c4-01__cabecera-arrow" src="../../icons/arrow_big_up.svg" alt="flecha mirando hacia arriba"></div>
+                            <hr class="c4-01-hr_tablet">
+                            <ul class="c4-01__mobile-ul sub-acordeon-onclick__submenu">
+                              <li class="c4-01__desktop-ul"><a href="">Jamaica <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Punta Cana, R. Dominicana <b>(2)</b></a></li>
+                              <li class="c4-01__desktop-ul"><a href="">Riviera Maya, México <b>(3)</b></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="c4-01__vermas c4-01__vermas-fixed">
+                          <hr class="c4-01__hr"><a href="/src/html/pages/listado-hoteles-2.php" class="c4-01__bottom-link">VER TODOS LOS DESTINOS</a>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="c4-01__experiencias c4-01__experiencias-fixed">
+                      <div class="c4-01__experiencias-content">
+                        <div class="div c4-01__main-cabecera js-acordeon acordeon-onclick"><span class="c4-01__title">EXPERIENCIAS EN NUESTROS HOTELES</span><img class="c4-01__cabecera-arrow" src="../../icons/arrow_big_up.svg"
+                            alt="flecha mirando hacia arriba"></div>
+                        <hr class="hr__main-cabecera">
+                        <div class="c4-01__articles-list acordeon-onclick__submenu">
+                          <div>
+                            <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image--10.png" alt="hotel image">
+                              <div class="articulo-resume04__text"><span class="articulo-resume04__title">Familias</span>
+                                <p class="articulo-resume04__p">
+                                  Te hacemos sentir único y especial en nuestros hoteles exclusivos y singulares.
+                                </p>
+                                <a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image--11.png" alt="hotel image">
+                              <div class="articulo-resume04__text"><span class="articulo-resume04__title">Familias</span>
+                                <p class="articulo-resume04__p">
+                                  Te hacemos sentir único y especial en nuestros hoteles exclusivos y singulares.
+                                </p>
+                                <a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image--12.png" alt="hotel image">
+                              <div class="articulo-resume04__text"><span class="articulo-resume04__title">Familias</span>
+                                <p class="articulo-resume04__p">
+                                  Te hacemos sentir único y especial en nuestros hoteles exclusivos y singulares.
+                                </p>
+                                <a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image--13.png" alt="hotel image">
+                              <div class="articulo-resume04__text"><span class="articulo-resume04__title">Familias</span>
+                                <p class="articulo-resume04__p">
+                                  Te hacemos sentir único y especial en nuestros hoteles exclusivos y singulares.
+                                </p>
+                                <a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c4-01__vermas c4-01__vermas-experiencias">
+                            <hr class="c4-01__hr"><a href="#" class="c4-01__bottom-link experiencias">VER TODAS LAS EXPERIENCIAS</a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown"><span class="dropdown__toggler">OFERTAS</span>
+              <div class="dropdown__content dropdown__content--centered2">
+                <div class="scroll-y ofr">
+                  <div class="c4-01__container c4-01__container2">
+                    <section class="c4-01__destinos">
+                      <div class="c4-01__destinos-content">
+                        <div class="c4-01__main-cabecera"><span class="c4-01__title">OFERTAS H10 HOTELS</span><span class="c4-01__title-arrow">^</span></div>
+                        <hr class="hr__main-cabecera">
+                        <div class="scroll-y">
+                          <div class="c4-01__articles-list c4-02__articles-ofertas">
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__10.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">30% Descuento</span>
+                                  <p class="articulo-resume04__p">Codigo SPRINGH10</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__11.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">Desayuno gratis</span>
+                                  <p class="articulo-resume04__p">En todos los hoteles H10</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__12.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">Transfer gratis</span>
+                                  <p class="articulo-resume04__p">En los hoteles Ocean</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="c4-01__destinos">
+                      <div class="c4-01__destinos-content">
+                        <div class="c4-01__main-cabecera"><span class="c4-01__title">EXPLORA NUESTROS HOTELES</span><span class="c4-01__title-arrow">^</span></div>
+                        <hr class="hr__main-cabecera">
+                        <div class="scroll-y ofr">
+                          <div class="c4-01__articles-list">
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__13.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">H10 Timanfaya Palace</span>
+                                  <p class="articulo-resume04__p">Desde 138€/noche</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__14.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">H10 Urquinanoa Plaza</span>
+                                  <p class="articulo-resume04__p">Desde 180€/noche</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="articulo-resume04"><img class="articulo-resume04__image" src="../../images/image__15.png" alt="hotel image">
+                                <div class="articulo-resume04__text"><span class="articulo-resume04__title">Ocean Coral & Turquesa</span>
+                                  <p class="articulo-resume04__p">Desde 138€/noche</p><a href="#" class="articulo-resume__ver04">VER MÁS<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c4-01__vermas c4-01__vermas-ofertas-mobile">
+                        <hr class="c4-01__hr"><a href="#" class="c4-01__bottom-link">VER TODAS LAS OFERTAS</a>
+                      </div>
+                    </section>
+                    <div class="c4-01__vermas c4-01__vermas-ofertas_desktop">
+                      <hr class="c4-01__hr"><a href="#" class="c4-01__bottom-link">VER TODAS LAS OFERTAS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">EVENTOS</a></li>
+            <li><a href="#">#STAYGREEN</a></li>
+            <li><a href="#">VUELO + HOTEL</a></li>
+            <li><a href="#">CLUB H10</a></li>
+            <li class="dropdown">
+              <span class="dropdown__toggler">MÁS...</span>
+              <div class="dropdown__content">
+                <div class="c4-01__container c4-01__container-mas">
+                  <section class="c4-01__destinos">
+                    <div class="c4-01__destinos-content">
+                      <div class="c4-01__lists-container-mas">
+                        <div class="c4-01__list-mas">
+                          <ul class="c4-01__mobile-ul acordeon-onclick__submenu">
+                            <li><a href="">FAMILIAS</a></li>
+                            <li><a href="">SOLO ADULTOS</a></li>
+                            <li><a href="">PRIVILEGE</a></li>
+                            <li><a href="">TODO INCLUIDO</a></li>
+                            <li><a href="">DESPACIO SPA CENTRES</a></li>
+                            <li><a href="">DEPORTES</a></li>
+                            <li><a href="">BODAS Y CELEBRACIONES</a></li>
+                            <li><a href="">PACKS EXPERIENCIAS</a></li>
+                          </ul>
+                        </div>
+                        <hr class="c4-01_mas-hr">
+                        <div class="c4-01__list-mas">
+                          <ul class="c4-01__mobile-ul acordeon-onclick__submenu">
+                            <li><a href="">HOTELES DE CIUDAD</a></li>
+                            <li><a href="">HOTELES DE PLAYA</a></li>
+                            <li><a href="">ESPACIOS SINGULARES</a></li>
+                            <li><a href="">BONO REGALO</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="btn-reservar">Buscar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="topbar-main-mobile-holder">
+      <div class="topbar-main-mobile">
+        <ul>
+          <li>
+            <a href="#h10-hotels" class="btn dropdown h10-hotels">HOTELES</a>
+          </li>
+          <li><a href="#h10-ofertas" class="btn dropdown h10-ofertas">OFERTAS</a></li>
+          <li><a href="#" class="btn">EVENTOS</a></li>
+          <li><a href="#" class="btn">#STAYGREEN</a></li>
+          <li><a href="#" class="btn">VUELO + HOTEL</a></li>
+          <li><a href="#" class="btn">CLUB H10</a></li>
+          <li>
+            <a href="#" class="btn dropdown mas">MÁS...</a>
+          </li>
+        </ul>
+        <div class="topbar-main-btns-bottom">
+          <a href="#" class="btn idioma">IDIOMA: <i>ES</i></a><span></span><a href="#" class="btn reservas">MIS RESERVAS</a>
+        </div>
+      </div>
+
+      <div class="topbar-main-accordion h10-hotels">
+        <div>
+          <a href="#" class="btn-close"><img src="../../icons/menu-close.svg" /><img src="../../icons/arrow-left-.svg" /></a>
+          <a href="#" class="topbar-main-accordion-title dropdown first-title open active">DESTINOS DE HOTELES</a>
+          <div class="topbar-main-accordion-content open">
+            <div class="topbar-main-accordion-sub">
+              <a href="#" class="topbar-main-accordion-sub-sub-title dropdown">ESPAÑA</a>
+              <div class="topbar-main-accordion-sub-sub-content">
+                <div>
+                  <a href="#" class="btn">Barcelona <b>(15)</b></a>
+                  <a href="#" class="btn">Benidorm <b>(1)</b></a>
+                  <a href="#" class="btn">Córdoba <b>(1)</b></a>
+                  <a href="#" class="btn">Costa del Sol <b>(1)</b></a>
+                  <a href="#" class="btn">Fuerteventura <b>(5)</b></a>
+                  <a href="#" class="btn">Gran Canaria <b>(1)</b></a>
+                  <a href="#" class="btn">La Palma <b>(1)</b></a>
+                  <a href="#" class="btn">Lanzarote <b>(5)</b></a>
+                  <a href="#" class="btn">Madrid <b>(3)</b></a>
+                  <a href="#" class="btn">Málaga <b>(1)</b></a>
+                  <a href="#" class="btn">Mallorca <b>(3)</b></a>
+                  <a href="#" class="btn">Salou - Cambrils <b>(3)</b></a>
+                  <a href="#" class="btn">Sevilla <b>(3)</b></a>
+                  <a href="#" class="btn">Tarrragona <b>(1)</b></a>
+                  <a href="/src/html/pages/listado-hoteles.php" class="btn">Tenerife <b>(7)</b></a>
+                </div>
+              </div>
+              <a href="#" class="topbar-main-accordion-sub-sub-title dropdown">EUROPA</a>
+              <div class="topbar-main-accordion-sub-sub-content">
+                <div>
+                  <a href="#" class="btn">Berlín <b>(2)</b></a>
+                  <a href="#" class="btn">Lisboa <b>(2)</b></a>
+                  <a href="#" class="btn">Londres <b>(1)</b></a>
+                  <a href="#" class="btn">Roma <b>(2)</b></a>
+                  <a href="#" class="btn">Venecia <b>(1)</b></a>
+                </div>
+              </div>
+              <a href="#" class="topbar-main-accordion-sub-sub-title dropdown">CARIBE</a>
+              <div class="topbar-main-accordion-sub-sub-content">
+                <div>
+                  <a href="#" class="btn">Jamaica <b>(2)</b></a>
+                  <a href="#" class="btn">Punta Cana, R. Dominicana <b>(2)</b></a>
+                  <a href="#" class="btn">Riviera Maya, México <b>(3)</b></a>
+                </div>
+              </div>
+              <a href="#" class="topbar-main-accordion-sub-title-alt">VER TODOS LOS DESTINOS</a>
+            </div>
+          </div>
+          <a href="#" class="topbar-main-accordion-title dropdown open active">EXPERIENCIAS EN NUESTROS HOTELES</a>
+          <div class="topbar-main-accordion-content open">
+            <a href="#" class="btn">Familias</a>
+            <a href="#" class="btn">Adults Only</a>
+            <a href="#" class="btn">Privilege</a>
+            <a href="#" class="btn">All inclusive</a>
+            <a href="#" class="btn-alt">VER TODAS LAS EXPERIENCIAS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-main-accordion h10-ofertas">
+        <div>
+          <a href="#" class="btn-close"><img src="../../icons/menu-close.svg" /><img src="../../icons/arrow-left-.svg" /></a>
+          <a href="#" class="topbar-main-accordion-title dropdown first-title open active">OFERTAS</a>
+          <a href="#" class="topbar-main-accordion-title dropdown open active">OFERTAS H10 HOTELS</a>
+          <div class="topbar-main-accordion-content open">
+            <a href="#" class="btn">30% Descuento</a>
+            <a href="#" class="btn">Desayuno gratis</a>
+            <a href="#" class="btn">Transfer gratis</a>
+          </div>
+          <a href="#" class="topbar-main-accordion-title dropdown open active">EXPLORA NUESTROS HOTELES</a>
+          <div class="topbar-main-accordion-content open">
+            <a href="#" class="btn">H10 Timanfaya Palace<br><b>Desde 350€/noche</b></a>
+            <a href="#" class="btn">H10 Urquinaona Plaza<br><b>Desde 138€/noche</b></a>
+            <a href="#" class="btn">Ocean Coral & Turquesa<br><b>Desde 350€/noche</b></a>
+            <a href="#" class="btn">Ocean Coral & Turquesa<br><b>Desde 350€/noche</b></a>
+            <a href="#" class="btn">Ocean Coral & Turquesa<br><b>Desde 350€/noche</b></a>
+            <a href="#" class="btn-alt">VER TODAS LAS OFERTAS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-main-accordion mas">
+        <div>
+          <a href="#" class="btn-close"><img src="../../icons/menu-close.svg" /><img src="../../icons/arrow-left-.svg" /></a>
+          <div class="_title-mas">MAS...</div>
+          <div class="_container-mas">
+            <div class="_list-mas">
+              <ul class="_mobile-ul">
+                <li><a href="#">Familias</a></li>
+                <li><a href="#">Solo Adultos</a></li>
+                <li><a href="#">Privilege</a></li>
+                <li><a href="#">Todo Incluido</a></li>
+                <li><a href="#">Despacio Spa Centres</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Bodas y Celebraciones</a></li>
+                <li><a href="#">Packs Experiencias</a></li>
+              </ul>
+            </div>
+            <div class="_list-mas">
+              <ul class="_mobile-ul">
+                <li><a href="#">Hoteles de Ciudad</a></li>
+                <li><a href="#">Hoteles de Playa</a></li>
+                <li><a href="#">Espacios Singulares</a></li>
+                <li><a href="#">Bono Regalo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-main-mobile-cerrar-sesion">
+      <div class="holder">
+        <div class="title">HOLA, NOMBRE <a href="#" class="close"></a></div>
+        <div class="content">
+          <div class="titulo">¿Quieres cerrar tu sesión?</div>
+          <div class="texto">Recuerda que si cierras sesión puedes identificarte de nuevo en cualquier momento.</div>
+          <button class="btn-cerrar-sesion">Cerrar sesión<img class="ico" src="../../icons/check-out.svg" alt="check out icon"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-main-mobile-idioma">
+      <div class="holder">
+        <div class="title">IDIOMA <a href="#" class="close"></a></div>
+        <div class="content">
+          <ul class="btns">
+            <li><a href="#" class="btn">Català</a></li>
+            <li><a href="#" class="btn">English</a></li>
+            <li><a href="#" class="btn">Deutsch</a></li>
+            <li><a href="#" class="btn">Français</a></li>
+            <li><a href="#" class="btn">Italiano</a></li>
+            <li><a href="#" class="btn">Portugués</a></li>
+            <li><a href="#" class="btn">Ruso</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-main-mobile-reservas">
+      <div class="holder">
+        <div class="title">MIS RESERVAS <a href="#" class="close"></a></div>
+        <div class="content">
+          <div class="_title">GESTIONA TU RESERVA</div>
+          <div class="_content">
+            <div>
+              <div class="_form-container">
+                <form class="_form">
+    <!--              <label class="_label" for="hotel">HOTEL</label>
+                  <input class="_input" placeholder="H10 Atlantic Sunset" id="hotel">-->
+                  <label class="_label" for="localizador">LOCALIZADOR</label>
+                  <div class="_localizador">
+                    <input class="_input _localizador" placeholder="H5201"><span>-</span>
+                    <input class="_input _codigo-localizador" placeholder="Completa tu código localizador">
+                  </div>
+                  <label class="_label" for="email">EMAIL</label>
+                  <input class="_input" placeholder="Escribe tu email" id="email">
+                </form>
+                <div class="_reserva">
+                  <button class="_btn-buscar">BUSCAR RESERVA</button>
+                </div>
+                <div class="_check-container-holder">
+                  <div class="_check-container">
+                    <button class="_btn-check">CHECK-IN ONLINE<img class="_ico" src="../../icons/check-in.svg" alt="check in icon"></button>
+                    <p class="_text">Desde las 15h, dos días antes de tu llegada al hotel.</p>
+                  </div>
+                  <div class="_check-container">
+                    <button class="_btn-check">CHECK-OUT ONLINE<img class="_ico" src="../../icons/check-out.svg" alt="check out icon"></button>
+                    <p class="_text">Desde las 22h del día anterior a tu salida del hotel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-main-mobile-contactanos">
+      <div class="holder">
+        <div class="title">CONTÁCTANOS <a href="#" class="close"></a></div>
+        <div class="content">
+          <div class="_mobile-tlf"><span>ESPAÑA <br> +34 900 000 000</span>
+            <button class="main-button">LLAMAR</button>
+            <hr class="_mobile-hr">
+          </div>
+          <div class="_tlf-container">
+            <div class="_tlf-text"><img class="_tlf__icon" src="../../icons/call_.svg" alt="call icon">
+              <p class="text">Horario Atención al Cliente (GMT+1) <br> Lunes a viernes de 9 a 20h <br> Sábados de 10 a 15h</p>
+            </div>
+            <div>
+              <ul class="_tlf-list">
+                <div class="_tlf-list-left">
+                  <li class="_tlf__list-item"> FRANCIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> ITALIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> ALEMANIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> REINO UNIDO <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                </div>
+                <div class="_tlf-list-right">
+                  <li class="_tlf__list-item"> ESTADOS UNIDOS <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> RUSIA <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> PORTUGAL <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                  <li class="_tlf__list-item"> BRAZIL <br><a href="tel"> <b> +33 (0) 176 54 24 86 </b></a></li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-main-mobile-login">
+      <div class="holder">
+        <div class="title">LOG IN <a href="#" class="close"></a></div>
+        <div class="content">
+          <div class="_login-container">
+            <div class="_login-titles">
+              <span class="form-login-club-h10 _activeitem">LOGIN CLUB H10</span>
+              <span class="form-acceso-agencias">ACCESO AGENCIAS</span>
+            </div>
+            <div>
+              <div class="_login-content form-login-club-h10 active">
+                <form class="_login-form">
+                  <div class="_login-item">
+                    <label for="nro">Nº TARJETA/EMAIL</label>
+                    <input class="input-main i-usuario" placeholder="521..." id="nro">
+                  </div>
+                  <div class="_login-item">
+                    <label for="contrasena">CONTRASEÑA</label>
+                    <input class="input-main i-contrasena" placeholder="Introduce tu contraseña" id="contrasena">
+                    <div class="_login-checkbox">
+                      <label class="checkbox-recuerdame">
+                        Recuérdame
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+                <div class="_container2"><a href="#">¿Has olvidado tu contraseña?</a>
+                  <button class="main-button">ACCEDER</button>
+                </div>
+                <div class="_container3"><b>¿Aún no tienes acceso online?</b>
+                  <p>Regístrate o activa tu cuenta (solo necesitas el número de tarjeta del Club H10 para activar tu cuenta online).</p>
+                  <div class="_bottom-buttons">
+                    <button class="second-button">REGISTRATE</button>
+                    <button class="second-button">ACTIVA TU CUENTA</button>
+                  </div>
+                </div>
+              </div>
+              <div class="_login-content form-acceso-agencias">
+                <form class="_login-form">
+                  <div class="_login-item">
+                    <label for="codigo">CÓDIGO DE EMPRESA</label>
+                    <input class="input-main" placeholder="521..." id="codigo">
+                  </div>
+                  <div class="_login-item">
+                    <label for="usuario">USUARIO</label>
+                    <input class="input-main i-usuario" placeholder="Introduce tu usuario" id="usuario">
+                  </div>
+                  <div class="_login-item">
+                    <label for="contrasena2">CONTRASEÑA</label>
+                    <input class="input-main i-contrasena" placeholder="Introduce tu contraseña" id="contrasena2">
+                    <div class="_login-checkbox">
+                      <label class="checkbox-recuerdame">
+                        Recuérdame
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+                <div class="_container2"><a href="#">¿Has olvidado tu contraseña?</a>
+                  <button class="main-button">ACCEDER</button>
+                </div>
+                <div class="_container4">
+                  <p>¿Aún no tienes acceso online?</p> <a href="#">Regístrate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="banner-c5">
+      <div class="slick-slider-holder">
+        <div class="slick-slider">
+          <div>
+            <div class="banner-c5__item">
+              <img src="../../images/image-4.png" alt="">
+              <div class="container-fix container-hero-text">
+                <div class="banner-c5__text">
+                  <div class="banner-c5__text-container">
+                    <h1 class="banner-c5__title">Conoce nuestros espacios singulares</h1>
+                    <h2 class="banner-c5__subtitle">Descubre espacios singulares en las mejores ubicaciones de la ciudad</h2>
+                    <button class="second-button">SABER MÁS</button>
+                    <hr class="banner-c5__hr"><span class="banner-c5__span">TENERIFE - H10 ATLANTIC SUNSET</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /.banner-c5__item -->
+          </div>
+
+          <div>
+            <div class="banner-c5__item">
+              <img src="../../images/Cabecera_Home_Verano.jpg" alt="">
+              <div class="container-fix container-hero-text">
+                <div class="banner-c5__text banner-c5__text--secondary">
+                  <div class="banner-c5__text-container">
+                    <h1 class="banner-c5__title">Conoce nuestros espacios singulares</h1>
+                    <h2 class="banner-c5__subtitle">Descubre espacios singulares en las mejores ubicaciones de la ciudad</h2>
+                    <button class="second-button">SABER MÁS</button>
+                    <hr class="banner-c5__hr"><span class="banner-c5__span">TENERIFE - H10 ATLANTIC SUNSET</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /.banner-c5__item -->
+          </div>
+
+          <div>
+            <div class="banner-c5__item">
+              <img src="../../images/Cabecera_Home_Tripadvisor.jpg" alt="">
+              <div class="container-fix container-hero-text">
+                <div class="banner-c5__text">
+                  <div class="banner-c5__text-container">
+                    <h1 class="banner-c5__title">Conoce nuestros espacios singulares</h1>
+                    <h2 class="banner-c5__subtitle">Descubre espacios singulares en las mejores ubicaciones de la ciudad</h2>
+                    <button class="second-button">SABER MÁS</button>
+                    <hr class="banner-c5__hr"><span class="banner-c5__span">TENERIFE - H10 ATLANTIC SUNSET</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /.banner-c5__item -->
+          </div>
+
+          <div>
+            <div class="banner-c5__item">
+              <img src="../../images/Cabecera_Home_Familias.jpg" alt="">
+              <div class="container-fix container-hero-text">
+                <div class="banner-c5__text">
+                  <div class="banner-c5__text-container">
+                    <h1 class="banner-c5__title">Conoce nuestros espacios singulares</h1>
+                    <h2 class="banner-c5__subtitle">Descubre espacios singulares en las mejores ubicaciones de la ciudad</h2>
+                    <button class="second-button">SABER MÁS</button>
+                    <hr class="banner-c5__hr"><span class="banner-c5__span">TENERIFE - H10 ATLANTIC SUNSET</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /.banner-c5__item -->
+          </div>
+
+
+          <div>
+            <div class="banner-c5__item video">
+              <video width="100" autoplay muted loop>
+                <source src="../../videos/spot.mov" type="video/mp4">
+              </video>
+            </div> <!-- /.banner-c5__item -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="c8-1__container container-fix fix-top fix-bottom container-left">
+      <div class="card-info__container inset-text">
+        <div class="card-info__image-container"><img class="card-info__image" src="../../images/image-35_bis.png" alt="hotel image"><span class="card-info__image-span">H10 Palacio Colomera - Córdoba</span></div>
+        <div class="card-info__text-container">
+          <h1 class="card-info__title">El valor de lo único</h1>
+          <p class="card-info__p">Cada viaje, una aventura. Cada hotel, una experiencia diferente y memorable.</p>
+        </div>
+      </div>
+    </section>
+    <div class="container-fix">
+      <section class="c15__container fix-top fix-bottom">
+        <div class="hoteles-destacados">
+          <div class="slick-slider-holder">
+            <div class="slick-slider">
+              <div>
+                <div class="hotel-destacado">
+                  <div class="img-holder"><img src="../../images/03_HPLPatio.jpg" class="img" alt=""/></div>
+                  <div class="data">
+                    <div class="data-content">
+                      <h3 class="titulo">Sé único</h3>
+                      <p class="texto">Alójate en exclusivos hoteles donde te haremos sentir único y especial.</p>
+                    </div>
+                    <a href="#" class="btn-ver">Espacios singulares</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hotel-destacado">
+                  <div class="img-holder"><img src="../../images/11_HASInfinityPool3.jpg" class="img" alt=""/></div>
+                  <div class="data">
+                    <div class="data-content">
+                      <h3 class="titulo">Disfruta del mar</h3>
+                      <p class="texto">Hoteles en primera línea de mar con todo lo necesario para unas vacaciones inolvidables.</p>
+                    </div>
+                    <a href="#" class="btn-ver">Hoteles vacacionales</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hotel-destacado">
+                  <div class="img-holder"><img src="../../images/01_HMITerrace.jpg" class="img" alt=""/></div>
+                  <div class="data">
+                    <div class="data-content">
+                      <h3 class="titulo">Explora la ciudad</h3>
+                      <p class="texto">Hoteles con encanto y gastronomía de autor en el corazón de las principales ciudades españolas y europeas.</p>
+                    </div>
+                    <a href="/src/html/pages/hoteles-en-ciudad.php" class="btn-ver">Hoteles de ciudad</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-fix direct-booking">
+      <h2 class="card-container__title">Reserva de forma directa en H10 Hotels</h2>
+      <ul class="card-container__info separator-line-list">
+        <li class="separator-line-list__item"><b class="font-weight--400">Cancelación</b><span class="font-weight--300"> gratuita</span></li>
+        <li class="separator-line-list__item"><b class="font-weight--400">Mejor tarifa</b><span class="font-weight--300"> garantizada</span></li>
+        <li class="separator-line-list__item"><b class="font-weight--400">Ofertas</b><span class="font-weight--300"> exclusivas</span></li>
+        <li class="separator-line-list__item"><b class="font-weight--400">Check in - Check out</b><span class="font-weight--300"> online</span></li>
+      </ul>
+    </div>
+    <section class="c16__container fix-top">
+      <div class="container-fix">
+        <div class="hoteles-ofertas">
+          <div class="slick-slider-holder">
+            <div class="slick-slider">
+              <div>
+                <div class="hotel-oferta">
+                  <div class="imagen">
+                    <div class="texto"><b>20%</b> Reserva con el código <b>SPRINGH10</b></div>
+                    <div class="imagen-holder">
+                      <img src="../../images/image-96.png" class="img" alt=""/>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-detalle" data-order="1">Ver detalles</a>
+                </div>
+              </div>
+              <div>
+                <div class="hotel-oferta">
+                  <div class="imagen">
+                    <div class="texto"><b>Desayuno gratis</b> en una selección de hoteles</div>
+                    <div class="imagen-holder">
+                      <img src="../../images/image-97.png" class="img" alt=""/>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-detalle" data-order="2">Ver detalles</a>
+                </div>
+              </div>
+              <div>
+                <div class="hotel-oferta">
+                  <div class="imagen">
+                    <div class="texto"><b>Transfer gratis</b> en Caribe</div>
+                    <div class="imagen-holder">
+                      <img src="../../images/image-98.png" class="img" alt=""/>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-detalle" data-order="3">Ver detalles</a>
+                </div>
+              </div>
+              <div>
+                <div class="hotel-oferta">
+                  <div class="imagen">
+                    <div class="texto">Last minute hoy <b>5% adicional</b></div>
+                    <div class="imagen-holder">
+                      <img src="../../images/image-99.png" class="img" alt=""/>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-detalle" data-order="4">Ver detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mas-ofertas-holder">
+          <a href="#" class="btn-mas-ofertas">Más ofertas</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="oferta-modals">
+      <div class="c30-a__container modal-detalle-habitacion" data-order="1">
+        <div class="container-holder">
+
+          <div class="top">
+            <div class="titulo"></div>
+            <a href="#" class="btn-close"></a>
+          </div>
+
+          <div class="col">
+            <div class="col-left oferta">
+      <!--        <div class="titulo show">OFERTA PREVENTA DE VERANO 2022</div>-->
+
+              <div class="slick-slider-holder">
+                <div class="slick-slider">
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-125.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-126.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-contador-holder">
+                  <div class="slick-contador">
+                    <div class="slick-actual"></div>
+                    <div class="slick-total"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-right oferta">
+              <div class="titulo">H10 PORTO PONIENTE
+              <ul class="ratings">
+                <li class="star active"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
+              <span class="titulo titulo-gl">GL</span>
+              <div class="labels">
+                <div class="label">Hotel Familiar</div>
+                <div class="label">Adults Only</div>
+              </div>
+
+              </div>
+
+
+              <div class="texto">Válido desde <b>19/05/2022</b> al <b>01/06/2022</b></div>
+              <div class="texto ofertas"><span class="from">DESDE: </span> <span class="prev">427€</span> <span class="price">386€</span>/noche</div>
+
+              <div class="">
+              <section class="c58__container modal">
+                  <div class="holder narrow">
+                    <div class="data-set">
+                      <div class="info_ico"><img src="../../../src/icons/info.svg" alt="" /></div>
+                      <div class="data">
+                        <div class="text">¡Esta oferta de Preventa de verano 2022 supone un <b>ahorro del 20%</b> en tu reserva!</div>
+                      </div>
+                      </div>
+                    <a href="#" class="btn-ver-ficha">Reservar desde 386€/noche</a>
+                  </div>
+              </section>
+              </div>
+
+              <div class="descripcion">
+                <div class="titulo_">Condiciones:</div>
+                <ul class="items">
+                  <li>Preventa de Verano en Ocean Maya Royale</li>
+                  <li>Viaje entre 01/07/2022 - 20/08/2022</li>
+                  <li>Precio por habitación y noche en ocupación Doble Junior Suite</li>
+                  <li>Incluye Transporte Hotel-Aeropuerto-Hotel (Mínimo de 3 noches)</li>
+                  <li>WIFI gratis durante su estancia</li>
+                  <li>Acceso a Casino y Bolera incluido</li>
+                  <li>Mejor tarifa online garantizada</li>
+                  <li>Entretenimiento Nocturno Diariamente</li>
+                  <li>Precios en plan Todo Incluido</li>
+                  <li>20% de descuento adicional usando el promocode: SPRINGH10</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="c30-a__container modal-detalle-habitacion" data-order="2">
+        <div class="container-holder">
+
+          <div class="top">
+            <div class="titulo"></div>
+            <a href="#" class="btn-close"></a>
+          </div>
+
+          <div class="col">
+            <div class="col-left oferta">
+      <!--        <div class="titulo show">OFERTA PREVENTA DE VERANO 2023</div>-->
+
+              <div class="slick-slider-holder">
+                <div class="slick-slider">
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-125.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-126.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-contador-holder">
+                  <div class="slick-contador">
+                    <div class="slick-actual"></div>
+                    <div class="slick-total"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-right oferta">
+              <div class="titulo">H10 PORTO PONIENTE 2
+              <ul class="ratings">
+                <li class="star active"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
+              <div class="labels">
+                <div class="label">Hotel Familiar</div>
+                <div class="label">Adults Only</div>
+              </div>
+
+              </div>
+
+
+              <div class="texto">Válido desde <b>19/05/2022</b> al <b>01/06/2022</b></div>
+              <div class="texto ofertas"><span class="from">DESDE: </span> <span class="prev">427€</span> <span class="price">386€</span>/noche</div>
+
+              <div class="">
+              <section class="c58__container modal">
+                  <div class="holder narrow">
+                    <div class="data-set">
+                      <div class="info_ico"><img src="../../../src/icons/info.svg" alt="" /></div>
+                      <div class="data">
+                        <div class="text">¡Esta oferta de Preventa de verano 2022 supone un <b>ahorro del 20%</b> en tu reserva!</div>
+                      </div>
+                      </div>
+                    <a href="#" class="btn-ver-ficha">Reservar desde 386€/noche</a>
+                  </div>
+              </section>
+              </div>
+
+              <div class="descripcion">
+                <div class="titulo_">Condiciones:</div>
+                <ul class="items">
+                  <li>Preventa de Verano en Ocean Maya Royale</li>
+                  <li>Viaje entre 01/07/2022 - 20/08/2022</li>
+                  <li>Precio por habitación y noche en ocupación Doble Junior Suite</li>
+                  <li>Incluye Transporte Hotel-Aeropuerto-Hotel (Mínimo de 3 noches)</li>
+                  <li>WIFI gratis durante su estancia</li>
+                  <li>Acceso a Casino y Bolera incluido</li>
+                  <li>Mejor tarifa online garantizada</li>
+                  <li>Entretenimiento Nocturno Diariamente</li>
+                  <li>Precios en plan Todo Incluido</li>
+                  <li>20% de descuento adicional usando el promocode: SPRINGH10</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="c30-a__container modal-detalle-habitacion" data-order="3">
+        <div class="container-holder">
+
+          <div class="top">
+            <div class="titulo"></div>
+            <a href="#" class="btn-close"></a>
+          </div>
+
+          <div class="col">
+            <div class="col-left oferta">
+      <!--        <div class="titulo show">OFERTA PREVENTA DE VERANO 2024</div>-->
+
+              <div class="slick-slider-holder">
+                <div class="slick-slider">
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-125.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-126.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-contador-holder">
+                  <div class="slick-contador">
+                    <div class="slick-actual"></div>
+                    <div class="slick-total"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-right oferta">
+              <div class="titulo">H10 PORTO PONIENTE 5
+              <ul class="ratings">
+                <li class="star active"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
+              <div class="labels">
+                <div class="label">Hotel Familiar</div>
+                <div class="label">Adults Only</div>
+              </div>
+
+              </div>
+
+
+              <div class="texto">Válido desde <b>19/05/2022</b> al <b>01/06/2022</b></div>
+              <div class="texto ofertas"><span class="from">DESDE: </span> <span class="prev">427€</span> <span class="price">386€</span>/noche</div>
+
+              <div class="">
+                <section class="c58__container modal">
+                    <div class="holder narrow">
+                      <div class="data-set">
+                        <div class="info_ico"><img src="../../../src/icons/info.svg" alt="" /></div>
+                        <div class="data">
+                          <div class="text">¡Esta oferta de Preventa de verano 2022 supone un <b>ahorro del 20%</b> en tu reserva!</div>
+                        </div>
+                        </div>
+                      <a href="#" class="btn-ver-ficha">Reservar desde 386€/noche</a>
+                    </div>
+                </section>
+              </div>
+
+
+              <div class="descripcion">
+                <div class="titulo_">Condiciones:</div>
+                <ul class="items">
+                  <li>Preventa de Verano en Ocean Maya Royale</li>
+                  <li>Viaje entre 01/07/2022 - 20/08/2022</li>
+                  <li>Precio por habitación y noche en ocupación Doble Junior Suite</li>
+                  <li>Incluye Transporte Hotel-Aeropuerto-Hotel (Mínimo de 3 noches)</li>
+                  <li>WIFI gratis durante su estancia</li>
+                  <li>Acceso a Casino y Bolera incluido</li>
+                  <li>Mejor tarifa online garantizada</li>
+                  <li>Entretenimiento Nocturno Diariamente</li>
+                  <li>Precios en plan Todo Incluido</li>
+                  <li>20% de descuento adicional usando el promocode: SPRINGH10</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="c30-a__container modal-detalle-habitacion" data-order="4">
+        <div class="container-holder">
+
+          <div class="top">
+            <div class="titulo"></div>
+            <a href="#" class="btn-close"></a>
+          </div>
+
+          <div class="col">
+            <div class="col-left oferta">
+      <!--        <div class="titulo show">OFERTA PREVENTA DE VERANO 2024</div>-->
+
+              <div class="slick-slider-holder">
+                <div class="slick-slider">
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-125.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="item">
+                      <img src="../../images/image-126.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-contador-holder">
+                  <div class="slick-contador">
+                    <div class="slick-actual"></div>
+                    <div class="slick-total"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-right oferta">
+              <div class="titulo">H10 PORTO PONIENTE 5
+              <ul class="ratings">
+                <li class="star active"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
+              <div class="labels">
+                <div class="label">Hotel Familiar</div>
+                <div class="label">Adults Only</div>
+              </div>
+
+              </div>
+
+
+              <div class="texto">Válido desde <b>19/05/2022</b> al <b>01/06/2022</b></div>
+              <div class="texto ofertas"><span class="from">DESDE: </span> <span class="prev">427€</span> <span class="price">386€</span>/noche</div>
+
+              <div class="">
+                <section class="c58__container modal">
+                    <div class="holder narrow">
+                      <div class="data-set">
+                        <div class="info_ico"><img src="../../../src/icons/info.svg" alt="" /></div>
+                        <div class="data">
+                          <div class="text">¡Esta oferta de Preventa de verano 2022 supone un <b>ahorro del 20%</b> en tu reserva!</div>
+                        </div>
+                        </div>
+                      <a href="#" class="btn-ver-ficha">Reservar desde 386€/noche</a>
+                    </div>
+                </section>
+              </div>
+
+
+              <div class="descripcion">
+                <div class="titulo_">Condiciones:</div>
+                <ul class="items">
+                  <li>Preventa de Verano en Ocean Maya Royale</li>
+                  <li>Viaje entre 01/07/2022 - 20/08/2022</li>
+                  <li>Precio por habitación y noche en ocupación Doble Junior Suite</li>
+                  <li>Incluye Transporte Hotel-Aeropuerto-Hotel (Mínimo de 3 noches)</li>
+                  <li>WIFI gratis durante su estancia</li>
+                  <li>Acceso a Casino y Bolera incluido</li>
+                  <li>Mejor tarifa online garantizada</li>
+                  <li>Entretenimiento Nocturno Diariamente</li>
+                  <li>Precios en plan Todo Incluido</li>
+                  <li>20% de descuento adicional usando el promocode: SPRINGH10</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="c8-2__container container-fix fix-top fix-bottom container-left">
+      <div class="card-info__container02">
+        <div class="card-info__image-container vertical"><img class="card-info__image-02" src="../../images/HDCorridors.jpg" alt="hotel image"></div>
+        <div class="card-info__container02-left">
+          <div class="card-info__text-container">
+            <h3 class="card-info__title font-argent">En Club H10 eres único</h3>
+            <p class="card-info__p02 p02">Para nosotros eres único, y por ello queremos que te sientas como en casa, a través de un trato especial y con servicios de valor.</p>
+            <div class="subcard-item">
+              <div class="card-info__subcard-container">
+                <div class="subcard-items__container">
+                  <div class="subcard__item"><img class="item-icon" src="../../icons/new_releases.svg" alt="icon">
+                    <p><strong>5% descuento</strong> desde la primera reserva</p>
+                  </div>
+                  <div class="subcard__item"><img class="item-icon" src="../../icons/local_activity.svg" alt="icon">
+                    <p>Acumula <strong>puntos canjeables</strong> por estancias y servicios</p>
+                  </div>
+                  <div class="subcard__item"><img class="item-icon" src="../../icons/partly_cloudy.svg" alt="icon">
+                    <p>Benefíciate de promociones exclusivas y <b>noches gratis</b></p>
+                  </div>
+                  <div class="subcard__item"><img class="item-icon" src="../../icons/redeem.svg" alt="icon">
+                    <p>Disfruta de tu <b>obsequio de bienvenida</b> y atenciones especiales</p>
+                  </div>
+                </div>
+                <div class="subcard-items__button">
+                  <button class="main-button">UNIRME AL CLUB</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-info__container02-mobile">
+        <div class="card-sticker">
+          <h3 class="card-sticker__title font-argent">En Club H10 eres único</h3><span class="card-sticker__info">Para nosotros eres único, y por ello queremos que te sientas como en casa, a través de un trato especial y con servicios de valor.</span>
+          <ul class="card-sticker__contenido">
+            <li class="card-sticker__contenido--card"><div class="rounded-icon"><img class="card-sticker__icon" src="../../icons/new_releases.svg" alt="icon"></div>
+              <p class="card-sticker__text"> <strong>5% descuento</strong> desde la primera reserva</p>
+            </li>
+            <li class="card-sticker__contenido--card"><div class="rounded-icon"><img class="card-sticker__icon" src="../../icons/local_activity.svg" alt="icon"></div>
+              <p class="card-sticker__text"> Acumula <strong>puntos canjeables</strong> por estancias y servicios</p>
+            </li>
+            <li class="card-sticker__contenido--card"><div class="rounded-icon"><img class="card-sticker__icon" src="../../icons/partly_cloudy_night.svg" alt="icon"></div>
+              <p class="card-sticker__text"> Beneficiate de promociones exclusivas y <b>noches gratis</b></p>
+            </li>
+            <li class="card-sticker__contenido--card"><div class="rounded-icon"><img class="card-sticker__icon" src="../../icons/redeem.svg" alt="icon"></div>
+              <p class="card-sticker__text"> Disfruta de tu <b>obsequio de bienvenida</b> y atenciones especiales</p>
+            </li>
+          </ul>
+          <div class="card-sticker__button">
+            <button class="main-button">UNIRME AL CLUB</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c13__container container-fix fix-top fix-bottom container-both" id="experiencias-home">
+      <div class="heading-container">
+        <div class="heading">
+          <h2>Una experiencia para cada momento</h2>
+          <p>Hoteles que se adaptan a tu momento vital, compartiendo una misma esencia y estándar de calidad</p>
+        </div>
+      </div>
+      <div class="nav-container">
+        <ul class="nav">
+          <li><h3><a href="#" id="0" class="activeitem">FAMILIAS</a></h3></li>
+          <li><h3><a href="#" id="1">SOLO ADULTOS</a></h3></li>
+          <li><h3><a href="#" id="2">PRIVILEGE</a></h3></li>
+          <li><h3><a href="#" id="3">TODO INCLUIDO</a></h3></li>
+          <li><h3><a href="#" id="4">DESPACIO SPA CENTRES</a></h3></li>
+          <li><h3><a href="#" id="5">DEPORTES</a></h3></li>
+          <li><h3><a href="#" id="6">EVENTOS</a></h3></li>
+        </ul>
+      </div>
+      <div class="contents">
+        <div class="layer"></div>
+        <div id="0" class="content show">
+          <div class="c13_b">
+            <div class="col">
+<!--              <img src="../../images/image-87_.png" alt="" class="image">-->
+               <img src="../../images/Sports.jpg" alt="" class="image">
+            </div>
+            <div class="col">
+              <div class="text">
+                <h4>Familias </h4>
+                <p>
+                  Parques acuáticos, toboganes y un completo programa de animación para compartir unas vacaciones en familia.
+                </p>
+                <p>
+                  Contamos con servicios especializados y habitaciones familiares que ofrecen diferentes posibilidades de ocupación
+                </p>
+                <div class="butt-holder">
+                  <button class="main-button">NUESTRA OFERTA PARA FAMILIAS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1" class="content"></div>
+        <div id="2" class="content">
+          <div class="c13_">
+            <div class="col">
+              <div class="text">
+                <h4>Privilege </h4>
+                <p>
+                  Para quienes buscan una experiencia superior
+                  <br><br>
+                  Con Privilege, Exclusive Rooms and Services obtendrás un trato exclusivo y personalizado, habitaciones superiores equipadas con todo tipo de comodidades, espacios reservados y una excelente propuesta gastronómica
+                </p>
+                <div class="butt-holder">
+                  <button class="main-button">HOTELES SOLO ADULTOS</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <img src="../../images/image-87.png" alt="" class="image">
+            </div>
+          </div>
+        </div>
+        <div id="3" class="content"></div>
+        <div id="4" class="content">
+          <div class="c14_">
+            <div class="col">
+              <div class="text">
+                <h4>Despacio Spa Centres </h4>
+                <p>
+                  Centros de salud y belleza diseñados para relajarte y cuidarte durante tu estancia.
+                </p>
+                <p>
+                  Elige entre nuestros centros Beauty, Spa o Thalasso para desconectar en las piscinas y circuitos acuáticos, o déjate mimar por nuestros profesionales con un tratamiento personalizado.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="image-holder">
+                <img src="../../images/image-104.png" alt="" class="image-left">
+                <img src="../../images/image-103.png" alt="" class="image-right">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="4" class="content"></div>
+        <div id="5" class="content"></div>
+        <div id="6" class="content"></div>
+      </div>
+    </section>
+    <div class="container-fix">
+      <section class="c51__container">
+        <a href="/src/html/pages/ficha-galeria.php" class="btn-ver">VER TODAS LAS IMÁGENES<img class="arrow-right" src="../../icons/arrow-right.svg" alt="hotel image"></a>
+        <div class="grid-wrapper">
+          <div class="wide e-click" id="slide-0">
+            <div class="video-holder">
+              <div class="ico-play"></div>
+              <video id="video" poster="../../images/image-111.png" class="video">
+                <source src="../../videos/video-lorem-ipsum.mp4" type="video/mp4">
+                <source src="../../videos/video-lorem-ipsum.ogg" type="video/ogv">
+                <source src="../../videos/video-lorem-ipsum.webm" type="video/webm">
+                  Your browser doesn't support HTML5 video.
+              </video>
+            </div>
+          </div>
+          <div class="image2 e-click" id="slide-1"><img src="../../images/grid-image2.png" alt=""></div>
+          <div class="e-click" id="slide-2"><img src="../../images/grid-image3.png" alt=""></div>
+          <div class="display-none__mobile e-click" id="slide-3"><img class="display-none__mobile" src="../../images/grid-image6.png" alt=""></div>
+          <div class="display-none__mobile e-click" id="slide-4"><img class="display-none__mobile" src="../../images/grid-image1.png" alt=""></div>
+          <div class="display-none__mobile e-click" id="slide-5"><img class="display-none__mobile" src="../../images/grid-image8.png" alt=""></div>
+          <div class="display-none__mobile m1 e-click" id="slide-6"><img class="display-none__mobile display-none__tablet" src="../../images/grid-image7.png" alt=""></div>
+          <div class="display-none__mobile m2 e-click" id="slide-7"><img class="display-none__mobile display-none__tablet" src="../../images/grid-image4.png" alt=""></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="c51__container modal-galeria">
+      <a href="#" class="btn-close"></a>
+      <div class="slick-slider-holder">
+        <div class="slick-slider">
+          <div>
+            <div class="item" data-caption="Piscina exterior 0">
+              <div class="video-holder">
+                <div class="ico-play"></div>
+                <video id="video" poster="../../images/image-111.png" class="video">
+                  <source src="../../videos/video-lorem-ipsum.mp4" type="video/mp4">
+                  <source src="../../videos/video-lorem-ipsum.ogg" type="video/ogv">
+                  <source src="../../videos/video-lorem-ipsum.webm" type="video/webm">
+                    Your browser doesn't support HTML5 video.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior">
+              <img src="../../images/grid-image2.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina interior">
+              <img src="../../images/grid-image3.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior2">
+              <img src="../../images/grid-image6.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior3">
+              <img src="../../images/grid-image1.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior4">
+              <img src="../../images/grid-image8.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior 5">
+              <img src="../../images/grid-image7.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+          <div>
+            <div class="item" data-caption="Piscina exterior 6">
+              <img src="../../images/grid-image4.png" data-lazy="" data-srcset="" data-sizes="100vw" class="image" alt="" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+        <div class="slick-contador-holder">
+          <div class="slick-contador"><div class="slick-actual"></div><div class="slick-total"></div></div> <div class="texto">Piscina exterior</div>
+        </div>
+      </div>
+    </div>
+    <div class="cSuscripcion-newsletter__container modal-suscripcion-newsletter">
+      <div class="container-holder">
+        <a href="#" class="btn-close"></a>
+
+        <div class="layer-confirmacion">
+          <div class="holder">
+            <img src="../../icons/check_circle.svg" class="icon" alt="" />
+            <div class="title">GRACIAS POR CONFIAR EN H10 HOTELS</div>
+            <div class="text">En breves recibirás un correo confirmando la operación, y ya estarás preparado para recibir las últimas novedades y ofertas de H10 Hotels directamente en tu buzón.</div>
+          </div>
+        </div>
+
+        <section class="c75__container">
+          <div class="title">Mantente al día de nuestras promociones y descuentos</div>
+          <div class="text">Suscríbete a nuestro boletín y recibe directamente en tu buzón nuestras mejores ofertas.</div>
+          <div class="row">
+            <div class="col">
+              <div class="form-input">
+                <label class="label">Nombre*</label>
+                <input class="input" value="" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-input">
+                <label class="label">Apellido 1*</label>
+                <input class="input" value="" placeholder="" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-input">
+                <label class="label">Apellido 2</label>
+                <input class="input" value="" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-input">
+                <label class="label">Correo electrónico*</label>
+                <input class="input" value="" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-input">
+                <label class="label">País*</label>
+                <div class="select">
+                  <select id="standard-select" name="standard-select" required="">
+                    <option value="" disabled="" selected="" hidden="">Selecciona tu hotel</option>
+                    <option value="Option 1">Opción 1</option>
+                    <option value="Option 2">Opción 2</option>
+                    <option value="Option 3">Opción 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="checkbox-holder">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span> <span>He leído y acepto la cláusula de Información sobre Protección de Datos</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="checkbox-holder">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span> <span>Deseo recibir las comunicaciones sobre ofertas y promociones de H10 Hotels.</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="#" class="btn-enviar">SUSCRÍBETE</a>
+            </div>
+          </div>
+        </sectionm>
+
+      </div>
+
+    </div>
+    <footer class="footer container-fix">
+
+      <a href="#" class="btn-backtop"><img src="../../icons/arrow-up-white.svg" alt="" /></a>
+
+      <section class="footer--desktop">
+        <article class="footer--desktop__enlaces-interes">
+          <div class="footer--desktop__enlaces-interes--lista">
+            <h4 class="footer--desktop__enlaces-interes--title">H10 HOTELS</h4>
+            <ul class="footer--desktop__enlaces-interes--ul">
+              <li class="footer--desktop__enlaces-interes--texto-title">HOTELES EN ESPAÑA</li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Barcelona</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Madrid</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Sevilla</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Córdoba</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Málaga</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Tarragona</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Tenerife</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Lanzarote</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Fuerteventura</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en La Palma</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Gran Canaria</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Mallorca</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Costa del Sol</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Salou - Cambrils</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Benidorm</a></li>
+              <li class="footer--desktop__enlaces-interes--texto-title-special">HOTELES EN CIUDADES EUROPEAS</li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Roma</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Venecia</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Londres</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Berlín</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Lisboa</a></li>
+            </ul>
+          </div>
+          <div class="footer--desktop__enlaces-interes--lista">
+            <h4 class="footer--desktop__enlaces-interes--title">OCEAN BY H10 HOTELS</h4>
+            <ul class="footer--desktop__enlaces-interes--ul">
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Punta Cana, Rep. Dominicana</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Jamaica</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles en Riviera maya, México</a></li>
+            </ul>
+            <h4 class="footer--desktop__enlaces-interes--title-special">THE ONE HOTELS</h4>
+            <ul class="footer--desktop__enlaces-interes--ul">
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hotel en Barcelona</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hotel en Lisboa</a></li>
+            </ul>
+          </div>
+          <div class="footer--desktop__enlaces-interes--lista">
+            <h4 class="footer--desktop__enlaces-interes--title">SECCIONES</h4>
+            <ul class="footer--desktop__enlaces-interes--ul">
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Hoteles</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Ofertas</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Eventos</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">#Staygreen</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Club H10</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Vuelo + Hotel</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Experiencias</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Safety Program</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Familias</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Solo Adultos</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Privilege</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Todo Incluido</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Despacio SPA Centres</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Deportes</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Sobre nosotros</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Empleo</a></li>
+              <li class="footer--desktop__enlaces-interes--texto"><a href="#">Área profesional</a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="footer__enlaces-interes">
+        <div class="footer__enlaces-interes-principal">
+          <article class="footer__enlaces-interes--desplegado-principal">
+            <div class="footer__enlaces-interes--desplegado js-acordeon">
+              <div class="footer__enlaces-interes__title">
+                <h4 class="footer__enlaces-interes--desplegado--title">H10 HOTELS</h4><img class="footer__enlaces-interes--desplegado--image" src="../../icons/arrow_big_down.svg" alt="imagen de una flecha apuntando hacia abajo">
+              </div>
+              <ul class="footer__enlaces-interes--desplegado--lista">
+                <li class="footer__enlaces-interes--desplegado--texto footer__enlaces-interes--desplegado--texto--head">HOTELES EN ESPAÑA</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Barcelona</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Madrid</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Sevilla</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Córdoba</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Málaga</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Tarragona</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Tenerife</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Lanzarote</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Fuerteventura</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en La Palma</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Gran Canaria</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Mallorca</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Costa del Sol</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Salou - Cambrils</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Benidorm</li>
+                <li class="footer__enlaces-interes--desplegado--texto footer__enlaces-interes--desplegado--texto--head">HOTELES EN CIUDADES EUROPEAS</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Roma</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Venecia</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Londres</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Berlín</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Lisboa</li>
+              </ul>
+            </div>
+            <hr class="linea-separadora__2">
+          </article>
+          <article class="footer__enlaces-interes--desplegado-principal">
+            <div class="footer__enlaces-interes--desplegado js-acordeon">
+              <div class="footer__enlaces-interes__title">
+                <h4 class="footer__enlaces-interes--desplegado--title">OCEAN BY H10 HOTELS</h4><img class="footer__enlaces-interes--desplegado--image" src="../../icons/arrow_big_down.svg" alt="imagen de una flecha apuntando hacia abajo">
+              </div>
+              <ul class="footer__enlaces-interes--desplegado--lista">
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Punta Cana, Rep. Dominicana</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Jamaica</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles en Riviera maya, México</li>
+              </ul>
+            </div>
+            <hr class="linea-separadora__2">
+          </article>
+           <article class="footer__enlaces-interes--desplegado-principal">
+            <div class="footer__enlaces-interes--desplegado js-acordeon">
+              <div class="footer__enlaces-interes__title">
+                <h4 class="footer__enlaces-interes--desplegado--title">THE ONE HOTELS</h4><img class="footer__enlaces-interes--desplegado--image" src="../../icons/arrow_big_down.svg" alt="imagen de una flecha apuntando hacia abajo">
+              </div>
+              <ul class="footer__enlaces-interes--desplegado--lista">
+                <li class="footer__enlaces-interes--desplegado--texto">Hotel en Barcelona</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Hotel en Lisboa</li>
+              </ul>
+            </div>
+            <hr class="linea-separadora__2">
+          </article>
+          <div class="footer__enlaces-interes--desplegado--contenedor"></div>
+          <article class="footer__enlaces-interes--desplegado-principal">
+            <div class="footer__enlaces-interes--desplegado js-acordeon">
+              <div class="footer__enlaces-interes__title">
+                <h4 class="footer__enlaces-interes--desplegado--title">SECCIONES</h4><img class="footer__enlaces-interes--desplegado--image" src="../../icons/arrow_big_down.svg" alt="imagen de una flecha apuntando hacia abajo">
+            </div>
+              <ul class="footer__enlaces-interes--desplegado--lista">
+                <li class="footer__enlaces-interes--desplegado--texto">Hoteles</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Ofertas</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Eventos</li>
+                <li class="footer__enlaces-interes--desplegado--texto">#Staygreen</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Club H10</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Vuelo + Hotel</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Experiencias</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Safety Program</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Familias</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Solo Adultos</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Privilege</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Todo Incluido</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Despacio SPA Centres</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Deportes</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Sobre nosotros</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Empleo</li>
+                <li class="footer__enlaces-interes--desplegado--texto">Área profesional</li>
+              </ul>
+            </div>
+            <hr class="linea-separadora__2">
+          </article>
+        </div>
+        <div class="footer-info__suscripcion">
+          <h5 class="footer-info__suscripcion--title">SUSCRÍBETE A NUESTRAS NOVEDADES</h5>
+          <p class="footer-info__suscripcion--texto">Suscríbete a nuestra newsletter para estar a la última de nuestras novedades y recibir las mejores ofertas en tu correo electrónico</p>
+          <form class="footer-info__suscripcion--correo">
+<!--            <input class="footer-info__suscripcion--input" type="search" placeholder="Introduce tu correo electrónico">-->
+          </form>
+          <button class="main-button footer-info__suscripcion--boton btn-modal-suscripcion-newsletter">ENVIAR</button>
+        </div>
+        <div class="footer-info__redes">
+          <h5 class="footer-info__redes--title">SÍGUENOS EN REDES SOCIALES</h5>
+          <div class="footer-info__redes--contenedor">
+            <a href="#" class="btn instagram"></a>
+            <a href="#" class="btn facebook"></a>
+            <a href="#" class="btn tiktok"></a>
+            <a href="#" class="btn youtube"></a>
+          </div>
+        </div>
+        <div class="footer-info__app">
+          <h5 class="footer-info__app--title">DESCARGA NUESTRA APP</h5>
+          <div class="footer-info__app--contenedor"><a class="footer-info__app--enlace" href="#"><img class=".footer-info__app--image" src="../../images/download-app-store.png" alt="botón descarga app store"></a><a class="footer-info__app--enlace" href="#"><img class=".footer-info__app--image" src="../../images/download-play-store.png" alt="botón descarga play store"></a></div>
+        </div>
+        <div class="footer-info__adicional">
+          <h5 class="footer-info__adicional--title">© H10 HOTELS</h5>
+          <p class="footer-info__adicional--text">C/ Numancia 185</p>
+          <p class="footer-info__adicional--text">08034. Barcelona, España</p>
+          <p class="footer-info__adicional--text">(+34) 900 000 000</p>
+        </div>
+      </section>
+      <ul class="separator-line-list footer-info__extra">
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">LA COMPAÑÍA</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">CONTACTO</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">SALA DE PRENSA</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">MAPA WEB</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">COOKIES</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">POLÍTICA DE PRIVACIDAD</a></li>
+        <li class="separator-line-list__item"><a class="footer-info__extra--text" href="#">NOTA LEGAL</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="../../../js/aos.js"></script>
+    <script type="text/javascript" src="../../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../../js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../js/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="../../../js/acordeontoggler.js"></script>
+    <script type="text/javascript" src="../../../js/_c1.js"></script>
+    <script type="text/javascript" src="../../../js/_c7.js"></script>
+    <script type="text/javascript" src="../../../js/_c13-14.js"></script>
+    <script type="text/javascript" src="../../../js/_c15.js"></script>
+    <script type="text/javascript" src="../../../js/_c16.js"></script>
+    <script type="text/javascript" src="../../../js/_c5-carousel.js"></script>
+    <script type="text/javascript" src="../../../js/_c30-c.js"></script>
+    <script type="text/javascript" src="../../../js/_cSuscripcion-newsletter.js"></script>
+    <script type="text/javascript" src="../../../js/general.js"></script>
+  </body>
+</html>
