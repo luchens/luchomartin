@@ -40,7 +40,7 @@
     onHabilidades();
 		$(window).resize();
 
-		const scrollIndicator = document.getElementById("scroll-indicator");
+		const scrollIndicator = document.getElementById("scroll-indicator-barra");
 	  const maxScrollableHeight = document.body.scrollHeight - window.innerHeight;
 	  const percentage = (window.scrollY / maxScrollableHeight) * 100;
 	  scrollIndicator.style.width = `${percentage}%`;
@@ -323,20 +323,20 @@ function onHabilidades(){
   var top = ($('.habilidades').height()-$(window).scrollTop());
   var index = 0;
 
-  if(top <= 700){
+  /*if(top <= 700){
     if(index == 0){
       $('.chart').easyPieChart({
         easing: 'easeOutBounce',
         onStep: function(from, to, percent) {
             $(this.el).find('.percent').text(Math.round(percent));
         },
-        barColor: '#2098D1',
+        barColor: '#2097d0',
         trackColor: '#fff',
-        scaleColor: '#030'
+        scaleColor: '#fff'
       });
     }
     index++;
-  }
+  }*/
 
   if($(window).scrollTop() >= ($('.home').height()-5)){
     $(".page-up-holder").removeClass("fadeOutDown").addClass('fadeInUp');
